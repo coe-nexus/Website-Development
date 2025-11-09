@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoveOfEdu Design System - Implementation Guide</title>
+    
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Primary Colors */
+            --cove-gold: #b08d57;
+            --cove-dark: #1c1c1c;
+            --cove-offwhite: #e8e3d8;
+            
+            /* Secondary Colors */
+            --cove-white: #ffffff;
+            --cove-warm-gray: #8b8680;
+            --cove-light-gold: #d4af37;
+            
+            /* Neutral Colors */
+            --cove-gray-700: #4a4a48;
+            --cove-gray-400: #999999;
+            --cove-gray-200: #e5e5e5;
+            --cove-gray-100: #f8f7f5;
+            
+            /* Semantic Colors */
+            --cove-success: #5a7f3b;
+            --cove-info: #4a7ba7;
+            --cove-warning: #d4a574;
+            --cove-error: #a85454;
+            
+            /* Spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+            --space-xxl: 48px;
+            --space-xxxl: 64px;
+            --space-huge: 96px;
+            
+            /* Typography */
+            --font-primary: 'Comfortaa', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            /* Border Radius */
+            --radius-small: 4px;
+            --radius-medium: 8px;
+            --radius-large: 16px;
+            --radius-xl: 24px;
+            --radius-round: 9999px;
+            
+            /* Shadows */
+            --shadow-subtle: 0 2px 4px rgba(28, 28, 28, 0.05);
+            --shadow-small: 0 4px 8px rgba(28, 28, 28, 0.08);
+            --shadow-medium: 0 8px 16px rgba(28, 28, 28, 0.1);
+            --shadow-large: 0 16px 32px rgba(28, 28, 28, 0.12);
+            --shadow-gold: 0 8px 24px rgba(176, 141, 87, 0.25);
+            
+            /* Transitions */
+            --transition-fast: 200ms ease;
+            --transition-normal: 300ms ease;
+            --transition-slow: 500ms ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background: var(--cove-white);
+            color: var(--cove-dark);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-lg);
+        }
+        
+        /* Typography Classes */
+        .display {
+            font-size: 4.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+        
+        .hero-text {
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        .h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: -0.01em;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: var(--space-md);
+        }
+        
+        .h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: var(--space-md);
+        }
+        
+        .h4 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.01em;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .caps {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            line-height: 1.5;
+        }
+        
+        .gold-text {
+            color: var(--cove-gold);
+        }
+        
+        .gold-dot {
+            color: var(--cove-gold);
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--cove-white) 0%, var(--cove-offwhite) 100%);
+            padding: var(--space-xxxl) 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--cove-gold);
+        }
+        
+        /* Navigation Demo */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(28, 28, 28, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: var(--space-lg) 0;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+        
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--cove-dark);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            transition: var(--transition-normal);
+        }
+        
+        .nav-link:hover {
+            color: var(--cove-gold);
+        }
+        
+        /* Section */
+        .section {
+            padding: var(--space-xxxl) 0;
+            border-bottom: 1px solid var(--cove-gray-200);
+        }
+        
+        .section-header {
+            margin-bottom: var(--space-xxl);
+        }
+        
+        /* Color Palette */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .color-card {
+            border-radius: var(--radius-medium);
+            overflow: hidden;
+            box-shadow: var(--shadow-small);
+            transition: var(--transition-normal);
+        }
+        
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .color-swatch {
+            height: 120px;
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-md);
+        }
+        
+        .color-info {
+            background: var(--cove-white);
+            padding: var(--space-md);
+        }
+        
+        .color-name {
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .color-hex {
+            color: var(--cove-warm-gray);
+            font-size: 0.875rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            border-radius: var(--radius-round);
+            transition: var(--transition-normal);
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-family: var(--font-primary);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            box-shadow: var(--shadow-gold);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(176, 141, 87, 0.35);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--cove-dark);
+            border-color: var(--cove-dark);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--cove-dark);
+            color: var(--cove-white);
+        }
+        
+        .btn-tertiary {
+            background: transparent;
+            color: var(--cove-gold);
+            border: none;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--cove-gold);
+            border-radius: 0;
+        }
+        
+        .btn-tertiary:hover {
+            color: var(--cove-dark);
+            border-color: var(--cove-dark);
+        }
+        
+        .btn-donate {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 6px 20px rgba(176, 141, 87, 0.35);
+        }
+        
+        .btn-donate:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(176, 141, 87, 0.45);
+        }
+        
+        .button-group {
+            display: flex;
+            gap: var(--space-lg);
+            flex-wrap: wrap;
+            align-items: center;
+            margin: var(--space-xl) 0;
+        }
+        
+        /* Cards */
+        .card {
+            background: var(--cove-white);
+            border-radius: var(--radius-large);
+            padding: var(--space-xl);
+            transition: var(--transition-normal);
+        }
+        
+        .card-default {
+            border: 1px solid rgba(28, 28, 28, 0.08);
+        }
+        
+        .card-default:hover {
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .card-elevated {
+            box-shadow: var(--shadow-small);
+        }
+        
+        .card-bordered {
+            background: var(--cove-gray-100);
+            border: 2px solid var(--cove-gold);
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+        }
+        
+        /* Student Journey */
+        .journey-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: var(--space-xxl) 0;
+            position: relative;
+        }
+        
+        .journey-line {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cove-gray-200) 0%, var(--cove-gold) 100%);
+            z-index: 0;
+        }
+        
+        .journey-step {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            background: var(--cove-white);
+            padding: var(--space-md);
+        }
+        
+        .journey-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-sm);
+            font-size: 1.5rem;
+        }
+        
+        .journey-icon.stuck {
+            background: var(--cove-offwhite);
+            color: var(--cove-warm-gray);
+        }
+        
+        .journey-icon.learning {
+            background: var(--cove-gray-100);
+            color: var(--cove-gold);
+        }
+        
+        .journey-icon.building {
+            background: linear-gradient(135deg, var(--cove-gray-100) 0%, var(--cove-offwhite) 100%);
+            color: var(--cove-gold);
+        }
+        
+        .journey-icon.success {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+        }
+        
+        /* Donation Tiers */
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-xxl) 0;
+        }
+        
+        .tier-card {
+            background: var(--cove-white);
+            border: 2px solid var(--cove-gray-200);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            text-align: center;
+            position: relative;
+            transition: var(--transition-normal);
+        }
+        
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-large);
+        }
+        
+        .tier-featured {
+            border-color: var(--cove-gold);
+            background: linear-gradient(135deg, var(--cove-white) 0%, var(--cove-gray-100) 100%);
+            transform: scale(1.05);
+        }
+        
+        .tier-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--cove-gold);
+            color: var(--cove-white);
+            padding: 4px 16px;
+            border-radius: var(--radius-round);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        
+        .tier-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cove-gold);
+            margin: var(--space-md) 0;
+        }
+        
+        .tier-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: var(--space-lg);
+        }
+        
+        /* Progress Indicators */
+        .progress-circular {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: var(--space-lg) auto;
+        }
+        
+        .progress-circular svg {
+            transform: rotate(-90deg);
+        }
+        
+        .progress-circular-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .progress-linear {
+            width: 100%;
+            height: 10px;
+            background: var(--cove-offwhite);
+            border-radius: var(--radius-round);
+            overflow: hidden;
+            margin: var(--space-lg) 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: var(--cove-gold);
+            transition: width 1s ease;
+        }
+        
+        /* Code Block */
+        .code-block {
+            background: var(--cove-gray-100);
+            border-left: 4px solid var(--cove-gold);
+            padding: var(--space-lg);
+            border-radius: var(--radius-medium);
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            overflow-x: auto;
+            margin: var(--space-lg) 0;
+        }
+        
+        /* Trust Badges */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin: var(--space-xl) 0;
+        }
+        
+        .trust-badge {
+            background: var(--cove-gray-100);
+            border: 2px solid var(--cove-gold);
+            border-radius: var(--radius-large);
+            padding: var(--space-lg);
+            text-align: center;
+        }
+        
+        .trust-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--cove-gold);
+        }
+        
+        .trust-label {
+            color: var(--cove-warm-gray);
+            font-size: 0.875rem;
+            margin-top: var(--space-sm);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .display { font-size: 2.5rem; }
+            .hero-text { font-size: 2rem; }
+            .h1 { font-size: 1.75rem; }
+            .h2 { font-size: 1.5rem; }
+            .nav-links { display: none; }
+            .journey-container { flex-direction: column; gap: var(--space-xl); }
+            .journey-line { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="display">CoveOfEdu<span class="gold-dot">.</span></h1>
+            <p style="color: var(--cove-warm-gray); font-size: 1.2rem;">
+                Design System Implementation Guide
+            </p>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="nav-logo">COVEOFEDU<span class="gold-dot">.</span></div>
+            <div class="nav-links">
+                <a href="#colors" class="nav-link">Colors</a>
+                <a href="#typography" class="nav-link">Typography</a>
+                <a href="#components" class="nav-link">Components</a>
+                <a href="#journey" class="nav-link">Student Journey</a>
+                <a href="#donate" class="btn btn-primary" style="padding: 12px 30px; font-size: 0.95rem;">
+                    Fund a Student
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Colors Section -->
+    <section id="colors" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Color Palette</h2>
+                <p>Our colors reflect trust, warmth, and the transformative power of education.</p>
+            </div>
+            
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--cove-gold);">
+                        <div style="color: white;">Primary</div>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Gold</div>
+                        <div class="color-hex">#b08d57</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--cove-dark);">
+                        <div style="color: white;">Primary</div>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Dark</div>
+                        <div class="color-hex">#1c1c1c</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--cove-offwhite);">
+                        <div>Primary</div>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Off White</div>
+                        <div class="color-hex">#e8e3d8</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--cove-white); border: 1px solid var(--cove-gray-200);">
+                        <div>Secondary</div>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">White</div>
+                        <div class="color-hex">#ffffff</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--cove-warm-gray);">
+                        <div style="color: white;">Secondary</div>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Warm Gray</div>
+                        <div class="color-hex">#8b8680</div>
+                    </div>
+                </div>
+                
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--cove-light-gold);">
+                        <div style="color: white;">Secondary</div>
+                    </div>
+                    <div class="color-info">
+                        <div class="color-name">Light Gold</div>
+                        <div class="color-hex">#d4af37</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Typography Section -->
+    <section id="typography" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Typography</h2>
+                <p>Comfortaa font creates a warm, approachable feeling while maintaining professionalism.</p>
+            </div>
+            
+            <div style="margin: var(--space-xl) 0;">
+                <p class="display">Display Text</p>
+                <p class="hero-text">Hero Heading</p>
+                <p class="h1">Heading Level 1</p>
+                <p class="h2">Heading Level 2</p>
+                <p class="h3">Heading Level 3</p>
+                <p class="h4">Heading Level 4</p>
+                <p class="caps">UPPERCASE LABEL</p>
+                <p>Regular body text with comfortable reading experience and optimal line height.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Components Section -->
+    <section id="components" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">UI Components</h2>
+            </div>
+            
+            <!-- Buttons -->
+            <div style="margin-bottom: var(--space-xxl);">
+                <h3 class="h3">Buttons</h3>
+                <div class="button-group">
+                    <button class="btn btn-primary">Fund a Student</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                    <button class="btn btn-tertiary">See Impact →</button>
+                    <button class="btn btn-donate">Donate $2,500</button>
+                </div>
+            </div>
+            
+            <!-- Cards -->
+            <div style="margin-bottom: var(--space-xxl);">
+                <h3 class="h3">Cards</h3>
+                <div class="card-grid">
+                    <div class="card card-default">
+                        <h4 class="h4">Default Card</h4>
+                        <p>Clean white background with subtle border. Perfect for general content.</p>
+                    </div>
+                    <div class="card card-elevated">
+                        <h4 class="h4">Elevated Card</h4>
+                        <p>Soft shadow creates depth and hierarchy in the layout.</p>
+                    </div>
+                    <div class="card card-bordered">
+                        <h4 class="h4 gold-text">Featured Card</h4>
+                        <p>Gold border draws attention to important information.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Progress Indicators -->
+            <div style="margin-bottom: var(--space-xxl);">
+                <h3 class="h3">Progress Indicators</h3>
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: var(--space-xl); align-items: center;">
+                    <div class="progress-circular">
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--cove-offwhite)" stroke-width="8"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="var(--cove-gold)" stroke-width="8"
+                                    stroke-dasharray="125.6 251.2" stroke-linecap="round"/>
+                        </svg>
+                        <div class="progress-circular-text">50%</div>
+                    </div>
+                    <div>
+                        <div class="progress-linear">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                        <p style="text-align: center; margin-top: var(--space-sm); color: var(--cove-warm-gray);">
+                            $28,600 of $44,000 Goal
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Student Journey Section -->
+    <section id="journey" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Student Journey Visualization</h2>
+                <p>From stuck to successful in 90 days</p>
+            </div>
+            
+            <div class="journey-container">
+                <div class="journey-line"></div>
+                
+                <div class="journey-step">
+                    <div class="journey-icon stuck">😔</div>
+                    <div class="caps">Stuck</div>
+                    <div style="color: var(--cove-warm-gray); font-size: 0.875rem;">Day 0</div>
+                </div>
+                
+                <div class="journey-step">
+                    <div class="journey-icon learning">📚</div>
+                    <div class="caps gold-text">Learning</div>
+                    <div style="color: var(--cove-warm-gray); font-size: 0.875rem;">Day 30</div>
+                </div>
+                
+                <div class="journey-step">
+                    <div class="journey-icon building">🚀</div>
+                    <div class="caps gold-text">Building</div>
+                    <div style="color: var(--cove-warm-gray); font-size: 0.875rem;">Day 60</div>
+                </div>
+                
+                <div class="journey-step">
+                    <div class="journey-icon success">🎉</div>
+                    <div class="caps" style="color: var(--cove-light-gold);">Success</div>
+                    <div style="color: var(--cove-warm-gray); font-size: 0.875rem;">Day 90</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Donation Tiers Section -->
+    <section id="donate" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Donation Tier Components</h2>
+                <p>How donors create lasting impact</p>
+            </div>
+            
+            <div class="tier-grid">
+                <div class="tier-card">
+                    <div class="tier-name">Reality Shifter</div>
+                    <div class="tier-price">$2.5K</div>
+                    <p style="color: var(--cove-warm-gray);">Fund 1 student transformation</p>
+                    <button class="btn btn-secondary" style="margin-top: var(--space-lg); width: 100%;">
+                        Select Tier
+                    </button>
+                </div>
+                
+                <div class="tier-card tier-featured">
+                    <div class="tier-badge">MOST POPULAR</div>
+                    <div class="tier-name">Infrastructure Builder</div>
+                    <div class="tier-price">$10K</div>
+                    <p style="color: var(--cove-warm-gray);">Fund 4 students + curriculum</p>
+                    <button class="btn btn-primary" style="margin-top: var(--space-lg); width: 100%;">
+                        Select Tier
+                    </button>
+                </div>
+                
+                <div class="tier-card">
+                    <div class="tier-name">Legacy Architect</div>
+                    <div class="tier-price">$50K</div>
+                    <p style="color: var(--cove-warm-gray);">Fund 20 students + expansion</p>
+                    <button class="btn btn-secondary" style="margin-top: var(--space-lg); width: 100%;">
+                        Select Tier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Badges -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Trust & Impact</h2>
+            </div>
+            
+            <div class="trust-grid">
+                <div class="trust-badge">
+                    <div class="trust-number">501(c)(3)</div>
+                    <div class="trust-label">Tax Deductible</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-number">94%</div>
+                    <div class="trust-label">Success Rate</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-number">127</div>
+                    <div class="trust-label">Students Funded</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-number">$1.2M+</div>
+                    <div class="trust-label">Revenue Generated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Code Examples -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="h2">Implementation Examples</h2>
+            </div>
+            
+            <h3 class="h3">CSS Variables</h3>
+            <div class="code-block">
+/* Use these CSS variables in your styles */
+.donation-button {
+    background: linear-gradient(135deg, var(--cove-gold), var(--cove-light-gold));
+    color: var(--cove-white);
+    padding: var(--space-md) var(--space-xl);
+    border-radius: var(--radius-round);
+    box-shadow: var(--shadow-gold);
+}
+
+.impact-card {
+    background: var(--cove-gray-100);
+    border: 2px solid var(--cove-gold);
+    border-radius: var(--radius-large);
+}
+            </div>
+            
+            <h3 class="h3">Component Structure</h3>
+            <div class="code-block">
+&lt;div class="tier-card tier-featured"&gt;
+    &lt;div class="tier-badge"&gt;MOST POPULAR&lt;/div&gt;
+    &lt;div class="tier-name"&gt;Infrastructure Builder&lt;/div&gt;
+    &lt;div class="tier-price"&gt;$10K&lt;/div&gt;
+    &lt;p&gt;Fund 4 students + curriculum&lt;/p&gt;
+    &lt;button class="btn btn-primary"&gt;Select Tier&lt;/button&gt;
+&lt;/div&gt;
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer style="background: var(--cove-dark); color: var(--cove-white); padding: var(--space-xxxl) 0; text-align: center;">
+        <div class="container">
+            <h3 style="color: var(--cove-white); margin-bottom: var(--space-md);">
+                COVEOFEDU<span class="gold-dot">.</span>
+            </h3>
+            <p class="caps" style="color: var(--cove-warm-gray); margin-bottom: var(--space-xl);">
+                Design System v1.0
+            </p>
+            <p style="color: var(--cove-offwhite);">
+                The Carnegie Library of the AI Age
+            </p>
+            <p style="color: var(--cove-warm-gray); margin-top: var(--space-sm);">
+                501(c)(3) Nonprofit • EIN: 92-2455469
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

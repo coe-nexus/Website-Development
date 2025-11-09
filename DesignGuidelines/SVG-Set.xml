@@ -1,0 +1,342 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2000" viewBox="0 0 1200 2000">
+  <defs>
+    <!-- Color Definitions -->
+    <style>
+      .primary-black { fill: #000000; }
+      .primary-white { fill: #ffffff; }
+      .accent-crimson { fill: #8B0020; }
+      .secondary-olive { fill: #2d3d1f; }
+      .neutral-offwhite { fill: #F8F4E6; }
+      .stroke-black { stroke: #000000; fill: none; }
+      .stroke-crimson { stroke: #8B0020; fill: none; }
+      .stroke-olive { stroke: #2d3d1f; fill: none; }
+    </style>
+    
+    <!-- Patterns -->
+    <pattern id="grid-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="100" stroke="#000000" stroke-width="0.5" opacity="0.05"/>
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#000000" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+    
+    <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#000000" opacity="0.1"/>
+    </pattern>
+    
+    <!-- Gradients -->
+    <linearGradient id="subtle-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F8F4E6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="50" y="50" font-family="-apple-system, sans-serif" font-size="32" font-weight="200">ASCEND Brand Graphics</text>
+  <line x1="50" y1="65" x2="150" y2="65" stroke="#8B0020" stroke-width="2"/>
+  
+  <!-- Section 1: Logo Variations -->
+  <g id="logos" transform="translate(50, 100)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">LOGOS</text>
+    
+    <!-- Primary Logo -->
+    <g id="logo-primary" transform="translate(0, 20)">
+      <text x="0" y="40" font-family="-apple-system, sans-serif" font-size="48" font-weight="200" letter-spacing="-2">ASCEND<tspan fill="#8B0020">.</tspan></text>
+      <text x="0" y="60" font-family="-apple-system, sans-serif" font-size="12" font-weight="300" fill="#2d3d1f">Minimal effort. Maximum evolution.</text>
+    </g>
+    
+    <!-- Compact Logo -->
+    <g id="logo-compact" transform="translate(400, 20)">
+      <text x="0" y="40" font-family="-apple-system, sans-serif" font-size="36" font-weight="300">A<tspan fill="#8B0020">.</tspan></text>
+    </g>
+    
+    <!-- Icon Logo -->
+    <g id="logo-icon" transform="translate(500, 20)">
+      <path d="M0 40 L15 10 L30 40 Z" stroke="#000000" stroke-width="2" fill="none"/>
+      <circle cx="15" cy="5" r="3" fill="#8B0020"/>
+    </g>
+  </g>
+  
+  <!-- Section 2: Character Icons -->
+  <g id="characters" transform="translate(50, 250)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">CHARACTER PROGRESSION</text>
+    
+    <!-- Focus Character -->
+    <g id="char-focus" transform="translate(0, 40)">
+      <circle cx="25" cy="25" r="25" fill="none" stroke="#000000" stroke-width="2"/>
+      <circle cx="25" cy="0" r="12" fill="#F8F4E6"/>
+      <circle cx="21" cy="-2" r="1" fill="#000000"/>
+      <circle cx="29" cy="-2" r="1" fill="#000000"/>
+      <rect x="17" y="30" width="16" height="12" fill="none" stroke="#2d3d1f" stroke-width="1"/>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">FOCUS</text>
+    </g>
+    
+    <!-- Growth Character -->
+    <g id="char-growth" transform="translate(100, 40)">
+      <rect x="10" y="10" width="30" height="30" fill="none" stroke="#2d3d1f" stroke-width="2"/>
+      <rect x="5" y="5" width="40" height="40" fill="none" stroke="#2d3d1f" stroke-width="1" opacity="0.5"/>
+      <circle cx="25" cy="-10" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <line x1="21" y1="-12" x2="23" y2="-12" stroke="#000000" stroke-width="1"/>
+      <line x1="27" y1="-12" x2="29" y2="-12" stroke="#000000" stroke-width="1"/>
+      <path d="M25 35 L25 15" stroke="#8B0020" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">GROWTH</text>
+    </g>
+    
+    <!-- Resilience Character -->
+    <g id="char-resilience" transform="translate(200, 40)">
+      <path d="M5 45 L25 5 L45 45 Z" fill="none" stroke="#000000" stroke-width="2"/>
+      <path d="M15 35 L25 15 L35 35 Z" fill="#F8F4E6"/>
+      <circle cx="25" cy="-10" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <line x1="20" y1="-12" x2="23" y2="-12" stroke="#000000" stroke-width="1.5"/>
+      <line x1="27" y1="-12" x2="30" y2="-12" stroke="#000000" stroke-width="1.5"/>
+      <rect x="17" y="17" width="16" height="18" fill="none" stroke="#8B0020" stroke-width="1"/>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">RESILIENCE</text>
+    </g>
+    
+    <!-- Achievement Character -->
+    <g id="char-achievement" transform="translate(300, 40)">
+      <path d="M25 -5 L40 20 L25 45 L10 20 Z" fill="none" stroke="#8B0020" stroke-width="2"/>
+      <path d="M25 5 L35 20 L25 35 L15 20 Z" fill="#F8F4E6"/>
+      <circle cx="25" cy="-20" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <path d="M21 -22 L22 -23" stroke="#000000" stroke-width="1"/>
+      <path d="M28 -23 L29 -22" stroke="#000000" stroke-width="1"/>
+      <path d="M21 -16 Q25 -14 29 -16" stroke="#000000" stroke-width="1" fill="none"/>
+      <text x="25" y="-35" text-anchor="middle" font-size="16" fill="#8B0020">*</text>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">EXCELLENCE</text>
+    </g>
+  </g>
+  
+  <!-- Section 3: UI Elements -->
+  <g id="ui-elements" transform="translate(50, 450)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">UI ELEMENTS</text>
+    
+    <!-- Buttons -->
+    <g id="buttons" transform="translate(0, 30)">
+      <!-- Primary Button -->
+      <rect x="0" y="0" width="120" height="50" fill="#000000"/>
+      <text x="60" y="30" text-anchor="middle" fill="#ffffff" font-size="11" letter-spacing="2">BEGIN</text>
+      
+      <!-- Secondary Button -->
+      <rect x="140" y="0" width="120" height="50" fill="none" stroke="#000000" stroke-width="1"/>
+      <text x="200" y="30" text-anchor="middle" fill="#000000" font-size="11" letter-spacing="2">EXPLORE</text>
+      
+      <!-- Minimal Button -->
+      <line x1="280" y1="49" x2="380" y2="49" stroke="#000000" stroke-width="1"/>
+      <text x="330" y="30" text-anchor="middle" fill="#000000" font-size="11" letter-spacing="2">LEARN MORE</text>
+    </g>
+    
+    <!-- Progress Indicators -->
+    <g id="progress" transform="translate(0, 100)">
+      <circle cx="20" cy="20" r="18" fill="none" stroke="#cccccc" stroke-width="1"/>
+      <circle cx="20" cy="20" r="18" fill="none" stroke="#8B0020" stroke-width="2" 
+              stroke-dasharray="57 113" stroke-dashoffset="-28" transform="rotate(-90 20 20)"/>
+      <text x="20" y="25" text-anchor="middle" font-size="10">25%</text>
+      
+      <line x1="70" y1="20" x2="170" y2="20" stroke="#cccccc" stroke-width="1"/>
+      <line x1="70" y1="20" x2="120" y2="20" stroke="#8B0020" stroke-width="2"/>
+      <circle cx="70" cy="20" r="3" fill="#8B0020"/>
+      <circle cx="120" cy="20" r="3" fill="#8B0020"/>
+      <circle cx="170" cy="20" r="3" fill="#cccccc"/>
+    </g>
+  </g>
+  
+  <!-- Section 4: Icons -->
+  <g id="icons" transform="translate(50, 650)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">ICONS</text>
+    
+    <!-- Arrow Icons -->
+    <g id="arrows" transform="translate(0, 30)">
+      <path d="M10 20 L30 20 M25 15 L30 20 L25 25" stroke="#000000" stroke-width="1" fill="none"/>
+      <path d="M60 10 L60 30 M55 25 L60 30 L65 25" stroke="#000000" stroke-width="1" fill="none"/>
+      <path d="M90 20 L105 10 M100 10 L105 10 L105 15" stroke="#000000" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Menu Icons -->
+    <g id="menu-icons" transform="translate(0, 80)">
+      <g id="hamburger">
+        <line x1="10" y1="15" x2="30" y2="15" stroke="#000000" stroke-width="1"/>
+        <line x1="10" y1="20" x2="30" y2="20" stroke="#000000" stroke-width="1"/>
+        <line x1="10" y1="25" x2="30" y2="25" stroke="#000000" stroke-width="1"/>
+      </g>
+      
+      <g id="close" transform="translate(50, 0)">
+        <line x1="15" y1="15" x2="25" y2="25" stroke="#000000" stroke-width="1"/>
+        <line x1="25" y1="15" x2="15" y2="25" stroke="#000000" stroke-width="1"/>
+      </g>
+      
+      <g id="plus" transform="translate(100, 0)">
+        <line x1="20" y1="10" x2="20" y2="30" stroke="#000000" stroke-width="1"/>
+        <line x1="10" y1="20" x2="30" y2="20" stroke="#000000" stroke-width="1"/>
+      </g>
+    </g>
+    
+    <!-- Achievement Icons -->
+    <g id="achievement-icons" transform="translate(200, 30)">
+      <g id="star">
+        <path d="M20 10 L23 17 L30 17 L24 22 L27 29 L20 24 L13 29 L16 22 L10 17 L17 17 Z" 
+              fill="none" stroke="#8B0020" stroke-width="1"/>
+      </g>
+      
+      <g id="trophy" transform="translate(50, 0)">
+        <path d="M15 15 L15 25 L25 25 L25 15 M10 15 L30 15 M20 25 L20 30 M15 30 L25 30" 
+              stroke="#8B0020" stroke-width="1" fill="none"/>
+      </g>
+      
+      <g id="badge" transform="translate(100, 0)">
+        <circle cx="20" cy="20" r="10" fill="none" stroke="#8B0020" stroke-width="1"/>
+        <path d="M20 15 L22 19 L26 19 L23 22 L24 26 L20 23 L16 26 L17 22 L14 19 L18 19 Z" 
+              fill="#8B0020" transform="scale(0.6) translate(13, 13)"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Section 5: Decorative Elements -->
+  <g id="decorative" transform="translate(50, 850)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">DECORATIVE ELEMENTS</text>
+    
+    <!-- Dividers -->
+    <g id="dividers" transform="translate(0, 30)">
+      <line x1="0" y1="10" x2="100" y2="10" stroke="#000000" stroke-width="1"/>
+      <line x1="0" y1="30" x2="100" y2="30" stroke="#000000" stroke-width="1" opacity="0.2"/>
+      <line x1="0" y1="50" x2="100" y2="50" stroke="#8B0020" stroke-width="2"/>
+      
+      <g transform="translate(150, 0)">
+        <line x1="0" y1="30" x2="30" y2="30" stroke="#000000" stroke-width="1"/>
+        <circle cx="40" cy="30" r="2" fill="#000000"/>
+        <line x1="50" y1="30" x2="80" y2="30" stroke="#000000" stroke-width="1"/>
+      </g>
+    </g>
+    
+    <!-- Accent Shapes -->
+    <g id="shapes" transform="translate(0, 100)">
+      <rect x="0" y="0" width="40" height="40" fill="none" stroke="#000000" stroke-width="1"/>
+      <circle cx="70" cy="20" r="20" fill="none" stroke="#000000" stroke-width="1"/>
+      <path d="M120 0 L140 20 L120 40 L100 20 Z" fill="none" stroke="#8B0020" stroke-width="1"/>
+      <path d="M170 40 L190 0 L210 40 Z" fill="none" stroke="#2d3d1f" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Section 6: Patterns & Backgrounds -->
+  <g id="patterns" transform="translate(50, 1050)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">PATTERNS</text>
+    
+    <rect x="0" y="30" width="150" height="100" fill="url(#grid-pattern)"/>
+    <rect x="170" y="30" width="150" height="100" fill="url(#dot-pattern)"/>
+    <rect x="340" y="30" width="150" height="100" fill="url(#subtle-gradient)"/>
+  </g>
+  
+  <!-- Section 7: Growth Path Visualization -->
+  <g id="growth-path" transform="translate(50, 1250)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">GROWTH PATH</text>
+    
+    <g transform="translate(0, 30)">
+      <!-- Ascending path -->
+      <path d="M0 100 L100 75 L200 50 L300 25 L400 0" 
+            stroke="#000000" stroke-width="1" fill="none" opacity="0.3"/>
+      
+      <!-- Milestone dots -->
+      <circle cx="0" cy="100" r="8" fill="#000000"/>
+      <text x="0" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">START</text>
+      
+      <circle cx="100" cy="75" r="8" fill="#2d3d1f"/>
+      <text x="100" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">FOCUS</text>
+      
+      <circle cx="200" cy="50" r="8" fill="#2d3d1f"/>
+      <text x="200" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">GROWTH</text>
+      
+      <circle cx="300" cy="25" r="8" fill="#2d3d1f"/>
+      <text x="300" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">RESILIENCE</text>
+      
+      <circle cx="400" cy="0" r="8" fill="#8B0020"/>
+      <text x="400" y="120" text-anchor="middle" font-size="8" fill="#8B0020">EXCELLENCE</text>
+    </g>
+  </g>
+  
+  <!-- Section 8: Badge System -->
+  <g id="badges" transform="translate(50, 1450)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">ACHIEVEMENT BADGES</text>
+    
+    <g transform="translate(0, 30)">
+      <!-- Level 1 Badge -->
+      <g id="badge-1">
+        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#000000" stroke-width="1"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" font-weight="200">01</text>
+        <text x="30" y="75" text-anchor="middle" font-size="8" fill="#666">BEGINNER</text>
+      </g>
+      
+      <!-- Level 2 Badge -->
+      <g id="badge-2" transform="translate(80, 0)">
+        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#2d3d1f" stroke-width="2"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" font-weight="200" fill="#2d3d1f">02</text>
+        <text x="30" y="75" text-anchor="middle" font-size="8" fill="#666">FOCUSED</text>
+      </g>
+      
+      <!-- Level 3 Badge -->
+      <g id="badge-3" transform="translate(160, 0)">
+        <path d="M30 0 L60 30 L30 60 L0 30 Z" fill="none" stroke="#8B0020" stroke-width="2"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" font-weight="200" fill="#8B0020">03</text>
+        <text x="30" y="75" text-anchor="middle" font-size="8" fill="#666">EVOLVED</text>
+      </g>
+      
+      <!-- Master Badge -->
+      <g id="badge-master" transform="translate(240, 0)">
+        <circle cx="30" cy="30" r="28" fill="none" stroke="#8B0020" stroke-width="2"/>
+        <circle cx="30" cy="30" r="24" fill="none" stroke="#8B0020" stroke-width="1"/>
+        <text x="30" y="25" text-anchor="middle" font-size="10" font-weight="600" fill="#8B0020">ASCEND</text>
+        <text x="30" y="40" text-anchor="middle" font-size="8" fill="#000000">MASTER</text>
+        <text x="30" y="75" text-anchor="middle" font-size="8" fill="#666">COMPLETE</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Section 9: Number System -->
+  <g id="numbers" transform="translate(50, 1600)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">NUMBER SYSTEM</text>
+    
+    <g transform="translate(0, 30)">
+      <text x="0" y="30" font-size="40" font-weight="200" fill="#000000">01</text>
+      <text x="60" y="30" font-size="40" font-weight="200" fill="#2d3d1f">02</text>
+      <text x="120" y="30" font-size="40" font-weight="200" fill="#2d3d1f">03</text>
+      <text x="180" y="30" font-size="40" font-weight="200" fill="#8B0020">04</text>
+      
+      <line x1="0" y1="50" x2="40" y2="50" stroke="#000000" stroke-width="1"/>
+      <text x="0" y="70" font-size="10" fill="#666">INACTIVE</text>
+      
+      <line x1="60" y1="50" x2="100" y2="50" stroke="#2d3d1f" stroke-width="1"/>
+      <text x="60" y="70" font-size="10" fill="#666">IN PROGRESS</text>
+      
+      <line x1="180" y1="50" x2="220" y2="50" stroke="#8B0020" stroke-width="2"/>
+      <text x="180" y="70" font-size="10" fill="#666">COMPLETE</text>
+    </g>
+  </g>
+  
+  <!-- Section 10: Motion Guides -->
+  <g id="motion" transform="translate(50, 1750)">
+    <text x="0" y="0" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="2">MOTION GUIDES</text>
+    
+    <g transform="translate(0, 30)">
+      <!-- Fade in -->
+      <rect x="0" y="0" width="40" height="40" fill="#000000" opacity="0.2"/>
+      <rect x="50" y="0" width="40" height="40" fill="#000000" opacity="0.4"/>
+      <rect x="100" y="0" width="40" height="40" fill="#000000" opacity="0.6"/>
+      <rect x="150" y="0" width="40" height="40" fill="#000000" opacity="0.8"/>
+      <rect x="200" y="0" width="40" height="40" fill="#000000" opacity="1"/>
+      <text x="0" y="60" font-size="10">FADE IN</text>
+      
+      <!-- Scale -->
+      <g transform="translate(0, 80)">
+        <rect x="15" y="15" width="10" height="10" fill="#8B0020"/>
+        <rect x="55" y="10" width="20" height="20" fill="#8B0020" opacity="0.8"/>
+        <rect x="100" y="5" width="30" height="30" fill="#8B0020" opacity="0.6"/>
+        <rect x="150" y="0" width="40" height="40" fill="#8B0020" opacity="0.4"/>
+        <text x="0" y="60" font-size="10">SCALE UP</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="none" stroke="#8B0020" stroke-width="1"/>
+    </marker>
+  </defs>
+</svg>
