@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHYTHM: The Sustainable Pace of Lifelong Success | CoveOfEdu Blog</title>
+    <meta name="description" content="Master Rhythm—the seventh and final teaching. Learn how consistency beats intensity and how to build a sustainable pace for lifelong transformation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cove-gold: #b08d57;
+            --cove-dark: #1c1c1c;
+            --cove-offwhite: #e8e3d8;
+            --cove-white: #ffffff;
+            --cove-warm-gray: #8b8680;
+            --cove-light-gold: #d4af37;
+            --cove-gray-100: #f8f7f5;
+            --cove-gray-200: #e5e5e5;
+            --font-primary: 'Comfortaa', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--cove-white);
+            color: var(--cove-dark);
+            line-height: 1.8;
+        }
+
+        .article-header {
+            background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%);
+            padding: 120px 20px 80px;
+            text-align: center;
+            color: var(--cove-white);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .teaching-badge {
+            display: inline-block;
+            background: var(--cove-gold);
+            color: var(--cove-white);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .article-header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            font-size: 1.1rem;
+            color: var(--cove-offwhite);
+            margin-bottom: 16px;
+        }
+
+        .reading-time {
+            font-size: 0.95rem;
+            color: var(--cove-warm-gray);
+        }
+
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 32px;
+        }
+
+        .article-content h2 {
+            font-size: 2.2rem;
+            margin-top: 64px;
+            margin-bottom: 24px;
+            color: var(--cove-dark);
+        }
+
+        .article-content h3 {
+            font-size: 1.8rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--cove-gold);
+        }
+
+        .article-content p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 28px 0 28px 40px;
+        }
+
+        .article-content li {
+            font-size: 1.15rem;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--cove-gold);
+            padding: 24px 32px;
+            margin: 40px 0;
+            background: var(--cove-gray-100);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--cove-dark);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 48px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--cove-white);
+        }
+
+        .highlight-box p {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+            color: var(--cove-white);
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 9999px;
+            transition: all 300ms ease;
+            cursor: pointer;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+            margin: 12px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cove-white);
+            border: 2px solid var(--cove-white);
+            margin: 12px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+        }
+
+        .cta-box {
+            background: var(--cove-gray-100);
+            border: 2px solid var(--cove-gold);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 64px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            color: var(--cove-dark);
+        }
+
+        .cta-box p {
+            font-size: 1.15rem;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        @media (max-width: 768px) {
+            .article-header h1 { font-size: 2.2rem; }
+            .article-content h2 { font-size: 1.8rem; }
+            .article-content h3 { font-size: 1.5rem; }
+            .article-content p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="container">
+            <span class="teaching-badge">TEACHING 07 OF 7</span>
+            <h1>RHYTHM<br><span style="color: var(--cove-gold);">The Sustainable Pace of Lifelong Success</span></h1>
+            <p class="article-meta">Consistency beats intensity. Small actions compound. Sustainable wins the race.</p>
+            <p class="reading-time">📖 13 minute read</p>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-content">
+
+        <h2>The Illusion of the Big Moment</h2>
+
+        <p>We're obsessed with dramatic transformation stories.</p>
+
+        <p>The entrepreneur who goes from broke to millionaire in 90 days. The person who loses 100 pounds in 6 months. The overnight success after a viral video. The single decision that changes everything.</p>
+
+        <p>These stories are exciting. Inspiring. And mostly lies.</p>
+
+        <p>Not because they didn't happen, but because they leave out the most important part: <strong>the daily rhythm that made them possible.</strong></p>
+
+        <p>The "overnight" success was actually 10 years of consistent daily work. The dramatic transformation was the result of thousands of small, unglamorous choices. The big breakthrough moment was built on a foundation of sustainable rhythm.</p>
+
+        <p>This is the seventh and final teaching because it ties everything together. You now have:</p>
+
+        <ul>
+            <li>The belief transformation is possible (PMA)</li>
+            <li>Clarity on your purpose (Purity of Thought)</li>
+            <li>A vivid vision of your future (Vision)</li>
+            <li>The courage to act (Courage)</li>
+            <li>The ability to inspire others (Charisma)</li>
+            <li>Protected space to do deep work (Sanctuary)</li>
+        </ul>
+
+        <p>Now you need <strong>Rhythm</strong>—the sustainable daily practice that turns all of this into lifelong transformation.</p>
+
+        <blockquote>
+            "We are what we repeatedly do. Excellence, then, is not an act, but a habit."<br>
+            — Aristotle
+        </blockquote>
+
+        <h2>What Is Rhythm?</h2>
+
+        <p>Rhythm is the practice of showing up consistently, sustainably, over time. It's:</p>
+
+        <ul>
+            <li><strong>Consistency over intensity:</strong> Daily progress beats occasional heroic effort</li>
+            <li><strong>Systems over motivation:</strong> Structures that work regardless of how you feel</li>
+            <li><strong>Sustainability over speed:</strong> Pace you can maintain for decades, not weeks</li>
+            <li><strong>Process over outcomes:</strong> Focusing on what you control (daily actions) not what you don't (results)</li>
+        </ul>
+
+        <p>Rhythm recognizes that transformation isn't a sprint or even a marathon. It's a lifestyle.</p>
+
+        <p>You're not trying to be extraordinary for 30 days. You're trying to be consistently good for 30 years.</p>
+
+        <h2>Why Motivation Fails and Rhythm Succeeds</h2>
+
+        <p>Most people rely on motivation to drive their actions. This is why most people fail.</p>
+
+        <p>Motivation is unreliable. Some days you'll wake up fired up. Other days you'll want to stay in bed. Motivation comes and goes like the tide.</p>
+
+        <p>Rhythm doesn't care how you feel. It's what you do regardless of motivation.</p>
+
+        <p>Think about brushing your teeth. You don't wait until you feel motivated. You don't give yourself a pep talk. You just do it. It's part of your rhythm.</p>
+
+        <p>The most successful students at CoveOfEdu aren't the most motivated. They're the ones who built sustainable rhythms—daily practices they can maintain whether they feel like it or not.</p>
+
+        <h2>The Student Who Found His Rhythm</h2>
+
+        <p>Let me tell you about Carlos (not his real name).</p>
+
+        <p>Carlos joined CoveOfEdu with enormous enthusiasm. Week one, he worked 60 hours on his business. Week two, 70 hours. He was on fire, making massive progress, telling everyone about his breakthrough.</p>
+
+        <p>Week three, he burned out completely. Didn't work at all. Too exhausted.</p>
+
+        <p>Week four, he tried to start again but couldn't recapture the intensity. He felt like a failure. "Maybe I'm not cut out for this," he said.</p>
+
+        <p>The problem wasn't his potential. It was his rhythm.</p>
+
+        <p>He was sprinting a marathon. Intensity without sustainability. Motivation without systems.</p>
+
+        <p>So we helped Carlos build a different approach:</p>
+
+        <ul>
+            <li>2 hours of focused work every morning, 7 days a week (14 hours weekly, down from 60-70)</li>
+            <li>Same time, same place, every day—making it a ritual, not a decision</li>
+            <li>One day off weekly to rest and reflect</li>
+            <li>Progress tracked daily to see compound effects</li>
+        </ul>
+
+        <p>It felt too slow at first. "I should be working more," he kept saying.</p>
+
+        <p>But we asked him: "Can you do 2 hours every morning for the next 5 years?"</p>
+
+        <p>He could. And that was the point.</p>
+
+        <p>Within 6 months of sustainable rhythm, Carlos had built a business generating $12,000/month. Not from occasional intensity, but from consistent daily action.</p>
+
+        <p>A year later, he's at $25,000/month. And he's not burned out. He's just getting started.</p>
+
+        <p>That's the power of Rhythm.</p>
+
+        <blockquote>
+            "The secret to getting ahead is getting started. The secret to getting started is breaking your complex overwhelming tasks into small manageable tasks, and then starting on the first one."<br>
+            — Mark Twain
+        </blockquote>
+
+        <h2>The Compound Effect of Rhythm</h2>
+
+        <p>Small actions, repeated daily, create exponential results. This is the compound effect.</p>
+
+        <p>Imagine two people:</p>
+
+        <ul>
+            <li><strong>Person A</strong> works on their business 60 hours one week, then burns out and does nothing for 3 weeks. Repeat monthly. = 60 hours/month</li>
+            <li><strong>Person B</strong> works on their business 2 hours every single day, sustainably. = 60 hours/month</li>
+        </ul>
+
+        <p>Same total time. Completely different results.</p>
+
+        <p>Person B builds momentum, maintains focus, develops skills continuously, and compounds their progress. Person A starts from zero repeatedly, loses momentum, forgets what they learned, and makes little progress.</p>
+
+        <p>Now extend this over a year. Five years. Ten years.</p>
+
+        <p>Person B doesn't just win—they lap Person A multiple times.</p>
+
+        <p><strong>Consistency beats intensity every single time.</strong></p>
+
+        <h2>Building Your Rhythm</h2>
+
+        <h3>1. Start Smaller Than You Think</h3>
+
+        <p>Most people set unsustainable goals. "I'll work out 2 hours daily!" (Then quit after 3 days.)</p>
+
+        <p>Instead, start with what you can sustain forever:</p>
+
+        <ul>
+            <li>Don't commit to 2 hours daily if you can't maintain it. Start with 30 minutes.</li>
+            <li>Don't commit to 7 days weekly if weekends are chaotic. Start with 5 days.</li>
+            <li>Don't commit to perfection. Start with showing up.</li>
+        </ul>
+
+        <p>The goal isn't to be impressive. It's to be consistent. You can always increase later. You can't recover from burnout quickly.</p>
+
+        <h3>2. Make It a Ritual, Not a Decision</h3>
+
+        <p>Every decision drains willpower. If you have to decide whether to work on your goal each day, you'll skip days.</p>
+
+        <p>Instead, make it automatic:</p>
+
+        <ul>
+            <li><strong>Same time:</strong> 6-8 AM every day (for example)</li>
+            <li><strong>Same place:</strong> Your designated workspace</li>
+            <li><strong>Same trigger:</strong> After coffee, before anything else</li>
+            <li><strong>Same duration:</strong> Exactly 2 hours, no more, no less</li>
+        </ul>
+
+        <p>When it's ritualized, it doesn't require motivation. It's just what you do.</p>
+
+        <h3>3. Track Your Streak</h3>
+
+        <p>What gets measured gets managed. Track how many consecutive days you've maintained your rhythm.</p>
+
+        <p>Use:</p>
+        <ul>
+            <li>A wall calendar with X's</li>
+            <li>An app like Habitica or Streaks</li>
+            <li>A simple spreadsheet</li>
+        </ul>
+
+        <p>The longer your streak, the more motivated you'll be to not break it. Jerry Seinfeld calls this "Don't Break the Chain."</p>
+
+        <h3>4. Plan for Disruptions</h3>
+
+        <p>Life will disrupt your rhythm. Travel. Illness. Emergencies. Family obligations.</p>
+
+        <p>Build in flexibility:</p>
+
+        <ul>
+            <li>If you miss a day, get right back on track the next day (don't use one miss as an excuse to quit)</li>
+            <li>Have a "minimum viable rhythm" for chaotic days (even 15 minutes counts)</li>
+            <li>Schedule one rest day weekly (planned breaks prevent burnout)</li>
+        </ul>
+
+        <p>Rhythm isn't about perfection. It's about consistently returning to the practice.</p>
+
+        <h3>5. Focus on Process, Not Outcomes</h3>
+
+        <p>You can't control results. You can only control actions.</p>
+
+        <p>Instead of: "I will make $10K this month"</p>
+
+        <p>Try: "I will work 2 focused hours every morning"</p>
+
+        <p>The second is within your control. The first isn't. Focus on the process, and results will follow.</p>
+
+        <!-- CTA Box 1 -->
+        <div class="highlight-box">
+            <h3>Build Sustainable Rhythm in Community</h3>
+            <p>Join Kiver.org to build your rhythm alongside thousands of students worldwide. Get daily accountability, share progress, celebrate streaks, and maintain consistency through community support. Transform together, not alone.</p>
+            <a href="https://kiver.org" class="btn btn-primary">Join Kiver.org Community</a>
+            <a href="../pages/7-teachings.html" class="btn btn-secondary">Review All 7 Teachings</a>
+        </div>
+
+        <h2>Rhythm in the Context of All 7 Teachings</h2>
+
+        <p>Rhythm is the final teaching because it makes all the others sustainable:</p>
+
+        <ul>
+            <li><strong>Positive Mental Attitude</strong> (Teaching 1): Daily practice of choosing optimism</li>
+            <li><strong>Purity of Thought</strong> (Teaching 2): Daily journaling/reflection to stay aligned with purpose</li>
+            <li><strong>Vision</strong> (Teaching 3): Daily visualization of your future</li>
+            <li><strong>Courage</strong> (Teaching 4): Daily practice of taking one scary action</li>
+            <li><strong>Charisma</strong> (Teaching 5): Daily practice of presence and connection</li>
+            <li><strong>Sanctuary</strong> (Teaching 6): Daily protection of your time and energy</li>
+            <li><strong>Rhythm</strong> (Teaching 7): The daily practice of showing up for all of it</li>
+        </ul>
+
+        <p>The 7 Teachings aren't a one-time lesson. They're a daily practice. Rhythm is what transforms philosophy into lifestyle.</p>
+
+        <h2>Common Rhythm Killers</h2>
+
+        <h3>Killer 1: All-or-Nothing Thinking</h3>
+        <p>"I missed one day, so I've failed. Might as well quit." This thinking destroys rhythm. Missing one day doesn't erase your progress. Just return to the rhythm tomorrow.</p>
+
+        <p><strong>Solution:</strong> Never miss twice. One disruption is life. Two in a row is a pattern. Get back on track immediately.</p>
+
+        <h3>Killer 2: Comparison</h3>
+        <p>"Someone else is working harder/faster/better than me." Comparison kills rhythm by making you feel inadequate.</p>
+
+        <p><strong>Solution:</strong> Compete only with yesterday's version of yourself. Are you better than you were yesterday? That's all that matters.</p>
+
+        <h3>Killer 3: Impatience</h3>
+        <p>"I've been doing this for two weeks and haven't seen results!" Rhythm requires patience. Compound effects take time to become visible.</p>
+
+        <p><strong>Solution:</strong> Trust the process. Results lag behind actions. Keep showing up.</p>
+
+        <h3>Killer 4: Overcommitting</h3>
+        <p>"I'll do this AND this AND this every day!" Too many new rhythms at once leads to overwhelm and quit.</p>
+
+        <p><strong>Solution:</strong> Build one rhythm at a time. Once it's automatic (30-90 days), add another.</p>
+
+        <h2>The Power of Tiny Gains</h2>
+
+        <p>If you improve just 1% every day for a year, you'll be 37 times better by the end.</p>
+
+        <p>This is the math of compound growth. Small, consistent improvements create exponential results.</p>
+
+        <ul>
+            <li>1% better each day = 37x better in 1 year</li>
+            <li>1% worse each day = nearly zero in 1 year</li>
+        </ul>
+
+        <p>This is why rhythm matters more than motivation. You don't need to be 100% better today. You just need to be 1% better. Every single day.</p>
+
+        <p>Over time, that's transformational.</p>
+
+        <h2>Rest Is Part of Rhythm</h2>
+
+        <p>Rhythm isn't about grinding nonstop. It's about sustainable pace, which includes rest.</p>
+
+        <p>Build in:</p>
+
+        <ul>
+            <li><strong>Daily rest:</strong> End work at a set time, every time</li>
+            <li><strong>Weekly rest:</strong> One full day off weekly</li>
+            <li><strong>Seasonal rest:</strong> 1-2 week breaks quarterly</li>
+            <li><strong>Sleep:</strong> 7-9 hours nightly, non-negotiable</li>
+        </ul>
+
+        <p>Rest isn't laziness. It's part of the rhythm. Athletes understand this—you can't train hard every day without rest days. Your transformation works the same way.</p>
+
+        <p>Sustainable rhythm includes recovery.</p>
+
+        <h2>When Rhythm Gets Hard</h2>
+
+        <p>Some days, maintaining your rhythm will feel impossible. You'll be tired, unmotivated, discouraged. You'll want to quit.</p>
+
+        <p>These are the days that define you.</p>
+
+        <p>Anyone can show up when they're motivated. Only the successful show up when they're not.</p>
+
+        <p>On hard days:</p>
+
+        <ul>
+            <li>Lower the bar (do the minimum viable version)</li>
+            <li>Remember your "why" (purpose fuels persistence)</li>
+            <li>Just start (momentum builds once you begin)</li>
+            <li>Celebrate showing up (the action matters more than the result)</li>
+        </ul>
+
+        <p>The days you don't feel like showing up are the most important days to show up.</p>
+
+        <blockquote>
+            "The man who moves a mountain begins by carrying away small stones."<br>
+            — Confucius
+        </blockquote>
+
+        <!-- CTA Box 2 -->
+        <div class="cta-box">
+            <h3>Bring Rhythm & The 7 Teachings to Your Organization</h3>
+            <p>🌍 Live Zoom/Google Meet sessions teaching Rhythm and all 7 Teachings globally<br>
+            🏢 Help teams build sustainable habits and consistent performance in corporations, schools, and communities<br>
+            💰 Support underserved students while creating cultures of excellence<br>
+            📈 Transform organizational culture through daily practice and sustained excellence</p>
+            <a href="../pages/contact.html" class="btn" style="background: linear-gradient(135deg, var(--cove-gold), var(--cove-light-gold)); color: var(--cove-white); box-shadow: 0 8px 24px rgba(176, 141, 87, 0.25);">Schedule a Live Teaching Event</a>
+        </div>
+
+        <h2>Your Rhythm Starts Today</h2>
+
+        <p>You don't need to transform your entire life today. You just need to take one small, consistent action toward your vision.</p>
+
+        <p>What's the minimum viable rhythm you can commit to?</p>
+
+        <ul>
+            <li>15 minutes of focused work daily?</li>
+            <li>One page of writing?</li>
+            <li>One sales call?</li>
+            <li>One lesson learned?</li>
+        </ul>
+
+        <p>Start there. Do it today. Then tomorrow. Then the next day.</p>
+
+        <p>Don't focus on the mountain. Focus on the next step.</p>
+
+        <p>365 steps later, you'll look back and be amazed at how far you've traveled.</p>
+
+        <h2>The Complete Journey</h2>
+
+        <p>You've now explored all 7 Teachings:</p>
+
+        <ol>
+            <li><strong>Positive Mental Attitude:</strong> Believe transformation is possible</li>
+            <li><strong>Purity of Thought:</strong> Discover your purpose and align with it</li>
+            <li><strong>Vision:</strong> See your future before it exists</li>
+            <li><strong>Courage:</strong> Take action despite fear</li>
+            <li><strong>Charisma:</strong> Inspire and influence others</li>
+            <li><strong>Sanctuary:</strong> Protect your energy and focus</li>
+            <li><strong>Rhythm:</strong> Show up consistently, sustainably, forever</li>
+        </ol>
+
+        <p>Together, these teachings create a complete system for transformation.</p>
+
+        <p>Not a quick fix. Not a hack. Not a shortcut.</p>
+
+        <p>A lifestyle. A practice. A way of being in the world that creates lasting success, fulfillment, and impact.</p>
+
+        <h2>This Is Just the Beginning</h2>
+
+        <p>Reading about the teachings isn't the same as living them. Knowledge without action is just entertainment.</p>
+
+        <p>So here's your invitation:</p>
+
+        <p><strong>Join the movement.</strong></p>
+
+        <p>Join Kiver.org and experience the 7 Teachings in community. Attend live sessions. Share your progress. Get accountability. Connect with thousands of people worldwide who are committed to the same transformation.</p>
+
+        <p>Bring the 7 Teachings to your organization. Host live webinars for your team, school, or community. Help others discover these principles.</p>
+
+        <p>Support underserved students. Every donation to CoveOfEdu funds a student's transformation through AI education and the 7 Teachings.</p>
+
+        <p>The teachings have been shared. The tools have been given. The path has been laid out.</p>
+
+        <p>Now it's up to you to walk it.</p>
+
+        <p>One day at a time. One step at a time. With rhythm.</p>
+
+        <blockquote>
+            "The journey of a thousand miles begins with one step."<br>
+            — Lao Tzu
+        </blockquote>
+
+        <h2>Review All 7 Teachings</h2>
+
+        <ul>
+            <li><a href="positive-mental-attitude.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 1: Positive Mental Attitude</a> – The foundation of all success</li>
+            <li><a href="purity-of-thought.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 2: Purity of Thought</a> – Discovering your life's purpose</li>
+            <li><a href="vision.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 3: Vision</a> – Building your future before it exists</li>
+            <li><a href="courage.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 4: Courage</a> – The bridge between knowing and doing</li>
+            <li><a href="charisma.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 5: Charisma</a> – The ability to inspire and influence</li>
+            <li><a href="sanctuary.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 6: Sanctuary</a> – Creating space for growth and transformation</li>
+            <li><a href="rhythm.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 7: Rhythm</a> – The sustainable pace of lifelong success</li>
+        </ul>
+
+        <p style="margin-top: 64px; font-size: 1.4rem; color: var(--cove-gold); font-weight: 700; text-align: center; line-height: 1.6;">
+            Show up. Stay consistent. Trust the process.<br>
+            Your transformation is waiting.
+        </p>
+
+    </article>
+
+    <!-- Footer -->
+    <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center;">
+        <div class="container">
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span style="color: var(--cove-gold);">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+            <p style="color: var(--cove-warm-gray); font-size: 0.9rem;">
+                CoveOfEdu is a 501(c)(3) nonprofit organization | EIN: 92-2455469
+            </p>
+            <p style="color: var(--cove-warm-gray); font-size: 0.85rem; margin-top: 16px;">
+                Thank you for exploring the 7 Teachings. Your journey starts now.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 7 Teachings | Purpose-Driven Success Philosophy | CoveOfEdu</title>
+    <meta name="description" content="Discover the 7 Teachings: Positive Mental Attitude, Purity of Thought, Vision, Courage, Charisma, Sanctuary, and Rhythm. Skills alone aren't enough—learn the philosophy that creates lasting transformation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cove-gold: #b08d57;
+            --cove-dark: #1c1c1c;
+            --cove-offwhite: #e8e3d8;
+            --cove-white: #ffffff;
+            --cove-warm-gray: #8b8680;
+            --cove-light-gold: #d4af37;
+            --cove-gray-100: #f8f7f5;
+            --cove-gray-200: #e5e5e5;
+            --font-primary: 'Comfortaa', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--cove-white);
+            color: var(--cove-dark);
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%);
+            padding: 120px 20px;
+            text-align: center;
+            color: var(--cove-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            color: var(--cove-offwhite);
+            margin-bottom: 32px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section {
+            padding: 100px 20px;
+        }
+
+        .teaching-detail {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 64px;
+            margin: 80px 0;
+            padding: 80px 0;
+            border-bottom: 2px solid var(--cove-gray-200);
+        }
+
+        .teaching-detail:last-child {
+            border-bottom: none;
+        }
+
+        .teaching-sidebar {
+            position: relative;
+        }
+
+        .teaching-number {
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--cove-gold);
+            opacity: 0.2;
+            line-height: 1;
+            position: absolute;
+            top: -40px;
+            left: 0;
+        }
+
+        .teaching-name {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--cove-gold);
+            margin-top: 80px;
+            margin-bottom: 16px;
+        }
+
+        .teaching-essence {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--cove-warm-gray);
+        }
+
+        .teaching-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: var(--cove-dark);
+        }
+
+        .teaching-content p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 24px;
+            color: var(--cove-dark);
+        }
+
+        .teaching-content ul {
+            margin: 24px 0 24px 32px;
+        }
+
+        .teaching-content li {
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 9999px;
+            transition: all 300ms ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            box-shadow: 0 8px 24px rgba(176, 141, 87, 0.25);
+            margin: 0 12px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(176, 141, 87, 0.4);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: var(--cove-white);
+        }
+
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 24px;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gold-dot {
+            color: var(--cove-gold);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .teaching-detail { grid-template-columns: 1fr; gap: 32px; }
+            .teaching-number { font-size: 5rem; }
+            .teaching-name { font-size: 2rem; margin-top: 60px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>The 7 Teachings<span style="color: var(--cove-gold);">.</span></h1>
+            <p class="subtitle">Skills alone aren't enough. The 7 Teachings provide the philosophy, mindset, and purpose that transform knowledge into lasting wealth and impact.</p>
+            <div style="margin-top: 48px;">
+                <a href="#teachings" class="btn btn-primary">Explore the Teachings</a>
+                <a href="../blog/index.html" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white);">Read In-Depth Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section" style="background: var(--cove-gray-100);">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 32px;">Why Philosophy Matters<span class="gold-dot">.</span></h2>
+                <p style="font-size: 1.25rem; line-height: 1.9; color: var(--cove-dark); margin-bottom: 24px;">
+                    We can teach anyone to use AI tools. We can show anyone how to build a business. But without a deeper sense of purpose, meaning, and philosophy, those skills become hollow.
+                </p>
+                <p style="font-size: 1.25rem; line-height: 1.9; color: var(--cove-dark); margin-bottom: 24px;">
+                    The 7 Teachings are the foundation of everything we do at CoveOfEdu. They're the difference between temporary success and lasting transformation. Between making money and building wealth. Between having a job and living a purpose.
+                </p>
+                <p style="font-size: 1.25rem; line-height: 1.9; color: var(--cove-gold); font-weight: 600;">
+                    This is what makes our students different. This is what creates real change.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachings Section -->
+    <section id="teachings" class="section">
+        <div class="container">
+
+            <!-- Teaching 1 -->
+            <div class="teaching-detail">
+                <div class="teaching-sidebar">
+                    <div class="teaching-number">01</div>
+                    <h2 class="teaching-name">Positive Mental Attitude</h2>
+                    <p class="teaching-essence">"The foundation of all success"</p>
+                </div>
+                <div class="teaching-content">
+                    <h3>Belief in Possibility</h3>
+                    <p>Everything begins with the belief that transformation is possible. A Positive Mental Attitude isn't naive optimism—it's the conscious choice to see opportunity where others see obstacles.</p>
+                    <p>Before you can master AI, before you can build a business, you must first believe that you are capable of change. That your circumstances don't define your potential. That you have the power to reshape your reality.</p>
+                    <p><strong>Key Principles:</strong></p>
+                    <ul>
+                        <li>Your thoughts shape your reality</li>
+                        <li>Challenges are opportunities for growth</li>
+                        <li>Success starts with self-belief</li>
+                        <li>Attitude determines altitude</li>
+                    </ul>
+                    <a href="../blog/positive-mental-attitude.html" class="btn btn-primary" style="margin-top: 24px;">Read Full Article →</a>
+                </div>
+            </div>
+
+            <!-- Teaching 2 -->
+            <div class="teaching-detail">
+                <div class="teaching-sidebar">
+                    <div class="teaching-number">02</div>
+                    <h2 class="teaching-name">Purity of Thought</h2>
+                    <p class="teaching-essence">"Clear thinking for clear action"</p>
+                </div>
+                <div class="teaching-content">
+                    <h3>Discovering Your Purpose</h3>
+                    <p>Purity of Thought means cutting through the noise to discover what truly matters. It's about aligning your actions with your deepest values and purpose.</p>
+                    <p>In a world full of distractions, mental clarity is your superpower. When you know *why* you're doing something, the *how* becomes much easier. This teaching helps students discover their life's purpose and align everything they do with that north star.</p>
+                    <p><strong>Key Principles:</strong></p>
+                    <ul>
+                        <li>Clarity precedes success</li>
+                        <li>Purpose drives persistence</li>
+                        <li>Aligned actions create momentum</li>
+                        <li>Your "why" fuels your "how"</li>
+                    </ul>
+                    <a href="../blog/purity-of-thought.html" class="btn btn-primary" style="margin-top: 24px;">Read Full Article →</a>
+                </div>
+            </div>
+
+            <!-- Teaching 3 -->
+            <div class="teaching-detail">
+                <div class="teaching-sidebar">
+                    <div class="teaching-number">03</div>
+                    <h2 class="teaching-name">Vision</h2>
+                    <p class="teaching-essence">"Build your future before it exists"</p>
+                </div>
+                <div class="teaching-content">
+                    <h3>Seeing What Others Cannot</h3>
+                    <p>Vision is the ability to see your future with such clarity that it becomes inevitable. It's not wishful thinking—it's strategic imagination backed by action.</p>
+                    <p>Our students learn to create detailed visions of their future: what they'll build, who they'll become, the impact they'll make. This vision becomes a roadmap, pulling them forward even when the path is difficult.</p>
+                    <p><strong>Key Principles:</strong></p>
+                    <ul>
+                        <li>The future is created twice: first in mind, then in reality</li>
+                        <li>Vivid vision creates magnetic pull</li>
+                        <li>See it, believe it, achieve it</li>
+                        <li>Vision without action is daydreaming; action without vision is chaos</li>
+                    </ul>
+                    <a href="../blog/vision.html" class="btn btn-primary" style="margin-top: 24px;">Read Full Article →</a>
+                </div>
+            </div>
+
+            <!-- Teaching 4 -->
+            <div class="teaching-detail">
+                <div class="teaching-sidebar">
+                    <div class="teaching-number">04</div>
+                    <h2 class="teaching-name">Courage</h2>
+                    <p class="teaching-essence">"The bridge between knowing and doing"</p>
+                </div>
+                <div class="teaching-content">
+                    <h3>Taking Action Despite Fear</h3>
+                    <p>Courage isn't the absence of fear—it's taking action despite the fear. It's the bridge that connects knowledge to results, dreams to reality.</p>
+                    <p>Most people know what they need to do. Few have the courage to actually do it. This teaching empowers students to launch their businesses, publish their work, share their ideas, and step into their potential even when it's scary.</p>
+                    <p><strong>Key Principles:</strong></p>
+                    <ul>
+                        <li>Fear is natural; paralysis is optional</li>
+                        <li>Courage is a muscle that grows with use</li>
+                        <li>Imperfect action beats perfect inaction</li>
+                        <li>Breakthroughs live on the other side of fear</li>
+                    </ul>
+                    <a href="../blog/courage.html" class="btn btn-primary" style="margin-top: 24px;">Read Full Article →</a>
+                </div>
+            </div>
+
+            <!-- Teaching 5 -->
+            <div class="teaching-detail">
+                <div class="teaching-sidebar">
+                    <div class="teaching-number">05</div>
+                    <h2 class="teaching-name">Charisma</h2>
+                    <p class="teaching-essence">"The ability to inspire and influence"</p>
+                </div>
+                <div class="teaching-content">
+                    <h3>Leading Yourself and Others</h3>
+                    <p>Charisma is often misunderstood as an innate trait, but it's actually a skill you can develop. It's the ability to inspire, influence, and lead—starting with yourself.</p>
+                    <p>Students learn to communicate their vision, build authentic relationships, tell compelling stories, and inspire others to action. Whether pitching to clients, leading a team, or building a movement, charisma is essential.</p>
+                    <p><strong>Key Principles:</strong></p>
+                    <ul>
+                        <li>Authenticity attracts; performance repels</li>
+                        <li>Listen more than you speak</li>
+                        <li>Charisma is service, not selfishness</li>
+                        <li>Your energy is contagious—choose wisely</li>
+                    </ul>
+                    <a href="../blog/charisma.html" class="btn btn-primary" style="margin-top: 24px;">Read Full Article →</a>
+                </div>
+            </div>
+
+            <!-- Teaching 6 -->
+            <div class="teaching-detail">
+                <div class="teaching-sidebar">
+                    <div class="teaching-number">06</div>
+                    <h2 class="teaching-name">Sanctuary</h2>
+                    <p class="teaching-essence">"Creating space for growth"</p>
+                </div>
+                <div class="teaching-content">
+                    <h3>Sacred Space for Transformation</h3>
+                    <p>Sanctuary is the practice of creating protected space—physical, mental, and emotional—where deep work and transformation can occur.</p>
+                    <p>In our chaotic world, students must learn to build environments that support their growth. This includes setting boundaries, designing productive workspaces, cultivating supportive relationships, and protecting their energy from draining influences.</p>
+                    <p><strong>Key Principles:</strong></p>
+                    <ul>
+                        <li>Your environment shapes your outcomes</li>
+                        <li>Boundaries are acts of self-respect</li>
+                        <li>Protect your energy fiercely</li>
+                        <li>Create space for deep, uninterrupted work</li>
+                    </ul>
+                    <a href="../blog/sanctuary.html" class="btn btn-primary" style="margin-top: 24px;">Read Full Article →</a>
+                </div>
+            </div>
+
+            <!-- Teaching 7 -->
+            <div class="teaching-detail">
+                <div class="teaching-sidebar">
+                    <div class="teaching-number">07</div>
+                    <h2 class="teaching-name">Rhythm</h2>
+                    <p class="teaching-essence">"The sustainable pace of success"</p>
+                </div>
+                <div class="teaching-content">
+                    <h3>Consistency Over Intensity</h3>
+                    <p>Rhythm is the final teaching because it ensures everything else is sustainable. It's about finding your natural pace and maintaining it over time.</p>
+                    <p>Success isn't a sprint; it's a lifelong journey. Students learn to build systems, habits, and routines that create consistent progress without burnout. Small actions, repeated daily, compound into extraordinary results.</p>
+                    <p><strong>Key Principles:</strong></p>
+                    <ul>
+                        <li>Consistency beats intensity every time</li>
+                        <li>Systems produce results; motivation is fleeting</li>
+                        <li>Rest is part of the rhythm, not a break from it</li>
+                        <li>Compound interest applies to habits, not just money</li>
+                    </ul>
+                    <a href="../blog/rhythm.html" class="btn btn-primary" style="margin-top: 24px;">Read Full Article →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Experience the 7 Teachings in Community<span style="color: var(--cove-white);">.</span></h2>
+            <p>Join Kiver.org and experience the 7 Teachings with a global community. Attend live events, connect with fellow learners, and bring these teachings to your organization.</p>
+
+            <div style="margin-bottom: 32px;">
+                <a href="https://kiver.org" class="btn" style="background: var(--cove-white); color: var(--cove-gold);">Join Kiver.org</a>
+                <a href="#events" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white); margin-left: 16px;">Host a Live Event</a>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.15); border-radius: 16px; padding: 40px; margin-top: 48px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h3 style="font-size: 1.8rem; margin-bottom: 16px;">Bring the 7 Teachings to Your Organization</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 24px;">
+                    🌍 Live Zoom/Google Meet events in every language<br>
+                    🏢 Perfect for corporations, schools, and communities<br>
+                    💰 Donations support our mission to educate underserved students<br>
+                    🤝 Form clubs and study groups worldwide
+                </p>
+                <a href="contact.html" class="btn" style="background: var(--cove-white); color: var(--cove-gold);">Schedule a Live Teaching Event</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center;">
+        <div class="container">
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span class="gold-dot">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+            <p style="color: var(--cove-warm-gray); font-size: 0.9rem;">
+                CoveOfEdu is a 501(c)(3) nonprofit organization | EIN: 92-2455469
+            </p>
+            <p style="color: var(--cove-warm-gray); font-size: 0.85rem; margin-top: 24px;">
+                © 2025 CoveOfEdu. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISION: Building Your Future Before It Exists | CoveOfEdu Blog</title>
+    <meta name="description" content="Learn how Vision transforms dreams into reality. The third of the 7 Teachings that shows you how to create a future so vivid it becomes inevitable.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cove-gold: #b08d57;
+            --cove-dark: #1c1c1c;
+            --cove-offwhite: #e8e3d8;
+            --cove-white: #ffffff;
+            --cove-warm-gray: #8b8680;
+            --cove-light-gold: #d4af37;
+            --cove-gray-100: #f8f7f5;
+            --cove-gray-200: #e5e5e5;
+            --font-primary: 'Comfortaa', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--cove-white);
+            color: var(--cove-dark);
+            line-height: 1.8;
+        }
+
+        .article-header {
+            background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%);
+            padding: 120px 20px 80px;
+            text-align: center;
+            color: var(--cove-white);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .teaching-badge {
+            display: inline-block;
+            background: var(--cove-gold);
+            color: var(--cove-white);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .article-header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            font-size: 1.1rem;
+            color: var(--cove-offwhite);
+            margin-bottom: 16px;
+        }
+
+        .reading-time {
+            font-size: 0.95rem;
+            color: var(--cove-warm-gray);
+        }
+
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 32px;
+        }
+
+        .article-content h2 {
+            font-size: 2.2rem;
+            margin-top: 64px;
+            margin-bottom: 24px;
+            color: var(--cove-dark);
+        }
+
+        .article-content h3 {
+            font-size: 1.8rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--cove-gold);
+        }
+
+        .article-content p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 28px 0 28px 40px;
+        }
+
+        .article-content li {
+            font-size: 1.15rem;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--cove-gold);
+            padding: 24px 32px;
+            margin: 40px 0;
+            background: var(--cove-gray-100);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--cove-dark);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 48px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--cove-white);
+        }
+
+        .highlight-box p {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+            color: var(--cove-white);
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 9999px;
+            transition: all 300ms ease;
+            cursor: pointer;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+            margin: 12px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cove-white);
+            border: 2px solid var(--cove-white);
+            margin: 12px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+        }
+
+        .cta-box {
+            background: var(--cove-gray-100);
+            border: 2px solid var(--cove-gold);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 64px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            color: var(--cove-dark);
+        }
+
+        .cta-box p {
+            font-size: 1.15rem;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        @media (max-width: 768px) {
+            .article-header h1 { font-size: 2.2rem; }
+            .article-content h2 { font-size: 1.8rem; }
+            .article-content h3 { font-size: 1.5rem; }
+            .article-content p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="container">
+            <span class="teaching-badge">TEACHING 03 OF 7</span>
+            <h1>VISION<br><span style="color: var(--cove-gold);">Building Your Future Before It Exists</span></h1>
+            <p class="article-meta">See what others cannot. Create what doesn't yet exist. Make the invisible inevitable.</p>
+            <p class="reading-time">📖 13 minute read</p>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-content">
+
+        <h2>Everything Is Created Twice</h2>
+
+        <p>Before the Wright brothers built an airplane, they saw it in their minds. Before Steve Jobs created the iPhone, he envisioned a world where powerful computing fit in your pocket. Before Martin Luther King Jr. changed America, he had a dream.</p>
+
+        <p>Every single thing that exists in the physical world was first created in someone's imagination. Your home. Your clothes. The device you're reading this on. All of it began as vision.</p>
+
+        <p>This is the fundamental truth of creation: <strong>Everything is built twice—first in your mind, then in reality.</strong></p>
+
+        <p>Most people never leverage this power. They drift through life reacting to circumstances instead of creating them. They let others define their future instead of designing it themselves.</p>
+
+        <p>Vision—the third teaching—is about taking control of that creative process. It's about becoming the architect of your own future rather than a passive observer of it.</p>
+
+        <blockquote>
+            "Imagination is everything. It is the preview of life's coming attractions."<br>
+            — Albert Einstein
+        </blockquote>
+
+        <h2>What Is Vision?</h2>
+
+        <p>Vision is not wishful thinking. It's not daydreaming or hoping things work out. True vision is:</p>
+
+        <ul>
+            <li><strong>Specific:</strong> You can see details, feel textures, hear sounds</li>
+            <li><strong>Compelling:</strong> It excites you and pulls you forward</li>
+            <li><strong>Aligned:</strong> It reflects your purpose and values</li>
+            <li><strong>Actionable:</strong> It inspires concrete steps you can take today</li>
+            <li><strong>Vivid:</strong> It feels so real you could touch it</li>
+        </ul>
+
+        <p>Vision is the practice of creating such a clear, detailed picture of your desired future that your brain begins treating it as real. When your vision is strong enough, your subconscious mind goes to work making it happen—spotting opportunities, solving problems, and motivating action.</p>
+
+        <p>Athletes call this "visualization." Entrepreneurs call it "strategic planning." Mystics call it "manifestation." We call it <strong>Vision</strong>—and it's one of the most powerful tools you possess.</p>
+
+        <h2>Why Vision Works: The Neuroscience</h2>
+
+        <p>Your brain cannot distinguish between vivid imagination and real experience. Neuroscientists have proven this repeatedly through brain scans.</p>
+
+        <p>When you visualize something in detail, the same neural pathways light up as when you actually experience it. This means:</p>
+
+        <ul>
+            <li>Visualizing success creates the same neural patterns as achieving success</li>
+            <li>Rehearsing challenges mentally prepares you to handle them in reality</li>
+            <li>Imagining your future self changes how you behave in the present</li>
+        </ul>
+
+        <p>Furthermore, your <strong>Reticular Activating System (RAS)</strong>—the brain's filtering mechanism—starts paying attention to things that align with your vision. Suddenly, you notice opportunities you would have missed. Resources appear. People show up. "Coincidences" multiply.</p>
+
+        <p>This isn't magic. It's neurobiology. Vision literally rewires your brain to see and create your desired reality.</p>
+
+        <h2>The Student Who Saw Her Future</h2>
+
+        <p>Let me tell you about Sarah (not her real name).</p>
+
+        <p>When Sarah joined CoveOfEdu, she was working three part-time jobs just to make rent. She had enormous talent but zero direction. She didn't know what she wanted—she just knew she wanted something different.</p>
+
+        <p>Through the Vision exercises, Sarah began creating a detailed picture of her ideal life. She didn't just say, "I want to be successful." She got specific:</p>
+
+        <ul>
+            <li>She envisioned waking up at 8 AM (not 5 AM for a commute) in a bright apartment</li>
+            <li>She saw herself working on AI projects she was passionate about</li>
+            <li>She imagined helping 100 other women learn AI skills</li>
+            <li>She visualized hitting $10,000/month in revenue within a year</li>
+            <li>She felt the pride of her mother seeing her success</li>
+        </ul>
+
+        <p>Sarah didn't just think about this vision once. She spent 10 minutes every morning and evening visualizing it in vivid detail. She wrote about it. She created a vision board. She made it <em>real</em> in her mind before it was real in the world.</p>
+
+        <p>Within 11 months, Sarah hit every single one of those goals. Not because of luck. Not because she was special. But because her vision was so clear and compelling that she unconsciously started making decisions aligned with it.</p>
+
+        <p>She turned down a "stable" job offer because it didn't fit her vision. She said yes to uncomfortable opportunities that did. She invested time in learning AI even when she was exhausted. She showed up every day because she could <em>see</em> where she was going.</p>
+
+        <p>That's the power of Vision.</p>
+
+        <blockquote>
+            "The only thing worse than being blind is having sight but no vision."<br>
+            — Helen Keller
+        </blockquote>
+
+        <h2>How to Create Powerful Vision</h2>
+
+        <h3>1. Start With the End in Mind</h3>
+
+        <p>Imagine it's five years from now and you've exceeded your wildest expectations. Where are you? What are you doing? Who are you with? How do you feel?</p>
+
+        <p>Don't censor yourself. Don't worry about "how" it will happen. Just let yourself dream big and specific.</p>
+
+        <h3>2. Engage All Five Senses</h3>
+
+        <p>Weak vision is visual only. Powerful vision engages every sense:</p>
+
+        <ul>
+            <li><strong>See:</strong> What do you see when you look around your future life?</li>
+            <li><strong>Hear:</strong> What sounds surround you? What are people saying to you?</li>
+            <li><strong>Feel:</strong> What emotions dominate? What physical sensations?</li>
+            <li><strong>Smell:</strong> What scents are in the air?</li>
+            <li><strong>Taste:</strong> What are you celebrating with?</li>
+        </ul>
+
+        <p>The more sensory details you include, the more real your vision becomes to your brain.</p>
+
+        <h3>3. Write Your Future Biography</h3>
+
+        <p>Write 2-3 pages about your life five years from now as if it's already happened. Use present tense. Be specific. Include:</p>
+
+        <ul>
+            <li>Where you live and what it looks like</li>
+            <li>What work you do and why it fulfills you</li>
+            <li>Who you've become as a person</li>
+            <li>What impact you've made</li>
+            <li>How your relationships have evolved</li>
+            <li>What you're most proud of</li>
+        </ul>
+
+        <p>Read this biography regularly. Update it as your vision evolves. Let it guide your daily decisions.</p>
+
+        <h3>4. Create a Vision Board</h3>
+
+        <p>Collect images, quotes, and symbols that represent your vision. Arrange them on a board (physical or digital) that you see daily.</p>
+
+        <p>This isn't about "manifesting through cosmic energy." It's about training your RAS to notice opportunities aligned with your vision.</p>
+
+        <h3>5. Daily Visualization Practice</h3>
+
+        <p>Spend 10 minutes each morning and evening in deep visualization:</p>
+
+        <ul>
+            <li>Close your eyes</li>
+            <li>Take three deep breaths</li>
+            <li>Step into your future self</li>
+            <li>Experience your vision as if it's happening now</li>
+            <li>Feel the emotions fully</li>
+            <li>Open your eyes and carry that energy into your day/night</li>
+        </ul>
+
+        <p>This practice compounds. The more you visualize, the more real it becomes, the more aligned your actions become.</p>
+
+        <h2>Vision Without Action Is Just Fantasy</h2>
+
+        <p>Here's the hard truth: <strong>Vision alone changes nothing.</strong></p>
+
+        <p>You can visualize success all day long, but if you don't take action, you're just daydreaming. Vision is powerful, but only when coupled with consistent, aligned action.</p>
+
+        <p>Think of vision as the destination and action as the vehicle. You need both. The destination tells you where to go; the vehicle gets you there.</p>
+
+        <p>This is why Vision is the third teaching, not the first:</p>
+
+        <ul>
+            <li><strong>Positive Mental Attitude</strong> (Teaching 1) gives you the belief that the journey is possible</li>
+            <li><strong>Purity of Thought</strong> (Teaching 2) clarifies the right destination for you</li>
+            <li><strong>Vision</strong> (Teaching 3) makes that destination vivid and magnetic</li>
+            <li><strong>Courage</strong> (Teaching 4) gets you moving despite fear</li>
+            <li><strong>Charisma</strong> (Teaching 5) brings others along</li>
+            <li><strong>Sanctuary</strong> (Teaching 6) protects your focus</li>
+            <li><strong>Rhythm</strong> (Teaching 7) ensures you can sustain the journey</li>
+        </ul>
+
+        <p>Each teaching builds on the previous ones to create a complete system for transformation.</p>
+
+        <h2>The Bridge Between Vision and Reality</h2>
+
+        <p>Once you have a clear vision, the next question is: "How do I get from here to there?"</p>
+
+        <p>The answer is <strong>reverse engineering</strong>:</p>
+
+        <ol>
+            <li>Start with your 5-year vision</li>
+            <li>Work backwards to a 1-year goal</li>
+            <li>Break that into quarterly milestones</li>
+            <li>Define monthly objectives</li>
+            <li>Identify weekly actions</li>
+            <li>Choose daily tasks</li>
+        </ol>
+
+        <p>Suddenly, your massive vision becomes a series of small, manageable steps. The impossible becomes inevitable.</p>
+
+        <p>For example, Sarah's vision of $10K/month became:</p>
+
+        <ul>
+            <li><strong>1-year goal:</strong> Build AI consulting business to $10K/month</li>
+            <li><strong>Q1:</strong> Learn AI tools, build portfolio projects</li>
+            <li><strong>Q2:</strong> Get first 3 clients at $1,000/month each</li>
+            <li><strong>Q3:</strong> Raise rates, add 4 more clients</li>
+            <li><strong>Q4:</strong> Scale to $10K/month, systematize operations</li>
+            <li><strong>This month:</strong> Complete one portfolio project, reach out to 50 potential clients</li>
+            <li><strong>This week:</strong> Build demo project for specific industry</li>
+            <li><strong>Today:</strong> Research companies in target industry, draft outreach message</li>
+        </ol>
+
+        <p>When you break down your vision like this, it stops feeling overwhelming and starts feeling achievable.</p>
+
+        <!-- CTA Box 1 -->
+        <div class="highlight-box">
+            <h3>Build Your Vision in Community</h3>
+            <p>Join Kiver.org to clarify and strengthen your vision alongside thousands of students worldwide. Attend live vision-building workshops, share your goals, and get accountability from a global community committed to transformation.</p>
+            <a href="https://kiver.org" class="btn btn-primary">Join Kiver.org Community</a>
+            <a href="../pages/7-teachings.html" class="btn btn-secondary">Explore All 7 Teachings</a>
+        </div>
+
+        <h2>Common Vision Mistakes</h2>
+
+        <h3>Mistake 1: Making It Too Vague</h3>
+        <p>"I want to be rich" is not a vision. "I generate $20,000/month through my AI consulting business, allowing me to work from anywhere and spend weekends with my family" is a vision.</p>
+
+        <p>Specificity creates power. Vagueness creates confusion.</p>
+
+        <h3>Mistake 2: Borrowing Someone Else's Vision</h3>
+        <p>Don't envision what you think you "should" want. Envision what you <em>actually</em> want. Your vision must be authentically yours or it won't motivate you when things get hard.</p>
+
+        <h3>Mistake 3: Setting the Bar Too Low</h3>
+        <p>Your vision should scare you a little. If it feels easily achievable, you're thinking too small. Push yourself to imagine what's possible, not just what's comfortable.</p>
+
+        <h3>Mistake 4: Never Revisiting It</h3>
+        <p>Create your vision once and then forget about it? That's not how this works. Your vision should be a living document that you review and refine regularly. As you grow, your vision can expand.</p>
+
+        <h3>Mistake 5: Focusing Only on Material Outcomes</h3>
+        <p>Money and success are great, but don't forget to include who you want to become, how you want to feel, and the impact you want to make. The richest people aren't always the happiest.</p>
+
+        <h2>Vision as a Filter for Decisions</h2>
+
+        <p>One of the most practical benefits of having a clear vision is that it makes decision-making easy.</p>
+
+        <p>When you're presented with an opportunity, ask: "Does this align with my vision?"</p>
+
+        <ul>
+            <li>If yes → Pursue it</li>
+            <li>If no → Decline it</li>
+        </ul>
+
+        <p>This simple filter saves enormous time and energy. You stop saying yes to things that don't matter. You start saying no to distractions. You become ruthlessly focused on what actually moves you toward your vision.</p>
+
+        <p>Sarah turned down a $70K/year job offer because it didn't align with her vision of building her own AI business. That decision seemed crazy to her friends and family. But within a year, she was earning more than that offer while having complete freedom and fulfillment.</p>
+
+        <p>Vision gave her the clarity to make that hard choice.</p>
+
+        <blockquote>
+            "If you don't know where you're going, any road will get you there."<br>
+            — Lewis Carroll
+        </blockquote>
+
+        <h2>The Magnetic Power of Vision</h2>
+
+        <p>Here's something almost mystical about vision: <strong>When your vision is clear enough, it attracts resources.</strong></p>
+
+        <p>People who can help you seemingly appear out of nowhere. Books with the exact information you need show up. Opportunities you never expected materialize.</p>
+
+        <p>Some call this manifestation. Others call it the law of attraction. Skeptics call it confirmation bias.</p>
+
+        <p>The truth? It doesn't matter what you call it. What matters is that it works.</p>
+
+        <p>When you're clear about where you're going, you notice opportunities you would have missed. You speak with conviction that attracts collaborators. You make decisions aligned with your goals. You persist when others quit.</p>
+
+        <p>Is it magic? No. Is it powerful? Absolutely.</p>
+
+        <h2>Vision for Different Life Areas</h2>
+
+        <p>Don't limit your vision to just career or money. Create vision for every important area of your life:</p>
+
+        <ul>
+            <li><strong>Health:</strong> What does your ideal physical and mental state look like?</li>
+            <li><strong>Relationships:</strong> What quality of connections do you want?</li>
+            <li><strong>Career:</strong> What work excites and fulfills you?</li>
+            <li><strong>Finance:</strong> What level of wealth and freedom do you desire?</li>
+            <li><strong>Growth:</strong> What skills and knowledge are you acquiring?</li>
+            <li><strong>Impact:</strong> What difference are you making in the world?</li>
+            <li><strong>Fun:</strong> What experiences bring you joy and adventure?</li>
+        </ul>
+
+        <p>A complete vision encompasses all of who you are, not just one dimension.</p>
+
+        <!-- CTA Box 2 -->
+        <div class="cta-box">
+            <h3>Bring Vision Training to Your Organization</h3>
+            <p>🌍 Live Zoom/Google Meet sessions teaching Vision and the 7 Teachings globally<br>
+            🏢 Empower your teams to create compelling futures in corporations, schools, and communities<br>
+            💰 Support underserved students while transforming your organization<br>
+            🎯 Help your people align personal vision with organizational mission</p>
+            <a href="../pages/contact.html" class="btn" style="background: linear-gradient(135deg, var(--cove-gold), var(--cove-light-gold)); color: var(--cove-white); box-shadow: 0 8px 24px rgba(176, 141, 87, 0.25);">Schedule a Live Teaching Event</a>
+        </div>
+
+        <h2>When Vision Gets Challenged</h2>
+
+        <p>Your vision will be tested. Count on it.</p>
+
+        <p>People will tell you it's unrealistic. Life will throw obstacles in your path. You'll have moments of doubt where it all feels impossible.</p>
+
+        <p>This is when having a <em>written, detailed</em> vision becomes critical. When your motivation fades, you can return to your vision and remember why you started. When others doubt you, your vision reminds you of what you know to be true. When obstacles appear, your vision shows you they're temporary.</p>
+
+        <p>Vision doesn't make the journey easy. It makes the journey worth it.</p>
+
+        <h2>The Compound Effect of Vision</h2>
+
+        <p>Perhaps the most powerful aspect of vision is this: <strong>Small actions aligned with a clear vision compound into extraordinary results.</strong></p>
+
+        <p>One day of working toward your vision? Barely noticeable.</p>
+
+        <p>100 days? You'll see some progress.</p>
+
+        <p>1,000 days? Your life will be unrecognizable.</p>
+
+        <p>This is why Vision pairs so perfectly with <strong>Rhythm</strong> (Teaching 7). When you combine a compelling future vision with consistent daily action, transformation becomes inevitable.</p>
+
+        <blockquote>
+            "A vision without execution is just hallucination."<br>
+            — Henry Ford
+        </blockquote>
+
+        <h2>Your Turn to See</h2>
+
+        <p>Right now, pause and ask yourself: <strong>What do I actually want my life to look like?</strong></p>
+
+        <p>Not what you think you should want. Not what would impress others. Not what seems "realistic."</p>
+
+        <p>What do <em>you</em> want?</p>
+
+        <p>Get specific. Get vivid. Get excited. Let yourself dream without limits.</p>
+
+        <p>Then write it down. Make it real on paper. Give your vision form and substance.</p>
+
+        <p>Because here's the truth: <strong>If you can see it clearly enough, you can build it.</strong></p>
+
+        <p>The future doesn't happen to you. You create it. One vision, one decision, one action at a time.</p>
+
+        <p>This is what we teach at CoveOfEdu. Not just AI skills. Not just business strategies. But the fundamental ability to envision a better future and build it into reality.</p>
+
+        <p>Your vision is waiting. Will you see it?</p>
+
+        <h2>Continue Your Journey</h2>
+
+        <p>Vision is the third teaching. Once you can see your future clearly, the remaining teachings help you bring it to life:</p>
+
+        <ul>
+            <li><a href="positive-mental-attitude.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 1: Positive Mental Attitude</a> – Believe your vision is achievable</li>
+            <li><a href="purity-of-thought.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 2: Purity of Thought</a> – Ensure your vision aligns with your purpose</li>
+            <li><a href="courage.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 4: Courage</a> – Take action toward your vision despite fear</li>
+            <li><a href="charisma.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 5: Charisma</a> – Inspire others to join your vision</li>
+            <li><a href="sanctuary.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 6: Sanctuary</a> – Protect your vision from distraction</li>
+            <li><a href="rhythm.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 7: Rhythm</a> – Build your vision sustainably over time</li>
+        </ul>
+
+        <p style="margin-top: 48px; font-size: 1.3rem; color: var(--cove-gold); font-weight: 600;">See it. Believe it. Build it. Your future is waiting.</p>
+
+    </article>
+
+    <!-- Footer -->
+    <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center;">
+        <div class="container">
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span style="color: var(--cove-gold);">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+            <p style="color: var(--cove-warm-gray); font-size: 0.9rem;">
+                CoveOfEdu is a 501(c)(3) nonprofit organization | EIN: 92-2455469
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

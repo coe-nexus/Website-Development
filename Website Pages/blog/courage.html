@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURAGE: The Bridge Between Knowing and Doing | CoveOfEdu Blog</title>
+    <meta name="description" content="Discover how Courage transforms knowledge into action. The fourth of the 7 Teachings that empowers you to take the leap despite fear.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cove-gold: #b08d57;
+            --cove-dark: #1c1c1c;
+            --cove-offwhite: #e8e3d8;
+            --cove-white: #ffffff;
+            --cove-warm-gray: #8b8680;
+            --cove-light-gold: #d4af37;
+            --cove-gray-100: #f8f7f5;
+            --cove-gray-200: #e5e5e5;
+            --font-primary: 'Comfortaa', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--cove-white);
+            color: var(--cove-dark);
+            line-height: 1.8;
+        }
+
+        .article-header {
+            background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%);
+            padding: 120px 20px 80px;
+            text-align: center;
+            color: var(--cove-white);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .teaching-badge {
+            display: inline-block;
+            background: var(--cove-gold);
+            color: var(--cove-white);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .article-header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            font-size: 1.1rem;
+            color: var(--cove-offwhite);
+            margin-bottom: 16px;
+        }
+
+        .reading-time {
+            font-size: 0.95rem;
+            color: var(--cove-warm-gray);
+        }
+
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 32px;
+        }
+
+        .article-content h2 {
+            font-size: 2.2rem;
+            margin-top: 64px;
+            margin-bottom: 24px;
+            color: var(--cove-dark);
+        }
+
+        .article-content h3 {
+            font-size: 1.8rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--cove-gold);
+        }
+
+        .article-content p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 28px 0 28px 40px;
+        }
+
+        .article-content li {
+            font-size: 1.15rem;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--cove-gold);
+            padding: 24px 32px;
+            margin: 40px 0;
+            background: var(--cove-gray-100);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--cove-dark);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 48px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--cove-white);
+        }
+
+        .highlight-box p {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+            color: var(--cove-white);
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 9999px;
+            transition: all 300ms ease;
+            cursor: pointer;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+            margin: 12px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cove-white);
+            border: 2px solid var(--cove-white);
+            margin: 12px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+        }
+
+        .cta-box {
+            background: var(--cove-gray-100);
+            border: 2px solid var(--cove-gold);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 64px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            color: var(--cove-dark);
+        }
+
+        .cta-box p {
+            font-size: 1.15rem;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        @media (max-width: 768px) {
+            .article-header h1 { font-size: 2.2rem; }
+            .article-content h2 { font-size: 1.8rem; }
+            .article-content h3 { font-size: 1.5rem; }
+            .article-content p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="container">
+            <span class="teaching-badge">TEACHING 04 OF 7</span>
+            <h1>COURAGE<br><span style="color: var(--cove-gold);">The Bridge Between Knowing and Doing</span></h1>
+            <p class="article-meta">Feel the fear and do it anyway. Action creates confidence. Confidence creates more action.</p>
+            <p class="reading-time">📖 12 minute read</p>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-content">
+
+        <h2>The Gap That Destroys Dreams</h2>
+
+        <p>There's a graveyard where most dreams go to die. It's not called failure or bad luck or lack of opportunity.</p>
+
+        <p>It's called the gap between knowing and doing.</p>
+
+        <p>You know what you should do. You have the knowledge. You've read the books, taken the courses, made the plans. You know exactly what step to take next.</p>
+
+        <p>But you don't take it.</p>
+
+        <p>Why? Because that step is scary. It's uncertain. It requires you to be vulnerable, to risk rejection, to possibly fail in front of others. So you hesitate. You wait for the "right time." You gather more information. You make more plans.</p>
+
+        <p>And your dream sits in that gap, slowly suffocating.</p>
+
+        <p>This is why Courage is the fourth teaching. The first three teachings prepare you—they give you belief, clarity, and vision. But <strong>without courage, nothing happens.</strong></p>
+
+        <blockquote>
+            "Courage is not the absence of fear, but rather the assessment that something else is more important than fear."<br>
+            — Franklin D. Roosevelt
+        </blockquote>
+
+        <h2>What Courage Really Is</h2>
+
+        <p>Let's be clear: Courage is not fearlessness. Fearlessness is either ignorance or pathology. If you feel no fear, you either don't understand the risk or something is neurologically wrong.</p>
+
+        <p>Courage is feeling the fear and choosing to act anyway.</p>
+
+        <p>It's acknowledging that yes, this could go wrong. Yes, you might fail. Yes, people might judge you. Yes, it's uncomfortable. <em>And doing it despite all that.</em></p>
+
+        <p>Courage is:</p>
+
+        <ul>
+            <li>Launching your business before you feel ready</li>
+            <li>Publishing your work even though people might criticize it</li>
+            <li>Having the difficult conversation you've been avoiding</li>
+            <li>Quitting the "safe" job to pursue your purpose</li>
+            <li>Asking for help when you need it</li>
+            <li>Admitting you were wrong</li>
+            <li>Starting over after failure</li>
+        </ul>
+
+        <p>Courage is the muscle that turns intention into reality.</p>
+
+        <h2>Why We Avoid Courage</h2>
+
+        <p>Humans are wired for survival, not success. Your brain's primary job is to keep you alive, not to help you thrive. This means it's hypervigilant about threats and risks.</p>
+
+        <p>When you think about doing something courageous, your brain screams warnings:</p>
+
+        <ul>
+            <li><strong>Fear of failure:</strong> "What if it doesn't work?"</li>
+            <li><strong>Fear of rejection:</strong> "What if people don't like it?"</li>
+            <li><strong>Fear of judgment:</strong> "What will they think of me?"</li>
+            <li><strong>Fear of success:</strong> "What if I can't handle what comes next?"</li>
+            <li><strong>Fear of embarrassment:</strong> "I'll look stupid if this fails."</li>
+        </ul>
+
+        <p>These fears are designed to keep you safe. They worked great when "risk" meant being eaten by a predator. They work terribly in the modern world, where the biggest risks are often <em>not</em> taking action.</p>
+
+        <p>The cost of inaction—regret, unfulfilled potential, a life half-lived—doesn't trigger your fear response the same way action does. So your brain defaults to paralysis, to comfort, to safety.</p>
+
+        <p>Courage means overriding that default.</p>
+
+        <h2>The Student Who Chose Courage</h2>
+
+        <p>Let me tell you about David (not his real name).</p>
+
+        <p>David came to CoveOfEdu with enormous potential but crushing self-doubt. He'd built several projects in private but never shown them to anyone. The thought of putting his work out into the world terrified him.</p>
+
+        <p>"What if it's not good enough?"<br>
+        "What if people laugh at me?"<br>
+        "What if I fail publicly?"</p>
+
+        <p>These questions paralyzed him for months. He had the skills. He had the vision. He knew what to do. But he couldn't bring himself to do it.</p>
+
+        <p>Then, during a Courage-building session, something clicked. He realized that his fear of regret was beginning to outweigh his fear of failure.</p>
+
+        <p>He didn't suddenly become fearless. He was still terrified. But he decided that living with "what if I had tried?" was more painful than possibly failing.</p>
+
+        <p>So he took one courageous action: he published his first AI project online.</p>
+
+        <p>His hands shook as he hit "publish." He felt physically nauseous. He almost deleted it immediately.</p>
+
+        <p>But he didn't.</p>
+
+        <p>Within 24 hours, he had his first positive feedback. Within a week, his first client inquiry. Within a month, his first $5,000 contract.</p>
+
+        <p>None of that would have happened without that one moment of courage.</p>
+
+        <p>Today, David runs a six-figure AI consulting business. But the money isn't the most important part. The most important part is that he proved to himself that he could do scary things and survive. That courage, once exercised, grows stronger.</p>
+
+        <blockquote>
+            "Everything you want is on the other side of fear."<br>
+            — Jack Canfield
+        </blockquote>
+
+        <h2>How to Build Courage</h2>
+
+        <h3>1. Start With Micro-Courage</h3>
+
+        <p>You don't need to make a grand gesture. You need to take one small, courageous action today. Then another tomorrow. Then another the next day.</p>
+
+        <p>Courage is a muscle. It grows stronger with use.</p>
+
+        <p><strong>Examples of micro-courage:</strong></p>
+        <ul>
+            <li>Send that email you've been drafting for weeks</li>
+            <li>Share one piece of your work publicly</li>
+            <li>Ask one person for help or feedback</li>
+            <li>Say no to a request that doesn't serve you</li>
+            <li>Speak up in a meeting when you'd normally stay quiet</li>
+        </ul>
+
+        <p>These small acts compound. Each one proves to yourself that you can handle discomfort. Each one rewires your brain to associate action with reward rather than danger.</p>
+
+        <h3>2. Reframe Failure</h3>
+
+        <p>Most people avoid courage because they're terrified of failure. But what if failure isn't the opposite of success—it's part of the process?</p>
+
+        <p>Every successful person has failed more times than average people have tried. The difference? They didn't let failure stop them.</p>
+
+        <p>Reframe failure as:</p>
+        <ul>
+            <li><strong>Data:</strong> "This approach didn't work. What can I learn?"</li>
+            <li><strong>Refinement:</strong> "Now I know what not to do next time."</li>
+            <li><strong>Courage training:</strong> "I did the scary thing. I'm stronger now."</li>
+        </ul>
+
+        <p>When you remove the stigma from failure, courage becomes easier.</p>
+
+        <h3>3. Use the 10-10-10 Rule</h3>
+
+        <p>When facing a courageous choice, ask yourself:</p>
+
+        <ul>
+            <li>How will I feel about this decision in 10 minutes?</li>
+            <li>How will I feel about this decision in 10 months?</li>
+            <li>How will I feel about this decision in 10 years?</li>
+        </ul>
+
+        <p>This creates perspective. The fear you feel right now (10 minutes) is usually disproportionate to the long-term impact (10 years).</p>
+
+        <p>Most courageous actions feel terrifying in the moment but become your proudest moments in hindsight.</p>
+
+        <h3>4. Connect to Your 'Why'</h3>
+
+        <p>Courage is easier when you remember what you're fighting for. When you're deeply connected to your purpose (Teaching 2: Purity of Thought) and vision (Teaching 3: Vision), short-term discomfort becomes bearable.</p>
+
+        <p>Before taking a courageous action, remind yourself:</p>
+        <ul>
+            <li>Why does this matter?</li>
+            <li>What becomes possible if I do this?</li>
+            <li>Who am I doing this for (including future you)?</li>
+        </ul>
+
+        <p>Purpose fuels courage.</p>
+
+        <h3>5. Create Accountability</h3>
+
+        <p>Tell someone what you're going to do and when you're going to do it. Public commitment creates helpful pressure.</p>
+
+        <p>It's easier to back out of a commitment you made only to yourself. When someone else knows, you're more likely to follow through.</p>
+
+        <p>This is one reason why the Kiver.org community is so powerful—shared accountability makes courage contagious.</p>
+
+        <h2>The 20 Seconds of Courage</h2>
+
+        <p>Here's a secret: <strong>You only need about 20 seconds of courage to change your life.</strong></p>
+
+        <p>20 seconds to hit "send" on that email.</p>
+        <p>20 seconds to walk up and introduce yourself.</p>
+        <p>20 seconds to hit "publish" on your work.</p>
+        <p>20 seconds to say "I quit" or "I'm in."</p>
+
+        <p>Most life-changing moments require only a brief burst of courage. Once you're in motion, momentum takes over. The hard part is those first 20 seconds.</p>
+
+        <p>Can you muster 20 seconds of courage right now?</p>
+
+        <h2>Imperfect Action Beats Perfect Inaction</h2>
+
+        <p>Perfectionism is often disguised cowardice. We say we're "waiting until it's ready," but really we're waiting until we feel safe—which is never.</p>
+
+        <p>The truth: <strong>Done is better than perfect.</strong></p>
+
+        <p>Your first attempt will be messy. Your first business will have flaws. Your first project won't be your best work. <em>Do it anyway.</em></p>
+
+        <p>You learn more from one imperfect action than from a thousand perfect plans.</p>
+
+        <ul>
+            <li>Launch before you're ready</li>
+            <li>Share before it's perfect</li>
+            <li>Start before you feel confident</li>
+        </ul>
+
+        <p>Confidence doesn't create action. Action creates confidence.</p>
+
+        <!-- CTA Box 1 -->
+        <div class="highlight-box">
+            <h3>Practice Courage in Community</h3>
+            <p>Join Kiver.org to build your courage muscle alongside thousands of students taking bold action worldwide. Get support, accountability, and encouragement from people who understand what it takes to do scary things.</p>
+            <a href="https://kiver.org" class="btn btn-primary">Join Kiver.org Community</a>
+            <a href="../pages/7-teachings.html" class="btn btn-secondary">Explore All 7 Teachings</a>
+        </div>
+
+        <h2>Courage in the Context of the Other Teachings</h2>
+
+        <p>Courage is the fourth teaching because it activates everything that came before:</p>
+
+        <ul>
+            <li><strong>Positive Mental Attitude</strong> (Teaching 1) gives you the belief that action is worth taking</li>
+            <li><strong>Purity of Thought</strong> (Teaching 2) ensures you're taking action toward your true purpose</li>
+            <li><strong>Vision</strong> (Teaching 3) shows you what you're courageously moving toward</li>
+            <li><strong>Courage</strong> (Teaching 4) turns all of that into actual movement</li>
+            <li><strong>Charisma</strong> (Teaching 5) helps you bring others along on the journey</li>
+            <li><strong>Sanctuary</strong> (Teaching 6) protects your courage from being drained</li>
+            <li><strong>Rhythm</strong> (Teaching 7) ensures your courageous actions compound over time</li>
+        </ul>
+
+        <p>Without courage, the other teachings remain theoretical. With it, they become transformative.</p>
+
+        <h2>The Courage Cycle</h2>
+
+        <p>Here's the beautiful thing about courage: <strong>it creates a positive feedback loop.</strong></p>
+
+        <ol>
+            <li>You take a courageous action (despite fear)</li>
+            <li>You survive (and often thrive)</li>
+            <li>Your confidence grows</li>
+            <li>The next courageous action feels slightly easier</li>
+            <li>You take it</li>
+            <li>Your courage muscle strengthens further</li>
+            <li>Repeat</li>
+        </ol>
+
+        <p>Each act of courage makes the next one easier. Not because you stop feeling fear, but because you trust yourself to handle it.</p>
+
+        <p>The students who transform their lives through CoveOfEdu don't do it because they're naturally brave. They do it because they're willing to be scared and act anyway. And each time they do, they become a little braver.</p>
+
+        <h2>Common Courage Killers</h2>
+
+        <h3>Killer 1: Overthinking</h3>
+        <p>Analysis paralysis is real. The more you think about a scary action, the scarier it becomes. Your brain invents problems that don't exist yet.</p>
+
+        <p><strong>Solution:</strong> Set a decision deadline. Give yourself a fixed amount of time to think, then act. Thinking is important, but at some point, you need to move.</p>
+
+        <h3>Killer 2: Seeking Permission</h3>
+        <p>Waiting for someone to tell you it's okay. Waiting for a sign. Waiting for permission that will never come.</p>
+
+        <p><strong>Solution:</strong> Give yourself permission. You don't need anyone's approval to pursue your purpose. You're an adult. Decide and act.</p>
+
+        <h3>Killer 3: Comfortable Suffering</h3>
+        <p>Sometimes the pain you know feels safer than the uncertainty of change. So you stay stuck in a situation you hate because at least it's familiar.</p>
+
+        <p><strong>Solution:</strong> Make the cost of inaction clear. What will your life look like in 5 years if nothing changes? Is that acceptable?</p>
+
+        <h3>Killer 4: Isolation</h3>
+        <p>Trying to be courageous alone is much harder than being courageous in community.</p>
+
+        <p><strong>Solution:</strong> Surround yourself with people who are taking courageous actions. Their courage will inspire yours. This is why communities like Kiver.org are so transformative.</p>
+
+        <blockquote>
+            "Courage is contagious. When a brave man takes a stand, the spines of others are often stiffened."<br>
+            — Billy Graham
+        </blockquote>
+
+        <h2>What Happens When You Choose Courage</h2>
+
+        <p>Let's be honest: <strong>Courage doesn't guarantee success.</strong></p>
+
+        <p>Sometimes you'll take the brave action and it won't work out. You'll fail. You'll get rejected. You'll look foolish.</p>
+
+        <p>But here's what courage <em>does</em> guarantee:</p>
+
+        <ul>
+            <li><strong>Growth:</strong> You'll learn something valuable</li>
+            <li><strong>Respect:</strong> You'll respect yourself more for trying</li>
+            <li><strong>No regret:</strong> You'll never wonder "what if?"</li>
+            <li><strong>Strength:</strong> Your courage muscle will be stronger</li>
+            <li><strong>Inspiration:</strong> You'll inspire others to be braver</li>
+        </ul>
+
+        <p>And often—more often than you expect—courage leads to breakthrough. To opportunity. To transformation.</p>
+
+        <p>Not because you were lucky. But because you were willing to act when others only planned.</p>
+
+        <h2>Courage Isn't Reckless</h2>
+
+        <p>Let me be clear: Courage doesn't mean being stupid or reckless.</p>
+
+        <p>It doesn't mean quitting your job with no savings and "following your passion." It doesn't mean ignoring legitimate risks. It doesn't mean acting without thinking.</p>
+
+        <p>Courage is <em>calculated</em> risk-taking. It's being smart about danger while still taking the leap.</p>
+
+        <p>For example:</p>
+        <ul>
+            <li>Build your side business before quitting your job</li>
+            <li>Test your idea on a small scale before going all-in</li>
+            <li>Save a financial runway before making a big change</li>
+            <li>Start with the smallest viable courageous action</li>
+        </ul>
+
+        <p>Courage and preparation aren't opposites—they're partners.</p>
+
+        <!-- CTA Box 2 -->
+        <div class="cta-box">
+            <h3>Bring Courage Training to Your Organization</h3>
+            <p>🌍 Live Zoom/Google Meet sessions teaching Courage and the 7 Teachings globally<br>
+            🏢 Help teams overcome fear and take bold action in corporations, schools, and communities<br>
+            💰 Support underserved students while transforming organizational culture<br>
+            🚀 Create a culture where people feel empowered to innovate and take initiative</p>
+            <a href="../pages/contact.html" class="btn" style="background: linear-gradient(135deg, var(--cove-gold), var(--cove-light-gold)); color: var(--cove-white); box-shadow: 0 8px 24px rgba(176, 141, 87, 0.25);">Schedule a Live Teaching Event</a>
+        </div>
+
+        <h2>Your Courageous Action</h2>
+
+        <p>Right now, you know something you need to do. Something you've been avoiding. Something that scares you.</p>
+
+        <p>Maybe it's sending that email. Starting that project. Having that conversation. Taking that first step.</p>
+
+        <p>You've been waiting to feel ready. To feel confident. To feel less afraid.</p>
+
+        <p>Here's the truth: <strong>You'll never feel completely ready. The fear won't go away. You just have to do it anyway.</strong></p>
+
+        <p>Can you take one courageous action today? Just one?</p>
+
+        <p>Not tomorrow. Not when things are perfect. Not when you feel ready.</p>
+
+        <p>Today.</p>
+
+        <p>Your future self is waiting on the other side of that fear. The version of you who looks back and says, "I'm so glad I did that."</p>
+
+        <p>Be that person. Take the leap.</p>
+
+        <blockquote>
+            "Life shrinks or expands in proportion to one's courage."<br>
+            — Anaïs Nin
+        </blockquote>
+
+        <h2>Continue Your Journey</h2>
+
+        <p>Courage is the fourth teaching. Once you've learned to act despite fear, the remaining teachings help you maximize that action:</p>
+
+        <ul>
+            <li><a href="positive-mental-attitude.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 1: Positive Mental Attitude</a> – Believe courage is possible</li>
+            <li><a href="purity-of-thought.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 2: Purity of Thought</a> – Know what's worth being courageous for</li>
+            <li><a href="vision.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 3: Vision</a> – See what your courage is building</li>
+            <li><a href="charisma.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 5: Charisma</a> – Inspire others with your courageous example</li>
+            <li><a href="sanctuary.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 6: Sanctuary</a> – Protect your courage from being drained</li>
+            <li><a href="rhythm.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 7: Rhythm</a> – Build sustainable courage over time</li>
+        </ul>
+
+        <p style="margin-top: 48px; font-size: 1.3rem; color: var(--cove-gold); font-weight: 600;">Feel the fear. Do it anyway. Become who you're meant to be.</p>
+
+    </article>
+
+    <!-- Footer -->
+    <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center;">
+        <div class="container">
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span style="color: var(--cove-gold);">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+            <p style="color: var(--cove-warm-gray); font-size: 0.9rem;">
+                CoveOfEdu is a 501(c)(3) nonprofit organization | EIN: 92-2455469
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
