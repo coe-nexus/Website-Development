@@ -6,11 +6,11 @@
       .primary-black { fill: #000000; }
       .primary-white { fill: #ffffff; }
       .accent-crimson { fill: #8B0020; }
-      .secondary-olive { fill: #2d3d1f; }
+      .secondary-gold { fill: #b08d57; }
       .neutral-offwhite { fill: #F8F4E6; }
       .stroke-black { stroke: #000000; fill: none; }
       .stroke-crimson { stroke: #8B0020; fill: none; }
-      .stroke-olive { stroke: #2d3d1f; fill: none; }
+      .stroke-gold { stroke: #b08d57; fill: none; }
     </style>
     
     <!-- Patterns -->
@@ -41,7 +41,7 @@
     <!-- Primary Logo -->
     <g id="logo-primary" transform="translate(0, 20)">
       <text x="0" y="40" font-family="-apple-system, sans-serif" font-size="48" font-weight="200" letter-spacing="-2">ASCEND<tspan fill="#8B0020">.</tspan></text>
-      <text x="0" y="60" font-family="-apple-system, sans-serif" font-size="12" font-weight="300" fill="#2d3d1f">Minimal effort. Maximum evolution.</text>
+      <text x="0" y="60" font-family="-apple-system, sans-serif" font-size="12" font-weight="300" fill="#8b8680">Minimal effort. Maximum evolution.</text>
     </g>
     
     <!-- Compact Logo -->
@@ -66,19 +66,19 @@
       <circle cx="25" cy="0" r="12" fill="#F8F4E6"/>
       <circle cx="21" cy="-2" r="1" fill="#000000"/>
       <circle cx="29" cy="-2" r="1" fill="#000000"/>
-      <rect x="17" y="30" width="16" height="12" fill="none" stroke="#2d3d1f" stroke-width="1"/>
-      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">FOCUS</text>
+      <rect x="17" y="30" width="16" height="12" fill="none" stroke="#8b8680" stroke-width="1"/>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#8b8680">FOCUS</text>
     </g>
     
     <!-- Growth Character -->
     <g id="char-growth" transform="translate(100, 40)">
-      <rect x="10" y="10" width="30" height="30" fill="none" stroke="#2d3d1f" stroke-width="2"/>
-      <rect x="5" y="5" width="40" height="40" fill="none" stroke="#2d3d1f" stroke-width="1" opacity="0.5"/>
+      <rect x="10" y="10" width="30" height="30" fill="none" stroke="#8b8680" stroke-width="2"/>
+      <rect x="5" y="5" width="40" height="40" fill="none" stroke="#8b8680" stroke-width="1" opacity="0.5"/>
       <circle cx="25" cy="-10" r="12" fill="#ffffff" stroke="#000000" stroke-width="1"/>
       <line x1="21" y1="-12" x2="23" y2="-12" stroke="#000000" stroke-width="1"/>
       <line x1="27" y1="-12" x2="29" y2="-12" stroke="#000000" stroke-width="1"/>
       <path d="M25 35 L25 15" stroke="#8B0020" stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">GROWTH</text>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#8b8680">GROWTH</text>
     </g>
     
     <!-- Resilience Character -->
@@ -89,7 +89,7 @@
       <line x1="20" y1="-12" x2="23" y2="-12" stroke="#000000" stroke-width="1.5"/>
       <line x1="27" y1="-12" x2="30" y2="-12" stroke="#000000" stroke-width="1.5"/>
       <rect x="17" y="17" width="16" height="18" fill="none" stroke="#8B0020" stroke-width="1"/>
-      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">RESILIENCE</text>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#8b8680">RESILIENCE</text>
     </g>
     
     <!-- Achievement Character -->
@@ -101,7 +101,7 @@
       <path d="M28 -23 L29 -22" stroke="#000000" stroke-width="1"/>
       <path d="M21 -16 Q25 -14 29 -16" stroke="#000000" stroke-width="1" fill="none"/>
       <text x="25" y="-35" text-anchor="middle" font-size="16" fill="#8B0020">*</text>
-      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#2d3d1f">EXCELLENCE</text>
+      <text x="25" y="70" text-anchor="middle" font-size="10" fill="#8b8680">EXCELLENCE</text>
     </g>
   </g>
   
@@ -211,7 +211,7 @@
       <rect x="0" y="0" width="40" height="40" fill="none" stroke="#000000" stroke-width="1"/>
       <circle cx="70" cy="20" r="20" fill="none" stroke="#000000" stroke-width="1"/>
       <path d="M120 0 L140 20 L120 40 L100 20 Z" fill="none" stroke="#8B0020" stroke-width="1"/>
-      <path d="M170 40 L190 0 L210 40 Z" fill="none" stroke="#2d3d1f" stroke-width="1"/>
+      <path d="M170 40 L190 0 L210 40 Z" fill="none" stroke="#b08d57" stroke-width="1"/>
     </g>
   </g>
   
@@ -235,16 +235,16 @@
       
       <!-- Milestone dots -->
       <circle cx="0" cy="100" r="8" fill="#000000"/>
-      <text x="0" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">START</text>
-      
-      <circle cx="100" cy="75" r="8" fill="#2d3d1f"/>
-      <text x="100" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">FOCUS</text>
-      
-      <circle cx="200" cy="50" r="8" fill="#2d3d1f"/>
-      <text x="200" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">GROWTH</text>
-      
-      <circle cx="300" cy="25" r="8" fill="#2d3d1f"/>
-      <text x="300" y="120" text-anchor="middle" font-size="8" fill="#2d3d1f">RESILIENCE</text>
+      <text x="0" y="120" text-anchor="middle" font-size="8" fill="#8b8680">START</text>
+
+      <circle cx="100" cy="75" r="8" fill="#8b8680"/>
+      <text x="100" y="120" text-anchor="middle" font-size="8" fill="#8b8680">FOCUS</text>
+
+      <circle cx="200" cy="50" r="8" fill="#8b8680"/>
+      <text x="200" y="120" text-anchor="middle" font-size="8" fill="#8b8680">GROWTH</text>
+
+      <circle cx="300" cy="25" r="8" fill="#8b8680"/>
+      <text x="300" y="120" text-anchor="middle" font-size="8" fill="#8b8680">RESILIENCE</text>
       
       <circle cx="400" cy="0" r="8" fill="#8B0020"/>
       <text x="400" y="120" text-anchor="middle" font-size="8" fill="#8B0020">EXCELLENCE</text>
@@ -265,8 +265,8 @@
       
       <!-- Level 2 Badge -->
       <g id="badge-2" transform="translate(80, 0)">
-        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#2d3d1f" stroke-width="2"/>
-        <text x="30" y="35" text-anchor="middle" font-size="20" font-weight="200" fill="#2d3d1f">02</text>
+        <rect x="0" y="0" width="60" height="60" fill="none" stroke="#b08d57" stroke-width="2"/>
+        <text x="30" y="35" text-anchor="middle" font-size="20" font-weight="200" fill="#b08d57">02</text>
         <text x="30" y="75" text-anchor="middle" font-size="8" fill="#666">FOCUSED</text>
       </g>
       
@@ -294,14 +294,14 @@
     
     <g transform="translate(0, 30)">
       <text x="0" y="30" font-size="40" font-weight="200" fill="#000000">01</text>
-      <text x="60" y="30" font-size="40" font-weight="200" fill="#2d3d1f">02</text>
-      <text x="120" y="30" font-size="40" font-weight="200" fill="#2d3d1f">03</text>
+      <text x="60" y="30" font-size="40" font-weight="200" fill="#8b8680">02</text>
+      <text x="120" y="30" font-size="40" font-weight="200" fill="#b08d57">03</text>
       <text x="180" y="30" font-size="40" font-weight="200" fill="#8B0020">04</text>
-      
+
       <line x1="0" y1="50" x2="40" y2="50" stroke="#000000" stroke-width="1"/>
       <text x="0" y="70" font-size="10" fill="#666">INACTIVE</text>
-      
-      <line x1="60" y1="50" x2="100" y2="50" stroke="#2d3d1f" stroke-width="1"/>
+
+      <line x1="60" y1="50" x2="100" y2="50" stroke="#8b8680" stroke-width="1"/>
       <text x="60" y="70" font-size="10" fill="#666">IN PROGRESS</text>
       
       <line x1="180" y1="50" x2="220" y2="50" stroke="#8B0020" stroke-width="2"/>

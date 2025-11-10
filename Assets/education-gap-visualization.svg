@@ -6,9 +6,9 @@
       .value-text { font-family: 'Comfortaa', -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #1c1c1c; }
       .year-text { font-family: 'Comfortaa', -apple-system, sans-serif; font-size: 12px; font-weight: 300; fill: #666; }
       .accent-gold { fill: #b08d57; }
-      .accent-olive { fill: #2d3d1f; }
+      .accent-gray { fill: #8b8680; }
       .line-gold { stroke: #b08d57; fill: none; stroke-width: 3; }
-      .line-olive { stroke: #2d3d1f; fill: none; stroke-width: 3; }
+      .line-gray { stroke: #8b8680; fill: none; stroke-width: 3; }
       .grid-line { stroke: #e0e0e0; stroke-width: 1; stroke-dasharray: 5,5; }
       .bg-gradient { fill: url(#bgGradient); }
     </style>
@@ -62,15 +62,15 @@
   <circle cx="950" cy="120" r="6" class="accent-gold"/>
 
   <!-- Line 2: Students in Traditional Education (Declining) -->
-  <path d="M 200 300 L 350 310 L 500 340 L 650 380 L 800 420 L 950 450" class="line-olive"/>
+  <path d="M 200 300 L 350 310 L 500 340 L 650 380 L 800 420 L 950 450" class="line-gray"/>
 
   <!-- Data points for Line 2 -->
-  <circle cx="200" cy="300" r="6" class="accent-olive"/>
-  <circle cx="350" cy="310" r="6" class="accent-olive"/>
-  <circle cx="500" cy="340" r="6" class="accent-olive"/>
-  <circle cx="650" cy="380" r="8" class="accent-olive"/>
-  <circle cx="800" cy="420" r="6" class="accent-olive"/>
-  <circle cx="950" cy="450" r="6" class="accent-olive"/>
+  <circle cx="200" cy="300" r="6" class="accent-gray"/>
+  <circle cx="350" cy="310" r="6" class="accent-gray"/>
+  <circle cx="500" cy="340" r="6" class="accent-gray"/>
+  <circle cx="650" cy="380" r="8" class="accent-gray"/>
+  <circle cx="800" cy="420" r="6" class="accent-gray"/>
+  <circle cx="950" cy="450" r="6" class="accent-gray"/>
 
   <!-- "The Gap" annotation -->
   <line x1="670" y1="180" x2="670" y2="380" stroke="#8B0020" stroke-width="2" stroke-dasharray="8,4"/>
@@ -93,8 +93,8 @@
     <text x="55" y="30" class="label-text">Students with AI Access</text>
     <text x="55" y="45" class="year-text">& Modern Resources</text>
 
-    <line x1="15" y1="70" x2="45" y2="70" class="line-olive"/>
-    <circle cx="30" cy="70" r="4" class="accent-olive"/>
+    <line x1="15" y1="70" x2="45" y2="70" class="line-gray"/>
+    <circle cx="30" cy="70" r="4" class="accent-gray"/>
     <text x="55" y="75" class="label-text">Traditional Education Only</text>
   </g>
 
