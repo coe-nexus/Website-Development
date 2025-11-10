@@ -110,7 +110,7 @@ about:
 
 That's when I knew we had to do something."
 
-- [Founder Name], Founder of CoveOfEdu
+- Dr. Izzy Kiver Ed.D, Founder of CoveOfEdu
 
 [Pull quote highlighted in gold]
 "Traditional education was preparing students for a world 
@@ -443,7 +443,7 @@ Thank you for being part of ours.
 - Primary background: White → Off-white gradient (#ffffff → #e8e3d8)
 - Text: Dark charcoal (#1c1c1c)
 - Accents: Gold (#b08d57)
-- Secondary accents: Olive (#2d3d1f)
+- Secondary accents: Warm Gray (#8b8680)
 
 ### Typography
 - Headers: Comfortaa, 600-700 weight

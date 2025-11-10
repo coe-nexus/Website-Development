@@ -537,7 +537,7 @@ CONTACT
   "foundingDate": "2023",
   "founder": {
     "@type": "Person",
-    "name": "[Founder Name]"
+    "name": "Dr. Izzy Kiver Ed.D"
   }
 }
 ```
