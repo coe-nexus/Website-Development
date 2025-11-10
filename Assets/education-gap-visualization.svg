@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <style>
+      .title-text { font-family: 'Comfortaa', -apple-system, sans-serif; font-size: 24px; font-weight: 600; fill: #1c1c1c; }
+      .label-text { font-family: 'Comfortaa', -apple-system, sans-serif; font-size: 14px; font-weight: 400; fill: #1c1c1c; }
+      .value-text { font-family: 'Comfortaa', -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #1c1c1c; }
+      .year-text { font-family: 'Comfortaa', -apple-system, sans-serif; font-size: 12px; font-weight: 300; fill: #666; }
+      .accent-gold { fill: #b08d57; }
+      .accent-olive { fill: #2d3d1f; }
+      .line-gold { stroke: #b08d57; fill: none; stroke-width: 3; }
+      .line-olive { stroke: #2d3d1f; fill: none; stroke-width: 3; }
+      .grid-line { stroke: #e0e0e0; stroke-width: 1; stroke-dasharray: 5,5; }
+      .bg-gradient { fill: url(#bgGradient); }
+    </style>
+
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8e3d8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" class="bg-gradient"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" class="title-text">The Education Gap: Widening Opportunity Divide</text>
+  <line x1="500" y1="50" x2="700" y2="50" stroke="#b08d57" stroke-width="3"/>
+
+  <!-- Y-axis labels -->
+  <text x="80" y="130" text-anchor="end" class="label-text">High</text>
+  <text x="80" y="300" text-anchor="end" class="label-text">Medium</text>
+  <text x="80" y="470" text-anchor="end" class="label-text">Low</text>
+  <text x="40" y="260" text-anchor="middle" class="label-text" transform="rotate(-90 40 260)">Opportunity & Access</text>
+
+  <!-- Grid lines -->
+  <line x1="100" y1="130" x2="1100" y2="130" class="grid-line"/>
+  <line x1="100" y1="215" x2="1100" y2="215" class="grid-line"/>
+  <line x1="100" y1="300" x2="1100" y2="300" class="grid-line"/>
+  <line x1="100" y1="385" x2="1100" y2="385" class="grid-line"/>
+  <line x1="100" y1="470" x2="1100" y2="470" class="grid-line"/>
+
+  <!-- X-axis -->
+  <line x1="100" y1="500" x2="1100" y2="500" stroke="#1c1c1c" stroke-width="2"/>
+
+  <!-- Year markers -->
+  <text x="200" y="530" text-anchor="middle" class="year-text">2010</text>
+  <text x="350" y="530" text-anchor="middle" class="year-text">2015</text>
+  <text x="500" y="530" text-anchor="middle" class="year-text">2020</text>
+  <text x="650" y="530" text-anchor="middle" class="year-text">2023</text>
+  <text x="800" y="530" text-anchor="middle" class="year-text">2025</text>
+  <text x="950" y="530" text-anchor="middle" class="year-text">2030</text>
+
+  <!-- Line 1: Students with AI Access & Resources (Rising) -->
+  <path d="M 200 350 L 350 320 L 500 260 L 650 180 L 800 150 L 950 120" class="line-gold"/>
+
+  <!-- Data points for Line 1 -->
+  <circle cx="200" cy="350" r="6" class="accent-gold"/>
+  <circle cx="350" cy="320" r="6" class="accent-gold"/>
+  <circle cx="500" cy="260" r="6" class="accent-gold"/>
+  <circle cx="650" cy="180" r="8" class="accent-gold"/>
+  <circle cx="800" cy="150" r="6" class="accent-gold"/>
+  <circle cx="950" cy="120" r="6" class="accent-gold"/>
+
+  <!-- Line 2: Students in Traditional Education (Declining) -->
+  <path d="M 200 300 L 350 310 L 500 340 L 650 380 L 800 420 L 950 450" class="line-olive"/>
+
+  <!-- Data points for Line 2 -->
+  <circle cx="200" cy="300" r="6" class="accent-olive"/>
+  <circle cx="350" cy="310" r="6" class="accent-olive"/>
+  <circle cx="500" cy="340" r="6" class="accent-olive"/>
+  <circle cx="650" cy="380" r="8" class="accent-olive"/>
+  <circle cx="800" cy="420" r="6" class="accent-olive"/>
+  <circle cx="950" cy="450" r="6" class="accent-olive"/>
+
+  <!-- "The Gap" annotation -->
+  <line x1="670" y1="180" x2="670" y2="380" stroke="#8B0020" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="680" y="270" class="value-text" fill="#8B0020">THE GAP</text>
+  <text x="680" y="290" class="label-text" fill="#8B0020">200 points</text>
+
+  <!-- CoveOfEdu marker (2023) -->
+  <circle cx="650" cy="280" r="12" fill="#8B0020" opacity="0.2"/>
+  <circle cx="650" cy="280" r="6" fill="#8B0020"/>
+  <line x1="650" y1="280" x2="750" y2="250" stroke="#8B0020" stroke-width="1.5"/>
+  <text x="755" y="245" class="label-text" fill="#8B0020" font-weight="600">CoveOfEdu Founded</text>
+  <text x="755" y="260" class="label-text" fill="#8B0020">Bridging the Gap</text>
+
+  <!-- Legend -->
+  <g transform="translate(850, 70)">
+    <rect x="0" y="0" width="280" height="90" fill="white" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+
+    <line x1="15" y1="25" x2="45" y2="25" class="line-gold"/>
+    <circle cx="30" cy="25" r="4" class="accent-gold"/>
+    <text x="55" y="30" class="label-text">Students with AI Access</text>
+    <text x="55" y="45" class="year-text">& Modern Resources</text>
+
+    <line x1="15" y1="70" x2="45" y2="70" class="line-olive"/>
+    <circle cx="30" cy="70" r="4" class="accent-olive"/>
+    <text x="55" y="75" class="label-text">Traditional Education Only</text>
+  </g>
+
+  <!-- Key Statistics -->
+  <g transform="translate(100, 550)">
+    <text x="0" y="0" class="label-text" font-weight="600">Key Insight: </text>
+    <text x="90" y="0" class="label-text">By 2030, students without AI literacy will be at a 200-point disadvantage in opportunity access.</text>
+  </g>
+</svg>

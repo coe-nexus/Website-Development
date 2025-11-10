@@ -25,9 +25,9 @@
 - Internal links: Programs, Student Stories
 - CTA: Student application
 
-**Thursday:** Self-Knowledge: The Foundation of Success (Teaching #1)
-- Primary keyword: "self-knowledge personal growth"
-- Secondary: "know yourself", "self-awareness"
+**Thursday:** POSITIVE MENTAL ATTITUDE: The Foundation of Success (Teaching #1)
+- Primary keyword: "positive mental attitude success"
+- Secondary: "positive thinking", "mental attitude"
 - Word count: 1,500+
 - Internal links: 7 Teachings hub, Other teachings
 - CTA: Join 7 Teachings movement
@@ -56,9 +56,9 @@
 - Internal links: Programs, Blog category
 - CTA: Newsletter for weekly tool tips
 
-**Thursday:** Discovering Your Life's Purpose: A Student's Guide (Teaching #2)
-- Primary keyword: "find your purpose"
-- Secondary: "life purpose student", "purpose discovery"
+**Thursday:** PURITY OF THOUGHT: Discovering Your Life's Purpose (Teaching #2)
+- Primary keyword: "purity of thought"
+- Secondary: "clear thinking", "mental clarity"
 - Word count: 1,500+
 - Internal links: 7 Teachings, Teaching #1
 - CTA: Join newsletter
@@ -75,9 +75,9 @@
 - Internal links: Programs, Student Stories
 - CTA: Apply to program
 
-**Thursday:** Building Resilience: How to Bounce Back from Failure (Teaching #3)
-- Primary keyword: "building resilience students"
-- Secondary: "mental toughness", "overcome failure"
+**Thursday:** VISION: Building Your Future Before It Exists (Teaching #3)
+- Primary keyword: "vision for future"
+- Secondary: "future vision", "goal setting vision"
 - Word count: 1,600+
 - Internal links: 7 Teachings, Previous teachings
 - CTA: Newsletter signup
@@ -99,9 +99,9 @@
 - CTA: Free marketing resources
 
 ### Week 7
-**Monday:** Systems Thinking: Seeing the Bigger Picture (Teaching #4)
-- Primary keyword: "systems thinking for students"
-- Secondary: "critical thinking", "big picture thinking"
+**Monday:** COURAGE: The Bridge Between Knowing and Doing (Teaching #4)
+- Primary keyword: "courage to take action"
+- Secondary: "courage students", "overcoming fear"
 - Word count: 1,500+
 - Internal links: 7 Teachings, Other teachings
 - CTA: Join movement
@@ -121,9 +121,9 @@
 - Internal links: AI Tools, Programs
 - CTA: Join program
 
-**Thursday:** Creating Real Value: Beyond Making Money (Teaching #5)
-- Primary keyword: "creating value business"
-- Secondary: "purpose driven business", "meaningful work"
+**Thursday:** CHARISMA: The Ability to Inspire and Influence (Teaching #5)
+- Primary keyword: "developing charisma"
+- Secondary: "charisma skills", "influence others"
 - Word count: 1,500+
 - Internal links: 7 Teachings, Entrepreneurship articles
 - CTA: Newsletter
@@ -141,9 +141,9 @@
 - Internal links: Entrepreneurship articles
 - CTA: Apply to get mentorship
 
-**Thursday:** Leadership for Students: Start Before You're Ready (Teaching #6)
-- Primary keyword: "student leadership development"
-- Secondary: "young leaders", "leadership skills students"
+**Thursday:** SANCTUARY: Creating Space for Growth and Transformation (Teaching #6)
+- Primary keyword: "sanctuary for growth"
+- Secondary: "personal sanctuary", "space for transformation"
 - Word count: 1,600+
 - Internal links: 7 Teachings, Success stories
 - CTA: Join movement
@@ -164,9 +164,9 @@
 - CTA: Fund a transformation
 
 ### Week 11
-**Monday:** Building a Legacy That Matters: Long-Term Thinking (Teaching #7)
-- Primary keyword: "building a legacy young person"
-- Secondary: "long-term thinking", "legacy mindset"
+**Monday:** RHYTHM: The Sustainable Pace of Lifelong Success (Teaching #7)
+- Primary keyword: "rhythm sustainable success"
+- Secondary: "sustainable pace", "lifelong success rhythm"
 - Word count: 1,500+
 - Internal links: All 7 Teachings, About
 - CTA: Complete the 7 Teachings journey

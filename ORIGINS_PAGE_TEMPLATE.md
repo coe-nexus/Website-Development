@@ -81,6 +81,7 @@ H3: Three Observations That Changed Everything
 - Timeline graphic showing wealth gap widening
 - Before/after comparison visual
 - Data visualization of opportunity gap
+- **File:** `/Assets/education-gap-visualization.svg` (displays the widening education gap from 2010-2030)
 
 ---
 
@@ -208,20 +209,40 @@ A framework for living.
 
 [Visual timeline showing development of each teaching]
 
-2022, Q1: Self-Knowledge
+2022, Q1: Teaching 1 - POSITIVE MENTAL ATTITUDE
 [Brief story of first student breakthrough]
+"The foundation of all success begins with how you think."
 
-2022, Q2: Purpose Discovery  
+2022, Q2: Teaching 2 - PURITY OF THOUGHT
 [Development story]
+"Clear thinking leads to clear action."
 
-2022, Q3: Resilience Building
+2022, Q3: Teaching 3 - VISION
 [Testing and refinement]
+"See the future you're building before it exists."
 
-[Continue for all 7 teachings]
+2022, Q4: Teaching 4 - COURAGE
+[Implementation story]
+"The bridge between knowing and doing."
+
+2023, Q1: Teaching 5 - CHARISMA
+[Student transformation story]
+"The ability to inspire and influence for good."
+
+2023, Q2: Teaching 6 - SANCTUARY
+[Community development]
+"Creating space for growth and transformation."
+
+2023, Q3: Teaching 7 - RHYTHM
+[Framework completion]
+"The sustainable pace of lifelong success."
 
 [Ending statement]
 By 2023, we had created more than a curriculum.
 We had created a philosophy for the next generation.
+
+The 7 Teachings: POSITIVE MENTAL ATTITUDE, PURITY OF THOUGHT,
+VISION, COURAGE, CHARISMA, SANCTUARY, and RHYTHM.
 
 [CTA]
 [Button - Primary] Explore the 7 Teachings →

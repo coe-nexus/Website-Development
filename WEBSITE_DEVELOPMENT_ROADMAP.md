@@ -271,32 +271,39 @@
     - Length: 1,800+ words
 
 #### Pillar 3: The 7 Teachings (7 articles - one per teaching)
-11. **"Self-Knowledge: The Foundation of Success"**
-    - Teaching 1 deep-dive
+11. **"POSITIVE MENTAL ATTITUDE: The Foundation of Success"**
+    - Teaching 1 deep-dive: Positive Mental Attitude
+    - Keywords: positive mental attitude, PMA, positive thinking
     - Length: 1,500+ words
 
-12. **"Discovering Your Life's Purpose: A Student's Guide"**
-    - Teaching 2 deep-dive
+12. **"PURITY OF THOUGHT: Clear Thinking for Clear Action"**
+    - Teaching 2 deep-dive: Purity of Thought
+    - Keywords: purity of thought, mental clarity, clear thinking
     - Length: 1,500+ words
 
-13. **"Building Resilience: How to Bounce Back from Failure"**
-    - Teaching 3 deep-dive
+13. **"VISION: Building Your Future Before It Exists"**
+    - Teaching 3 deep-dive: Vision
+    - Keywords: vision for future, goal setting, future vision
     - Length: 1,600+ words
 
-14. **"Systems Thinking: Seeing the Bigger Picture"**
-    - Teaching 4 deep-dive
+14. **"COURAGE: The Bridge Between Knowing and Doing"**
+    - Teaching 4 deep-dive: Courage
+    - Keywords: courage to act, overcoming fear, taking action
     - Length: 1,500+ words
 
-15. **"Creating Real Value: Beyond Making Money"**
-    - Teaching 5 deep-dive
+15. **"CHARISMA: The Ability to Inspire and Influence"**
+    - Teaching 5 deep-dive: Charisma
+    - Keywords: developing charisma, influence, inspiration
     - Length: 1,500+ words
 
-16. **"Leadership for Students: Start Before You're Ready"**
-    - Teaching 6 deep-dive
+16. **"SANCTUARY: Creating Space for Growth and Transformation"**
+    - Teaching 6 deep-dive: Sanctuary
+    - Keywords: personal sanctuary, space for growth, transformation
     - Length: 1,600+ words
 
-17. **"Building a Legacy That Matters: Long-Term Thinking"**
-    - Teaching 7 deep-dive
+17. **"RHYTHM: The Sustainable Pace of Lifelong Success"**
+    - Teaching 7 deep-dive: Rhythm
+    - Keywords: sustainable rhythm, lifelong success, consistent growth
     - Length: 1,500+ words
 
 #### Pillar 4: Student Success & Impact (3 articles)
