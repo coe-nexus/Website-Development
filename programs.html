@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Programs & Curriculum | AI Education & 7 Teachings - CoveOfEdu</title>
+    <meta name="description" content="Explore CoveOfEdu's transformative programs: AI mastery, entrepreneurship training, and the 7 Teachings philosophy. 90-day student transformation curriculum.">
+    <meta name="keywords" content="AI education program, entrepreneurship training, 7 Teachings curriculum, student transformation, Kiver.org, AI skills training">
+    <meta name="author" content="CoveOfEdu">
+    <link rel="canonical" href="https://coveofedu.org/programs">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Programs & Curriculum | AI Education & 7 Teachings - CoveOfEdu">
+    <meta property="og:description" content="Explore CoveOfEdu's transformative programs: AI mastery, entrepreneurship training, and the 7 Teachings philosophy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coveofedu.org/programs">
+    <meta property="og:image" content="https://coveofedu.org/Assets/programs-social-share.jpg">
+    <meta property="og:site_name" content="CoveOfEdu">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Programs & Curriculum | AI Education & 7 Teachings - CoveOfEdu">
+    <meta name="twitter:description" content="Explore CoveOfEdu's transformative programs: AI mastery, entrepreneurship training, and the 7 Teachings philosophy.">
+    <meta name="twitter:image" content="https://coveofedu.org/Assets/programs-social-share.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "CoveOfEdu Transformation Program",
+        "description": "90-day transformation program combining AI education, entrepreneurship, and philosophical training",
+        "provider": {
+            "@type": "Organization",
+            "name": "CoveOfEdu",
+            "sameAs": "https://coveofedu.org"
+        },
+        "educationalCredentialAwarded": "Certificate of Completion",
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "online",
+            "duration": "P90D"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ASCEND Design System - Programs Page Styles */
+
+        :root {
+            --color-primary-bg: #ffffff;
+            --color-secondary-bg: #e8e3d8;
+            --color-text: #1c1c1c;
+            --color-gold: #b08d57;
+            --color-olive: #2d3d1f;
+            --font-family: 'Comfortaa', cursive;
+            --max-width: 1000px;
+            --section-padding: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-secondary-bg) 100%);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--color-olive);
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            color: var(--color-gold);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .large-text {
+            font-size: 1.375rem;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: var(--section-padding) 0;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: var(--section-padding) 0;
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.05) 0%, rgba(45, 61, 31, 0.05) 100%);
+        }
+
+        .gold-accent {
+            width: 80px;
+            height: 3px;
+            background: var(--color-gold);
+            margin: 2rem auto;
+        }
+
+        .overline {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 3rem;
+            margin: 3rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--color-gold) 0%, var(--color-olive) 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -3.75rem;
+            top: 2rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            background: var(--color-gold);
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 3px var(--color-gold);
+        }
+
+        .timeline-phase {
+            font-weight: 600;
+            color: var(--color-gold);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Program Cards */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .program-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid var(--color-gold);
+            transition: all 0.3s ease;
+        }
+
+        .program-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .program-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Feature List */
+        .feature-list {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .feature-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.125rem;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        /* Curriculum Modules */
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .module-card {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-gold);
+        }
+
+        .module-number {
+            font-weight: 700;
+            color: var(--color-gold);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+            margin: 3rem 0;
+            padding: 3rem;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--color-olive);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-family);
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--color-gold);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #9a7849;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(176, 141, 87, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-gold);
+            border: 2px solid var(--color-gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-gold);
+            color: white;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(45, 61, 31, 0.1) 100%);
+            padding: 4rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Comparison Table */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .comparison-side {
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .comparison-side.old {
+            background: rgba(168, 84, 84, 0.1);
+        }
+
+        .comparison-side.new {
+            background: rgba(176, 141, 87, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 60px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .timeline {
+                padding-left: 2rem;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 3px solid var(--color-gold);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <p class="overline">OUR PROGRAMS</p>
+                <h1>Transform Your Life in 90 Days</h1>
+                <p class="large-text">We don't just teach skills—we build entrepreneurs, philosophers, and the next generation of leaders.</p>
+                <div class="gold-accent"></div>
+            </div>
+        </section>
+
+        <!-- OVERVIEW SECTION -->
+        <section class="section">
+            <div class="container">
+                <h2>The CoveOfEdu Difference</h2>
+                <div class="comparison">
+                    <div class="comparison-side old">
+                        <h3 style="color: #a85454;">Traditional Education</h3>
+                        <ul class="feature-list">
+                            <li style="opacity: 0.6;">One-time classes that end</li>
+                            <li style="opacity: 0.6;">Passive learning from lectures</li>
+                            <li style="opacity: 0.6;">Theory without application</li>
+                            <li style="opacity: 0.6;">Skills without meaning</li>
+                            <li style="opacity: 0.6;">No community support</li>
+                            <li style="opacity: 0.6;">Outdated job preparation</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-side new">
+                        <h3 style="color: var(--color-gold);">CoveOfEdu Model</h3>
+                        <ul class="feature-list">
+                            <li>Lifetime platform access (Kiver.org)</li>
+                            <li>Learn by building real businesses</li>
+                            <li>Apply skills immediately</li>
+                            <li>Skills + philosophical foundation</li>
+                            <li>Lifelong community network</li>
+                            <li>Future-proof AI mastery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <span class="stat-number">90</span>
+                        <span class="stat-label">Days to Transformation</span>
+                    </div>
+                    <div>
+                        <span class="stat-number">94%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div>
+                        <span class="stat-number">$96K</span>
+                        <span class="stat-label">Avg First Year Revenue</span>
+                    </div>
+                    <div>
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Lifetime Access</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 90-DAY JOURNEY -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
+            <div class="container">
+                <h2>Your 90-Day Journey</h2>
+                <p class="large-text">From stuck to successful through a proven, structured transformation process.</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-phase">Days 1-30: Foundation</div>
+                        <h3>Master the Fundamentals</h3>
+                        <p>You'll learn AI basics, set up your tools, and discover the first 3 of the 7 Teachings: POSITIVE MENTAL ATTITUDE, PURITY OF THOUGHT, and VISION.</p>
+                        <h4>What You'll Achieve:</h4>
+                        <ul class="feature-list">
+                            <li>AI tool mastery (ChatGPT, Midjourney, Claude, etc.)</li>
+                            <li>Personal brand foundation</li>
+                            <li>Business idea validation</li>
+                            <li>Mental frameworks for success</li>
+                            <li>First AI-powered project</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-phase">Days 31-60: Building</div>
+                        <h3>Launch Your Business</h3>
+                        <p>You'll build your first business, learn marketing, and master COURAGE and CHARISMA—the teachings that turn knowledge into action.</p>
+                        <h4>What You'll Achieve:</h4>
+                        <ul class="feature-list">
+                            <li>Live business/service launch</li>
+                            <li>First clients/customers</li>
+                            <li>Marketing systems setup</li>
+                            <li>Revenue generation</li>
+                            <li>Portfolio development</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-phase">Days 61-90: Scaling</div>
+                        <h3>Build Sustainable Success</h3>
+                        <p>You'll scale your business, create systems, and integrate SANCTUARY and RHYTHM—ensuring long-term sustainability.</p>
+                        <h4>What You'll Achieve:</h4>
+                        <ul class="feature-list">
+                            <li>Automated revenue systems</li>
+                            <li>Client retention strategies</li>
+                            <li>Work-life balance</li>
+                            <li>Future roadmap</li>
+                            <li>Mentor certification path</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THREE PILLARS -->
+        <section class="section">
+            <div class="container">
+                <h2>Three Pillars of Transformation</h2>
+                <p class="large-text">Our program integrates technical skills, business acumen, and philosophical wisdom.</p>
+
+                <div class="program-grid">
+                    <div class="program-card">
+                        <div class="program-icon">🤖</div>
+                        <h3>1. AI Mastery</h3>
+                        <p>Learn the tools that give you 10x leverage:</p>
+                        <ul class="feature-list">
+                            <li>ChatGPT & LLM prompting</li>
+                            <li>AI image generation</li>
+                            <li>Automation tools</li>
+                            <li>AI-powered research</li>
+                            <li>Content creation at scale</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">💼</div>
+                        <h3>2. Entrepreneurship</h3>
+                        <p>Build real businesses, not just projects:</p>
+                        <ul class="feature-list">
+                            <li>Business model design</li>
+                            <li>Market research & validation</li>
+                            <li>Sales & marketing</li>
+                            <li>Client management</li>
+                            <li>Financial fundamentals</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">🌟</div>
+                        <h3>3. The 7 Teachings</h3>
+                        <p>Philosophical foundation for lasting success:</p>
+                        <ul class="feature-list">
+                            <li>Positive Mental Attitude</li>
+                            <li>Purity of Thought</li>
+                            <li>Vision</li>
+                            <li>Courage</li>
+                            <li>Charisma</li>
+                            <li>Sanctuary</li>
+                            <li>Rhythm</li>
+                        </ul>
+                        <a href="/seven-teachings" style="color: var(--color-gold); font-weight: 500;">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CURRICULUM MODULES -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
+            <div class="container">
+                <h2>Complete Curriculum</h2>
+                <p class="large-text">Over 50 modules covering everything you need to succeed in the AI age.</p>
+
+                <h3 style="margin-top: 3rem;">AI & Technology Track</h3>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <div class="module-number">MODULE 1</div>
+                        <h4>Introduction to AI</h4>
+                        <p>Understanding Large Language Models and their capabilities</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 2</div>
+                        <h4>Prompt Engineering</h4>
+                        <p>Master the art of communicating with AI systems</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 3</div>
+                        <h4>AI Image Generation</h4>
+                        <p>Create professional visuals with Midjourney & DALL-E</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 4</div>
+                        <h4>Automation & Tools</h4>
+                        <p>Build systems that work while you sleep</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 5</div>
+                        <h4>AI-Powered Content</h4>
+                        <p>Scale content creation with AI assistance</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 6</div>
+                        <h4>AI Ethics & Safety</h4>
+                        <p>Responsible AI use and future considerations</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem;">Entrepreneurship Track</h3>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <div class="module-number">MODULE 7</div>
+                        <h4>Finding Your Niche</h4>
+                        <p>Identify profitable opportunities aligned with your skills</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 8</div>
+                        <h4>Business Models</h4>
+                        <p>Choose the right model for your goals</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 9</div>
+                        <h4>Marketing Fundamentals</h4>
+                        <p>Attract customers without a huge budget</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 10</div>
+                        <h4>Sales & Persuasion</h4>
+                        <p>Close deals ethically and effectively</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 11</div>
+                        <h4>Client Management</h4>
+                        <p>Deliver exceptional service and build loyalty</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">MODULE 12</div>
+                        <h4>Scaling Systems</h4>
+                        <p>Grow your business sustainably</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem;">Philosophy Track (7 Teachings)</h3>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <div class="module-number">TEACHING 1</div>
+                        <h4>Positive Mental Attitude</h4>
+                        <p>Transform your mindset for success</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">TEACHING 2</div>
+                        <h4>Purity of Thought</h4>
+                        <p>Clear thinking leads to clear action</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">TEACHING 3</div>
+                        <h4>Vision</h4>
+                        <p>See your future before it exists</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">TEACHING 4</div>
+                        <h4>Courage</h4>
+                        <p>Bridge the gap between knowing and doing</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">TEACHING 5</div>
+                        <h4>Charisma</h4>
+                        <p>Inspire and influence for good</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">TEACHING 6</div>
+                        <h4>Sanctuary</h4>
+                        <p>Create space for growth</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-number">TEACHING 7</div>
+                        <h4>Rhythm</h4>
+                        <p>Sustainable pace for lifelong success</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT & RESOURCES -->
+        <section class="section">
+            <div class="container">
+                <h2>Support & Resources</h2>
+                <p class="large-text">You're never alone on your journey. We provide comprehensive support throughout your transformation.</p>
+
+                <div class="program-grid">
+                    <div class="program-card">
+                        <div class="program-icon">👥</div>
+                        <h3>1-on-1 Mentorship</h3>
+                        <p>Matched with an experienced mentor who's walked the path you're on.</p>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">🌐</div>
+                        <h3>Kiver.org Platform</h3>
+                        <p>Lifetime access to all curriculum, tools, and community features.</p>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">💬</div>
+                        <h3>Community Forums</h3>
+                        <p>Connect with fellow students, alumni, and mentors 24/7.</p>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">🛠️</div>
+                        <h3>Tool Access</h3>
+                        <p>Premium subscriptions to AI tools and business software included.</p>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">📊</div>
+                        <h3>Progress Tracking</h3>
+                        <p>Dashboard to monitor your growth and celebrate milestones.</p>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">🎓</div>
+                        <h3>Certification</h3>
+                        <p>Official completion certificate and pathway to become a mentor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ELIGIBILITY & APPLICATION -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
+            <div class="container">
+                <h2>Who Is This For?</h2>
+                <div class="program-grid">
+                    <div class="program-card">
+                        <h3>✅ Perfect For:</h3>
+                        <ul class="feature-list">
+                            <li>Ages 16-25 (primary focus)</li>
+                            <li>Underserved communities</li>
+                            <li>Motivated self-starters</li>
+                            <li>Willing to put in the work</li>
+                            <li>Ready for transformation</li>
+                            <li>Committed to 10+ hrs/week</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-card">
+                        <h3>❌ Not For:</h3>
+                        <ul class="feature-list">
+                            <li style="opacity: 0.6;">Those seeking quick fixes</li>
+                            <li style="opacity: 0.6;">Passive learners</li>
+                            <li style="opacity: 0.6;">Not willing to build</li>
+                            <li style="opacity: 0.6;">Can't commit time</li>
+                            <li style="opacity: 0.6;">Already successful entrepreneurs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3>How to Apply</h3>
+                    <p class="large-text">We fund students through donations. If you're ready to transform your life:</p>
+                    <ol style="text-align: left; max-width: 600px; margin: 2rem auto; font-size: 1.125rem;">
+                        <li style="margin-bottom: 1rem;">Fill out our application form</li>
+                        <li style="margin-bottom: 1rem;">Complete a short video interview</li>
+                        <li style="margin-bottom: 1rem;">Get matched with a donor sponsor</li>
+                        <li style="margin-bottom: 1rem;">Begin your 90-day transformation</li>
+                    </ol>
+                    <a href="/contact" class="btn btn-primary" style="margin-top: 2rem;">Apply Now →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>Ready to Transform Your Life?</h2>
+                    <p class="large-text">Join 127+ students who have already started their journey to success.</p>
+                    <div class="cta-buttons">
+                        <a href="/contact" class="btn btn-primary">Apply as a Student →</a>
+                        <a href="/donate" class="btn btn-secondary">Fund a Student →</a>
+                        <a href="/impact" class="btn btn-secondary">See Student Stories →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--color-olive); color: white; padding: 3rem 0; text-align: center; margin-top: var(--section-padding);">
+        <div class="container">
+            <p>&copy; 2025 CoveOfEdu. 501(c)(3) Nonprofit Organization. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="/about" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">About</a>
+                <a href="/origins" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Origins</a>
+                <a href="/programs" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Programs</a>
+                <a href="/impact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Impact</a>
+                <a href="/donate" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Donate</a>
+                <a href="/contact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

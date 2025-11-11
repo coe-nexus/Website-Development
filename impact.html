@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Impact & Student Stories | Real Transformations - CoveOfEdu</title>
+    <meta name="description" content="See how CoveOfEdu transforms lives. Real student stories, measurable impact metrics, and the proof that AI education changes everything.">
+    <meta name="keywords" content="student success stories, education impact, AI education results, student transformations, nonprofit impact metrics">
+    <meta name="author" content="CoveOfEdu">
+    <link rel="canonical" href="https://coveofedu.org/impact">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Impact & Student Stories | Real Transformations - CoveOfEdu">
+    <meta property="og:description" content="See how CoveOfEdu transforms lives. Real student stories, measurable impact metrics, and proof that AI education changes everything.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coveofedu.org/impact">
+    <meta property="og:image" content="https://coveofedu.org/Assets/impact-social-share.jpg">
+    <meta property="og:site_name" content="CoveOfEdu">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Impact & Student Stories | Real Transformations - CoveOfEdu">
+    <meta name="twitter:description" content="See how CoveOfEdu transforms lives. Real student stories and measurable impact metrics.">
+    <meta name="twitter:image" content="https://coveofedu.org/Assets/impact-social-share.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ASCEND Design System - Impact Page Styles */
+
+        :root {
+            --color-primary-bg: #ffffff;
+            --color-secondary-bg: #e8e3d8;
+            --color-text: #1c1c1c;
+            --color-gold: #b08d57;
+            --color-olive: #2d3d1f;
+            --font-family: 'Comfortaa', cursive;
+            --max-width: 1000px;
+            --section-padding: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-secondary-bg) 100%);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--color-olive);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .large-text {
+            font-size: 1.375rem;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: var(--section-padding) 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: var(--section-padding) 0;
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(45, 61, 31, 0.1) 100%);
+        }
+
+        .gold-accent {
+            width: 80px;
+            height: 3px;
+            background: var(--color-gold);
+            margin: 2rem auto;
+        }
+
+        .overline {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        /* Stats Dashboard */
+        .stats-dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 4px solid var(--color-gold);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.125rem;
+            color: var(--color-olive);
+            font-weight: 500;
+        }
+
+        .stat-detail {
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        /* Student Story Cards */
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .story-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .story-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .student-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-olive) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .student-info h3 {
+            margin-bottom: 0.5rem;
+            color: var(--color-olive);
+        }
+
+        .student-location {
+            color: var(--color-gold);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .student-tagline {
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .story-quote {
+            font-size: 1.375rem;
+            font-style: italic;
+            line-height: 1.8;
+            color: var(--color-olive);
+            padding: 2rem;
+            background: rgba(176, 141, 87, 0.05);
+            border-left: 4px solid var(--color-gold);
+            margin: 2rem 0;
+        }
+
+        .story-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(176, 141, 87, 0.05);
+            border-radius: 8px;
+        }
+
+        .story-metric {
+            text-align: center;
+        }
+
+        .story-metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            display: block;
+        }
+
+        .story-metric-label {
+            font-size: 0.875rem;
+            color: #666;
+        }
+
+        /* Impact Timeline */
+        .impact-timeline {
+            margin: 3rem 0;
+        }
+
+        .timeline-year {
+            margin-bottom: 3rem;
+        }
+
+        .year-header {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-items {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-gold);
+        }
+
+        .timeline-item h4 {
+            color: var(--color-olive);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Testimonial Slider */
+        .testimonial-slider {
+            position: relative;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .testimonial-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--color-olive);
+        }
+
+        /* Video Embed */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-family);
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--color-gold);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #9a7849;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(176, 141, 87, 0.3);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(45, 61, 31, 0.1) 100%);
+            padding: 4rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 60px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .story-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .stats-dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 3px solid var(--color-gold);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <p class="overline">OUR IMPACT</p>
+                <h1>Real Students. Real Results.</h1>
+                <p class="large-text">These aren't hypotheticals. These are real transformations happening right now.</p>
+                <div class="gold-accent"></div>
+            </div>
+        </section>
+
+        <!-- STATS DASHBOARD -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center;">Impact By The Numbers</h2>
+                <div class="stats-dashboard">
+                    <div class="stat-card">
+                        <span class="stat-number">127</span>
+                        <span class="stat-label">Students Funded</span>
+                        <p class="stat-detail">Since 2019</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">94%</span>
+                        <span class="stat-label">Success Rate</span>
+                        <p class="stat-detail">Students who complete program</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">$1.2M+</span>
+                        <span class="stat-label">Revenue Generated</span>
+                        <p class="stat-detail">By our students</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">$96K</span>
+                        <span class="stat-label">Average First Year</span>
+                        <p class="stat-detail">Student earnings</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">90</span>
+                        <span class="stat-label">Days Average</span>
+                        <p class="stat-detail">To first paying client</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Lifetime Access</span>
+                        <p class="stat-detail">To Kiver.org platform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED STUDENT STORIES -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
+            <div class="container">
+                <h2>Student Success Stories</h2>
+                <p class="large-text">Meet the students who transformed their lives through CoveOfEdu.</p>
+
+                <div class="story-grid">
+                    <!-- Story 1: Maria -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <div class="student-photo">👩</div>
+                            <div class="student-info">
+                                <h3>Maria Rodriguez, 19</h3>
+                                <div class="student-location">📍 Tampa, FL</div>
+                                <div class="student-tagline">"From minimum wage to $96K in year one"</div>
+                            </div>
+                        </div>
+
+                        <div class="story-quote">
+                            "I went from working retail for $12/hour to running my own AI content agency making $8K/month. But honestly, the money is just the side effect. The real transformation was discovering who I am and what I'm capable of. The 7 Teachings gave me a framework for life that no traditional school ever did."
+                        </div>
+
+                        <p><strong>Before CoveOfEdu:</strong> Working retail, no college prospects, unsure about her future.</p>
+                        <p><strong>After 90 Days:</strong> Launched AI-powered content agency, landed 3 paying clients, generating $3K/month.</p>
+                        <p><strong>After 1 Year:</strong> $96K revenue, 12 recurring clients, hired first employee, teaching younger students.</p>
+
+                        <div class="story-metrics">
+                            <div class="story-metric">
+                                <span class="story-metric-value">60</span>
+                                <span class="story-metric-label">Days to Launch</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">$96K</span>
+                                <span class="story-metric-label">Year 1 Revenue</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">12</span>
+                                <span class="story-metric-label">Clients</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">Vision</span>
+                                <span class="story-metric-label">Key Teaching</span>
+                            </div>
+                        </div>
+
+                        <!-- Placeholder for video -->
+                        <div class="video-container">
+                            <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-olive) 100%); color: white; font-size: 1.5rem;">
+                                📹 Maria's Video Testimonial
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story 2: James -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <div class="student-photo">👨</div>
+                            <div class="student-info">
+                                <h3>James Chen, 22</h3>
+                                <div class="student-location">📍 Los Angeles, CA</div>
+                                <div class="student-tagline">"Built an AI automation agency serving 8 businesses"</div>
+                            </div>
+                        </div>
+
+                        <div class="story-quote">
+                            "I had a community college degree and no direction. CoveOfEdu didn't just teach me AI—it taught me how to think like an entrepreneur and build something meaningful. Now I'm helping small businesses automate their operations and save 20+ hours per week."
+                        </div>
+
+                        <p><strong>Before CoveOfEdu:</strong> Community college dropout, working gig economy jobs, $24K/year.</p>
+                        <p><strong>After 90 Days:</strong> Built first automation for local business, $2K project, validated business model.</p>
+                        <p><strong>After 1 Year:</strong> 8 recurring clients, $7K MRR, expanded services, hired partner.</p>
+
+                        <div class="story-metrics">
+                            <div class="story-metric">
+                                <span class="story-metric-value">45</span>
+                                <span class="story-metric-label">Days to Launch</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">$84K</span>
+                                <span class="story-metric-label">Year 1 Revenue</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">8</span>
+                                <span class="story-metric-label">Clients</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">Courage</span>
+                                <span class="story-metric-label">Key Teaching</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story 3: Aaliyah -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <div class="student-photo">👩🏾</div>
+                            <div class="student-info">
+                                <h3>Aaliyah Washington, 20</h3>
+                                <div class="student-location">📍 Detroit, MI</div>
+                                <div class="student-tagline">"From homeless shelter to AI consultant"</div>
+                            </div>
+                        </div>
+
+                        <div class="story-quote">
+                            "At my lowest point, living in a shelter, I thought my life was over. CoveOfEdu gave me more than skills—they gave me hope, purpose, and a community that believed in me. Today I'm financially independent and helping others find their way out."
+                        </div>
+
+                        <p><strong>Before CoveOfEdu:</strong> Recently homeless, no job, no support system, fighting depression.</p>
+                        <p><strong>After 90 Days:</strong> Stable housing through first clients, built AI consulting service, $4K/month.</p>
+                        <p><strong>After 1 Year:</strong> $52K earned, apartment lease, emergency fund, mentoring other students.</p>
+
+                        <div class="story-metrics">
+                            <div class="story-metric">
+                                <span class="story-metric-value">75</span>
+                                <span class="story-metric-label">Days to Launch</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">$52K</span>
+                                <span class="story-metric-label">Year 1 Revenue</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">6</span>
+                                <span class="story-metric-label">Clients</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">PMA</span>
+                                <span class="story-metric-label">Key Teaching</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story 4: Marcus -->
+                    <div class="story-card">
+                        <div class="story-header">
+                            <div class="student-photo">👨🏿</div>
+                            <div class="student-info">
+                                <h3>Marcus Thompson, 18</h3>
+                                <div class="student-location">📍 Atlanta, GA</div>
+                                <div class="student-tagline">"Youngest student to reach $100K revenue"</div>
+                            </div>
+                        </div>
+
+                        <div class="story-quote">
+                            "Everyone told me college was the only path. CoveOfEdu showed me I could create my own path. At 18, I'm already making more than both my parents combined, and I'm using it to help my family and my community."
+                        </div>
+
+                        <p><strong>Before CoveOfEdu:</strong> High school senior, accepted to state college, curious about alternatives.</p>
+                        <p><strong>After 90 Days:</strong> Built AI marketing agency, landed first contract for $5K.</p>
+                        <p><strong>After 1 Year:</strong> $112K revenue, team of 3, paid off parents' debt, full scholarship recipient turned donor.</p>
+
+                        <div class="story-metrics">
+                            <div class="story-metric">
+                                <span class="story-metric-value">30</span>
+                                <span class="story-metric-label">Days to Launch</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">$112K</span>
+                                <span class="story-metric-label">Year 1 Revenue</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">15</span>
+                                <span class="story-metric-label">Clients</span>
+                            </div>
+                            <div class="story-metric">
+                                <span class="story-metric-value">Charisma</span>
+                                <span class="story-metric-label">Key Teaching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL CAROUSEL -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center;">What Students Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p class="testimonial-text">"CoveOfEdu didn't just change my career—it changed how I see myself and the world. The 7 Teachings are a life philosophy I'll carry forever."</p>
+                        <div class="testimonial-author">— Sarah M., Class of 2023</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT OVER TIME -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
+            <div class="container">
+                <h2>Our Growth Journey</h2>
+                <p class="large-text">From a pilot program to a transformative movement.</p>
+
+                <div class="impact-timeline">
+                    <div class="timeline-year">
+                        <div class="year-header">2019-2020</div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <h4>Foundation Year</h4>
+                                <p>Identified the AI education gap and began developing curriculum</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>First Pilot Program</h4>
+                                <p>12 students, 91% completion rate, $240K total revenue generated</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-year">
+                        <div class="year-header">2021</div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <h4>7 Teachings Developed</h4>
+                                <p>Integrated philosophical framework into technical curriculum</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>35 Students Funded</h4>
+                                <p>Expanded to 3 cities, 94% success rate maintained</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-year">
+                        <div class="year-header">2022</div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <h4>Kiver.org Platform Launch</h4>
+                                <p>Built permanent infrastructure for student access</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>42 Students Transformed</h4>
+                                <p>$480K in student revenue, first alumni mentors certified</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-year">
+                        <div class="year-header">2023</div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <h4>501(c)(3) Status Achieved</h4>
+                                <p>Official nonprofit recognition, enabling tax-deductible donations</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>38 Students Funded</h4>
+                                <p>$420K in student earnings, expanded curriculum modules</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-year">
+                        <div class="year-header">2024-2025</div>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <h4>National Expansion</h4>
+                                <p>Serving students in 8 states, partnership with 3 community organizations</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>127 Total Students</h4>
+                                <p>$1.2M+ total revenue generated, 15 alumni now mentors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DONOR IMPACT -->
+        <section class="section">
+            <div class="container">
+                <h2>Where Your Donation Goes</h2>
+                <p class="large-text">Complete transparency on how we use funds to maximize impact.</p>
+
+                <div class="stats-dashboard" style="margin-top: 2rem;">
+                    <div class="stat-card">
+                        <span class="stat-number">65%</span>
+                        <span class="stat-label">Direct Student Programs</span>
+                        <p class="stat-detail">Tuition, tools, mentorship</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">20%</span>
+                        <span class="stat-label">Platform Development</span>
+                        <p class="stat-detail">Building Kiver.org infrastructure</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">10%</span>
+                        <span class="stat-label">Administrative</span>
+                        <p class="stat-detail">Legal, accounting, operations</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number">5%</span>
+                        <span class="stat-label">Marketing & Outreach</span>
+                        <p class="stat-detail">Finding more students to serve</p>
+                    </div>
+                </div>
+
+                <div style="background: white; padding: 2.5rem; border-radius: 8px; margin-top: 3rem;">
+                    <h3>Return on Investment</h3>
+                    <p class="large-text">For every $2,500 donated (one student transformation):</p>
+                    <ul style="font-size: 1.125rem; line-height: 2;">
+                        <li>Average student generates <strong>$96K in year one</strong></li>
+                        <li>Student goes from potential burden to <strong>taxpaying contributor</strong></li>
+                        <li>Estimated lifetime earnings increase: <strong>$2M+</strong></li>
+                        <li>Student becomes mentor to <strong>3-5 future students</strong></li>
+                        <li>Family financial situation improved in <strong>85% of cases</strong></li>
+                    </ul>
+                    <p class="large-text" style="margin-top: 2rem;"><strong>Your $2,500 donation creates a ripple effect worth millions.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
+            <div class="container">
+                <div class="cta-section">
+                    <h2>Be Part of the Next Success Story</h2>
+                    <p class="large-text">Every transformation starts with someone who believed it was possible.</p>
+                    <div class="cta-buttons">
+                        <a href="/donate" class="btn btn-primary">Fund a Student →</a>
+                        <a href="/programs" class="btn btn-primary">View Programs →</a>
+                        <a href="/contact" class="btn btn-primary">Contact Us →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--color-olive); color: white; padding: 3rem 0; text-align: center; margin-top: var(--section-padding);">
+        <div class="container">
+            <p>&copy; 2025 CoveOfEdu. 501(c)(3) Nonprofit Organization. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="/about" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">About</a>
+                <a href="/origins" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Origins</a>
+                <a href="/programs" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Programs</a>
+                <a href="/impact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Impact</a>
+                <a href="/donate" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Donate</a>
+                <a href="/contact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

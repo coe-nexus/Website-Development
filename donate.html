@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Donate | Fund Student Transformations - CoveOfEdu</title>
+    <meta name="description" content="Fund a student's transformation. Your donation provides AI education, entrepreneurship training, and the 7 Teachings. Tax-deductible 501(c)(3) contributions.">
+    <meta name="keywords" content="donate education, fund students, AI education donation, tax deductible donation, nonprofit giving, student transformation">
+    <meta name="author" content="CoveOfEdu">
+    <link rel="canonical" href="https://coveofedu.org/donate">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Donate | Fund Student Transformations - CoveOfEdu">
+    <meta property="og:description" content="Fund a student's transformation. Your donation provides AI education, entrepreneurship training, and the 7 Teachings. Tax-deductible 501(c)(3) contributions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coveofedu.org/donate">
+    <meta property="og:image" content="https://coveofedu.org/Assets/donate-social-share.jpg">
+    <meta property="og:site_name" content="CoveOfEdu">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Donate | Fund Student Transformations - CoveOfEdu">
+    <meta name="twitter:description" content="Fund a student's transformation. Your donation provides AI education, entrepreneurship training, and the 7 Teachings.">
+    <meta name="twitter:image" content="https://coveofedu.org/Assets/donate-social-share.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "DonateAction",
+        "recipient": {
+            "@type": "Organization",
+            "name": "CoveOfEdu",
+            "url": "https://coveofedu.org",
+            "logo": "https://coveofedu.org/Assets/logo.png",
+            "nonprofitStatus": "501(c)(3)",
+            "taxID": "92-2455469"
+        },
+        "description": "Support transformative AI education for underserved students"
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stripe Integration (placeholder - replace with your Stripe key) -->
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <style>
+        /* ASCEND Design System - Donate Page Styles */
+
+        :root {
+            --color-primary-bg: #ffffff;
+            --color-secondary-bg: #e8e3d8;
+            --color-text: #1c1c1c;
+            --color-gold: #b08d57;
+            --color-olive: #2d3d1f;
+            --font-family: 'Comfortaa', cursive;
+            --max-width: 1200px;
+            --section-padding: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-secondary-bg) 100%);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--color-olive);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .large-text {
+            font-size: 1.375rem;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: var(--section-padding) 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: var(--section-padding) 0;
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(45, 61, 31, 0.1) 100%);
+        }
+
+        .gold-accent {
+            width: 80px;
+            height: 3px;
+            background: var(--color-gold);
+            margin: 2rem auto;
+        }
+
+        .overline {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        /* Donation Tiers */
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .tier-card {
+            background: white;
+            border: 2px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            border-color: var(--color-gold);
+        }
+
+        .tier-card.featured {
+            border-color: var(--color-gold);
+            border-width: 3px;
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+            transform: scale(1.05);
+        }
+
+        .tier-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-gold);
+            color: white;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .tier-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-olive);
+            margin-bottom: 1rem;
+        }
+
+        .tier-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            margin: 1rem 0;
+        }
+
+        .tier-description {
+            color: #666;
+            margin-bottom: 2rem;
+            min-height: 60px;
+        }
+
+        .tier-impact {
+            text-align: left;
+            margin: 2rem 0;
+        }
+
+        .tier-impact h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        .tier-impact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tier-impact li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .tier-impact li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-weight: 600;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 1rem 2rem;
+            font-family: var(--font-family);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            min-height: 50px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-gold) 0%, #d4af37 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(176, 141, 87, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(176, 141, 87, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-gold);
+            border: 2px solid var(--color-gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-gold);
+            color: white;
+        }
+
+        /* Custom Amount Form */
+        .custom-amount-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 4rem auto;
+        }
+
+        .amount-input {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-family: var(--font-family);
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .amount-input:focus {
+            outline: none;
+            border-color: var(--color-gold);
+        }
+
+        .quick-amounts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .quick-amount-btn {
+            padding: 1rem;
+            background: white;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            font-family: var(--font-family);
+            font-size: 1.125rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quick-amount-btn:hover,
+        .quick-amount-btn.active {
+            border-color: var(--color-gold);
+            background: rgba(176, 141, 87, 0.1);
+        }
+
+        /* Payment Form */
+        .payment-form {
+            margin-top: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--color-olive);
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            font-family: var(--font-family);
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--color-gold);
+        }
+
+        /* Trust Badges */
+        .trust-section {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-olive);
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--color-gold);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--color-olive);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Impact Calculator */
+        .impact-calculator {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(45, 61, 31, 0.1) 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+
+        .impact-result {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .impact-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--color-gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .tier-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tier-card.featured {
+                transform: scale(1);
+            }
+
+            .quick-amounts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .trust-section {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 3px solid var(--color-gold);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <p class="overline">DONATE</p>
+                <h1>Fund a Student's Transformation</h1>
+                <p class="large-text">Your donation doesn't just teach skills—it transforms lives through AI education, entrepreneurship, and the 7 Teachings philosophy.</p>
+                <div class="gold-accent"></div>
+                <p style="font-weight: 500;">501(c)(3) Tax-Deductible • EIN: 92-2455469</p>
+            </div>
+        </section>
+
+        <!-- DONATION TIERS -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center;">Choose Your Impact Level</h2>
+                <p class="large-text" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Each tier represents a specific, measurable impact on students' lives.</p>
+
+                <div class="tier-grid">
+                    <!-- Tier 1: Catalyst -->
+                    <div class="tier-card" onclick="selectTier(250)">
+                        <div class="tier-name">Catalyst</div>
+                        <div class="tier-price">$250</div>
+                        <div class="tier-description">Give one student a month of AI training</div>
+                        <div class="tier-impact">
+                            <h4>Your Impact:</h4>
+                            <ul>
+                                <li>1 month access to Kiver.org</li>
+                                <li>AI fundamentals training</li>
+                                <li>Community access</li>
+                                <li>Progress tracking</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Select Tier</button>
+                    </div>
+
+                    <!-- Tier 2: Builder -->
+                    <div class="tier-card" onclick="selectTier(1000)">
+                        <div class="tier-name">Builder</div>
+                        <div class="tier-price">$1,000</div>
+                        <div class="tier-description">Fund a student's full quarter of transformation</div>
+                        <div class="tier-impact">
+                            <h4>Your Impact:</h4>
+                            <ul>
+                                <li>3 months full access</li>
+                                <li>Complete AI curriculum</li>
+                                <li>Business building tools</li>
+                                <li>Mentor matching</li>
+                                <li>7 Teachings training</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Select Tier</button>
+                    </div>
+
+                    <!-- Tier 3: Reality Shifter (Featured) -->
+                    <div class="tier-card featured" onclick="selectTier(2500)">
+                        <div class="tier-badge">MOST POPULAR</div>
+                        <div class="tier-name">Reality Shifter</div>
+                        <div class="tier-price">$2,500</div>
+                        <div class="tier-description">Complete 90-day student transformation</div>
+                        <div class="tier-impact">
+                            <h4>Your Impact:</h4>
+                            <ul>
+                                <li>Full 90-day program</li>
+                                <li>AI mastery training</li>
+                                <li>Business launch support</li>
+                                <li>Lifetime platform access</li>
+                                <li>Personal mentor</li>
+                                <li>Recognition on donor wall</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary">Select Tier</button>
+                    </div>
+
+                    <!-- Tier 4: Infrastructure Builder -->
+                    <div class="tier-card" onclick="selectTier(10000)">
+                        <div class="tier-name">Infrastructure Builder</div>
+                        <div class="tier-price">$10,000</div>
+                        <div class="tier-description">Transform 4 students + fund curriculum development</div>
+                        <div class="tier-impact">
+                            <h4>Your Impact:</h4>
+                            <ul>
+                                <li>4 full student transformations</li>
+                                <li>New curriculum module</li>
+                                <li>Platform features</li>
+                                <li>Named donor recognition</li>
+                                <li>Quarterly impact reports</li>
+                                <li>Student success stories</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Select Tier</button>
+                    </div>
+
+                    <!-- Tier 5: Movement Leader -->
+                    <div class="tier-card" onclick="selectTier(25000)">
+                        <div class="tier-name">Movement Leader</div>
+                        <div class="tier-price">$25,000</div>
+                        <div class="tier-description">Transform 10 students + expand operations</div>
+                        <div class="tier-impact">
+                            <h4>Your Impact:</h4>
+                            <ul>
+                                <li>10 student transformations</li>
+                                <li>Program expansion funding</li>
+                                <li>Teacher training initiative</li>
+                                <li>Advisory board seat</li>
+                                <li>Annual impact event invite</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Select Tier</button>
+                    </div>
+
+                    <!-- Tier 6: Legacy Architect -->
+                    <div class="tier-card" onclick="selectTier(50000)">
+                        <div class="tier-name">Legacy Architect</div>
+                        <div class="tier-price">$50,000</div>
+                        <div class="tier-description">Transform 20 students + build lasting infrastructure</div>
+                        <div class="tier-impact">
+                            <h4>Your Impact:</h4>
+                            <ul>
+                                <li>20 student transformations</li>
+                                <li>Major platform development</li>
+                                <li>National program expansion</li>
+                                <li>Named program/feature</li>
+                                <li>Legacy donor recognition</li>
+                                <li>Direct founder collaboration</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Select Tier</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOM AMOUNT SECTION -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5);">
+            <div class="container">
+                <div class="custom-amount-section">
+                    <h2 style="text-align: center;">Or Choose Your Own Amount</h2>
+                    <p style="text-align: center; color: #666;">Every dollar directly supports student transformation</p>
+
+                    <div class="quick-amounts">
+                        <button class="quick-amount-btn" onclick="setAmount(50)">$50</button>
+                        <button class="quick-amount-btn" onclick="setAmount(100)">$100</button>
+                        <button class="quick-amount-btn" onclick="setAmount(500)">$500</button>
+                        <button class="quick-amount-btn" onclick="setAmount(1000)">$1,000</button>
+                    </div>
+
+                    <input type="number" id="customAmount" class="amount-input" placeholder="$" min="10" value="100">
+
+                    <div class="impact-calculator">
+                        <h3 style="text-align: center; margin-bottom: 1rem;">Your Impact:</h3>
+                        <div class="impact-result">
+                            <div class="impact-number" id="impactStudents">0.4</div>
+                            <p style="font-size: 1.25rem; color: var(--color-olive);">Students Served</p>
+                        </div>
+                    </div>
+
+                    <form class="payment-form" id="donationForm">
+                        <div class="form-group">
+                            <label for="donorName">Full Name *</label>
+                            <input type="text" id="donorName" name="donorName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="donorEmail">Email Address *</label>
+                            <input type="email" id="donorEmail" name="donorEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="card-element">Credit or Debit Card *</label>
+                            <div id="card-element" style="padding: 0.75rem; border: 2px solid #e5e5e5; border-radius: 8px; background: white;"></div>
+                            <div id="card-errors" role="alert" style="color: #a85454; margin-top: 0.5rem;"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="margin-top: 2rem;">
+                            Complete Donation
+                        </button>
+
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: #666;">
+                            Secure payment processing via Stripe. Your donation is tax-deductible.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUST SECTION -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center;">Why Donate to CoveOfEdu?</h2>
+                <div class="trust-section">
+                    <div class="trust-item">
+                        <div class="trust-icon">🏛️</div>
+                        <div class="trust-label">501(c)(3) Nonprofit</div>
+                        <div style="color: #666; font-size: 0.875rem; margin-top: 0.5rem;">Tax Deductible</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">📊</div>
+                        <div class="trust-label">94% Success Rate</div>
+                        <div style="color: #666; font-size: 0.875rem; margin-top: 0.5rem;">Proven Results</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">💰</div>
+                        <div class="trust-label">65% to Students</div>
+                        <div style="color: #666; font-size: 0.875rem; margin-top: 0.5rem;">Direct Impact</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🔒</div>
+                        <div class="trust-label">Secure Processing</div>
+                        <div style="color: #666; font-size: 0.875rem; margin-top: 0.5rem;">Stripe Protected</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5);">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How is my donation used?</div>
+                    <p>65% funds direct student programs (tuition, tools, mentorship), 20% develops the Kiver.org platform, 10% covers administrative costs, and 5% goes to marketing to reach more students.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is my donation tax-deductible?</div>
+                    <p>Yes! CoveOfEdu is a registered 501(c)(3) nonprofit (EIN: 92-2455469). You'll receive a tax receipt immediately after your donation.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I donate monthly?</div>
+                    <p>Absolutely! Monthly donations help us plan sustainable student support. Contact us at donate@coveofedu.org to set up recurring donations.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Will I know which student I'm helping?</div>
+                    <p>For donations of $2,500+, we can match you with a specific student (with their permission) and provide quarterly progress updates.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What payment methods do you accept?</div>
+                    <p>We accept all major credit/debit cards via Stripe. For wire transfers or stock donations over $10,000, please contact us directly.</p>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can my company match my donation?</div>
+                    <p>Many employers offer donation matching! Check with your HR department. We'll provide all necessary documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- OTHER WAYS TO GIVE -->
+        <section class="section">
+            <div class="container">
+                <h2 style="text-align: center;">Other Ways to Support</h2>
+                <div class="tier-grid" style="margin-top: 3rem;">
+                    <div class="tier-card">
+                        <h3>Corporate Sponsorship</h3>
+                        <p>Partner with us to transform entire cohorts of students while building your brand's impact story.</p>
+                        <a href="/contact" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="tier-card">
+                        <h3>Stock Donations</h3>
+                        <p>Donate appreciated stock and avoid capital gains tax while supporting students.</p>
+                        <a href="/contact" class="btn btn-secondary">Get Started</a>
+                    </div>
+
+                    <div class="tier-card">
+                        <h3>Legacy Giving</h3>
+                        <p>Include CoveOfEdu in your estate planning and create lasting educational infrastructure.</p>
+                        <a href="/contact" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--color-olive); color: white; padding: 3rem 0; text-align: center; margin-top: var(--section-padding);">
+        <div class="container">
+            <p>&copy; 2025 CoveOfEdu. 501(c)(3) Nonprofit Organization. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="/about" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">About</a>
+                <a href="/origins" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Origins</a>
+                <a href="/programs" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Programs</a>
+                <a href="/impact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Impact</a>
+                <a href="/contact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Stripe (replace 'pk_test_...' with your actual Stripe publishable key)
+        const stripe = Stripe('pk_test_REPLACE_WITH_YOUR_STRIPE_KEY');
+        const elements = stripe.elements();
+        const cardElement = elements.create('card', {
+            style: {
+                base: {
+                    fontFamily: "'Comfortaa', cursive",
+                    fontSize: '16px',
+                    color: '#1c1c1c',
+                }
+            }
+        });
+        cardElement.mount('#card-element');
+
+        // Handle card errors
+        cardElement.on('change', function(event) {
+            const displayError = document.getElementById('card-errors');
+            if (event.error) {
+                displayError.textContent = event.error.message;
+            } else {
+                displayError.textContent = '';
+            }
+        });
+
+        // Impact calculator
+        const customAmountInput = document.getElementById('customAmount');
+        const impactStudents = document.getElementById('impactStudents');
+
+        function updateImpact() {
+            const amount = parseFloat(customAmountInput.value) || 0;
+            const students = (amount / 2500).toFixed(1);
+            impactStudents.textContent = students;
+        }
+
+        customAmountInput.addEventListener('input', updateImpact);
+
+        // Quick amount buttons
+        function setAmount(amount) {
+            customAmountInput.value = amount;
+            updateImpact();
+
+            // Update button styles
+            document.querySelectorAll('.quick-amount-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        // Tier selection
+        function selectTier(amount) {
+            customAmountInput.value = amount;
+            updateImpact();
+            customAmountInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Form submission
+        const form = document.getElementById('donationForm');
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const amount = parseFloat(customAmountInput.value) || 0;
+            if (amount < 10) {
+                alert('Minimum donation amount is $10');
+                return;
+            }
+
+            // Disable submit button
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Processing...';
+
+            // TODO: Implement actual Stripe payment processing
+            // This would typically involve creating a payment intent on your server
+            // and then confirming the payment with Stripe
+
+            // Placeholder for payment processing
+            alert('Payment processing would happen here. Please integrate with your Stripe backend.');
+
+            // Re-enable button
+            submitButton.disabled = false;
+            submitButton.textContent = 'Complete Donation';
+        });
+
+        // Initialize impact calculator
+        updateImpact();
+    </script>
+</body>
+</html>
