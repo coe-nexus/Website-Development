@@ -1,0 +1,241 @@
+CoveOfEdu Website Sitemap - Mindmap AI Format
+
+Home
+    Hero Section
+    Mission Statement
+    Key CTAs
+
+About
+    About Us
+        Mission & Vision
+        Core Values
+        Impact Summary
+    Origins
+        Founder Story
+        Why We Exist
+        Timeline
+        Birth of 7 Teachings
+    What is COE
+        Philosophy
+        Educational Approach
+        Core Principles
+    Leadership
+        Leadership Team
+        Board Members
+        Advisory Council
+    People
+        Staff Members
+        Team Structure
+    501(c)(3) Status
+        EIN: 92-2455469
+        Tax Deductibility
+        IRS Documentation
+        Legal Status
+    Financial Transparency
+        Budget Breakdown
+        990 Forms
+        Annual Reports
+        Expense Ratios
+    Pressroom
+        Press Releases
+        Media Coverage
+        Downloadable Assets
+
+Programs
+    Programs Overview
+        All Offerings
+        How to Apply
+    Atlas Program
+        Program Details
+        Curriculum
+        Success Stories
+    7 Teachings Philosophy
+        Teaching 1: Positive Mental Attitude
+        Teaching 2: Purity of Thought
+        Teaching 3: Vision
+        Teaching 4: Courage
+        Teaching 5: Charisma
+        Teaching 6: Sanctuary
+        Teaching 7: Rhythm
+    Primer Course
+        Entry Level Course
+        Getting Started
+    Clubs Program
+        Student Clubs
+        Club Leadership
+    17 Minutes Daily
+        Daily Practice
+        Habit Building
+    Impact & Results
+        Success Metrics
+        Student Data
+        Testimonials
+        Before/After
+
+Community
+    Student Stories
+        Success Stories
+        Video Testimonials
+        Written Stories
+    Philosophy
+        Core Philosophy
+        Educational Beliefs
+    Become a Champion
+        Support Program
+        Advocate Resources
+
+Resources
+    For Parents
+        Parent Guide
+        How to Support
+        Resources
+    For Counselors
+        Counselor Guide
+        School Resources
+        Referral Process
+    For Club Leaders
+        Leadership Guide
+        Club Management
+        Resources
+    For Students
+        Student Guide
+        Getting Started
+        Resources
+    FAQ
+        About CoveOfEdu
+        Programs
+        Donations
+        7 Teachings
+        Getting Involved
+
+Blog
+    Blog Home
+        Featured Posts
+        Categories
+        Search
+    Peak Performance
+        Achieve Peak Performance
+        Daily Performance Tips
+        Reaching Peak Performance
+    Overcoming Procrastination
+        Beat Procrastination
+        Fun Anti-Procrastination
+        Kick Procrastination
+        Stop Procrastinating
+        Procrastination Busters
+        Break Destructive Habits
+    Growth Mindset
+        Growth Mindset Basics
+        Mindset Changes Life
+        Changing Your Mindset
+        Mindset Impact
+        Positive Mindset Shift
+        Limitless Mindset
+        Power of Limitless
+        Unlock Potential
+        Unlocking Limitless
+    Personal Transformation
+        Personal Transformation Guide
+        Steps to Transform
+        Becoming Best Self
+        Transform Yourself
+        Simple Transformation Steps
+        Personal Growth Secrets
+        Transform Your Career
+        Boost Your Growth
+        Key Benefits
+    Entrepreneurship
+        Business Funding Options
+        Funding Guide
+        Types of Funding
+        Startup Incubators
+        Boosting with Incubators
+        Incubators Help Succeed
+        Why Need Incubator
+        New Venture
+
+Support
+    Donate
+        One-Time Giving
+        Monthly Recurring
+        Giving Tiers
+            Champion: $1000+/month
+            Builder: $500/month
+            Supporter: $100/month
+            Friend: $25/month
+        Other Ways to Give
+            Stock Donations
+            Donor-Advised Funds
+            Employer Matching
+            Legacy Giving
+        Corporate Partnerships
+        Tax Deductibility Info
+    Contact Us
+        General Inquiry Form
+        Student Application
+        Donor Relations
+        Partnership Opportunities
+        Media Contact
+        Phone & Email
+        Office Hours
+
+Corporate (Consider Repositioning)
+    Portfolio
+        GS USA Case Study
+        SAP Case Study
+        Vvardis Case Study
+    Sales Vvardis
+
+Utility Pages
+    Privacy Policy
+    Terms of Service
+    Cookie Policy
+    Thank You - Donation
+    Thank You - Newsletter
+    404 Error Page
+    Sitemap XML
+
+Header Navigation (Proposed)
+    Home
+    About
+        Origins
+        Leadership
+        501(c)(3) Status
+    Programs
+        7 Teachings
+        Atlas
+        Impact
+    Community
+        Stories
+        Become a Champion
+    Blog
+    Donate
+    Contact
+
+Footer Navigation (Proposed)
+    Column 1: About
+        Origins
+        Team
+        Mission
+        501(c)(3) Status
+        EIN: 92-2455469
+    Column 2: Programs
+        7 Teachings
+        Atlas Program
+        Student Application
+        Success Stories
+    Column 3: Resources
+        Blog
+        FAQ
+        Press Kit
+        Annual Reports
+    Column 4: Get Involved
+        Donate
+        Volunteer
+        Newsletter
+        Contact
+    Bottom Bar
+        Privacy Policy
+        Terms of Service
+        Sitemap
+        Social Media Icons

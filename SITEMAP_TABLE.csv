@@ -1,0 +1,76 @@
+Number,Page Name,Current URL,Proposed URL,Level,Category,Header,Footer,Parent,Status,Description
+1,Home,/home,/,1,Core,Y,Y,-,LIVE,Main landing page
+2,Origins,/what,/origins,2,About,Y,Y,About,LIVE+REPO,Founder story and mission (redesigned in repo)
+3,What is COE,-,/what-is-coe,2,About,P,Y,About,REPO,Philosophy explanation
+4,Leadership,/leadership,/leadership,2,About,Y,Y,About,LIVE,Team and leadership bios
+5,People,/people,/people,2,About,Y,Y,About,LIVE,Staff and team members
+6,Atlas,/atlas,/atlas,2,Programs,Y,N,Programs,LIVE,Program overview (duplicate /atlas-2)
+7,Atlas 2,/atlas-2,/atlas (consolidate),2,Programs,N,N,Programs,LIVE,Duplicate - needs consolidation
+8,7 Teachings Intro,/7-teachings-intro,/7-teachings,2,Programs,Y,Y,Programs,LIVE,Philosophy introduction
+9,Primer Course,/primer-course,/primer-course,3,Programs,N,N,Programs,LIVE,Entry-level course
+10,Clubs,/clubs,/clubs,3,Programs,N,N,Programs,LIVE,Student club program
+11,17 Minutes,/17-minutes,/17-minutes,3,Programs,N,N,Programs,LIVE,Daily practice program
+12,Stories,/stories,/stories,2,Community,Y,Y,Community,LIVE,Student success stories
+13,Philosophy,/philosophy,/philosophy,2,Community,Y,Y,Community,LIVE,Core philosophy
+14,Become a Champion,/become-a-champion,/become-a-champion,2,Community,Y,N,Community,LIVE,Supporter call-to-action
+15,Parent Messaging,/parent-messaging,/for-parents,3,Resources,N,N,Resources,LIVE,Parent-specific information
+16,Counselor Messaging,/counselor-messaging,/for-counselors,3,Resources,N,N,Resources,LIVE,School counselor resources
+17,Club President Messaging,/club-president-messaging,/for-club-leaders,3,Resources,N,N,Resources,LIVE,Club leadership guide
+18,Teen Messaging,/teen-messaging,/for-students,3,Resources,N,N,Resources,LIVE,Student-focused content
+19,Portfolio,/portfolio,/portfolio,2,Corporate,Y,N,Corporate,LIVE,Work showcase
+20,GS USA,/portfolio/gs-usa,/portfolio/gs-usa,3,Corporate,N,N,Portfolio,LIVE,Client case study
+21,SAP,/portfolio/sap,/portfolio/sap,3,Corporate,N,N,Portfolio,LIVE,Client case study
+22,Vvardis,/portfolio/vvardis,/portfolio/vvardis,3,Corporate,N,N,Portfolio,LIVE,Client case study
+23,Sales Vvardis,/sales-vvardis,/sales-vvardis,3,Corporate,N,N,Corporate,LIVE,Sales-specific page
+24,Donate,/donate (planned),/donate,2,Support,Y,Y,-,REPO,Donation page with Pledge.to
+25,Contact Us,/contact-us,/contact,2,Support,Y,Y,-,LIVE,Contact form and information
+26,FAQ,/faq,/faq,2,Support,N,Y,Support,LIVE,Frequently asked questions
+27,Pressroom,/pressroom,/press,2,About,N,Y,About,LIVE,Media and press resources
+28,Elementor 2439,/elementor-2439,(review/delete),4,Utility,N,N,-,LIVE,Builder page - likely orphaned
+29,Blog Home,-,/blog,2,Content,Y,Y,-,PLANNED,Blog landing page with categories
+30,Achieve Peak Performance,-,/blog/achieve-peak-performance,4,Blog,N,N,Blog,REPO,Daily peak performance habits
+31,Tips for Peak Performance Daily,-,/blog/tips-peak-performance-daily,4,Blog,N,N,Blog,REPO,Daily success tips
+32,Tips for Reaching Peak Performance,-,/blog/tips-reaching-peak-performance,4,Blog,N,N,Blog,REPO,Performance strategies
+33,Beat Procrastination,-,/blog/beat-procrastination,4,Blog,N,N,Blog,REPO,Overcome procrastination
+34,Beat Procrastination with Fun,-,/blog/beat-procrastination-fun-activities,4,Blog,N,N,Blog,REPO,Fun approaches to productivity
+35,Kick Procrastination,-,/blog/kick-procrastination,4,Blog,N,N,Blog,REPO,Action steps against procrastination
+36,Stop Procrastinating,-,/blog/stop-procrastinating,4,Blog,N,N,Blog,REPO,Procrastination solutions
+37,Procrastination Busters,-,/blog/procrastination-busters,4,Blog,N,N,Blog,REPO,Tools to beat procrastination
+38,Break Free from Destructive Habits,-,/blog/break-free-destructive-habits,4,Blog,N,N,Blog,REPO,Habit transformation
+39,Growth Mindset,-,/blog/growth-mindset,4,Blog,N,N,Blog,REPO,Developing growth mindset
+40,How Growth Mindset Can Change Life,-,/blog/growth-mindset-change-life,4,Blog,N,N,Blog,REPO,Life transformation through mindset
+41,Changing Your Mindset,-,/blog/changing-your-mindset,4,Blog,N,N,Blog,REPO,Mindset shift strategies
+42,How Changing Mindset Changes Life,-,/blog/mindset-changes-life,4,Blog,N,N,Blog,REPO,Mindset impact on life
+43,Positive Mindset Shift,-,/blog/positive-mindset-shift,4,Blog,N,N,Blog,REPO,Creating positive mindset
+44,Limitless Mindset,-,/blog/limitless-mindset,4,Blog,N,N,Blog,REPO,Removing mental limitations
+45,Discover Power of Limitless Mindset,-,/blog/power-limitless-mindset,4,Blog,N,N,Blog,REPO,Limitless thinking benefits
+46,Unlock Your Potential with Limitless,-,/blog/unlock-potential-limitless-mindset,4,Blog,N,N,Blog,REPO,Potential unlocking strategies
+47,Unlocking Your Limitless Mindset,-,/blog/unlocking-limitless-mindset,4,Blog,N,N,Blog,REPO,Limitless mindset techniques
+48,Personal Transformation,-,/blog/personal-transformation,4,Blog,N,N,Blog,REPO,Complete transformation guide
+49,Steps to Personal Transformation,-,/blog/steps-personal-transformation,4,Blog,N,N,Blog,REPO,Step-by-step transformation
+50,Steps to Becoming Your Best Self,-,/blog/becoming-best-self,4,Blog,N,N,Blog,REPO,Self-improvement roadmap
+51,Transform Yourself,-,/blog/transform-yourself,4,Blog,N,N,Blog,REPO,Self-transformation guide
+52,Transform Yourself Simple Steps,-,/blog/transform-yourself-simple-steps,4,Blog,N,N,Blog,REPO,Easy transformation steps
+53,Simple Steps,-,/blog/simple-steps-transformation,4,Blog,N,N,Blog,REPO,Simple transformation approach
+54,Secrets to Personal Growth,-,/blog/secrets-personal-growth-improvement,4,Blog,N,N,Blog,REPO,Personal growth secrets
+55,Transform Your Career,-,/blog/transform-your-career,4,Blog,N,N,Blog,REPO,Career transformation
+56,Boost Your Growth,-,/blog/boost-your-growth,4,Blog,N,N,Blog,REPO,Growth acceleration
+57,Key Benefits,-,/blog/key-benefits-personal-growth,4,Blog,N,N,Blog,REPO,Benefits of personal development
+58,Business Funding Options,-,/blog/business-funding-options,4,Blog,N,N,Blog,REPO,Funding sources overview
+59,Guide Business Funding Options,-,/blog/guide-business-funding,4,Blog,N,N,Blog,REPO,Complete funding guide
+60,Understanding Different Types of Funding,-,/blog/types-business-funding,4,Blog,N,N,Blog,REPO,Funding types explained
+61,Startup Incubators,-,/blog/startup-incubators,4,Blog,N,N,Blog,REPO,Incubator overview
+62,Boosting Business with Incubators,-,/blog/boosting-business-startup-incubators,4,Blog,N,N,Blog,REPO,Incubator benefits
+63,How Incubators Can Help You Succeed,-,/blog/incubators-help-succeed,4,Blog,N,N,Blog,REPO,Success through incubators
+64,Why You Need a Startup Incubator,-,/blog/why-need-startup-incubator,4,Blog,N,N,Blog,REPO,Incubator necessity
+65,New Venture,-,/blog/new-venture,4,Blog,N,N,Blog,REPO,Starting new businesses
+66,501(c)(3) Status Page,-,/nonprofit-status,2,About,Y,Y,About,PLANNED,EIN tax info legal status
+67,Impact/Results Page,-,/impact,2,Programs,Y,Y,Programs,PLANNED,Metrics student success data
+68,Financial Transparency,-,/financials,2,About,N,Y,About,PLANNED,Budget 990 forms reports
+69,Programs Overview,-,/programs,2,Programs,Y,Y,-,PLANNED,Complete program listing
+70,Enhanced About,-,/about,2,About,Y,Y,-,PLANNED,Mission vision values
+71,Privacy Policy,-,/privacy,4,Utility,N,Y,Legal,PLANNED,Legal requirement
+72,Terms of Service,-,/terms,4,Utility,N,Y,Legal,PLANNED,Legal requirement
+73,Thank You (Donation),-,/thank-you-donation,4,Utility,N,N,-,PLANNED,Post-donation confirmation
+74,Thank You (Newsletter),-,/thank-you-subscribe,4,Utility,N,N,-,PLANNED,Newsletter signup confirmation
+75,404 Error Page,-,/404,4,Utility,N,N,-,PLANNED,Custom error page
