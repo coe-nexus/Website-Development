@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CoveOfEdu</title>
+    <meta name="description" content="Privacy Policy for CoveOfEdu - How we collect, use, and protect your personal information.">
+    <link rel="canonical" href="https://coveofedu.org/privacy-policy.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* ASCEND Design System Colors */
+            --color-gold: #b08d57;
+            --color-light-gold: #d4af37;
+            --color-dark: #1c1c1c;
+            --color-off-white: #e8e3d8;
+            --color-olive: #2d3d1f;
+            --color-warm-gray: #8b8680;
+            --color-gray-700: #4a4a48;
+            --color-gray-400: #999999;
+            --color-gray-200: #e5e5e5;
+            --color-gray-100: #f8f7f5;
+
+            /* Typography */
+            --font-primary: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+            /* Spacing */
+            --section-padding: 80px;
+            --container-padding: 32px;
+
+            /* Transitions */
+            --transition-normal: 300ms ease;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--color-off-white);
+            color: var(--color-dark);
+            line-height: 1.7;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(28, 28, 28, 0.08);
+            height: 72px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 var(--container-padding);
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--color-dark);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            transition: color var(--transition-normal);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+
+        main {
+            padding-top: 72px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-olive) 100%);
+            color: white;
+            padding: 80px var(--container-padding) 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .hero .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--section-padding) var(--container-padding);
+        }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 4px 8px rgba(28, 28, 28, 0.08);
+            margin-top: -40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-box {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border-left: 4px solid var(--color-gold);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-radius: 8px;
+        }
+
+        .toc {
+            background: var(--color-gray-100);
+            border-left: 4px solid var(--color-gold);
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-radius: 8px;
+        }
+
+        .toc h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+
+        .toc ol {
+            list-style: decimal;
+            padding-left: 1.5rem;
+        }
+
+        .toc li {
+            margin: 0.5rem 0;
+        }
+
+        .toc a {
+            color: var(--color-dark);
+            text-decoration: none;
+            transition: color var(--transition-normal);
+        }
+
+        .toc a:hover {
+            color: var(--color-gold);
+        }
+
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 100px;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--color-gray-200);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            margin: 2rem 0 1rem;
+        }
+
+        p {
+            color: var(--color-gray-700);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: var(--color-gold);
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: var(--color-gray-100);
+            color: var(--color-dark);
+            font-weight: 600;
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 2px solid var(--color-gold);
+        }
+
+        .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--color-gray-200);
+            color: var(--color-gray-700);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border-left: 4px solid var(--color-gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .highlight-box strong {
+            color: var(--color-dark);
+        }
+
+        .contact-box {
+            background: var(--color-gray-100);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin: 0 0 1rem;
+        }
+
+        .contact-box a {
+            color: var(--color-gold);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--color-olive);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: var(--section-padding);
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--color-gold);
+            text-decoration: none;
+            margin: 0 0.75rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .content-wrapper {
+                padding: 32px 24px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .data-table {
+                font-size: 0.9rem;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav>
+        <div class="nav-content">
+            <div class="nav-logo">COVEOFEDU.</div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/what-is-coe.html">About</a>
+                <a href="/origins.html">Our Story</a>
+                <a href="/donate.html">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="hero">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: November 15, 2025</p>
+        </div>
+
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="intro-box">
+                    <p>
+                        <strong>Your privacy matters to us.</strong> At CoveOfEdu, we are committed to protecting
+                        your personal information and being transparent about how we collect, use, and safeguard
+                        your data. This Privacy Policy explains our practices and your rights regarding your
+                        personal information.
+                    </p>
+                </div>
+
+                <div class="toc">
+                    <h2>Table of Contents</h2>
+                    <ol>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#information-collected">Information We Collect</a></li>
+                        <li><a href="#how-we-use">How We Use Your Information</a></li>
+                        <li><a href="#information-sharing">Information Sharing and Disclosure</a></li>
+                        <li><a href="#data-security">Data Security</a></li>
+                        <li><a href="#cookies">Cookies and Tracking Technologies</a></li>
+                        <li><a href="#your-rights">Your Privacy Rights</a></li>
+                        <li><a href="#children">Children's Privacy</a></li>
+                        <li><a href="#third-party">Third-Party Links</a></li>
+                        <li><a href="#data-retention">Data Retention</a></li>
+                        <li><a href="#international">International Users</a></li>
+                        <li><a href="#changes">Changes to This Policy</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ol>
+                </div>
+
+                <section id="overview">
+                    <h2>1. Overview</h2>
+                    <p>
+                        This Privacy Policy applies to coveofedu.org (the "Website") operated by CoveOfEdu,
+                        a 501(c)(3) nonprofit organization (EIN: 92-2455469). By using our Website, you consent
+                        to the data practices described in this policy.
+                    </p>
+                    <div class="highlight-box">
+                        <p><strong>Key Principles:</strong></p>
+                        <ul>
+                            <li>We only collect information necessary to serve our mission</li>
+                            <li>We never sell or rent your personal information</li>
+                            <li>We use industry-standard security measures to protect your data</li>
+                            <li>You have control over your personal information</li>
+                            <li>We are transparent about our data practices</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="information-collected">
+                    <h2>2. Information We Collect</h2>
+
+                    <h3>2.1 Information You Provide Directly</h3>
+                    <p>We collect information you voluntarily provide when you:</p>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Activity</th>
+                                <th>Information Collected</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Make a Donation</td>
+                                <td>Name, email, billing address, payment information, donation amount</td>
+                            </tr>
+                            <tr>
+                                <td>Subscribe to Newsletter</td>
+                                <td>Email address, name (optional), subscription preferences</td>
+                            </tr>
+                            <tr>
+                                <td>Contact Us</td>
+                                <td>Name, email, message content, any information you choose to provide</td>
+                            </tr>
+                            <tr>
+                                <td>Create an Account</td>
+                                <td>Name, email, password (encrypted), profile preferences</td>
+                            </tr>
+                            <tr>
+                                <td>Participate in Programs</td>
+                                <td>Name, contact information, educational background, program-specific data</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>2.2 Information Collected Automatically</h3>
+                    <p>When you visit our Website, we automatically collect:</p>
+                    <ul>
+                        <li>IP address and geographic location</li>
+                        <li>Browser type and version</li>
+                        <li>Operating system</li>
+                        <li>Pages visited and time spent on pages</li>
+                        <li>Referral source (how you found our Website)</li>
+                        <li>Device information (mobile, tablet, desktop)</li>
+                        <li>Cookies and similar tracking technologies (see Section 6)</li>
+                    </ul>
+
+                    <h3>2.3 Information from Third Parties</h3>
+                    <p>We may receive information from:</p>
+                    <ul>
+                        <li>Payment processors (transaction details, fraud prevention data)</li>
+                        <li>Social media platforms (if you interact with our social content)</li>
+                        <li>Analytics providers (aggregated website usage data)</li>
+                        <li>Email service providers (email engagement metrics)</li>
+                    </ul>
+                </section>
+
+                <section id="how-we-use">
+                    <h2>3. How We Use Your Information</h2>
+                    <p>We use the information we collect for the following purposes:</p>
+
+                    <h3>3.1 Mission-Critical Activities</h3>
+                    <ul>
+                        <li>Processing and acknowledging donations</li>
+                        <li>Providing tax receipts and donation records</li>
+                        <li>Delivering educational programs and services</li>
+                        <li>Measuring and reporting on our impact</li>
+                        <li>Improving our programs and infrastructure</li>
+                    </ul>
+
+                    <h3>3.2 Communications</h3>
+                    <ul>
+                        <li>Sending donation confirmations and receipts</li>
+                        <li>Delivering newsletters and educational content</li>
+                        <li>Providing updates on our programs and impact</li>
+                        <li>Responding to your inquiries and requests</li>
+                        <li>Sending important notices about policy changes</li>
+                    </ul>
+
+                    <h3>3.3 Website Operations</h3>
+                    <ul>
+                        <li>Maintaining and improving Website functionality</li>
+                        <li>Analyzing usage patterns and trends</li>
+                        <li>Personalizing your experience</li>
+                        <li>Preventing fraud and ensuring security</li>
+                        <li>Troubleshooting technical issues</li>
+                    </ul>
+
+                    <h3>3.4 Legal Compliance</h3>
+                    <ul>
+                        <li>Complying with 501(c)(3) reporting requirements</li>
+                        <li>Meeting tax and accounting obligations</li>
+                        <li>Responding to legal requests and preventing illegal activities</li>
+                        <li>Protecting our rights and property</li>
+                    </ul>
+                </section>
+
+                <section id="information-sharing">
+                    <h2>4. Information Sharing and Disclosure</h2>
+
+                    <h3>4.1 We DO NOT Sell Your Information</h3>
+                    <div class="highlight-box">
+                        <p>
+                            <strong>Important:</strong> CoveOfEdu never sells, rents, or trades your personal
+                            information to third parties for marketing purposes. Your trust is fundamental to
+                            our mission.
+                        </p>
+                    </div>
+
+                    <h3>4.2 When We Share Information</h3>
+                    <p>We may share your information only in these limited circumstances:</p>
+
+                    <ul>
+                        <li><strong>Service Providers:</strong> Trusted third-party vendors who help us operate
+                            our Website and programs (payment processors, email services, analytics providers).
+                            These providers are contractually obligated to protect your data.</li>
+                        <li><strong>Legal Requirements:</strong> When required by law, subpoena, court order,
+                            or government regulation.</li>
+                        <li><strong>Protection of Rights:</strong> To protect the rights, property, or safety
+                            of CoveOfEdu, our users, or the public.</li>
+                        <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or
+                            dissolution (though we would notify you and seek consent).</li>
+                        <li><strong>With Your Consent:</strong> When you explicitly authorize us to share
+                            your information.</li>
+                    </ul>
+
+                    <h3>4.3 Donor Recognition</h3>
+                    <p>
+                        We may publicly recognize donors unless you request anonymity. You can opt out of
+                        public recognition at any time by contacting us.
+                    </p>
+                </section>
+
+                <section id="data-security">
+                    <h2>5. Data Security</h2>
+                    <p>
+                        We implement industry-standard security measures to protect your personal information:
+                    </p>
+
+                    <h3>5.1 Technical Safeguards</h3>
+                    <ul>
+                        <li>SSL/TLS encryption for data transmission</li>
+                        <li>Encrypted storage of sensitive information</li>
+                        <li>Secure payment processing through PCI-DSS compliant providers</li>
+                        <li>Regular security audits and updates</li>
+                        <li>Firewalls and intrusion detection systems</li>
+                        <li>Access controls and authentication requirements</li>
+                    </ul>
+
+                    <h3>5.2 Organizational Safeguards</h3>
+                    <ul>
+                        <li>Limited access to personal information (need-to-know basis)</li>
+                        <li>Employee training on data privacy and security</li>
+                        <li>Confidentiality agreements with all staff and volunteers</li>
+                        <li>Regular security awareness training</li>
+                        <li>Incident response procedures</li>
+                    </ul>
+
+                    <h3>5.3 Payment Security</h3>
+                    <p>
+                        We do not store complete credit card information on our servers. All payment processing
+                        is handled by secure, PCI-DSS compliant third-party payment processors.
+                    </p>
+
+                    <div class="highlight-box">
+                        <p>
+                            <strong>Data Breach Notification:</strong> In the unlikely event of a data breach
+                            that affects your personal information, we will notify you promptly in accordance
+                            with applicable laws and take immediate steps to mitigate the impact.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="cookies">
+                    <h2>6. Cookies and Tracking Technologies</h2>
+
+                    <h3>6.1 What Are Cookies?</h3>
+                    <p>
+                        Cookies are small text files stored on your device that help websites remember your
+                        preferences and improve your experience.
+                    </p>
+
+                    <h3>6.2 How We Use Cookies</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Cookie Type</th>
+                                <th>Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Essential Cookies</td>
+                                <td>Required for basic Website functionality (e.g., security, form submission)</td>
+                            </tr>
+                            <tr>
+                                <td>Analytics Cookies</td>
+                                <td>Help us understand how visitors use our Website (Google Analytics)</td>
+                            </tr>
+                            <tr>
+                                <td>Preference Cookies</td>
+                                <td>Remember your settings and preferences</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing Cookies</td>
+                                <td>Track conversion from campaigns and measure effectiveness</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>6.3 Your Cookie Choices</h3>
+                    <p>
+                        You can control cookies through your browser settings. However, disabling cookies may
+                        affect Website functionality. Most browsers allow you to:
+                    </p>
+                    <ul>
+                        <li>View and delete cookies</li>
+                        <li>Block third-party cookies</li>
+                        <li>Block all cookies (not recommended)</li>
+                        <li>Clear cookies when you close your browser</li>
+                    </ul>
+
+                    <h3>6.4 Third-Party Analytics</h3>
+                    <p>
+                        We use Google Analytics to understand Website usage. Google Analytics collects
+                        information anonymously and reports Website trends. You can opt out of Google Analytics
+                        by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank"
+                        rel="noopener noreferrer" style="color: var(--color-gold);">Google Analytics Opt-out Browser Add-on</a>.
+                    </p>
+                </section>
+
+                <section id="your-rights">
+                    <h2>7. Your Privacy Rights</h2>
+                    <p>
+                        You have the following rights regarding your personal information:
+                    </p>
+
+                    <h3>7.1 Access and Portability</h3>
+                    <ul>
+                        <li>Request a copy of your personal information we hold</li>
+                        <li>Receive your data in a portable format</li>
+                    </ul>
+
+                    <h3>7.2 Correction and Update</h3>
+                    <ul>
+                        <li>Correct inaccurate information</li>
+                        <li>Update your contact details and preferences</li>
+                    </ul>
+
+                    <h3>7.3 Deletion ("Right to Be Forgotten")</h3>
+                    <ul>
+                        <li>Request deletion of your personal information</li>
+                        <li>Note: We may retain certain information for legal/tax compliance</li>
+                    </ul>
+
+                    <h3>7.4 Opt-Out Rights</h3>
+                    <ul>
+                        <li>Unsubscribe from marketing emails (click "unsubscribe" in any email)</li>
+                        <li>Opt out of public donor recognition</li>
+                        <li>Disable cookies through browser settings</li>
+                        <li>Request to stop processing your information for specific purposes</li>
+                    </ul>
+
+                    <h3>7.5 How to Exercise Your Rights</h3>
+                    <p>
+                        To exercise any of these rights, contact us at
+                        <a href="mailto:privacy@coveofedu.org" style="color: var(--color-gold);">privacy@coveofedu.org</a>.
+                        We will respond within 30 days.
+                    </p>
+                </section>
+
+                <section id="children">
+                    <h2>8. Children's Privacy</h2>
+                    <p>
+                        Our Website is not directed to children under 13 years of age. We do not knowingly
+                        collect personal information from children under 13.
+                    </p>
+                    <p>
+                        If you are under 13, please do not provide any information on this Website. If you
+                        are a parent or guardian and believe your child has provided us with personal information,
+                        please contact us immediately.
+                    </p>
+                    <p>
+                        For users between 13-18 years old, we require parental or guardian consent before
+                        collecting personal information or processing donations.
+                    </p>
+                </section>
+
+                <section id="third-party">
+                    <h2>9. Third-Party Links</h2>
+                    <p>
+                        Our Website may contain links to third-party websites (social media, payment processors,
+                        partner organizations). We are not responsible for the privacy practices of these
+                        external sites.
+                    </p>
+                    <p>
+                        We encourage you to review the privacy policies of any third-party sites you visit.
+                        This Privacy Policy applies only to coveofedu.org.
+                    </p>
+                </section>
+
+                <section id="data-retention">
+                    <h2>10. Data Retention</h2>
+                    <p>
+                        We retain your personal information for as long as necessary to fulfill the purposes
+                        outlined in this Privacy Policy, unless a longer retention period is required by law.
+                    </p>
+
+                    <h3>10.1 Retention Periods</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Data Type</th>
+                                <th>Retention Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Donation Records</td>
+                                <td>7 years (IRS requirement for 501(c)(3) organizations)</td>
+                            </tr>
+                            <tr>
+                                <td>Email Subscriptions</td>
+                                <td>Until you unsubscribe</td>
+                            </tr>
+                            <tr>
+                                <td>Website Analytics</td>
+                                <td>26 months (Google Analytics default)</td>
+                            </tr>
+                            <tr>
+                                <td>Contact Form Inquiries</td>
+                                <td>3 years or until resolved</td>
+                            </tr>
+                            <tr>
+                                <td>Account Information</td>
+                                <td>Until account deletion requested</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>10.2 Secure Deletion</h3>
+                    <p>
+                        When we delete your information, we use secure deletion methods to ensure it cannot
+                        be recovered or reconstructed.
+                    </p>
+                </section>
+
+                <section id="international">
+                    <h2>11. International Users</h2>
+                    <p>
+                        Our Website is operated in the United States. If you are accessing the Website from
+                        outside the United States, please be aware that your information will be transferred
+                        to, stored, and processed in the United States.
+                    </p>
+                    <p>
+                        By using our Website, you consent to the transfer of your information to the United
+                        States and acknowledge that U.S. data protection laws may differ from those in your
+                        country.
+                    </p>
+
+                    <h3>11.1 GDPR Compliance (European Users)</h3>
+                    <p>
+                        If you are in the European Economic Area (EEA), you have additional rights under the
+                        General Data Protection Regulation (GDPR), including:
+                    </p>
+                    <ul>
+                        <li>Right to object to processing</li>
+                        <li>Right to restrict processing</li>
+                        <li>Right to lodge a complaint with a supervisory authority</li>
+                        <li>Right to withdraw consent at any time</li>
+                    </ul>
+                </section>
+
+                <section id="changes">
+                    <h2>12. Changes to This Policy</h2>
+                    <p>
+                        We may update this Privacy Policy from time to time to reflect changes in our practices,
+                        technology, legal requirements, or other factors.
+                    </p>
+                    <p>
+                        We will notify you of material changes by:
+                    </p>
+                    <ul>
+                        <li>Posting the updated policy on this page with a new "Last Updated" date</li>
+                        <li>Sending an email notification to registered users</li>
+                        <li>Displaying a prominent notice on our Website</li>
+                    </ul>
+                    <p>
+                        Your continued use of the Website after changes are posted constitutes acceptance
+                        of the updated Privacy Policy.
+                    </p>
+                </section>
+
+                <section id="contact">
+                    <h2>13. Contact Us</h2>
+                    <p>
+                        If you have questions, concerns, or requests regarding this Privacy Policy or our
+                        data practices, please contact us:
+                    </p>
+
+                    <div class="contact-box">
+                        <h3>Privacy Inquiries</h3>
+                        <p>
+                            <strong>Email:</strong> <a href="mailto:privacy@coveofedu.org">privacy@coveofedu.org</a><br>
+                            <strong>General Contact:</strong> <a href="mailto:info@coveofedu.org">info@coveofedu.org</a><br>
+                            <strong>Website:</strong> <a href="https://coveofedu.org">coveofedu.org</a>
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            <strong>Organization:</strong> CoveOfEdu<br>
+                            <strong>Tax ID (EIN):</strong> 92-2455469<br>
+                            <strong>Status:</strong> 501(c)(3) Nonprofit Organization
+                        </p>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-gray-700);">
+                            We will respond to privacy inquiries within 30 days.
+                        </p>
+                    </div>
+                </section>
+
+                <div class="highlight-box" style="margin-top: 3rem;">
+                    <p>
+                        <strong>Thank you for trusting CoveOfEdu with your information.</strong> Your privacy
+                        is essential to our mission of building educational infrastructure with transparency
+                        and integrity. We are committed to protecting your data and using it only to further
+                        our shared goal of transforming education for students who need it most.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CoveOfEdu. 501(c)(3) Nonprofit Organization. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="/origins.html">Our Story</a>
+                <a href="/what-is-coe.html">About COE</a>
+                <a href="/donate.html">Donate</a>
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="/terms-of-service.html">Terms of Service</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Tax ID (EIN):</strong> 92-2455469 | <strong>501(c)(3) Nonprofit</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
