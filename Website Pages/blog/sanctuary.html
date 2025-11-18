@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANCTUARY: Creating Space for Growth and Transformation | CoveOfEdu Blog</title>
+    <meta name="description" content="Learn how to create Sanctuary—the sixth of the 7 Teachings. Discover how to protect your energy, time, and focus for deep work and transformation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cove-gold: #b08d57;
+            --cove-dark: #1c1c1c;
+            --cove-offwhite: #e8e3d8;
+            --cove-white: #ffffff;
+            --cove-warm-gray: #8b8680;
+            --cove-light-gold: #d4af37;
+            --cove-gray-100: #f8f7f5;
+            --cove-gray-200: #e5e5e5;
+            --font-primary: 'Comfortaa', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--cove-white);
+            color: var(--cove-dark);
+            line-height: 1.8;
+        }
+
+        .article-header {
+            background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%);
+            padding: 120px 20px 80px;
+            text-align: center;
+            color: var(--cove-white);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        .teaching-badge {
+            display: inline-block;
+            background: var(--cove-gold);
+            color: var(--cove-white);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .article-header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            font-size: 1.1rem;
+            color: var(--cove-offwhite);
+            margin-bottom: 16px;
+        }
+
+        .reading-time {
+            font-size: 0.95rem;
+            color: var(--cove-warm-gray);
+        }
+
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 32px;
+        }
+
+        .article-content h2 {
+            font-size: 2.2rem;
+            margin-top: 64px;
+            margin-bottom: 24px;
+            color: var(--cove-dark);
+        }
+
+        .article-content h3 {
+            font-size: 1.8rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            color: var(--cove-gold);
+        }
+
+        .article-content p {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 28px 0 28px 40px;
+        }
+
+        .article-content li {
+            font-size: 1.15rem;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--cove-gold);
+            padding: 24px 32px;
+            margin: 40px 0;
+            background: var(--cove-gray-100);
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--cove-dark);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 48px 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--cove-white);
+        }
+
+        .highlight-box p {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+            color: var(--cove-white);
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 9999px;
+            transition: all 300ms ease;
+            cursor: pointer;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+            margin: 12px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cove-white);
+            border: 2px solid var(--cove-white);
+            margin: 12px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--cove-white);
+            color: var(--cove-gold);
+        }
+
+        .cta-box {
+            background: var(--cove-gray-100);
+            border: 2px solid var(--cove-gold);
+            padding: 48px;
+            border-radius: 16px;
+            margin: 64px 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            color: var(--cove-dark);
+        }
+
+        .cta-box p {
+            font-size: 1.15rem;
+            margin-bottom: 28px;
+            color: var(--cove-dark);
+        }
+
+        @media (max-width: 768px) {
+            .article-header h1 { font-size: 2.2rem; }
+            .article-content h2 { font-size: 1.8rem; }
+            .article-content h3 { font-size: 1.5rem; }
+            .article-content p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="container">
+            <span class="teaching-badge">TEACHING 06 OF 7</span>
+            <h1>SANCTUARY<br><span style="color: var(--cove-gold);">Creating Space for Growth and Transformation</span></h1>
+            <p class="article-meta">Protect your energy. Guard your time. Create sacred space for deep work.</p>
+            <p class="reading-time">📖 14 minute read</p>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-content">
+
+        <h2>The Assault on Your Attention</h2>
+
+        <p>You wake up and immediately check your phone. 47 notifications. Before you've even gotten out of bed, you've consumed dozens of other people's agendas, problems, and priorities.</p>
+
+        <p>You shower while planning your day. You eat breakfast while reading the news (all negative). You commute while listening to podcasts. You work while Slack messages interrupt every 3 minutes. You scroll social media during "breaks." You watch Netflix to "relax."</p>
+
+        <p>By the end of the day, you've consumed thousands of inputs but created almost nothing of value. You're exhausted but haven't actually focused on what matters. You're busy but not productive. Stimulated but not fulfilled.</p>
+
+        <p>This is life without Sanctuary.</p>
+
+        <p>And it's destroying your potential.</p>
+
+        <blockquote>
+            "The world will ask you who you are, and if you don't know, the world will tell you."<br>
+            — Carl Jung
+        </blockquote>
+
+        <h2>What Is Sanctuary?</h2>
+
+        <p>Sanctuary is the practice of creating protected space—physical, mental, and emotional—where transformation can occur.</p>
+
+        <p>It's:</p>
+
+        <ul>
+            <li><strong>Physical space:</strong> An environment designed for focus and deep work</li>
+            <li><strong>Time blocks:</strong> Protected hours where you're unavailable for interruptions</li>
+            <li><strong>Mental space:</strong> Freedom from constant stimulation and distraction</li>
+            <li><strong>Emotional boundaries:</strong> Protection from energy-draining people and situations</li>
+            <li><strong>Digital boundaries:</strong> Control over when and how technology accesses you</li>
+        </ul>
+
+        <p>Sanctuary is the recognition that <strong>your environment shapes your outcomes.</strong></p>
+
+        <p>You can have all the vision, courage, and charisma in the world. But if you're constantly interrupted, distracted, and drained, you'll never execute on that potential.</p>
+
+        <p>This is the sixth teaching because you need it to sustain everything else. Without sanctuary, your positive attitude gets worn down. Your purpose gets clouded. Your vision gets diluted. Your courage gets depleted. Your charisma fades.</p>
+
+        <p>Sanctuary protects your power.</p>
+
+        <h2>Why Sanctuary Is Non-Negotiable</h2>
+
+        <p>Deep work—the kind that creates real value and transformation—requires sustained, uninterrupted focus.</p>
+
+        <p>Research shows that it takes an average of 23 minutes to fully recover from an interruption. If you're interrupted every 10 minutes (which is typical), you literally never reach deep focus.</p>
+
+        <p>You're operating in a permanent state of partial attention. Doing everything at 60% quality. Never accessing your full capacity.</p>
+
+        <p>The students who build six-figure businesses through CoveOfEdu don't do it in stolen moments between distractions. They do it by creating sanctuary—protected time and space where they can focus deeply on building something meaningful.</p>
+
+        <p>Sanctuary isn't selfish. It's necessary.</p>
+
+        <h2>The Student Who Built Her Sanctuary</h2>
+
+        <p>Let me tell you about Rebecca (not her real name).</p>
+
+        <p>Rebecca was a single mother working full-time while trying to build her AI business. She had vision, skills, and determination. But she was drowning in constant demands.</p>
+
+        <p>Kids needed attention. Boss needed reports. Phone kept buzzing. Email kept piling up. Social media kept calling.</p>
+
+        <p>She'd sit down to work on her business and get interrupted five times in 20 minutes. By the time she refocused, something else would demand her attention. She was busy all day, every day, but making zero progress on what actually mattered.</p>
+
+        <p>"I don't have time to build a business," she said. "I barely have time to breathe."</p>
+
+        <p>The problem wasn't time. It was sanctuary.</p>
+
+        <p>So Rebecca made radical changes:</p>
+
+        <ul>
+            <li>She woke up at 5 AM (before kids and demands) and protected 90 minutes for deep work—phone off, internet blocked, door closed</li>
+            <li>She negotiated with her partner to take kids Saturday mornings—giving her 4 uninterrupted hours weekly</li>
+            <li>She deleted social media apps from her phone (only checked on computer, once daily)</li>
+            <li>She set up a tiny "office" in her closet—just a desk, lamp, and noise-canceling headphones—her physical sanctuary</li>
+            <li>She learned to say "no" to requests that didn't align with her goals</li>
+        </ul>
+
+        <p>The result? In 6 months, she built a business generating $8,000/month. Same person. Same day. Different approach to protecting her energy and attention.</p>
+
+        <p>That's the power of Sanctuary.</p>
+
+        <blockquote>
+            "Until you value yourself, you won't value your time. Until you value your time, you will not do anything with it."<br>
+            — M. Scott Peck
+        </blockquote>
+
+        <h2>Creating Physical Sanctuary</h2>
+
+        <h3>1. Design Your Space Intentionally</h3>
+
+        <p>Your physical environment dramatically affects your ability to focus. You need a space that signals to your brain: "This is where deep work happens."</p>
+
+        <p><strong>Minimum viable sanctuary:</strong></p>
+        <ul>
+            <li>A dedicated workspace (even if it's just a corner of a room or a closet desk)</li>
+            <li>Good lighting (natural light is best; quality lamp is second)</li>
+            <li>Minimal visual clutter</li>
+            <li>Comfortable seating that promotes alertness (not a couch)</li>
+            <li>Everything you need within reach (so you don't break focus to get things)</li>
+        </ul>
+
+        <p>You don't need a fancy home office. You just need a space that's yours, where you can focus without distraction.</p>
+
+        <h3>2. Remove Distractions Proactively</h3>
+
+        <p>Willpower is finite. Don't waste it resisting distractions. Design your environment so distractions aren't present.</p>
+
+        <ul>
+            <li>Phone in another room (or in a drawer, powered off)</li>
+            <li>Internet blocker apps during focus time (Freedom, Cold Turkey, etc.)</li>
+            <li>Noise-canceling headphones or white noise</li>
+            <li>Door closed with a "do not disturb" sign if needed</li>
+            <li>Email and Slack closed</li>
+        </ul>
+
+        <p>Make focus the path of least resistance and distraction the harder choice.</p>
+
+        <h3>3. Create Rituals That Signal "Sanctuary Mode"</h3>
+
+        <p>Rituals train your brain to enter focus state. Examples:</p>
+
+        <ul>
+            <li>Make a specific type of tea before each focus session</li>
+            <li>Put on the same playlist every time</li>
+            <li>Light a candle at your workspace</li>
+            <li>Do 5 minutes of deep breathing to transition</li>
+            <li>Put on specific "work clothes" (even if working from home)</li>
+        </ul>
+
+        <p>Over time, these rituals become triggers that help you enter deep focus quickly.</p>
+
+        <h2>Creating Temporal Sanctuary</h2>
+
+        <h3>1. Time Blocking for Deep Work</h3>
+
+        <p>Schedule sanctuary time on your calendar like you'd schedule a doctor's appointment. It's non-negotiable.</p>
+
+        <p><strong>Ideal deep work blocks:</strong></p>
+        <ul>
+            <li>Minimum 90 minutes (anything less doesn't allow deep focus)</li>
+            <li>Optimally 2-4 hours</li>
+            <li>Early morning when possible (fewer interruptions)</li>
+            <li>Same time daily (builds the habit)</li>
+        </ul>
+
+        <p>During these blocks, you're completely unavailable. No exceptions (unless it's an actual emergency).</p>
+
+        <h3>2. Protect Your Best Hours</h3>
+
+        <p>Most people give their best, highest-energy hours to reactive work (email, meetings, requests) and save low-energy hours for important work.</p>
+
+        <p>This is backwards.</p>
+
+        <p>Give your peak hours to your most important work. Everything else can happen in the gaps.</p>
+
+        <p>For most people, peak hours are morning. Protect them fiercely.</p>
+
+        <h3>3. Batch Low-Value Tasks</h3>
+
+        <p>Instead of checking email 47 times a day, check it twice—once at noon, once at 4 PM. Batch all responses.</p>
+
+        <p>Instead of taking calls whenever they come, have specific "call hours" when people can reach you.</p>
+
+        <p>Instead of doing admin tasks whenever they arise, do them all in one weekly batch.</p>
+
+        <p>Batching creates blocks of sanctuary by consolidating interruptions.</p>
+
+        <h2>Creating Mental Sanctuary</h2>
+
+        <h3>1. Practice Digital Minimalism</h3>
+
+        <p>Your attention is your most valuable resource. Every app, notification, and subscription is competing for it.</p>
+
+        <p><strong>Digital sanctuary checklist:</strong></p>
+        <ul>
+            <li>Turn off ALL non-essential notifications</li>
+            <li>Unsubscribe from email lists you don't actively read</li>
+            <li>Delete social media apps (or use app blockers to limit access)</li>
+            <li>Use "Do Not Disturb" mode liberally</li>
+            <li>Check messages on your schedule, not others'</li>
+        </ul>
+
+        <p>The goal isn't to be unreachable. It's to be reachable on your terms.</p>
+
+        <h3>2. Consume Intentionally</h3>
+
+        <p>What you consume shapes your mindset. Garbage in, garbage out.</p>
+
+        <p>During sanctuary time (and ideally always):</p>
+        <ul>
+            <li>No news (99% is irrelevant anxiety fuel)</li>
+            <li>No social media scrolling (comparison and distraction)</li>
+            <li>No random YouTube/Netflix (passive consumption)</li>
+        </ul>
+
+        <p>Instead, consume intentionally:</p>
+        <ul>
+            <li>Books that educate or inspire</li>
+            <li>Courses that build skills</li>
+            <li>Podcasts directly relevant to your goals</li>
+            <li>Content from mentors and role models</li>
+        </ul>
+
+        <h3>3. Create Mental White Space</h3>
+
+        <p>Constant stimulation prevents thinking. You need quiet space for ideas to emerge.</p>
+
+        <p>Build in:</p>
+        <ul>
+            <li>Morning meditation or journaling</li>
+            <li>Walks without podcasts or music</li>
+            <li>Shower thinking time</li>
+            <li>Regular digital detoxes (1 day weekly, 1 week annually)</li>
+        </ul>
+
+        <p>Boredom isn't the enemy. It's the space where creativity lives.</p>
+
+        <!-- CTA Box 1 -->
+        <div class="highlight-box">
+            <h3>Build Your Sanctuary with Community Support</h3>
+            <p>Join Kiver.org to connect with others creating sacred space for growth. Share strategies, get accountability, and learn from people protecting their energy worldwide. Transform in community, not isolation.</p>
+            <a href="https://kiver.org" class="btn btn-primary">Join Kiver.org Community</a>
+            <a href="../pages/7-teachings.html" class="btn btn-secondary">Explore All 7 Teachings</a>
+        </div>
+
+        <h2>Creating Emotional Sanctuary</h2>
+
+        <h3>1. Set Boundaries with People</h3>
+
+        <p>Not everyone deserves unlimited access to you. Some people drain your energy. Some people undermine your goals. Some people pull you into drama.</p>
+
+        <p>Creating sanctuary means saying:</p>
+        <ul>
+            <li>"I can't talk right now—I'm in deep work mode."</li>
+            <li>"I don't have capacity for that right now."</li>
+            <li>"That's not aligned with my goals, so I'm going to pass."</li>
+            <li>"I need to protect my energy, so I'm going to step back from this."</li>
+        </ul>
+
+        <p>This isn't mean. It's self-preservation.</p>
+
+        <h3>2. Curate Your Relationships</h3>
+
+        <p>You become the average of the five people you spend the most time with. Choose wisely.</p>
+
+        <p>Spend more time with people who:</p>
+        <ul>
+            <li>Support your vision</li>
+            <li>Energize rather than drain you</li>
+            <li>Challenge you to grow</li>
+            <li>Celebrate your wins</li>
+            <li>Hold you accountable</li>
+        </ul>
+
+        <p>Spend less time with people who:</p>
+        <ul>
+            <li>Complain constantly</li>
+            <li>Dismiss your goals</li>
+            <li>Create drama</li>
+            <li>Make you feel small</li>
+            <li>Pull you away from your purpose</li>
+        </ul>
+
+        <p>Your sanctuary includes the people you allow into your life.</p>
+
+        <h3>3. Protect Your Emotional Energy</h3>
+
+        <p>Some activities and situations drain you. Others energize you. Track this.</p>
+
+        <p>For two weeks, note what energizes you and what drains you. Then ruthlessly cut or minimize the draining activities that aren't necessary.</p>
+
+        <p>Your emotional energy is finite. Spend it wisely.</p>
+
+        <h2>Sanctuary in the Context of the Other Teachings</h2>
+
+        <p>Sanctuary protects and amplifies everything that came before:</p>
+
+        <ul>
+            <li><strong>Positive Mental Attitude</strong> (Teaching 1) is easier to maintain when you're not constantly exposed to negativity</li>
+            <li><strong>Purity of Thought</strong> (Teaching 2) requires quiet space to hear your own voice</li>
+            <li><strong>Vision</strong> (Teaching 3) needs protected time to be developed and refined</li>
+            <li><strong>Courage</strong> (Teaching 4) requires energy that sanctuary preserves</li>
+            <li><strong>Charisma</strong> (Teaching 5) is only sustainable when you protect your energy</li>
+            <li><strong>Sanctuary</strong> (Teaching 6) creates the space for all of this to flourish</li>
+            <li><strong>Rhythm</strong> (Teaching 7) is the daily practice of returning to sanctuary</li>
+        </ul>
+
+        <p>Without sanctuary, you burn out. With it, you thrive.</p>
+
+        <h2>Common Sanctuary Objections</h2>
+
+        <h3>"I don't have time for sanctuary."</h3>
+        <p>You don't have time NOT to. Hours spent in distracted, fragmented work produce far less than focused sanctuary hours. You're not too busy for sanctuary—you're too busy because you lack it.</p>
+
+        <h3>"People need me to be available."</h3>
+        <p>Very few things are actually emergencies. Most can wait 90 minutes. Being constantly available makes you reactive, not helpful. You serve people better from a place of focused energy than fragmented distraction.</p>
+
+        <h3>"I feel guilty saying no."</h3>
+        <p>Every "yes" to someone else's priority is a "no" to your own. If you don't protect your sanctuary, you'll spend your life building other people's dreams instead of your own.</p>
+
+        <h3>"I don't have space for a separate office."</h3>
+        <p>You don't need much. A corner. A closet desk. A library. A coffee shop with headphones. Sanctuary is more about boundaries than square footage.</p>
+
+        <h2>The ROI of Sanctuary</h2>
+
+        <p>Let's talk practically: <strong>Sanctuary directly multiplies your productivity and income.</strong></p>
+
+        <p>One hour in sanctuary (deep, uninterrupted focus) produces more value than four hours of fragmented work.</p>
+
+        <p>This means:</p>
+        <ul>
+            <li>You accomplish more in less time</li>
+            <li>You produce higher quality work</li>
+            <li>You have more energy left at the end of the day</li>
+            <li>You make faster progress toward your goals</li>
+            <li>You earn more because your work is better</li>
+        </ul>
+
+        <p>The students who protect sanctuary don't just work smarter—they produce exponentially better results.</p>
+
+        <!-- CTA Box 2 -->
+        <div class="cta-box">
+            <h3>Bring Sanctuary Practices to Your Organization</h3>
+            <p>🌍 Live Zoom/Google Meet sessions teaching Sanctuary and the 7 Teachings globally<br>
+            🏢 Help teams protect focus, energy, and productivity in corporations, schools, and communities<br>
+            💰 Support underserved students while creating healthier work cultures<br>
+            🧘 Build organizational cultures that respect deep work and boundaries</p>
+            <a href="../pages/contact.html" class="btn" style="background: linear-gradient(135deg, var(--cove-gold), var(--cove-light-gold)); color: var(--cove-white); box-shadow: 0 8px 24px rgba(176, 141, 87, 0.25);">Schedule a Live Teaching Event</a>
+        </div>
+
+        <h2>Your Sanctuary Starts Now</h2>
+
+        <p>You don't need permission to create sanctuary. You don't need ideal conditions. You just need to decide that your energy, attention, and potential are worth protecting.</p>
+
+        <p>Start small:</p>
+
+        <ul>
+            <li>Block one 90-minute sanctuary session this week</li>
+            <li>Turn off notifications on your phone</li>
+            <li>Say no to one request that doesn't serve your goals</li>
+            <li>Create one ritual that signals "focus mode"</li>
+        </ul>
+
+        <p>Then build from there. Each sanctuary session proves that focused work produces better results. Each boundary you set makes the next one easier. Each distraction you eliminate creates more space for what matters.</p>
+
+        <p>Your transformation doesn't happen in the chaos. It happens in the sanctuary.</p>
+
+        <blockquote>
+            "In a world of noise, silence is a revolutionary act."<br>
+            — Naval Ravikant
+        </blockquote>
+
+        <h2>Continue Your Journey</h2>
+
+        <p>Sanctuary is the sixth teaching. Once you've created protected space for growth, the final teaching helps you sustain it over a lifetime:</p>
+
+        <ul>
+            <li><a href="positive-mental-attitude.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 1: Positive Mental Attitude</a> – Protect your mindset from negativity</li>
+            <li><a href="purity-of-thought.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 2: Purity of Thought</a> – Find clarity in quiet space</li>
+            <li><a href="vision.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 3: Vision</a> – Develop vision in protected time</li>
+            <li><a href="courage.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 4: Courage</a> – Build courage by protecting energy</li>
+            <li><a href="charisma.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 5: Charisma</a> – Sustain charisma through sanctuary</li>
+            <li><a href="rhythm.html" style="color: var(--cove-gold); text-decoration: none; font-weight: 600;">Teaching 7: Rhythm</a> – Make sanctuary your daily practice</li>
+        </ul>
+
+        <p style="margin-top: 48px; font-size: 1.3rem; color: var(--cove-gold); font-weight: 600;">Protect your space. Guard your energy. Create your sanctuary.</p>
+
+    </article>
+
+    <!-- Footer -->
+    <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center;">
+        <div class="container">
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span style="color: var(--cove-gold);">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+            <p style="color: var(--cove-warm-gray); font-size: 0.9rem;">
+                CoveOfEdu is a 501(c)(3) nonprofit organization | EIN: 92-2455469
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

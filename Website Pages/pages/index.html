@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoveOfEdu | The Carnegie Library of the AI Age | 501(c)(3) Nonprofit</title>
+    <meta name="description" content="CoveOfEdu is a 501(c)(3) nonprofit building wealth-creation infrastructure through AI education for underserved students. Transform lives through the 7 Teachings.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../DesignGuidelines/Implementation-Guide.css">
+
+    <style>
+        :root {
+            --cove-gold: #b08d57;
+            --cove-dark: #1c1c1c;
+            --cove-offwhite: #e8e3d8;
+            --cove-white: #ffffff;
+            --cove-warm-gray: #8b8680;
+            --cove-light-gold: #d4af37;
+            --cove-gray-100: #f8f7f5;
+            --cove-gray-200: #e5e5e5;
+            --space-xl: 32px;
+            --space-xxl: 48px;
+            --space-xxxl: 64px;
+            --radius-large: 16px;
+            --radius-round: 9999px;
+            --shadow-gold: 0 8px 24px rgba(176, 141, 87, 0.25);
+            --font-primary: 'Comfortaa', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--cove-white);
+            color: var(--cove-dark);
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--cove-offwhite) 0%, var(--cove-white) 100%);
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(176, 141, 87, 0.1) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--cove-dark);
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: var(--cove-gold);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: var(--cove-warm-gray);
+            margin-bottom: 48px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-round);
+            transition: all 300ms ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            color: var(--cove-white);
+            box-shadow: var(--shadow-gold);
+            margin: 0 12px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(176, 141, 87, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--cove-dark);
+            border: 2px solid var(--cove-dark);
+            margin: 0 12px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--cove-dark);
+            color: var(--cove-white);
+        }
+
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section-dark {
+            background: var(--cove-dark);
+            color: var(--cove-white);
+        }
+
+        .section-light {
+            background: var(--cove-gray-100);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--cove-warm-gray);
+            margin-bottom: 64px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 32px;
+            background: var(--cove-white);
+            border-radius: var(--radius-large);
+            border: 2px solid var(--cove-gold);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--cove-gold);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: var(--cove-warm-gray);
+        }
+
+        .teachings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .teaching-card {
+            background: var(--cove-white);
+            padding: 40px;
+            border-radius: var(--radius-large);
+            border: 1px solid var(--cove-gray-200);
+            transition: all 300ms ease;
+            text-align: center;
+        }
+
+        .teaching-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(176, 141, 87, 0.2);
+            border-color: var(--cove-gold);
+        }
+
+        .teaching-number {
+            font-size: 1rem;
+            color: var(--cove-gold);
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 0.1em;
+        }
+
+        .teaching-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--cove-dark);
+        }
+
+        .teaching-description {
+            color: var(--cove-warm-gray);
+            line-height: 1.8;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            padding: 100px 20px;
+            text-align: center;
+            color: var(--cove-white);
+        }
+
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 24px;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .gold-dot {
+            color: var(--cove-gold);
+        }
+
+        .trust-badge {
+            display: inline-block;
+            background: rgba(176, 141, 87, 0.1);
+            color: var(--cove-gold);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero .tagline { font-size: 1.2rem; }
+            .section-title { font-size: 2rem; }
+            .btn { padding: 14px 32px; font-size: 1rem; margin: 8px; }
+            .cta-section h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>The Carnegie Library of the AI Age<span class="gold-dot">.</span></h1>
+            <p class="tagline">Building Wealth-Creation Infrastructure Through AI Education</p>
+            <p class="subtitle">Empowering underserved students to create sustainable wealth through AI skills, entrepreneurship, and the 7 Teachings of purpose-driven success.</p>
+
+            <div>
+                <div class="trust-badge">501(c)(3) NONPROFIT</div>
+                <div class="trust-badge">EIN: 92-2455469</div>
+                <div class="trust-badge">TAX DEDUCTIBLE</div>
+            </div>
+
+            <div style="margin-top: 48px;">
+                <a href="#join-movement" class="btn btn-primary">Join the Movement</a>
+                <a href="#7-teachings" class="btn btn-secondary">Explore the 7 Teachings</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Real Impact<span class="gold-dot">.</span> Real Results<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">We're not just teaching skills—we're building wealth-creation infrastructure for the next generation.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">$1.2M+</div>
+                    <div class="stat-label">Revenue Generated by Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">94%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">127</div>
+                    <div class="stat-label">Students Transformed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">90 Days</div>
+                    <div class="stat-label">Average Transformation Time</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 7 Teachings Section -->
+    <section id="7-teachings" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">The 7 Teachings<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">Skills alone aren't enough. We teach the philosophy, mindset, and purpose that create lasting success.</p>
+
+            <div class="teachings-grid">
+                <div class="teaching-card">
+                    <div class="teaching-number">TEACHING 01</div>
+                    <h3 class="teaching-title">Positive Mental Attitude</h3>
+                    <p class="teaching-description">The foundation of all success starts with the belief that transformation is possible.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">TEACHING 02</div>
+                    <h3 class="teaching-title">Purity of Thought</h3>
+                    <p class="teaching-description">Clear thinking leads to clear action. Discover your life's purpose and align with it.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">TEACHING 03</div>
+                    <h3 class="teaching-title">Vision</h3>
+                    <p class="teaching-description">Build your future before it exists. See what others cannot yet see.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">TEACHING 04</div>
+                    <h3 class="teaching-title">Courage</h3>
+                    <p class="teaching-description">The bridge between knowing and doing. Take action despite fear.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">TEACHING 05</div>
+                    <h3 class="teaching-title">Charisma</h3>
+                    <p class="teaching-description">The ability to inspire and influence. Lead yourself and others.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">TEACHING 06</div>
+                    <h3 class="teaching-title">Sanctuary</h3>
+                    <p class="teaching-description">Create sacred space for growth, transformation, and deep work.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">TEACHING 07</div>
+                    <h3 class="teaching-title">Rhythm</h3>
+                    <p class="teaching-description">The sustainable pace of lifelong success. Consistency over intensity.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="../blog/index.html" class="btn btn-primary">Read In-Depth Articles on Each Teaching</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Events CTA Section -->
+    <section id="join-movement" class="cta-section">
+        <div class="container">
+            <h2>Experience the 7 Teachings Live<span style="color: var(--cove-white);">.</span></h2>
+            <p>Join our global community on Kiver.org. Attend live Zoom/Google Meet events teaching the 7 Teachings in every language. Help us bring these transformative teachings to corporations, schools, and communities worldwide.</p>
+
+            <div style="margin-bottom: 32px;">
+                <a href="https://kiver.org" class="btn" style="background: var(--cove-white); color: var(--cove-gold); margin: 12px;">Join Kiver.org Community</a>
+                <a href="#events" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white); margin: 12px;">Host a Live Event</a>
+            </div>
+
+            <p style="font-size: 1.1rem; margin-top: 32px;">💡 <strong>For Organizations:</strong> Bring the 7 Teachings to your corporation, school, or community. Live webinars available globally. Form clubs. Transform lives together.</p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">How It Works<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">From stuck to successful in 90 days through AI education, entrepreneurship training, and purpose-driven philosophy.</p>
+
+            <div class="teachings-grid">
+                <div class="teaching-card">
+                    <div class="teaching-number">STEP 01</div>
+                    <h3 class="teaching-title">Learn AI Skills</h3>
+                    <p class="teaching-description">Master the tools that are reshaping every industry. No computer science background required.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">STEP 02</div>
+                    <h3 class="teaching-title">Build Your Business</h3>
+                    <p class="teaching-description">Apply AI skills to create real revenue-generating businesses with guidance and support.</p>
+                </div>
+
+                <div class="teaching-card">
+                    <div class="teaching-number">STEP 03</div>
+                    <h3 class="teaching-title">Transform Your Life</h3>
+                    <p class="teaching-description">Through the 7 Teachings, discover purpose, build wealth, and create lasting impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Fund a Transformation<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle" style="color: var(--cove-offwhite);">Your tax-deductible donation builds wealth-creation infrastructure for underserved students.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">$2,500</div>
+                    <div class="stat-label">Reality Shifter</div>
+                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 1 complete student transformation</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">$10,000</div>
+                    <div class="stat-label">Infrastructure Builder</div>
+                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 4 students + curriculum development</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">$50,000</div>
+                    <div class="stat-label">Legacy Architect</div>
+                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 20 students + staff expansion</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">$250K+</div>
+                    <div class="stat-label">Carnegie Class</div>
+                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund entire cohort (100+ students)</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="donate.html" class="btn btn-primary">Donate Now (Tax Deductible)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center; border-top: 1px solid rgba(176, 141, 87, 0.3);">
+        <div class="container">
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span class="gold-dot">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+
+            <div style="margin: 32px 0;">
+                <a href="about.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">About</a>
+                <a href="7-teachings.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">7 Teachings</a>
+                <a href="programs.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Programs</a>
+                <a href="impact.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Impact</a>
+                <a href="donate.html" style="color: var(--cove-gold); text-decoration: none; margin: 0 16px; font-weight: 600;">Donate</a>
+                <a href="../blog/index.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Blog</a>
+            </div>
+
+            <p style="color: var(--cove-warm-gray); font-size: 0.9rem; margin-top: 48px;">
+                CoveOfEdu is a 501(c)(3) nonprofit organization<br>
+                EIN: 92-2455469 | All donations are tax-deductible
+            </p>
+
+            <p style="color: var(--cove-warm-gray); font-size: 0.85rem; margin-top: 24px;">
+                © 2025 CoveOfEdu. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
