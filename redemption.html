@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Redemption | The Story Behind Covenant of Education</title>
+    <meta name="description" content="Watch Redemption - an intimate 10-minute documentary revealing how one brother's sacrifice became a global education movement. Enter your email to watch the film.">
+    <meta name="keywords" content="Redemption documentary, Covenant of Education, nonprofit education, student transformation, 7 Teachings">
+    <meta name="author" content="CoveOfEdu">
+    <link rel="canonical" href="https://coveofedu.org/redemption">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Watch Redemption | The Story Behind Covenant of Education">
+    <meta property="og:description" content="An intimate documentary revealing how one brother's sacrifice became a global education movement.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coveofedu.org/redemption">
+    <meta property="og:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
+    <meta property="og:site_name" content="CoveOfEdu">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Watch Redemption | The Story Behind Covenant of Education">
+    <meta name="twitter:description" content="An intimate documentary revealing how one brother's sacrifice became a global education movement.">
+    <meta name="twitter:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
+
+    <!-- Wistia Scripts -->
+    <script src="https://fast.wistia.com/embed/medias/hdlhplsgjz.jsonp" async></script>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+    <!-- Pledge.to Script -->
+    <script async="async" src="https://www.pledge.to/assets/widget.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* ASCEND Design System Colors */
+            --color-gold: #b08d57;
+            --color-light-gold: #d4af37;
+            --color-dark: #1c1c1c;
+            --color-off-white: #e8e3d8;
+            --color-warm-gray: #8b8680;
+            --color-gray-700: #4a4a48;
+            --color-gray-400: #999999;
+            --color-gray-200: #e5e5e5;
+            --color-gray-100: #f8f7f5;
+            --color-success: #5a7f3b;
+
+            /* Typography */
+            --font-primary: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+            /* Spacing */
+            --section-padding: 80px;
+            --container-padding: 32px;
+
+            /* Transitions */
+            --transition-normal: 300ms ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: linear-gradient(135deg, var(--color-off-white) 0%, #ffffff 100%);
+            color: var(--color-dark);
+            line-height: 1.7;
+        }
+
+        /* Top Banner */
+        .top-banner {
+            background: var(--color-dark);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
+        .top-banner span {
+            color: var(--color-gold);
+        }
+
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(28, 28, 28, 0.08);
+            height: 72px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 var(--container-padding);
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            letter-spacing: -0.02em;
+            text-decoration: none;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--color-gold);
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--color-dark);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            transition: color var(--transition-normal);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-gold);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: var(--color-gray-700);
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .gold-accent {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-gold), var(--color-light-gold));
+            margin: 2rem auto;
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 2rem 0 3rem;
+        }
+
+        .story-content {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(28, 28, 28, 0.08);
+            margin-bottom: 3rem;
+        }
+
+        .story-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .story-content h3 {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-content p {
+            font-size: 1.1rem;
+            color: var(--color-gray-700);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .story-content strong {
+            color: var(--color-dark);
+        }
+
+        .story-divider {
+            text-align: center;
+            margin: 2.5rem 0;
+            color: var(--color-gold);
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border-left: 4px solid var(--color-gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--color-gray-700);
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 3rem 0;
+            background: linear-gradient(180deg, rgba(176, 141, 87, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .video-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .logline {
+            text-align: center;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--color-gray-700);
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        .video-container {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(28, 28, 28, 0.12);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-top: 56.25%;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--color-dark);
+        }
+
+        .video-wrapper .wistia_responsive_padding {
+            padding: 56.25% 0 0 0;
+            position: relative;
+        }
+
+        .video-wrapper .wistia_responsive_wrapper {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .video-cta {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-gray-200);
+        }
+
+        .video-cta p {
+            color: var(--color-gray-700);
+            margin-bottom: 1rem;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--color-gray-700);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .quote-accent {
+            color: var(--color-gold);
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        /* Donation Section */
+        .donation-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.08) 0%, rgba(45, 61, 31, 0.05) 100%);
+        }
+
+        .donation-section .container {
+            max-width: 1000px;
+        }
+
+        .donation-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .donation-header .overline {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .donation-header h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+
+        .donation-header p {
+            font-size: 1.125rem;
+            color: var(--color-gray-700);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .donation-container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(28, 28, 28, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .donation-container h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--color-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .donation-container > p {
+            text-align: center;
+            color: var(--color-gray-700);
+            margin-bottom: 2rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-gray-200);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--color-warm-gray);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            min-height: 44px;
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-light-gold) 100%);
+            color: white;
+            box-shadow: 0 4px 16px rgba(176, 141, 87, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(176, 141, 87, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-dark);
+            border: 2px solid var(--color-dark);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-dark);
+            color: white;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-dark);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--color-gold);
+            text-decoration: none;
+            margin: 0 0.75rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .story-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .story-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .video-container {
+                padding: 1.5rem;
+            }
+
+            .donation-container {
+                padding: 1.5rem;
+            }
+
+            .donation-header h2 {
+                font-size: 1.75rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .nav-cta {
+                font-size: 0.75rem;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .quote {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-left {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+
+            .nav-cta {
+                font-size: 0.7rem;
+            }
+        }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 10000;
+            border-radius: 0 0 4px 0;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 3px solid var(--color-gold);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav>
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="https://coveofedu.org/" class="nav-logo">COVEOFEDU.</a>
+                <span class="nav-cta">🎗️ Text COE to 707070 To Donate</span>
+            </div>
+            <div class="nav-links">
+                <a href="https://coveofedu.org/">Home</a>
+                <a href="https://coveofedu.org/what-is-coe.html">About</a>
+                <a href="https://coveofedu.org/origins.html">Our Story</a>
+                <a href="#donate">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero animate-in">
+            <div class="container">
+                <h1>The Story Behind Covenant Of Education</h1>
+                <p class="subtitle">Ten Years in the Making</p>
+                <div class="gold-accent"></div>
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content animate-in">
+                    <p>Every morning for the past decade, I've poured coffee for my brother Tolik—even though he's been gone since 2014.</p>
+
+                    <p>When he gave me his last $500 a few years before his death, he walked to work for months in the Northeastern winters. He ate once a day. Never complained. Just gave everything so I could go to college.</p>
+
+                    <p>I went on to Harvard. Google. SAP. Built programs reaching 10 million learners.</p>
+
+                    <p>But I was too busy climbing that ladder to see he was suffering from a traumatic brain injury & headaches that made him scream; cognitive fog, invisible pain I couldn't recognize.</p>
+
+                    <div class="story-divider">• • •</div>
+
+                    <p>When he sent "need to talk" in 2014, I replied "at conference. talk later?"</p>
+
+                    <p>His response: <strong>"ok"</strong></p>
+
+                    <div class="highlight-box">
+                        <p>Two letters that haunted me for a decade.</p>
+                    </div>
+
+                    <p>He died two days later. Age 30. By suicide.</p>
+
+                    <div class="story-divider">• • •</div>
+
+                    <h2>Then Everything Changed</h2>
+
+                    <p>During a moment of deep forgiveness and self-love, Tolik visited me. Not in a dream. Not in my imagination. In a spiritual awakening that transformed everything I understood about sacrifice, love, and purpose.</p>
+
+                    <div class="highlight-box">
+                        <p>He wasn't a brother who abandoned me.<br><strong>He was a soldier who completed his mission.</strong></p>
+                    </div>
+
+                    <p>And his mission continues—through Covenant of Education, the organization I founded in his name to help those invisible, struggling teens find their purpose.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section class="video-section" id="watch">
+            <div class="container">
+                <h2>Watch Redemption</h2>
+                <p class="logline">After losing the one person who sacrificed everything for them, a grief-stricken brother transforms a decade of self-blame and guilt into redemption and purpose after a spiritual visitation reveals that love doesn't end with death—it transforms and multiplies through education and service to others.</p>
+
+                <div class="video-container animate-in">
+                    <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                            <span class="wistia_embed wistia_async_hdlhplsgjz popover=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span>
+                        </div>
+                    </div>
+
+                    <div class="video-cta">
+                        <p>This intimate 10-minute documentary reveals how love doesn't end with death—it transforms and multiplies through service to others.</p>
+                        <div class="action-buttons">
+                            <a href="#donate" class="btn btn-primary">Support Our Mission</a>
+                            <a href="#donate" class="btn btn-secondary">Make a Donation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE SECTION -->
+        <section class="quote-section">
+            <div class="container">
+                <p class="quote-accent">"</p>
+                <p class="quote">Two coffee cups. One full. One empty. A love that never dies—it only transforms.</p>
+            </div>
+        </section>
+
+        <!-- DONATION SECTION -->
+        <section class="donation-section" id="donate">
+            <div class="container">
+                <div class="donation-header">
+                    <p class="overline">MAKE AN IMPACT</p>
+                    <h2>Support the Future</h2>
+                    <p>Your donation transforms students' lives and builds the Carnegie Library of the AI Age.</p>
+                </div>
+
+                <div class="donation-container animate-in">
+                    <h3>Make Your Donation</h3>
+                    <p>Every contribution helps teens discover their purpose through live training in the Seven Teachings.</p>
+
+                    <!-- Pledge.to Widget -->
+                    <div class="plg-donate" data-widget-id="FMt7HDXJgi6kSB9T"></div>
+
+                    <div class="stats">
+                        <div>
+                            <span class="stat-number">30,000+</span>
+                            <span class="stat-label">Lessons Delivered</span>
+                        </div>
+                        <div>
+                            <span class="stat-number">$1.2M+</span>
+                            <span class="stat-label">Pledged</span>
+                        </div>
+                        <div>
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CoveOfEdu. 501(c)(3) Nonprofit Organization. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="https://coveofedu.org/origins.html">Our Story</a>
+                <a href="https://coveofedu.org/what-is-coe.html">About COE</a>
+                <a href="https://coveofedu.org/donate.html">Donate</a>
+                <a href="https://coveofedu.org/privacy-policy.html">Privacy Policy</a>
+                <a href="https://coveofedu.org/terms-of-service.html">Terms of Service</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Tax ID (EIN):</strong> 92-2455469 | <strong>501(c)(3) Nonprofit</strong>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-in');
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
