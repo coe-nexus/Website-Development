@@ -67,83 +67,6 @@
             line-height: 1.7;
         }
 
-        /* Top Banner */
-        .top-banner {
-            background: var(--color-dark);
-            color: white;
-            text-align: center;
-            padding: 10px 20px;
-            font-size: 0.9rem;
-        }
-
-        .top-banner span {
-            color: var(--color-gold);
-        }
-
-        /* Navigation */
-        nav {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(28, 28, 28, 0.08);
-            height: 72px;
-            position: sticky;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-        }
-
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 var(--container-padding);
-        }
-
-        .nav-left {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .nav-logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--color-dark);
-            letter-spacing: -0.02em;
-            text-decoration: none;
-        }
-
-        .nav-cta {
-            display: flex;
-            align-items: center;
-            font-size: 0.85rem;
-            color: var(--color-gold);
-            font-weight: 500;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: var(--color-dark);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            letter-spacing: 0.01em;
-            transition: color var(--transition-normal);
-        }
-
-        .nav-links a:hover {
-            color: var(--color-gold);
-        }
-
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -174,15 +97,6 @@
         .hero-content {
             position: relative;
             z-index: 1;
-        }
-
-        .hero-overline {
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--color-gold);
-            margin-bottom: 1rem;
         }
 
         .hero h1 {
@@ -527,28 +441,6 @@
             box-shadow: 0 12px 32px rgba(176, 141, 87, 0.35);
         }
 
-        /* Footer */
-        footer {
-            background: var(--color-dark);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-
-        footer a {
-            color: var(--color-gold);
-            text-decoration: none;
-            margin: 0 0.75rem;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -611,14 +503,6 @@
                 font-size: 1.75rem;
             }
 
-            .nav-links {
-                display: none;
-            }
-
-            .nav-cta {
-                font-size: 0.75rem;
-            }
-
             .btn {
                 width: 100%;
                 text-align: center;
@@ -626,16 +510,6 @@
         }
 
         @media (max-width: 480px) {
-            .nav-left {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.25rem;
-            }
-
-            .nav-cta {
-                font-size: 0.7rem;
-            }
-
             .hero {
                 padding: 3rem 0 2rem;
             }
@@ -650,22 +524,6 @@
         }
 
         /* Accessibility */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: var(--color-gold);
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            z-index: 10000;
-            border-radius: 0 0 4px 0;
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
         a:focus,
         button:focus {
             outline: 3px solid var(--color-gold);
@@ -674,29 +532,11 @@
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <nav>
-        <div class="nav-content">
-            <div class="nav-left">
-                <a href="https://coveofedu.org/" class="nav-logo">COVEOFEDU.</a>
-                <span class="nav-cta">Text COE to 707070 To Donate</span>
-            </div>
-            <div class="nav-links">
-                <a href="https://coveofedu.org/">Home</a>
-                <a href="https://coveofedu.org/what-is-coe.html">About</a>
-                <a href="https://coveofedu.org/origins.html">Our Story</a>
-                <a href="https://coveofedu.org/donate.html">Donate</a>
-            </div>
-        </div>
-    </nav>
-
     <main id="main-content">
         <!-- HERO SECTION -->
         <section class="hero animate-in">
             <div class="container">
                 <div class="hero-content">
-                    <p class="hero-overline">Case Study</p>
                     <h1>Agentic RAG Systems</h1>
                     <p class="subtitle">Whatever you can conceive and believe, the mind can achieve.</p>
                     <div class="gold-accent"></div>
@@ -746,9 +586,11 @@
                 <div class="video-container animate-in">
                     <div class="video-wrapper">
                         <iframe
-                            src="https://www.youtube.com/embed/MCdqByKOUFI"
+                            src="https://www.youtube-nocookie.com/embed/MCdqByKOUFI?rel=0"
                             title="Dimash Tabay - Agentic RAG Systems Project Showcase"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
                             allowfullscreen>
                         </iframe>
                     </div>
@@ -812,22 +654,6 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 CoveOfEdu. 501(c)(3) Nonprofit Organization. All rights reserved.</p>
-            <p style="margin-top: 1rem;">
-                <a href="https://coveofedu.org/origins.html">Our Story</a>
-                <a href="https://coveofedu.org/what-is-coe.html">About COE</a>
-                <a href="https://coveofedu.org/donate.html">Donate</a>
-                <a href="https://coveofedu.org/privacy-policy.html">Privacy Policy</a>
-                <a href="https://coveofedu.org/terms-of-service.html">Terms of Service</a>
-            </p>
-            <p style="margin-top: 1rem; font-size: 0.9rem;">
-                <strong>Tax ID (EIN):</strong> 92-2455469 | <strong>501(c)(3) Nonprofit</strong>
-            </p>
-        </div>
-    </footer>
 
     <script>
         // Smooth scroll for anchor links
