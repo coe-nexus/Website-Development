@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 7 Teachings | Dr. Izzy Kiver | Founder of COE</title>
+    <meta name="description" content="The story of Dr. Izzy Kiver — from immigrant kid with nothing to the creator of the 7 Teachings and the Covenant of Education. How one man's journey through loss, sacrifice, and relentless pursuit of mastery became a system that cultivates genius in others.">
+    <meta name="keywords" content="Dr. Izzy Kiver, 7 Teachings, Covenant of Education, COE founder, purpose, mentorship, transformation, Talmud, doctoral thesis, cognitive load theory">
+    <meta name="author" content="CoveOfEdu">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="The 7 Teachings | Dr. Izzy Kiver | Founder of COE">
+    <meta property="og:description" content="The story of Dr. Izzy Kiver — from immigrant kid with nothing to the creator of the 7 Teachings and the Covenant of Education.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
+    <meta property="og:site_name" content="CoveOfEdu">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The 7 Teachings | Dr. Izzy Kiver | Founder of COE">
+    <meta name="twitter:description" content="The story of Dr. Izzy Kiver — from immigrant kid with nothing to the creator of the 7 Teachings and the Covenant of Education.">
+    <meta name="twitter:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* ASCEND Design System Colors */
+            --color-gold: #b08d57;
+            --color-light-gold: #d4af37;
+            --color-dark: #1c1c1c;
+            --color-off-white: #e8e3d8;
+            --color-warm-gray: #8b8680;
+            --color-gray-700: #4a4a48;
+            --color-gray-400: #999999;
+            --color-gray-200: #e5e5e5;
+            --color-gray-100: #f8f7f5;
+
+            /* Typography */
+            --font-primary: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+            /* Spacing */
+            --section-padding: 80px;
+            --container-padding: 32px;
+
+            /* Transitions */
+            --transition-normal: 300ms ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: linear-gradient(135deg, var(--color-off-white) 0%, #ffffff 100%);
+            color: var(--color-dark);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 0 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(176, 141, 87, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(176, 141, 87, 0.05) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.15rem;
+            color: var(--color-gray-700);
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .gold-accent {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-gold), var(--color-light-gold));
+            margin: 2rem auto;
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 2rem 0 3rem;
+        }
+
+        .story-content {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(28, 28, 28, 0.08);
+            margin-bottom: 3rem;
+        }
+
+        .story-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .story-content h3 {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .story-content p {
+            font-size: 1.1rem;
+            color: var(--color-gray-700);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .story-content strong {
+            color: var(--color-dark);
+        }
+
+        .story-divider {
+            text-align: center;
+            margin: 2.5rem 0;
+            color: var(--color-gold);
+            font-size: 1.5rem;
+            letter-spacing: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border-left: 4px solid var(--color-gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--color-gray-700);
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 3rem 0;
+            background: linear-gradient(180deg, rgba(176, 141, 87, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .video-section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .video-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--color-gray-700);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.7;
+        }
+
+        .video-container {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(28, 28, 28, 0.12);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-top: 56.25%;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--color-dark);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Resources Section */
+        .resources-section {
+            padding: 3rem 0;
+        }
+
+        .resources-content {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(28, 28, 28, 0.08);
+        }
+
+        .resources-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .resource-card {
+            background: var(--color-gray-100);
+            border: 1px solid var(--color-gray-200);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            display: block;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(28, 28, 28, 0.1);
+            border-color: var(--color-gold);
+        }
+
+        .resource-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-url {
+            font-size: 0.9rem;
+            color: var(--color-warm-gray);
+        }
+
+        /* Quote Section */
+        .quote-section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .quote-card {
+            background: linear-gradient(135deg, var(--color-dark) 0%, #2a2a2a 100%);
+            border-radius: 16px;
+            padding: 4rem 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quote-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(176, 141, 87, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(176, 141, 87, 0.08) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .quote-card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .quote-accent {
+            color: var(--color-gold);
+            font-size: 3.5rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .quote-headline {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .quote-subheadline {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--color-gold);
+            margin-bottom: 2rem;
+        }
+
+        .quote-body {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.9;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .quote-attribution {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--color-gold);
+            font-weight: 500;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.08) 0%, rgba(45, 61, 31, 0.05) 100%);
+        }
+
+        .cta-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-overline {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-content h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            font-size: 1.125rem;
+            color: var(--color-gray-700);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            min-height: 44px;
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-primary);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-light-gold) 100%);
+            color: white;
+            box-shadow: 0 4px 16px rgba(176, 141, 87, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(176, 141, 87, 0.3);
+        }
+
+        .btn-donate {
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-light-gold) 100%);
+            color: white;
+            box-shadow: 0 4px 16px rgba(176, 141, 87, 0.25);
+            padding: 18px 48px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .btn-donate:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 32px rgba(176, 141, 87, 0.35);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .story-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .story-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .video-container {
+                padding: 1.5rem;
+            }
+
+            .resources-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-card {
+                padding: 3rem 2rem;
+            }
+
+            .quote-headline {
+                font-size: 1.4rem;
+            }
+
+            .quote-body {
+                font-size: 1rem;
+            }
+
+            .cta-content h2 {
+                font-size: 1.75rem;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3rem 0 2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .quote-card {
+                padding: 2.5rem 1.5rem;
+            }
+        }
+
+        /* Accessibility */
+        a:focus,
+        button:focus {
+            outline: 3px solid var(--color-gold);
+            outline-offset: 2px;
+        }
+
+        /* Thesis embed — Google Docs iframe in a styled container */
+        .thesis-wrapper {
+            position: relative;
+            padding-top: 75%;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            border: 1px solid var(--color-gray-200);
+        }
+
+        .thesis-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero animate-in">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>The 7 Teachings</h1>
+                    <p class="subtitle">This is love. This is sacrifice. Still my brother's sacrifice, moving through the world.</p>
+                    <div class="gold-accent"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content animate-in">
+                    <h2>The Immigrant</h2>
+                    <h3>From Ukraine to the Edge of Everything</h3>
+
+                    <p>Izzy Kiver arrived in America from Ukraine with nothing. Not the poetic kind of nothing that makes for a good opening line -- the real kind. The kind where every opportunity is a minor miracle and every setback confirms what the world already seems to believe about you.</p>
+
+                    <p>He was always searching for mentors. Always working as hard as he possibly could to be the very best at whatever was in front of him. Not out of ambition in the way most people use that word -- out of something closer to necessity. When you start with nothing, excellence isn't a strategy. It's oxygen.</p>
+
+                    <p>He entered yeshiva. Eighteen-hour days. Six days a week. The kind of schedule that breaks most people inside of a month. Izzy did it for years. By seventeen, he had finished the Talmud -- the entire Talmud -- over twelve times, with reviews and many Tosfoth. For context: many scholars consider completing the Talmud once in a decade to be a serious accomplishment. Izzy did it twelve times before he was old enough to vote.</p>
+
+                    <div class="highlight-box">
+                        <p>This was not prodigy. This was will. The particular kind of will that forms in people who understand -- not intellectually, but in their bones -- that no one is coming to save them. You either build the ladder yourself, or you stay where you are.</p>
+                    </div>
+
+                    <div class="story-divider">&bull; &bull; &bull;</div>
+
+                    <h2>The Cut</h2>
+                    <h3>Cutting Off the Arm to Save the Body</h3>
+
+                    <p>At some point, the path Izzy was on stopped being the right path. Not because it was wrong -- because it was someone else's. The yeshiva, the tradition, the expectation -- all of it had given him a foundation that would prove unshakeable. But the building he was meant to construct on top of it required a different set of blueprints.</p>
+
+                    <p>He made the decision that the hardest-working people eventually face: he cut off the arm to save the body. He left the known world and stepped into the unknown. He went searching -- not away from something, but toward whatever it was that his particular combination of gifts and scars was meant to become.</p>
+
+                    <p>That search would take him to Harvard. To Silicon Valley. Through loss that would have stopped most people cold. And ultimately, to the creation of something that didn't exist before he built it.</p>
+
+                    <div class="highlight-box">
+                        <p>And through all of it -- through every pivot, every reinvention, every dark corridor -- his brother Tolik's sacrifice was the engine underneath. The $500 given on a cold January day. The love that asked for nothing in return. Everything Izzy built, he built on that foundation. Still his brother's sacrifice, moving through the world.</p>
+                    </div>
+
+                    <div class="story-divider">&bull; &bull; &bull;</div>
+
+                    <h2>The System</h2>
+                    <h3>The 7 Teachings and the Covenant of Education</h3>
+
+                    <p>The 7 Teachings are not a curriculum. They are a doctrine -- a system for finding the genius that already exists inside a person and giving it the structure to emerge. Built from everything Izzy learned: the discipline of the Talmud, the rigor of doctoral research, the pattern recognition that comes from studying cognitive load theory and psychoneuroimmunology, and the irreplaceable education of personal loss.</p>
+
+                    <p>Izzy built the kiver.org learning platform from the ground up -- an LMS designed to deliver the most necessary skills to young adults for living a life of happiness and success. Finding their purpose and joy in life early, before the world has had time to convince them it's too late.</p>
+
+                    <p>His doctoral thesis -- dedicated to his brother Nafthali -- explored how patients with brain injury using ATT and ATP therapies can inspire cognitive load theory and reduce the burnout epidemic among knowledge workers. The research was personal. A brother with a brain injury. A world full of people burning out. The connection between the two became the academic backbone of what COE teaches.</p>
+
+                    <div class="highlight-box">
+                        <p>The Covenant of Education is not a program. It is a debt repaid for the rest of a lifetime. Every teen who finds their purpose, every young adult who discovers their genius, every transformation documented in these pages -- <strong>Dimash</strong>, <strong>Misha</strong>, <strong>Elly</strong>, <strong>Dr. Hall</strong> -- is proof that Tolik's sacrifice was not wasted. His honor and legacy live forever through us.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEDIA SECTION 1: The 7 Teachings Introduction -->
+        <section class="video-section" id="seven-teachings">
+            <div class="container">
+                <h2>The 7 Teachings</h2>
+                <p class="video-subtitle">An introduction to the doctrine and methodology at the heart of the Covenant of Education.</p>
+                <div class="video-container animate-in">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/ZQhEGNH2LHQ?rel=0"
+                            title="Dr. Izzy Kiver — Introduction to the 7 Teachings"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEDIA SECTION 2: Doctoral Thesis Defense -->
+        <section class="video-section" id="thesis-defense">
+            <div class="container">
+                <h2>Doctoral Thesis Defense</h2>
+                <p class="video-subtitle">Dedicated to Nafthali — exploring how brain injury therapies can inspire cognitive load theory and reduce the burnout epidemic among knowledge workers.</p>
+                <div class="video-container animate-in">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/y7GJ_8Iawrc?rel=0"
+                            title="Dr. Izzy Kiver — Doctoral Thesis Defense"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEDIA SECTION 3: Doctoral Thesis Document -->
+        <section class="video-section" id="thesis-document">
+            <div class="container">
+                <h2>The Doctoral Thesis</h2>
+                <p class="video-subtitle">The full research document — a bridge between brain injury rehabilitation and the reduction of cognitive burnout in knowledge workers.</p>
+                <div class="video-container animate-in">
+                    <div class="thesis-wrapper">
+                        <iframe
+                            src="https://docs.google.com/document/d/e/2PACX-1vT756pGbDphG4miiJ8RDtw7zJ2XkdCmANS4l_Mtc3yCeqHrUf4BclEYRbFmAGsSGt-Llexj1a5u0GaH/pub?embedded=true"
+                            title="Dr. Izzy Kiver — Doctoral Thesis Document">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESOURCES SECTION -->
+        <section class="resources-section">
+            <div class="container">
+                <div class="resources-content animate-in">
+                    <h2>Links &amp; Resources</h2>
+
+                    <div class="resources-grid">
+                        <a href="https://kiver.org" target="_blank" rel="noopener noreferrer" class="resource-card">
+                            <p class="resource-label">Platform</p>
+                            <p class="resource-title">Kiver.org LMS</p>
+                            <p class="resource-url">kiver.org</p>
+                        </a>
+
+                        <a href="https://www.youtube.com/@coveofedu" target="_blank" rel="noopener noreferrer" class="resource-card">
+                            <p class="resource-label">Channel</p>
+                            <p class="resource-title">COE on YouTube</p>
+                            <p class="resource-url">youtube.com/@coveofedu</p>
+                        </a>
+
+                        <a href="https://my.link.gallery/?source=d98fdf2722584634bec97edbda383913" target="_blank" rel="noopener noreferrer" class="resource-card">
+                            <p class="resource-label">Gallery</p>
+                            <p class="resource-title">Our Work at a Glance</p>
+                            <p class="resource-url">link.gallery</p>
+                        </a>
+
+                        <a href="https://coveofedu.org" target="_blank" rel="noopener noreferrer" class="resource-card">
+                            <p class="resource-label">Organization</p>
+                            <p class="resource-title">Covenant of Education</p>
+                            <p class="resource-url">coveofedu.org</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUOTE SECTION -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="quote-card animate-in">
+                    <div class="quote-card-content">
+                        <p class="quote-accent">&ldquo;</p>
+                        <p class="quote-headline">This is not a program.</p>
+                        <p class="quote-subheadline">It is a debt I intend to repay for the rest of my life.</p>
+                        <p class="quote-body">Seven teachings. Seven weeks. Tools they'll carry for the rest of their lives -- long after they've forgotten my name. Your honor and legacy, Nafthali, live forever through us. There is not a day that goes by in which I don't miss you.</p>
+                        <p class="quote-attribution">-- Izzy Kiver</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-in">
+                    <p class="cta-overline">Continue the Legacy</p>
+                    <h2>Become a Redeemer</h2>
+                    <p>Every genius cultivated through COE began with a single act of belief. Tolik gave the first $500. Take the role of redeemer and help the next teen find the genius inside themselves through the 7 Teachings.</p>
+                    <a href="https://www.pledge.to/coe" target="_blank" rel="noopener noreferrer" class="btn btn-donate">Give Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-in');
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
