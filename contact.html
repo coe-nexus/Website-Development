@@ -358,6 +358,220 @@
             text-decoration: underline;
         }
 
+        /* ─── Credentials Section ─── */
+        .credentials-section {
+            background: var(--color-dark);
+            color: #f0ece4;
+            padding: var(--section-padding) 0;
+        }
+
+        .credentials-section h2 {
+            color: #f0ece4;
+        }
+
+        .credentials-section .overline {
+            color: var(--color-gold);
+        }
+
+        .credentials-lead {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: rgba(240, 236, 228, 0.85);
+            max-width: 800px;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        /* Audience Tabs */
+        .cred-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 2px solid rgba(176, 141, 87, 0.25);
+            margin-bottom: 2.5rem;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .cred-tab {
+            padding: 0.85rem 1.5rem;
+            font-family: var(--font-family);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: rgba(240, 236, 228, 0.5);
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            min-height: 44px;
+        }
+
+        .cred-tab:hover {
+            color: rgba(240, 236, 228, 0.8);
+        }
+
+        .cred-tab.active {
+            color: var(--color-gold);
+            border-bottom-color: var(--color-gold);
+        }
+
+        .cred-panel {
+            display: none;
+        }
+
+        .cred-panel.active {
+            display: block;
+            animation: credFadeIn 0.4s ease;
+        }
+
+        @keyframes credFadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cred-panel-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .cred-prose {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: rgba(240, 236, 228, 0.82);
+        }
+
+        .cred-prose p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* One-Liners Grid */
+        .cred-oneliners {
+            margin-top: 3.5rem;
+            border-top: 1px solid rgba(176, 141, 87, 0.2);
+            padding-top: 2.5rem;
+        }
+
+        .cred-oneliners h3 {
+            color: rgba(240, 236, 228, 0.9);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .oneliner-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .oneliner-item {
+            display: flex;
+            align-items: baseline;
+            gap: 1.25rem;
+            padding: 1rem 1.25rem;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 6px;
+            border-left: 3px solid var(--color-gold);
+        }
+
+        .oneliner-label {
+            flex-shrink: 0;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            min-width: 110px;
+        }
+
+        .oneliner-text {
+            font-size: 1rem;
+            color: rgba(240, 236, 228, 0.78);
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        /* Credentials Blockquote */
+        .cred-blockquote {
+            margin-top: 3rem;
+            padding: 2rem 2.5rem;
+            background: rgba(176, 141, 87, 0.08);
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .cred-blockquote::before {
+            content: '\201C';
+            position: absolute;
+            top: -0.25rem;
+            left: 1rem;
+            font-size: 4rem;
+            color: var(--color-gold);
+            opacity: 0.35;
+            line-height: 1;
+        }
+
+        .cred-blockquote p {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: rgba(240, 236, 228, 0.8);
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        .cred-blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        .cred-closing {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(176, 141, 87, 0.2);
+            font-size: 1.05rem;
+            color: rgba(240, 236, 228, 0.65);
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .cred-closing p {
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 768px) {
+            .cred-tabs {
+                gap: 0;
+            }
+
+            .cred-tab {
+                padding: 0.75rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .oneliner-item {
+                flex-direction: column;
+                gap: 0.35rem;
+            }
+
+            .oneliner-label {
+                min-width: auto;
+            }
+
+            .cred-blockquote {
+                padding: 1.5rem;
+            }
+
+            .cred-blockquote p {
+                padding-left: 0.5rem;
+            }
+        }
+
         /* ─── Donor Perks Section ─── */
         .perks-grid {
             display: grid;
@@ -750,6 +964,104 @@
             </div>
         </section>
 
+        <!-- CREDENTIALS SECTION -->
+        <section class="credentials-section">
+            <div class="container">
+                <p class="overline">CREDENTIALS &mdash; DEPLOYED, NOT DISPLAYED</p>
+                <h2>The Architecture Behind the Work</h2>
+                <p class="credentials-lead">"I've spent ten years at places like Google and SAP building learning systems that reached millions of people &mdash; with completion rates that made the industry uncomfortable. Harvard, Michigan, MIT, a doctorate in education technology. All of which I now deploy entirely in service of helping teenagers figure out who they are before the world tells them who to be."</p>
+
+                <div class="cred-tabs" role="tablist">
+                    <button class="cred-tab active" role="tab" aria-selected="true" data-panel="cred-donors">For Major Donors</button>
+                    <button class="cred-tab" role="tab" aria-selected="false" data-panel="cred-foundations">For Foundations</button>
+                    <button class="cred-tab" role="tab" aria-selected="false" data-panel="cred-parents">For Parents</button>
+                    <button class="cred-tab" role="tab" aria-selected="false" data-panel="cred-full">The Full Record</button>
+                </div>
+
+                <!-- Panel: Major Donors -->
+                <div class="cred-panel active" id="cred-donors" role="tabpanel">
+                    <p class="cred-panel-label">Lead with Scale</p>
+                    <div class="cred-prose">
+                        <p>I've spent the better part of a decade building things that teach people &mdash; at volumes most educators would find slightly indecent.</p>
+                        <p>Ten million engineers at Polygon Labs. Five million families at TAL Education. Several thousand managers at SAP who, I'm told, still reference the frameworks I built, which is either flattering or an indictment of what came after me &mdash; I choose to believe the former.</p>
+                        <p>The completion rates were triple the industry average. Not because I'm particularly brilliant &mdash; though I wouldn't argue the point strenuously &mdash; but because I learned something early that most curriculum designers never figure out: people don't finish things that weren't built for them. They finish things that see them. That's not pedagogy. That's architecture. And it's the same architecture underneath the 7 Teachings.</p>
+                        <p>The difference is that at Google, the stakes were quarterly performance reviews. Here, the stakes are a sixteen-year-old who can't breathe over a college essay. I find the second problem considerably more interesting.</p>
+                    </div>
+                </div>
+
+                <!-- Panel: Foundations -->
+                <div class="cred-panel" id="cred-foundations" role="tabpanel">
+                    <p class="cred-panel-label">Academic Rigor, Worn Lightly</p>
+                    <div class="cred-prose">
+                        <p>My academic credentials &mdash; and I share these not because I find them particularly interesting but because I understand you need to put something in a file &mdash; include a doctorate in Education Technology, a Master's from Harvard, a second Master's in Learning Innovation from Michigan, and a MicroMasters in Data Science from MIT. My doctoral thesis focused on AI-enhanced curriculum development for performance improvement, which is a very clinical way of describing the question that actually kept me up at night: <em>Can you systematize the thing my brother did for me with five hundred dollars and no formal training whatsoever?</em></p>
+                        <p>The answer, it turns out, is yes. But it required borrowing from computational linguistics, behavioral psychology, and instructional design &mdash; and ignoring approximately forty percent of what each field considers orthodoxy. The remaining sixty percent, properly integrated, is what became the 7 Teachings.</p>
+                        <p>I mention the rigor because I know what this room needs to hear. But I want to be honest about something: the research gave me the framework. My brother gave me the question. And in my experience, the person with the right question will always outperform the person with the right methodology. I was fortunate enough to end up with both.</p>
+                    </div>
+                </div>
+
+                <!-- Panel: Parents -->
+                <div class="cred-panel" id="cred-parents" role="tabpanel">
+                    <p class="cred-panel-label">Context Matters</p>
+                    <div class="cred-prose">
+                        <p>I should tell you what I do for a living, because context matters and I've been talking about my brother for ten minutes without mentioning that I actually have a day job.</p>
+                        <p>I'm an educator. That's the short version. The longer version involves Harvard, and Google, and a decade of building learning programs at companies whose names you'd recognize, and completion rates that made my colleagues mildly suspicious that I was somehow cheating.</p>
+                        <p>But I didn't start COE because of any of that. The r&eacute;sum&eacute; is a tool &mdash; a useful one, the way a good lockpick is useful &mdash; but it's not the reason.</p>
+                        <p>The reason is a man who had a brain injury and five hundred dollars and decided my future mattered more than his groceries. Everything I learned at Harvard and Google and SAP &mdash; the instructional design, the behavioral frameworks, the data science &mdash; all of it exists in service of one question: <em>Can I build, at scale, what Tolik did for me in a dormitory with an empty wallet?</em></p>
+                        <p>The credentials help me build it well. The promise is why I build it at all.</p>
+                    </div>
+                </div>
+
+                <!-- Panel: Full Record -->
+                <div class="cred-panel" id="cred-full" role="tabpanel">
+                    <p class="cred-panel-label">The Quiet Aside</p>
+                    <div class="cred-prose">
+                        <p>If you need the list &mdash; and I understand that you do, because trust is built on evidence and I have no quarrel with that &mdash; here it is:</p>
+                        <p>Harvard, Master's in Management. University of Michigan, Master's in Learning Innovation. A doctorate in Education Technology. MIT MicroMasters in Data Science. Thirty-five certifications across instructional design, artificial intelligence, and product management, which sounds excessive and probably is, but I've never been able to resist a well-structured course &mdash; occupational hazard of being an educator.</p>
+                        <p>Ten years across Google, SAP, Polygon Labs, and TAL Education. Curriculum that reached, collectively, north of ten million learners. Completion rates that tripled industry benchmarks &mdash; not once, but consistently, across radically different populations and contexts.</p>
+                        <p>All of which means exactly one thing for the purposes of this conversation: I know how to build learning systems that people actually finish. And I know how to do it at a scale that matters.</p>
+                        <p>The reason I do it &mdash; that's a different list entirely. That list has one item on it, and his name was Tolik.</p>
+                    </div>
+                </div>
+
+                <!-- One-Liners by Context -->
+                <div class="cred-oneliners">
+                    <h3>By Context</h3>
+                    <div class="oneliner-grid">
+                        <div class="oneliner-item">
+                            <span class="oneliner-label">Donors</span>
+                            <span class="oneliner-text">"I've built learning systems reaching ten million people. Now I build them for the people who need them most."</span>
+                        </div>
+                        <div class="oneliner-item">
+                            <span class="oneliner-label">Foundations</span>
+                            <span class="oneliner-text">"Doctorate in Ed Tech. Decade at Google and SAP. My thesis was essentially: can you scale what my brother did with five hundred dollars?"</span>
+                        </div>
+                        <div class="oneliner-item">
+                            <span class="oneliner-label">Parents</span>
+                            <span class="oneliner-text">"Harvard and Google taught me how to build programs. My brother taught me why."</span>
+                        </div>
+                        <div class="oneliner-item">
+                            <span class="oneliner-label">Cold Intro</span>
+                            <span class="oneliner-text">"Learning architect. Harvard, Google, ten million learners. Now I do the same thing for teenagers &mdash; and it matters considerably more."</span>
+                        </div>
+                        <div class="oneliner-item">
+                            <span class="oneliner-label">When Challenged</span>
+                            <span class="oneliner-text">"I built curriculum at Google, SAP, and Polygon that tripled industry completion rates. The 7 Teachings outperforms all of them. Ninety-five percent."</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Conversational Drop -->
+                <div class="cred-blockquote">
+                    <p>...and I should mention &mdash; though it's almost beside the point &mdash; I didn't come to this naively. I built curriculum at Google that reached their entire learning ecosystem. Designed training architecture at SAP that's still running, or so I'm told by people who enjoy making me feel old. My doctoral work was specifically on AI-enhanced learning design. Ten million engineers at Polygon used frameworks I built.</p>
+                    <p>I say this not to impress you &mdash; I find self-promotion roughly as pleasant as turbulence &mdash; but because I want you to understand that when I tell you the 7 Teachings works, I'm not speaking from hope. I'm speaking from a rather exhaustive familiarity with what works and what doesn't at scale. And this &mdash; this &mdash; works.</p>
+                </div>
+
+                <div class="cred-closing">
+                    <p>Credentials are a weapon, not a costume. You don't walk into a room wearing them. You keep them holstered. And when the moment calls for it &mdash; when someone needs to know why they should trust the architecture &mdash; you set them on the table quietly, the way a man sets down a passport at a border crossing. Not to impress the officer. Just to confirm what he already suspected: you've been places.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- DONOR PERKS SECTION -->
         <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
             <div class="container">
@@ -870,6 +1182,30 @@
                         e.preventDefault();
                         header.click();
                     }
+                });
+            });
+
+            // ─── Credentials Tabs ───
+            var tabs = document.querySelectorAll('.cred-tab');
+            var panels = document.querySelectorAll('.cred-panel');
+
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    var targetId = tab.getAttribute('data-panel');
+
+                    // Deactivate all tabs and panels
+                    tabs.forEach(function (t) {
+                        t.classList.remove('active');
+                        t.setAttribute('aria-selected', 'false');
+                    });
+                    panels.forEach(function (p) {
+                        p.classList.remove('active');
+                    });
+
+                    // Activate clicked tab and its panel
+                    tab.classList.add('active');
+                    tab.setAttribute('aria-selected', 'true');
+                    document.getElementById(targetId).classList.add('active');
                 });
             });
 
