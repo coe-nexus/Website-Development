@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Book a Discovery Call | CoveOfEdu</title>
+    <meta name="description" content="Book a free 10-minute discovery call with Covenant of Education. Explore our services — course building, college readiness, mentoring, cohorts, and more.">
+    <meta name="keywords" content="discovery call, education consulting, course building, college readiness, life purpose mentoring, 7 Teachings, CoveOfEdu">
+    <meta name="author" content="CoveOfEdu">
+    <link rel="canonical" href="https://coveofedu.org/contact">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Book a Discovery Call | CoveOfEdu">
+    <meta property="og:description" content="10 minutes. Pick a topic. Let's see if we're the right fit.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coveofedu.org/contact">
+    <meta property="og:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
+    <meta property="og:site_name" content="CoveOfEdu">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Book a Discovery Call | CoveOfEdu">
+    <meta name="twitter:description" content="10 minutes. Pick a topic. Let's see if we're the right fit.">
+    <meta name="twitter:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ASCEND Design System - Contact / Discovery Call Page */
+
+        :root {
+            --color-primary-bg: #ffffff;
+            --color-secondary-bg: #e8e3d8;
+            --color-text: #1c1c1c;
+            --color-gold: #b08d57;
+            --color-dark: #1c1c1c;
+            --color-warm-gray: #8b8680;
+            --color-gray-700: #4a4a48;
+            --font-family: 'Comfortaa', cursive;
+            --max-width: 1000px;
+            --section-padding: 100px;
+            --element-spacing: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-secondary-bg) 100%);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--color-gray-700);
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            color: var(--color-gold);
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.125rem;
+        }
+
+        .large-text {
+            font-size: 1.375rem;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: var(--section-padding) 0;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+        .section:nth-child(4) { animation-delay: 0.4s; }
+        .section:nth-child(5) { animation-delay: 0.5s; }
+
+        /* Accent Elements */
+        .gold-accent {
+            width: 80px;
+            height: 3px;
+            background: var(--color-gold);
+            margin: 2rem 0;
+        }
+
+        .overline {
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: var(--section-padding) 0;
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.05) 0%, rgba(45, 61, 31, 0.05) 100%);
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero .subheading {
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 400;
+            max-width: 800px;
+            margin-bottom: 2rem;
+            color: var(--color-warm-gray);
+        }
+
+        .hero .intro {
+            font-size: 1.2rem;
+            max-width: 700px;
+            color: var(--color-gray-700);
+            line-height: 1.8;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-family);
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            min-height: 44px;
+        }
+
+        .btn-primary {
+            background: var(--color-gold);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #9a7849;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(176, 141, 87, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-gold);
+            border: 2px solid var(--color-gold);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-gold);
+            color: white;
+        }
+
+        /* ─── Service / Offering Cards ─── */
+        .service-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            border-color: var(--color-gold);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.2s ease;
+        }
+
+        .service-card-header:hover {
+            background: rgba(176, 141, 87, 0.03);
+        }
+
+        .service-card-icon {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gold);
+        }
+
+        .service-card-icon svg {
+            width: 32px;
+            height: 32px;
+            stroke: var(--color-gold);
+            fill: none;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .service-card-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .service-card-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.25rem;
+            line-height: 1.3;
+        }
+
+        .service-card-price {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-gold);
+        }
+
+        .service-card-toggle {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card-toggle svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--color-warm-gray);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .service-card.active .service-card-toggle {
+            transform: rotate(180deg);
+        }
+
+        .service-card-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+
+        .service-card.active .service-card-body {
+            max-height: 500px;
+        }
+
+        .service-card-content {
+            padding: 0 2rem 2rem 5.25rem;
+            color: var(--color-gray-700);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .service-card-content p {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-card-content .detail {
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--color-secondary-bg);
+            margin-top: 0.75rem;
+            font-size: 0.975rem;
+            color: var(--color-warm-gray);
+        }
+
+        .service-card-content a {
+            color: var(--color-gold);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .service-card-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* ─── Donor Perks Section ─── */
+        .perks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .perk-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .perk-check {
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(176, 141, 87, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .perk-check svg {
+            width: 14px;
+            height: 14px;
+            stroke: var(--color-gold);
+            fill: none;
+            stroke-width: 2.5;
+        }
+
+        .perk-text h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.35rem;
+        }
+
+        .perk-text p {
+            font-size: 0.95rem;
+            color: var(--color-warm-gray);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        .perks-note {
+            margin-top: 2rem;
+            padding: 1.25rem 1.5rem;
+            background: rgba(176, 141, 87, 0.06);
+            border-left: 3px solid var(--color-gold);
+            border-radius: 0 8px 8px 0;
+            font-size: 0.975rem;
+            color: var(--color-gray-700);
+        }
+
+        .perks-note p {
+            margin-bottom: 0;
+            font-size: 0.975rem;
+        }
+
+        /* ─── Acuity Scheduling Section ─── */
+        .booking-section {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.08) 0%, rgba(45, 61, 31, 0.06) 100%);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .booking-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .acuity-embed-wrapper {
+            margin-top: 2.5rem;
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .acuity-embed-wrapper iframe {
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 60px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hero .subheading {
+                font-size: 1.25rem;
+            }
+
+            .service-card-header {
+                padding: 1.25rem 1.25rem;
+                gap: 1rem;
+            }
+
+            .service-card-content {
+                padding: 0 1.25rem 1.5rem 1.25rem;
+            }
+
+            .service-card-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .service-card-icon svg {
+                width: 26px;
+                height: 26px;
+            }
+
+            .perks-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-section {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        /* Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-gold);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 3px solid var(--color-gold);
+            outline-offset: 2px;
+        }
+
+        .service-card-header:focus-visible {
+            outline: 3px solid var(--color-gold);
+            outline-offset: -3px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <p class="overline">LET'S CONNECT</p>
+                <h1>Book a Discovery Call</h1>
+                <p class="subheading">10 minutes. Pick a topic. Let me help you find clarity.</p>
+                <div class="gold-accent" style="margin: 0 auto;"></div>
+                <p class="intro">This is a free 10-minute call to help you gain clarity on your next steps &mdash; whether that means discovering your purpose, accelerating your education, or growing deeper into the work you're already doing.</p>
+            </div>
+        </section>
+
+        <!-- SERVICE / OFFERING CARDS -->
+        <section class="section">
+            <div class="container">
+                <h2>What We Offer</h2>
+                <p class="large-text">Browse the services below, then book a call to discuss the one that fits.</p>
+
+                <div class="service-cards">
+
+                    <!-- 1. Education Architecture -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M3 21h18M3 7v14M21 7v14M6 21V10M10 21V10M14 21V10M18 21V10M3 7l9-4 9 4"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">Education Architecture &mdash; Course Building &amp; LMS Admin</div>
+                                <div class="service-card-price">$7,000&ndash;$10,000/month</div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>Full-service course design and learning management system administration. I build and manage the backend so your educational content actually works &mdash; structure, delivery, student tracking, the whole system.</p>
+                                <p class="detail">Ideal for organizations or educators who need a turnkey LMS setup. Includes curriculum architecture, LearnDash/WordPress integration, Talent LMS, Docebo and ongoing admin support (available for most LMS systems with custom feature development).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. College Readiness -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">College Readiness &amp; Consultation</div>
+                                <div class="service-card-price">$150 / 30-minute session <span style="font-size: 0.85rem; color: var(--color-warm-gray);">(discounted &mdash; scholarships available)</span></div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>Applications, university selection, and strategic positioning for college-bound students. We look at the full picture &mdash; grades, essays, extracurriculars, timing &mdash; and build a plan.</p>
+                                <p class="detail">Covers application review, personal statement coaching, university shortlisting, and timeline planning. Great for families navigating the admissions process. Personal education administration and materials portal included.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Founder's Cards -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 8l1.5 3 3.5.5-2.5 2.5.5 3.5L12 16l-3 1.5.5-3.5L7 11.5l3.5-.5z"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">Founder's Cards</div>
+                                <div class="service-card-price">$250/card</div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>Limited-edition collectible Purpose Card from Covenant of Education &mdash; contains all of The 7 Teachings. Signed, exclusive, tangible. Metal card design, luxury card, NFC links to the full 7 Teachings course to find and sharpen your life's purpose.</p>
+                                <p class="detail">This isn't merch. It is a core artifact of the mission COE is on &mdash; a movement of showing up for others. This card represents the core 7 Teachings and comes with a Certificate of Authenticity. <a href="#">Details coming soon</a><!-- TODO: add link to Purpose Cards page when available --></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Child Early Start -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L9 7H3l4.5 5L6 17l6-3 6 3-1.5-5L21 7h-6z"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">Child Early Start &mdash; Skip Grades &amp; Early College</div>
+                                <div class="service-card-price">$1,000</div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>A structured consultation for families exploring grade acceleration or early college enrollment for gifted children.</p>
+                                <p class="detail">Includes aptitude assessment guidance, curriculum gap analysis, and a step-by-step roadmap for navigating the institutional process. We've helped families compress timelines without sacrificing depth.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. 7 Teachings Reality Hack Cohorts -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l7 4"/><path d="M12 12l-5 8"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">7 Teachings Reality Hack Cohorts</div>
+                                <div class="service-card-price">$1,800/spot</div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>The flagship program. A structured cohort experience built around The 7 Teachings methodology &mdash; purpose discovery for teenagers through mentorship, challenges, and real-world application.</p>
+                                <p class="detail">Multi-week immersive program. Includes group sessions, 1:1 mentoring touchpoints, Atom Log tracking (<a href="https://thecoe.org/atom" target="_blank" rel="noopener">thecoe.org/atom</a>), and a final capstone. <a href="https://coveofedu.org/impact" target="_blank" rel="noopener">View case studies &amp; success stories</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. 1:1 Life Purpose Mentoring -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 3c-1.5 0-3 1.5-3 4 0 2 1.5 3.5 3 5 1.5-1.5 3-3 3-5 0-2.5-1.5-4-3-4z"/><path d="M12 12v9"/><path d="M9 21h6"/><path d="M8 17c-3 0-5-1-5-2.5S5 12 8 12"/><path d="M16 17c3 0 5-1 5-2.5S19 12 16 12"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">1:1 Life Purpose Mentoring <span style="font-size: 0.85rem; color: var(--color-warm-gray);">(Limited &mdash; Need-based scholarships available)</span></div>
+                                <div class="service-card-price">$10,000</div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>Intensive one-on-one mentoring through The 7 Teachings framework. Limited availability &mdash; this is the deep work.</p>
+                                <p class="detail">Not only for teenagers &mdash; adults too. For anyone ready to go deeper. Personalized mentoring cadence, purpose mapping, and ongoing accountability. Spots are highly limited and restricted to Dr. Izzy's schedule to maintain quality and transformative results.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Major Gifts & Donations -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L4 7v4c0 5.25 3.4 10.15 8 11.25 4.6-1.1 8-6 8-11.25V7l-8-5z"/><path d="M9 12l2 2 4-4"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">Major Gifts &amp; Donations</div>
+                                <div class="service-card-price">$25,000+</div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>For philanthropists and organizations who want to invest in the mission at scale. Major gift contributions fuel cohort scholarships, program expansion, and international reach.</p>
+                                <p class="detail">Major donors receive the full Founder's Circle experience (see supporter perks below). Let's talk about impact alignment and how your contribution moves the needle.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Monthly Supporter -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">Monthly Supporter &mdash; Cold Call Pledge</div>
+                                <div class="service-card-price">Starting at $18/month <span style="font-size: 0.85rem; color: var(--color-warm-gray);">(suggested: $42/month)</span></div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>Become a recurring supporter of Covenant of Education. Every dollar funds purpose discovery for a teenager who needs it.</p>
+                                <p class="detail">Monthly pledges keep the lights on and the programs running. Choose your level &mdash; $18/month minimum, $42/month suggested. See donor perks below. <a href="https://pledge.to/coe" target="_blank" rel="noopener">Start your pledge</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Public Speaking -->
+                    <div class="service-card">
+                        <div class="service-card-header" role="button" tabindex="0" aria-expanded="false">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 15V3"/><path d="M8 7l4-4 4 4"/><rect x="4" y="15" width="16" height="6" rx="1"/><path d="M8 18h.01M12 18h.01M16 18h.01"/></svg>
+                            </div>
+                            <div class="service-card-info">
+                                <div class="service-card-title">Public Speaking &amp; Keynotes</div>
+                                <div class="service-card-price">Inquire for rates</div>
+                            </div>
+                            <div class="service-card-toggle">
+                                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-body">
+                            <div class="service-card-content">
+                                <p>Dr. Izzy speaks on AI in education, purpose-driven leadership, and the future of learning &mdash; with experience on stage for audiences of hundreds to thousands across Central Asian entrepreneur hubs and international conferences.</p>
+                                <p class="detail">Topics include the intersection of AI and education, The 7 Teachings philosophy, building mission-driven organizations, and empowering the next generation through mentorship. Available for conferences, corporate events, university engagements, and nonprofit summits. <a href="#" target="_blank" rel="noopener">View past events</a><!-- TODO: add link to speaking page or media kit when available --></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DONOR PERKS SECTION -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.5); padding: var(--section-padding) 0;">
+            <div class="container">
+                <h2>What Supporters Receive</h2>
+                <p class="large-text">Every level of giving unlocks a meaningful connection to the work we do.</p>
+
+                <div class="perks-grid">
+                    <div class="perk-item">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div class="perk-text">
+                            <h4>Founder's Newsletter</h4>
+                            <p>Monthly email updates direct from the founder &mdash; insights, wins, and what's next.</p>
+                        </div>
+                    </div>
+
+                    <div class="perk-item">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div class="perk-text">
+                            <h4>Founder's Monthly Report</h4>
+                            <p>Physical mail: impact metrics, Atom moments, and case highlights delivered to your door.</p>
+                        </div>
+                    </div>
+
+                    <div class="perk-item">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div class="perk-text">
+                            <h4>New Card Releases</h4>
+                            <p>First access to new Purpose Card drops before anyone else.</p>
+                        </div>
+                    </div>
+
+                    <div class="perk-item">
+                        <div class="perk-check">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div class="perk-text">
+                            <h4>Founder's Card &mdash; Exclusive Edition</h4>
+                            <p>Signed, complete set of all 7 Teachings cards. Reserved for major donors and Founder's Circle tier.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="perks-note">
+                    <p>Supporters may also receive 7 Teachings cards with their donation, plus ongoing mail about company happenings and mission progress.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACUITY SCHEDULING SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="booking-section">
+                    <p class="overline">READY?</p>
+                    <h2>Book Your 10-Minute Call</h2>
+                    <p style="max-width: 600px; margin: 0 auto 1rem;">Select a topic that matches your interest, pick a time that works, and let's talk. No pressure, no pitch &mdash; just clarity.</p>
+
+                    <div class="acuity-embed-wrapper">
+                        <iframe src="https://app.acuityscheduling.com/schedule.php?owner=36964540&appointmentType=85173163" width="100%" height="800" frameBorder="0" allow="payment" title="Schedule a Discovery Call"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: var(--color-dark); color: white; padding: 3rem 0; text-align: center; margin-top: var(--section-padding);">
+        <div class="container">
+            <p>&copy; 2025 CoveOfEdu. 501(c)(3) Nonprofit Organization. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="/origins" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Our Story</a>
+                <a href="/seven-teachings" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">7 Teachings</a>
+                <a href="/programs" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Programs</a>
+                <a href="/impact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Impact</a>
+                <a href="/donate" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Donate</a>
+                <a href="/contact" style="color: var(--color-gold); text-decoration: none; margin: 0 1rem;">Contact</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                <strong>Tax ID:</strong> Available upon request | <strong>501(c)(3) Nonprofit</strong>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Acuity Scheduling Script -->
+    <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // ─── Accordion: expand / collapse service cards ───
+            var cards = document.querySelectorAll('.service-card');
+
+            cards.forEach(function (card) {
+                var header = card.querySelector('.service-card-header');
+
+                header.addEventListener('click', function () {
+                    var isActive = card.classList.contains('active');
+
+                    // Close all other cards
+                    cards.forEach(function (c) {
+                        c.classList.remove('active');
+                        c.querySelector('.service-card-header').setAttribute('aria-expanded', 'false');
+                    });
+
+                    // Toggle the clicked card
+                    if (!isActive) {
+                        card.classList.add('active');
+                        header.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                // Keyboard accessibility: Enter and Space to toggle
+                header.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        header.click();
+                    }
+                });
+            });
+
+            // ─── Intersection Observer for fade-in animations ───
+            var sections = document.querySelectorAll('.section');
+
+            var observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(function (section) {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
