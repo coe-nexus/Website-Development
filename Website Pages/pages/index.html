@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoveOfEdu | The Carnegie Library of the AI Age | 501(c)(3) Nonprofit</title>
-    <meta name="description" content="CoveOfEdu is a 501(c)(3) nonprofit building wealth-creation infrastructure through AI education for underserved students. Transform lives through the 7 Teachings.">
+    <title>Covenant of Education | Every teenager already has something extraordinary in them.</title>
+    <meta name="description" content="Covenant of Education is a 501(c)(3) nonprofit. The 7 Teachings — a system of structured presence that reveals people to themselves. 100 million people discovering their purpose by 2040.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,6 +42,7 @@
             line-height: 1.7;
         }
 
+        /* Hero */
         .hero {
             background: linear-gradient(135deg, var(--cove-offwhite) 0%, var(--cove-white) 100%);
             padding: 120px 20px;
@@ -69,7 +70,7 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 24px;
@@ -77,14 +78,14 @@
         }
 
         .hero .tagline {
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             color: var(--cove-gold);
             margin-bottom: 16px;
             font-weight: 500;
         }
 
         .hero .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: var(--cove-warm-gray);
             margin-bottom: 48px;
             max-width: 700px;
@@ -159,33 +160,58 @@
             margin-right: auto;
         }
 
+        .gold-dot {
+            color: var(--cove-gold);
+        }
+
+        .trust-badge {
+            display: inline-block;
+            background: rgba(176, 141, 87, 0.1);
+            color: var(--cove-gold);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin: 8px;
+        }
+
+        /* Stats */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
             margin: 48px 0;
         }
 
         .stat-card {
             text-align: center;
-            padding: 32px;
+            padding: 32px 20px;
             background: var(--cove-white);
             border-radius: var(--radius-large);
             border: 2px solid var(--cove-gold);
         }
 
         .stat-number {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 700;
             color: var(--cove-gold);
             margin-bottom: 8px;
         }
 
         .stat-label {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: var(--cove-warm-gray);
         }
 
+        .stat-context {
+            font-size: 0.85rem;
+            color: var(--cove-warm-gray);
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        /* Teachings Grid */
         .teachings-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -228,6 +254,143 @@
             line-height: 1.8;
         }
 
+        /* Problem & Origin */
+        .narrative-block {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: var(--cove-dark);
+        }
+
+        .narrative-block p {
+            margin-bottom: 24px;
+        }
+
+        .narrative-block .highlight {
+            color: var(--cove-gold);
+            font-weight: 600;
+        }
+
+        .narrative-block blockquote {
+            border-left: 4px solid var(--cove-gold);
+            padding: 16px 24px;
+            margin: 32px 0;
+            background: rgba(176, 141, 87, 0.05);
+            border-radius: 0 var(--radius-large) var(--radius-large) 0;
+            font-style: italic;
+        }
+
+        /* Group Selection */
+        .group-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .group-card {
+            padding: 40px;
+            border-radius: var(--radius-large);
+            border: 2px solid var(--cove-gray-200);
+            transition: all 300ms ease;
+        }
+
+        .group-card:hover {
+            border-color: var(--cove-gold);
+            box-shadow: 0 12px 32px rgba(176, 141, 87, 0.15);
+        }
+
+        .group-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--cove-gold);
+        }
+
+        .group-card p {
+            color: var(--cove-warm-gray);
+            line-height: 1.8;
+        }
+
+        /* Case Studies */
+        .case-study {
+            background: var(--cove-white);
+            border-radius: var(--radius-large);
+            padding: 40px;
+            margin-bottom: 32px;
+            border: 1px solid var(--cove-gray-200);
+        }
+
+        .case-study h3 {
+            font-size: 1.5rem;
+            color: var(--cove-gold);
+            margin-bottom: 8px;
+        }
+
+        .case-study .role {
+            font-size: 0.95rem;
+            color: var(--cove-warm-gray);
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .case-study p {
+            line-height: 1.8;
+            color: var(--cove-dark);
+        }
+
+        .case-study .achievements {
+            margin-top: 16px;
+            padding-left: 20px;
+        }
+
+        .case-study .achievements li {
+            margin-bottom: 8px;
+            color: var(--cove-warm-gray);
+        }
+
+        /* Donation Grid */
+        .donate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin: 48px 0;
+        }
+
+        .donate-card {
+            text-align: center;
+            padding: 32px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-large);
+            border: 2px solid rgba(176, 141, 87, 0.4);
+            transition: all 300ms ease;
+        }
+
+        .donate-card:hover {
+            border-color: var(--cove-gold);
+            transform: translateY(-4px);
+        }
+
+        .donate-amount {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--cove-gold);
+            margin-bottom: 8px;
+        }
+
+        .donate-tier {
+            font-size: 1.1rem;
+            color: var(--cove-offwhite);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .donate-desc {
+            font-size: 0.95rem;
+            color: var(--cove-warm-gray);
+        }
+
+        /* CTA */
         .cta-section {
             background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
             padding: 100px 20px;
@@ -246,28 +409,52 @@
             opacity: 0.95;
         }
 
-        .gold-dot {
-            color: var(--cove-gold);
+        /* Supporters */
+        .supporters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin: 48px 0;
         }
 
-        .trust-badge {
-            display: inline-block;
-            background: rgba(176, 141, 87, 0.1);
+        .supporter-category {
+            text-align: center;
+            padding: 32px 20px;
+        }
+
+        .supporter-category h3 {
+            font-size: 1.2rem;
             color: var(--cove-gold);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 0.9rem;
+            margin-bottom: 20px;
             font-weight: 600;
-            letter-spacing: 0.05em;
-            margin: 8px;
+        }
+
+        .supporter-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .supporter-category li {
+            padding: 8px 0;
+            color: var(--cove-warm-gray);
+            font-size: 1rem;
+            border-bottom: 1px solid var(--cove-gray-200);
+        }
+
+        .supporter-category li:last-child {
+            border-bottom: none;
         }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .hero .tagline { font-size: 1.2rem; }
-            .section-title { font-size: 2rem; }
+            .hero h1 { font-size: 2rem; }
+            .hero .tagline { font-size: 1.1rem; }
+            .section-title { font-size: 1.8rem; }
             .btn { padding: 14px 32px; font-size: 1rem; margin: 8px; }
             .cta-section h2 { font-size: 2rem; }
+            .narrative-block { font-size: 1.05rem; }
+            .group-cards { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+            .stat-number { font-size: 2rem; }
         }
     </style>
 </head>
@@ -275,9 +462,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>The Carnegie Library of the AI Age<span class="gold-dot">.</span></h1>
-            <p class="tagline">Building Wealth-Creation Infrastructure Through AI Education</p>
-            <p class="subtitle">Empowering underserved students to create sustainable wealth through AI skills, entrepreneurship, and the 7 Teachings of purpose-driven success.</p>
+            <h1>Every teenager already has something extraordinary in them<span class="gold-dot">.</span> We help them see it<span class="gold-dot">.</span></h1>
+            <p class="tagline">The 7 Teachings. A system of structured presence that reveals people to themselves.</p>
+            <p class="subtitle">Covenant of Education is a movement of showing up for others&mdash;until they are ready to show up for themselves, and can take others along with them on the journey to success.</p>
 
             <div>
                 <div class="trust-badge">501(c)(3) NONPROFIT</div>
@@ -286,35 +473,138 @@
             </div>
 
             <div style="margin-top: 48px;">
-                <a href="#join-movement" class="btn btn-primary">Join the Movement</a>
+                <a href="#donate" class="btn btn-primary">Support Our Mission</a>
                 <a href="#7-teachings" class="btn btn-secondary">Explore the 7 Teachings</a>
             </div>
         </div>
     </section>
 
-    <!-- Impact Section -->
+    <!-- Problem Statement -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Real Impact<span class="gold-dot">.</span> Real Results<span class="gold-dot">.</span></h2>
-            <p class="section-subtitle">We're not just teaching skills—we're building wealth-creation infrastructure for the next generation.</p>
+            <h2 class="section-title">The Problem<span class="gold-dot">.</span></h2>
+            <div class="narrative-block">
+                <p>Counseling, career training, therapy&hellip; prepares people for a world that will not exist. Our world is exponentially changing. We need character development that transcends economic disruption.</p>
+
+                <blockquote>
+                    The system catches the failing. It ignores the searching. Safety nets exist for kids falling behind&mdash;nothing exists for the kid reaching upward with empty hands.
+                </blockquote>
+
+                <p>I sit across from parents who can see brilliance in their children the way you can see a city from an airplane&mdash;clearly, completely, from a distance the child doesn't have. And those parents are desperate. Because they can see it, and their child cannot, and no amount of love or money or tutoring has been able to close that gap.</p>
+
+                <p>This is an epidemic that nobody talks about because these kids look extraordinary on paper. Schools can't reach them&mdash;these schools are often the source of the pressure. And therapy&mdash;look, therapy is wonderful. I'm a great believer in therapy. But therapy is a conversation about what's broken. <span class="highlight">These kids don't need to be fixed. They need to be shown.</span></p>
+
+                <p>Shown the thing inside them that everyone else can see but they can't. They need someone who sees the exception within them&mdash;the way my brother once saw it in me, when I was convinced there was nothing there worth finding.</p>
+
+                <p>Covenant of Education is the infrastructure for that gap.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Story -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Our Origin<span class="gold-dot">.</span></h2>
+            <div class="narrative-block">
+                <p>When I was a kid, I had fire inside me but no one to fan it. The system had programs for kids falling behind, but nothing for the kid reaching upward with empty hands.</p>
+
+                <p>Two experiences changed my life: a volunteer tutor who showed up three times a week, and a structured system that made my effort visible. Neither told me what to become. They created conditions where I could not help but become more of who I already was.</p>
+
+                <p>My brother did not have that. He took his own life. It took me a decade to process the grief and find my way to purpose. I started Covenant of Education so that <span class="highlight">the distance between lost and aimed would never be that far for anyone again.</span></p>
+
+                <p>We built the 7 Teachings&mdash;a philosophy and methodology that creates the conditions for self-discovery. We deliver it through physical NFC cards teenagers can scan for mentorship content, digital courses, facilitated group experiences, and eventually certified practitioners and institutional licensing.</p>
+
+                <p><span class="highlight">Our moonshot is 100 million people discovering their purpose by 2040.</span></p>
+
+                <p>Right now we are proving the model works at small scale. We need partners who believe that purpose-finding should not be an accident of privilege. If you want to be part of building the infrastructure that catches people before they fall through the cracks, this is the moment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are / Where Do You Fit -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Where Do You Fit<span class="gold-dot">?</span></h2>
+            <p class="section-subtitle">The best way to make your dreams come true is by taking others along with you for the ride. This is not meant to be an inspirational quote. It's the principle by which we function.</p>
+
+            <div class="group-cards">
+                <div class="group-card">
+                    <h3>Group A</h3>
+                    <p>You already show up for yourself every day, but you don't have the level of success you know you deserve. We show you how to show up for others in a way that gets you closer to your purpose&mdash;by mentoring and inspiring them towards success in your chosen direction.</p>
+                </div>
+                <div class="group-card">
+                    <h3>Group B</h3>
+                    <p>You don't yet show up for yourself. In which case we are here for YOU. We will show up for you, until you are ready to show up for yourself&mdash;and can take others along with you on the journey to success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Impact Stats -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Our Impact<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">Verified results from our cohorts to date.</p>
 
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">$1.2M+</div>
-                    <div class="stat-label">Revenue Generated by Students</div>
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Active Facilitators</div>
+                    <div class="stat-context">across 8 countries</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">94%</div>
-                    <div class="stat-label">Success Rate</div>
+                    <div class="stat-number">174</div>
+                    <div class="stat-label">Graduates</div>
+                    <div class="stat-context">96% avg completion</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">127</div>
-                    <div class="stat-label">Students Transformed</div>
+                    <div class="stat-number">+85%</div>
+                    <div class="stat-label">Avg PCI Improvement</div>
+                    <div class="stat-context">Purpose Clarity Index (pre&rarr;post)</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">90 Days</div>
-                    <div class="stat-label">Average Transformation Time</div>
+                    <div class="stat-number">58%</div>
+                    <div class="stat-label">Project Launch Rate</div>
+                    <div class="stat-context">of sample graduates</div>
                 </div>
+                <div class="stat-card">
+                    <div class="stat-number">9.3</div>
+                    <div class="stat-label">Net Promoter Score</div>
+                    <div class="stat-context">across all cohorts</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies / Transformation Stories -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Transformation Stories<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">Real people. Real transformations. Not crises averted&mdash;potential revealed.</p>
+
+            <div class="case-study">
+                <h3>Dimash</h3>
+                <div class="role">Full transformation arc &mdash; Purpose discovery journey</div>
+                <p>Dimash came to COE searching for direction. Through the 7 Teachings and structured mentorship, he discovered the DuplicateMe project&mdash;an endeavor that synthesized his skills, passions, and purpose into something he could not have imagined before the process began. His journey is the proof that when you create the right conditions, people don't just find purpose&mdash;they become it.</p>
+            </div>
+
+            <div class="case-study">
+                <h3>Aselya</h3>
+                <div class="role">Parent perspective &mdash; Witnessing transformation</div>
+                <p>As a parent, Aselya could see the brilliance in her child the way you can see a city from an airplane&mdash;clearly, completely, from a distance her child didn't have. Through COE she watched that gap close. She saw her child stop waiting for permission to become who they already were. What changed wasn't ability&mdash;it was visibility. The 7 Teachings made the invisible, visible.</p>
+            </div>
+
+            <div class="case-study">
+                <h3>Elly</h3>
+                <div class="role">Creator &mdash; Proving limitless potential</div>
+                <p>Elly "didn't realize" before that she could do what she did. Through COE she proved to herself what was always there:</p>
+                <ul class="achievements">
+                    <li>Directed a film and produced a documentary in 10 days</li>
+                    <li>Learned DaVinci Resolve in 1 week</li>
+                    <li>Edited a 10-minute production rough cut in 5 days while learning the platform</li>
+                    <li>Edited and published 30 YouTube videos in 3 weeks</li>
+                </ul>
+                <p style="margin-top: 16px;">These are personal testimonies to your own power and abilities when you apply your mind and believe in your limitless potential.</p>
             </div>
         </div>
     </section>
@@ -375,78 +665,35 @@
         </div>
     </section>
 
-    <!-- Global Events CTA Section -->
-    <section id="join-movement" class="cta-section">
-        <div class="container">
-            <h2>Experience the 7 Teachings Live<span style="color: var(--cove-white);">.</span></h2>
-            <p>Join our global community on Kiver.org. Attend live Zoom/Google Meet events teaching the 7 Teachings in every language. Help us bring these transformative teachings to corporations, schools, and communities worldwide.</p>
-
-            <div style="margin-bottom: 32px;">
-                <a href="https://kiver.org" class="btn" style="background: var(--cove-white); color: var(--cove-gold); margin: 12px;">Join Kiver.org Community</a>
-                <a href="#events" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white); margin: 12px;">Host a Live Event</a>
-            </div>
-
-            <p style="font-size: 1.1rem; margin-top: 32px;">💡 <strong>For Organizations:</strong> Bring the 7 Teachings to your corporation, school, or community. Live webinars available globally. Form clubs. Transform lives together.</p>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">How It Works<span class="gold-dot">.</span></h2>
-            <p class="section-subtitle">From stuck to successful in 90 days through AI education, entrepreneurship training, and purpose-driven philosophy.</p>
-
-            <div class="teachings-grid">
-                <div class="teaching-card">
-                    <div class="teaching-number">STEP 01</div>
-                    <h3 class="teaching-title">Learn AI Skills</h3>
-                    <p class="teaching-description">Master the tools that are reshaping every industry. No computer science background required.</p>
-                </div>
-
-                <div class="teaching-card">
-                    <div class="teaching-number">STEP 02</div>
-                    <h3 class="teaching-title">Build Your Business</h3>
-                    <p class="teaching-description">Apply AI skills to create real revenue-generating businesses with guidance and support.</p>
-                </div>
-
-                <div class="teaching-card">
-                    <div class="teaching-number">STEP 03</div>
-                    <h3 class="teaching-title">Transform Your Life</h3>
-                    <p class="teaching-description">Through the 7 Teachings, discover purpose, build wealth, and create lasting impact.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Donate Section -->
-    <section class="section section-dark">
+    <section id="donate" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Fund a Transformation<span class="gold-dot">.</span></h2>
-            <p class="section-subtitle" style="color: var(--cove-offwhite);">Your tax-deductible donation builds wealth-creation infrastructure for underserved students.</p>
+            <p class="section-subtitle" style="color: var(--cove-offwhite);">Your tax-deductible donation builds the infrastructure so that purpose-finding is never an accident of privilege. 100 this year. 100 million by 2040.</p>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">$2,500</div>
-                    <div class="stat-label">Reality Shifter</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 1 complete student transformation</p>
+            <div class="donate-grid">
+                <div class="donate-card">
+                    <div class="donate-amount">$1,800</div>
+                    <div class="donate-tier">Seed</div>
+                    <div class="donate-desc">Sponsor one student through the full 7 Teachings experience</div>
                 </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">$10,000</div>
-                    <div class="stat-label">Infrastructure Builder</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 4 students + curriculum development</p>
+                <div class="donate-card">
+                    <div class="donate-amount">$18,000</div>
+                    <div class="donate-tier">Cultivator</div>
+                    <div class="donate-desc">Fund a full cohort of 10 students through transformation</div>
                 </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">$50,000</div>
-                    <div class="stat-label">Legacy Architect</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 20 students + staff expansion</p>
+                <div class="donate-card">
+                    <div class="donate-amount">$32,400</div>
+                    <div class="donate-tier">Builder</div>
+                    <div class="donate-desc">Fund 18 students plus facilitator training and materials</div>
                 </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">$250K+</div>
-                    <div class="stat-label">Carnegie Class</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund entire cohort (100+ students)</p>
+                <div class="donate-card">
+                    <div class="donate-amount">$180,000</div>
+                    <div class="donate-tier">Architect</div>
+                    <div class="donate-desc">Fund our full annual goal of 100 students in 2026</div>
                 </div>
             </div>
 
@@ -456,28 +703,76 @@
         </div>
     </section>
 
+    <!-- Supporters & Gratitude -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Our Supporters<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">We are grateful to the people and organizations who have shaped our success and believed in our mission from the start.</p>
+
+            <div class="supporters-grid">
+                <div class="supporter-category">
+                    <h3>Software Partners</h3>
+                    <ul>
+                        <li>Canva</li>
+                        <li>Anthropic</li>
+                        <li>Goodstack</li>
+                        <li>TechSoup</li>
+                    </ul>
+                </div>
+
+                <div class="supporter-category">
+                    <h3>Donors</h3>
+                    <ul>
+                        <li>Dr. Jonathan Snyderman, MD</li>
+                    </ul>
+                </div>
+
+                <div class="supporter-category">
+                    <h3>Institutional Partners</h3>
+                    <ul>
+                        <li>Oxford International College</li>
+                        <li>Harvard</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>The distance between lost and aimed should never be far<span style="color: var(--cove-white);">.</span></h2>
+            <p>Join us in building the infrastructure that catches people before they fall through the cracks. Creating a network effect of accountability and success.</p>
+
+            <div style="margin-bottom: 32px;">
+                <a href="#donate" class="btn" style="background: var(--cove-white); color: var(--cove-gold); margin: 12px;">Become a Partner</a>
+                <a href="contact.html" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white); margin: 12px;">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center; border-top: 1px solid rgba(176, 141, 87, 0.3);">
         <div class="container">
-            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span class="gold-dot">.</span></h3>
-            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVENANT OF EDUCATION<span class="gold-dot">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">100 million people discovering their purpose by 2040.</p>
 
             <div style="margin: 32px 0;">
                 <a href="about.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">About</a>
                 <a href="7-teachings.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">7 Teachings</a>
                 <a href="programs.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Programs</a>
-                <a href="impact.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Impact</a>
+                <a href="origins.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Origins</a>
                 <a href="donate.html" style="color: var(--cove-gold); text-decoration: none; margin: 0 16px; font-weight: 600;">Donate</a>
                 <a href="../blog/index.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Blog</a>
             </div>
 
             <p style="color: var(--cove-warm-gray); font-size: 0.9rem; margin-top: 48px;">
-                CoveOfEdu is a 501(c)(3) nonprofit organization<br>
+                Covenant of Education is a 501(c)(3) nonprofit organization<br>
                 EIN: 92-2455469 | All donations are tax-deductible
             </p>
 
             <p style="color: var(--cove-warm-gray); font-size: 0.85rem; margin-top: 24px;">
-                © 2025 CoveOfEdu. All rights reserved.
+                &copy; 2025 Covenant of Education. All rights reserved.
             </p>
         </div>
     </footer>
