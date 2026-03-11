@@ -6,13 +6,13 @@
 
     <!-- SEO Meta Tags -->
     <title>About | Covenant of Education</title>
-    <meta name="description" content="We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support. 501(c)(3) nonprofit.">
+    <meta name="description" content="We help teenagers find their purpose before the world convinces them they don't have one. 501(c)(3) nonprofit.">
     <meta name="keywords" content="about CoveOfEdu, Covenant of Education, 7 Teachings, purpose discovery, teen mentorship, nonprofit, 501c3">
     <meta name="author" content="CoveOfEdu">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="About | Covenant of Education">
-    <meta property="og:description" content="We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support.">
+    <meta property="og:description" content="We help teenagers find their purpose before the world convinces them they don't have one.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://coveofedu.org/about">
     <meta property="og:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
@@ -21,7 +21,7 @@
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About | Covenant of Education">
-    <meta name="twitter:description" content="We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support.">
+    <meta name="twitter:description" content="We help teenagers find their purpose before the world convinces them they don't have one.">
     <meta name="twitter:image" content="https://coveofedu.org/Assets/Full-logo-trans.png">
 
     <!-- Canonical URL -->
@@ -46,11 +46,10 @@
         "alternateName": "Covenant of Education",
         "url": "https://coveofedu.org",
         "logo": "https://coveofedu.org/Assets/Full-logo-trans.png",
-        "description": "We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support.",
+        "description": "We help people find their purpose, get dangerous at it, and give that knowledge away to others — starting with the teenagers the system forgot to look out for.",
         "taxID": "92-2455469",
         "nonprofitStatus": "Nonprofit501c3",
         "foundingDate": "2023",
-        "mission": "We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Tampa",
@@ -97,15 +96,8 @@
             --font-primary: 'Comfortaa', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: var(--font-primary);
@@ -116,59 +108,19 @@
             font-size: 16px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
+        img { max-width: 100%; height: auto; display: block; }
 
-        h1, h2, h3, h4, h5, h6 {
-            line-height: 1.3;
-            font-weight: 600;
-        }
+        h1, h2, h3, h4, h5, h6 { line-height: 1.3; font-weight: 600; }
+        p { margin-bottom: var(--space-lg); }
 
-        p {
-            margin-bottom: var(--space-lg);
-        }
+        .gold-dot { color: var(--cove-gold); }
+        .gold-text { color: var(--cove-gold); }
 
-        .gold-dot {
-            color: var(--cove-gold);
-        }
+        /* Layout */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-xl); position: relative; z-index: 1; }
+        .narrow-container { max-width: 800px; margin: 0 auto; padding: 0 var(--space-xl); position: relative; z-index: 1; }
 
-        .gold-text {
-            color: var(--cove-gold);
-        }
-
-        .caps {
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            line-height: 1.5;
-        }
-
-        /* ============================================
-           Layout
-           ============================================ */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--space-xl);
-            position: relative;
-            z-index: 1;
-        }
-
-        .narrow-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 var(--space-xl);
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ============================================
-           Hero Section
-           ============================================ */
+        /* Hero */
         .hero {
             background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%);
             padding: 140px 20px 120px;
@@ -177,603 +129,211 @@
             overflow: hidden;
             color: var(--cove-white);
         }
-
         .hero::before {
             content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
             background: radial-gradient(circle at 30% 40%, rgba(176, 141, 87, 0.15) 0%, transparent 60%);
         }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: var(--space-lg);
-            letter-spacing: -0.02em;
-        }
-
-        .hero .tagline {
-            font-size: 1.4rem;
-            color: var(--cove-gold);
-            margin-bottom: var(--space-md);
-            font-weight: 500;
-        }
-
-        .hero .subtitle {
-            font-size: 1.15rem;
-            color: var(--cove-offwhite);
-            margin-bottom: var(--space-xxl);
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.8;
-            opacity: 0.9;
-        }
-
-        /* ============================================
-           Buttons
-           ============================================ */
-        .btn {
-            display: inline-block;
-            padding: 18px 48px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: var(--radius-round);
-            transition: all var(--transition-normal);
-            cursor: pointer;
-            border: 2px solid transparent;
-            font-family: var(--font-primary);
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
-            color: var(--cove-white);
-            box-shadow: var(--shadow-gold);
-            margin: 0 12px;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 32px rgba(176, 141, 87, 0.4);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--cove-white);
-            border: 2px solid var(--cove-white);
-            margin: 0 12px;
-        }
-
-        .btn-secondary:hover {
-            background: var(--cove-white);
-            color: var(--cove-dark);
-        }
-
-        .btn-dark {
-            background: transparent;
-            color: var(--cove-dark);
-            border: 2px solid var(--cove-dark);
-            margin: 0 12px;
-        }
-
-        .btn-dark:hover {
-            background: var(--cove-dark);
-            color: var(--cove-white);
-        }
-
-        /* ============================================
-           Sections
-           ============================================ */
-        .section {
-            padding: 100px 20px;
-        }
-
-        .section-dark {
-            background: var(--cove-dark);
-            color: var(--cove-white);
-        }
-
-        .section-light {
-            background: var(--cove-gray-100);
-        }
-
-        .section-offwhite {
-            background: var(--cove-offwhite);
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: var(--space-lg);
-        }
-
-        .section-subtitle {
-            font-size: 1.2rem;
-            text-align: center;
-            color: var(--cove-warm-gray);
-            margin-bottom: var(--space-xxxl);
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* ============================================
-           Narrative / Story Sections
-           ============================================ */
-        .narrative-section {
-            padding: 100px 20px;
-        }
-
-        .narrative-section .narrow-container {
-            max-width: 760px;
-        }
-
-        .act-label {
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--cove-gold);
-            margin-bottom: var(--space-md);
-            display: block;
-        }
-
-        .act-title {
-            font-size: 2.2rem;
-            font-weight: 600;
-            margin-bottom: var(--space-xxl);
-            line-height: 1.3;
-        }
-
-        .narrative-text {
-            font-size: 1.125rem;
-            line-height: 1.9;
-            color: var(--cove-gray-700);
-            margin-bottom: var(--space-lg);
-        }
-
-        .narrative-text.emphasis {
-            font-size: 1.25rem;
-            color: var(--cove-dark);
-            font-weight: 500;
-            line-height: 1.8;
-        }
-
-        .narrative-text.large-quote {
-            font-size: 1.375rem;
-            font-style: italic;
-            color: var(--cove-dark);
-            border-left: 3px solid var(--cove-gold);
-            padding-left: var(--space-xl);
-            margin: var(--space-xxl) 0;
-            line-height: 1.8;
-        }
-
-        .narrative-pause {
-            display: block;
-            width: 40px;
-            height: 2px;
-            background: var(--cove-gold);
-            margin: var(--space-xxl) 0;
-        }
-
-        .section-dark .narrative-text {
-            color: var(--cove-offwhite);
-        }
-
-        .section-dark .narrative-text.emphasis {
-            color: var(--cove-white);
-        }
-
-        .section-dark .act-title {
-            color: var(--cove-white);
-        }
-
-        /* ============================================
-           Values Grid
-           ============================================ */
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-xl);
-            margin: var(--space-xxl) 0;
-        }
-
-        .value-card {
-            background: var(--cove-white);
-            padding: 36px;
-            border-radius: var(--radius-large);
-            border: 1px solid var(--cove-gray-200);
-            transition: all var(--transition-normal);
-        }
-
-        .value-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 16px 40px rgba(176, 141, 87, 0.2);
-            border-color: var(--cove-gold);
-        }
-
-        .value-title {
-            font-size: 1.35rem;
-            font-weight: 600;
-            margin-bottom: var(--space-md);
-            color: var(--cove-dark);
-        }
-
-        .value-description {
-            color: var(--cove-warm-gray);
-            line-height: 1.8;
-            font-size: 1rem;
-            margin-bottom: 0;
-        }
-
-        /* ============================================
-           Team Section
-           ============================================ */
-        .team-card {
-            background: var(--cove-white);
-            border-radius: var(--radius-large);
-            padding: 48px;
-            box-shadow: var(--shadow-medium);
-            margin-bottom: var(--space-xxl);
-            border: 1px solid var(--cove-gray-200);
-            transition: all var(--transition-normal);
-        }
-
-        .team-card:hover {
-            border-color: var(--cove-gold);
-            box-shadow: var(--shadow-large);
-        }
-
-        .team-role {
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--cove-gold);
-            margin-bottom: var(--space-sm);
-        }
-
-        .team-name {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: var(--space-lg);
-            color: var(--cove-dark);
-        }
-
-        .team-bio {
-            font-size: 1.1rem;
-            line-height: 1.9;
-            color: var(--cove-gray-700);
-            margin-bottom: var(--space-lg);
-        }
-
-        .team-bio:last-child {
-            margin-bottom: 0;
-        }
-
-        /* ============================================
-           Advisor Section
-           ============================================ */
-        .advisor-card {
-            background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%);
-            border-radius: var(--radius-large);
-            padding: 48px;
-            color: var(--cove-white);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .advisor-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 10% 20%, rgba(176, 141, 87, 0.1) 0%, transparent 50%);
-        }
-
-        .advisor-card .team-role {
-            position: relative;
-            z-index: 1;
-        }
-
-        .advisor-card .team-name {
-            color: var(--cove-white);
-            position: relative;
-            z-index: 1;
-        }
-
-        .advisor-card .team-bio {
-            color: var(--cove-offwhite);
-            position: relative;
-            z-index: 1;
-        }
-
-        .endorsement-quote {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: var(--cove-gold);
-            border-left: 3px solid var(--cove-gold);
-            padding-left: var(--space-xl);
-            margin: var(--space-xl) 0;
-            line-height: 1.8;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ============================================
-           Meaning Section
-           ============================================ */
-        .meaning-card {
-            background: var(--cove-white);
-            border-radius: var(--radius-large);
-            padding: 36px;
-            box-shadow: var(--shadow-small);
-            border: 1px solid var(--cove-gray-200);
-            margin-bottom: var(--space-xl);
-        }
-
-        .meaning-name {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--cove-gold);
-            margin-bottom: var(--space-md);
-        }
-
-        .meaning-text {
-            font-size: 1.05rem;
-            line-height: 1.9;
-            color: var(--cove-gray-700);
-            font-style: italic;
-            margin-bottom: 0;
-        }
-
-        /* ============================================
-           Trust & Status Section
-           ============================================ */
-        .trust-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: var(--space-xl);
-            margin: var(--space-xxl) 0;
-        }
-
-        .trust-card {
-            background: var(--cove-white);
-            padding: 32px;
-            border-radius: var(--radius-large);
-            text-align: center;
-            border: 1px solid var(--cove-gray-200);
-            transition: all var(--transition-normal);
-        }
-
-        .trust-card:hover {
-            border-color: var(--cove-gold);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-medium);
-        }
-
-        .trust-icon {
-            font-size: 2.5rem;
-            margin-bottom: var(--space-md);
-        }
-
-        .trust-card-title {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: var(--cove-dark);
-            margin-bottom: var(--space-sm);
-        }
-
-        .trust-card-detail {
-            font-size: 0.95rem;
-            color: var(--cove-warm-gray);
-            line-height: 1.7;
-            margin-bottom: 0;
-        }
-
-        .trust-badge {
-            display: inline-block;
-            background: rgba(176, 141, 87, 0.15);
-            color: var(--cove-gold);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            margin: 6px;
-        }
-
-        /* ============================================
-           Document Links
-           ============================================ */
-        .doc-links {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: var(--space-xl);
-        }
-
-        .doc-link {
-            display: flex;
-            align-items: center;
-            padding: 1.25rem 1.5rem;
-            background: var(--cove-white);
-            border-radius: var(--radius-medium);
-            text-decoration: none;
-            color: var(--cove-dark);
-            box-shadow: var(--shadow-subtle);
-            border: 1px solid var(--cove-gray-200);
-            transition: all var(--transition-normal);
-        }
-
-        .doc-link:hover {
-            border-color: var(--cove-gold);
-            transform: translateX(5px);
-            box-shadow: var(--shadow-small);
-        }
-
-        .doc-link-icon {
-            font-size: 1.75rem;
-            margin-right: 1rem;
-            flex-shrink: 0;
-        }
-
-        .doc-link-content {
-            flex: 1;
-        }
-
-        .doc-link-title {
-            font-weight: 600;
-            font-size: 1.05rem;
-            margin-bottom: 0.2rem;
-        }
-
-        .doc-link-description {
-            font-size: 0.9rem;
-            color: var(--cove-warm-gray);
-        }
-
-        /* ============================================
-           Callout
-           ============================================ */
-        .callout {
-            background: var(--cove-white);
-            border-left: 4px solid var(--cove-gold);
-            padding: 2rem;
-            border-radius: 0 var(--radius-medium) var(--radius-medium) 0;
-            box-shadow: var(--shadow-subtle);
-            margin: var(--space-xl) 0;
-        }
-
-        .callout h3 {
-            color: var(--cove-gold);
-            margin-bottom: var(--space-md);
-            font-size: 1.35rem;
-        }
-
-        .callout ul {
-            list-style: none;
-            margin-top: var(--space-md);
-        }
-
-        .callout ul li {
-            padding: 0.4rem 0;
-            font-size: 1.05rem;
-            color: var(--cove-gray-700);
-        }
-
-        /* ============================================
-           Pledge Tracker
-           ============================================ */
-        .pledge-wrapper {
-            background: var(--cove-white);
-            border-radius: var(--radius-large);
-            padding: 36px;
-            box-shadow: var(--shadow-medium);
-            max-width: 700px;
-            margin: var(--space-xxl) auto 0;
-        }
-
-        /* ============================================
-           CTA Section
-           ============================================ */
-        .cta-section {
-            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
-            padding: 100px 20px;
-            text-align: center;
-            color: var(--cove-white);
-        }
-
-        .cta-section h2 {
-            font-size: 2.8rem;
-            margin-bottom: var(--space-lg);
-        }
-
-        .cta-section p {
-            font-size: 1.25rem;
-            margin-bottom: var(--space-xxl);
-            opacity: 0.95;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.8;
-        }
-
-        /* ============================================
-           Fade-in Animations
-           ============================================ */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ============================================
-           Footer
-           ============================================ */
-        .footer {
-            background: var(--cove-dark);
-            color: var(--cove-white);
-            padding: 64px 20px 32px;
-            text-align: center;
-            border-top: 1px solid rgba(176, 141, 87, 0.3);
-        }
-
-        .footer h3 {
-            font-size: 2rem;
-            margin-bottom: var(--space-md);
-        }
-
-        .footer-tagline {
-            color: var(--cove-offwhite);
-            margin-bottom: var(--space-xl);
-        }
-
-        .footer-nav a {
-            color: var(--cove-offwhite);
-            text-decoration: none;
-            margin: 0 16px;
-            transition: color var(--transition-fast);
-        }
-
-        .footer-nav a:hover {
-            color: var(--cove-gold);
-        }
-
-        .footer-nav a.donate-link {
-            color: var(--cove-gold);
-            font-weight: 600;
-        }
-
-        .footer-legal {
-            color: var(--cove-warm-gray);
-            font-size: 0.9rem;
-            margin-top: var(--space-xxl);
-        }
-
-        .footer-copyright {
-            color: var(--cove-warm-gray);
-            font-size: 0.85rem;
-            margin-top: var(--space-lg);
-        }
-
-        /* ============================================
-           Responsive
-           ============================================ */
+        .hero h1 { font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin-bottom: var(--space-lg); letter-spacing: -0.02em; }
+        .hero .tagline { font-size: 1.4rem; color: var(--cove-gold); margin-bottom: var(--space-md); font-weight: 500; }
+        .hero .subtitle { font-size: 1.15rem; color: var(--cove-offwhite); margin-bottom: var(--space-xxl); max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.8; opacity: 0.9; }
+        .trust-badge { display: inline-block; background: rgba(176, 141, 87, 0.15); color: var(--cove-gold); padding: 8px 20px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; margin: 6px; }
+
+        /* Buttons */
+        .btn { display: inline-block; padding: 18px 48px; font-size: 1.1rem; font-weight: 600; text-decoration: none; border-radius: var(--radius-round); transition: all var(--transition-normal); cursor: pointer; border: 2px solid transparent; font-family: var(--font-primary); }
+        .btn-primary { background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%); color: var(--cove-white); box-shadow: var(--shadow-gold); margin: 0 12px; }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(176, 141, 87, 0.4); }
+        .btn-secondary { background: transparent; color: var(--cove-white); border: 2px solid var(--cove-white); margin: 0 12px; }
+        .btn-secondary:hover { background: var(--cove-white); color: var(--cove-dark); }
+        .btn-dark { background: transparent; color: var(--cove-dark); border: 2px solid var(--cove-dark); margin: 0 12px; }
+        .btn-dark:hover { background: var(--cove-dark); color: var(--cove-white); }
+
+        /* Sections */
+        .section { padding: 100px 20px; }
+        .section-dark { background: var(--cove-dark); color: var(--cove-white); }
+        .section-light { background: var(--cove-gray-100); }
+        .section-offwhite { background: var(--cove-offwhite); }
+        .section-title { font-size: 2.5rem; font-weight: 600; text-align: center; margin-bottom: var(--space-lg); }
+        .section-subtitle { font-size: 1.2rem; text-align: center; color: var(--cove-warm-gray); margin-bottom: var(--space-xxxl); max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        /* Narrative */
+        .narrative-section { padding: 100px 20px; }
+        .narrative-section .narrow-container { max-width: 760px; }
+        .act-label { font-size: 0.875rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cove-gold); margin-bottom: var(--space-md); display: block; }
+        .act-title { font-size: 2.2rem; font-weight: 600; margin-bottom: var(--space-xxl); line-height: 1.3; }
+        .narrative-text { font-size: 1.125rem; line-height: 1.9; color: var(--cove-gray-700); margin-bottom: var(--space-lg); }
+        .narrative-text.emphasis { font-size: 1.25rem; color: var(--cove-dark); font-weight: 500; line-height: 1.8; }
+        .narrative-text.large-quote { font-size: 1.375rem; font-style: italic; color: var(--cove-dark); border-left: 3px solid var(--cove-gold); padding-left: var(--space-xl); margin: var(--space-xxl) 0; line-height: 1.8; }
+        .narrative-pause { display: block; width: 40px; height: 2px; background: var(--cove-gold); margin: var(--space-xxl) 0; }
+        .section-dark .narrative-text { color: var(--cove-offwhite); }
+        .section-dark .narrative-text.emphasis { color: var(--cove-white); }
+        .section-dark .act-title { color: var(--cove-white); }
+
+        /* Accordion */
+        .accordion { margin: var(--space-xl) 0; }
+        .accordion-trigger {
+            display: flex; align-items: center; justify-content: space-between;
+            width: 100%; background: none; border: 2px solid var(--cove-gold);
+            border-radius: var(--radius-medium); padding: 20px 28px;
+            font-family: var(--font-primary); font-size: 1.15rem; font-weight: 600;
+            color: var(--cove-gold); cursor: pointer; transition: all var(--transition-normal);
+        }
+        .accordion-trigger:hover { background: rgba(176, 141, 87, 0.08); }
+        .accordion-trigger .arrow { transition: transform var(--transition-normal); font-size: 1.2rem; }
+        .accordion-trigger.open .arrow { transform: rotate(180deg); }
+        .accordion-body {
+            max-height: 0; overflow: hidden; transition: max-height 0.5s ease;
+            background: var(--cove-gray-100); border-radius: 0 0 var(--radius-medium) var(--radius-medium);
+            border: 1px solid var(--cove-gray-200); border-top: none;
+        }
+        .accordion-body.open { max-height: 2000px; }
+        .accordion-inner { padding: 32px; }
+
+        /* Mechanism Steps */
+        .mechanism-step { margin-bottom: var(--space-xl); }
+        .mechanism-step-title { font-size: 1.3rem; font-weight: 700; color: var(--cove-dark); margin-bottom: var(--space-sm); }
+        .mechanism-step-text { font-size: 1.05rem; color: var(--cove-gray-700); line-height: 1.8; margin-bottom: 0; }
+
+        /* Values Grid */
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-xl); margin: var(--space-xxl) 0; }
+        .value-card { background: var(--cove-white); padding: 36px; border-radius: var(--radius-large); border: 1px solid var(--cove-gray-200); transition: all var(--transition-normal); }
+        .value-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(176, 141, 87, 0.2); border-color: var(--cove-gold); }
+        .value-title { font-size: 1.35rem; font-weight: 600; margin-bottom: var(--space-md); color: var(--cove-dark); }
+        .value-description { color: var(--cove-warm-gray); line-height: 1.8; font-size: 1rem; margin-bottom: 0; }
+
+        /* Team Section */
+        .team-card { background: var(--cove-white); border-radius: var(--radius-large); padding: 48px; box-shadow: var(--shadow-medium); margin-bottom: var(--space-xxl); border: 1px solid var(--cove-gray-200); transition: all var(--transition-normal); }
+        .team-card:hover { border-color: var(--cove-gold); box-shadow: var(--shadow-large); }
+        .team-header { display: flex; align-items: center; gap: var(--space-xl); margin-bottom: var(--space-xl); }
+        .team-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid var(--cove-gold); flex-shrink: 0; background: var(--cove-gray-100); }
+        .team-photo-placeholder { width: 160px; height: 160px; border-radius: 50%; border: 3px solid var(--cove-gold); flex-shrink: 0; background: var(--cove-gray-100); display: flex; align-items: center; justify-content: center; color: var(--cove-warm-gray); font-size: 0.8rem; text-align: center; padding: 12px; }
+        .team-role { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cove-gold); margin-bottom: var(--space-sm); }
+        .team-name { font-size: 2rem; font-weight: 700; margin-bottom: 0; color: var(--cove-dark); }
+        .team-bio { font-size: 1.1rem; line-height: 1.9; color: var(--cove-gray-700); margin-bottom: var(--space-lg); }
+        .team-bio:last-child { margin-bottom: 0; }
+
+        /* Advisor */
+        .advisor-card { background: linear-gradient(135deg, var(--cove-dark) 0%, #2a2a2a 100%); border-radius: var(--radius-large); padding: 48px; color: var(--cove-white); position: relative; overflow: hidden; margin-bottom: var(--space-xxl); }
+        .advisor-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 10% 20%, rgba(176, 141, 87, 0.1) 0%, transparent 50%); }
+        .advisor-card .team-header { position: relative; z-index: 1; }
+        .advisor-card .team-photo-placeholder { border-color: var(--cove-gold); background: rgba(255,255,255,0.08); color: var(--cove-offwhite); }
+        .advisor-card .team-role { position: relative; z-index: 1; }
+        .advisor-card .team-name { color: var(--cove-white); position: relative; z-index: 1; }
+        .advisor-card .team-bio { color: var(--cove-offwhite); position: relative; z-index: 1; }
+        .endorsement-quote { font-size: 1.2rem; font-style: italic; color: var(--cove-gold); border-left: 3px solid var(--cove-gold); padding-left: var(--space-xl); margin: var(--space-xl) 0; line-height: 1.8; position: relative; z-index: 1; }
+
+        /* Meaning */
+        .meaning-card { background: var(--cove-white); border-radius: var(--radius-large); padding: 36px; box-shadow: var(--shadow-small); border: 1px solid var(--cove-gray-200); margin-bottom: var(--space-xl); }
+        .meaning-name { font-size: 1.1rem; font-weight: 600; color: var(--cove-gold); margin-bottom: var(--space-md); }
+        .meaning-text { font-size: 1.05rem; line-height: 1.9; color: var(--cove-gray-700); font-style: italic; margin-bottom: 0; }
+
+        /* Trust Grid */
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-xl); margin: var(--space-xxl) 0; }
+        .trust-card { background: var(--cove-white); padding: 32px; border-radius: var(--radius-large); text-align: center; border: 1px solid var(--cove-gray-200); transition: all var(--transition-normal); cursor: pointer; text-decoration: none; color: inherit; display: block; }
+        .trust-card:hover { border-color: var(--cove-gold); transform: translateY(-4px); box-shadow: var(--shadow-medium); }
+        .trust-icon { font-size: 2.5rem; margin-bottom: var(--space-md); }
+        .trust-card-title { font-size: 1.15rem; font-weight: 600; color: var(--cove-dark); margin-bottom: var(--space-sm); }
+        .trust-card-detail { font-size: 0.95rem; color: var(--cove-warm-gray); line-height: 1.7; margin-bottom: var(--space-md); }
+        .trust-card-cta { font-size: 0.9rem; font-weight: 600; color: var(--cove-gold); text-decoration: none; }
+        .trust-card:hover .trust-card-cta { text-decoration: underline; }
+
+        /* Callout */
+        .callout { background: var(--cove-white); border-left: 4px solid var(--cove-gold); padding: 2rem; border-radius: 0 var(--radius-medium) var(--radius-medium) 0; box-shadow: var(--shadow-subtle); margin: var(--space-xl) 0; }
+        .callout h3 { color: var(--cove-gold); margin-bottom: var(--space-md); font-size: 1.35rem; }
+        .callout ul { list-style: none; margin-top: var(--space-md); }
+        .callout ul li { padding: 0.4rem 0; font-size: 1.05rem; color: var(--cove-gray-700); }
+
+        /* Doc Links */
+        .doc-links { display: flex; flex-direction: column; gap: 1rem; margin-top: var(--space-xl); }
+        .doc-link { display: flex; align-items: center; padding: 1.25rem 1.5rem; background: var(--cove-white); border-radius: var(--radius-medium); text-decoration: none; color: var(--cove-dark); box-shadow: var(--shadow-subtle); border: 1px solid var(--cove-gray-200); transition: all var(--transition-normal); }
+        .doc-link:hover { border-color: var(--cove-gold); transform: translateX(5px); box-shadow: var(--shadow-small); }
+        .doc-link-icon { font-size: 1.75rem; margin-right: 1rem; flex-shrink: 0; }
+        .doc-link-content { flex: 1; }
+        .doc-link-title { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.2rem; }
+        .doc-link-description { font-size: 0.9rem; color: var(--cove-warm-gray); }
+
+        /* Pledge */
+        .pledge-wrapper { background: var(--cove-white); border-radius: var(--radius-large); padding: 36px; box-shadow: var(--shadow-medium); max-width: 700px; margin: var(--space-xxl) auto 0; }
+
+        /* Mission/Vision/Moonshot (image-matched clean style) */
+        .mvm-section { padding: 100px 20px; background: var(--cove-gray-100); }
+        .mvm-block { margin-bottom: var(--space-huge); }
+        .mvm-block:last-child { margin-bottom: 0; }
+        .mvm-label { font-size: 0.875rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cove-gold); margin-bottom: var(--space-md); }
+        .mvm-heading { font-size: 2.5rem; font-weight: 700; color: var(--cove-dark); margin-bottom: var(--space-lg); line-height: 1.2; }
+        .mvm-heading .gold-dot { color: var(--cove-gold); }
+        .mvm-text { font-size: 1.25rem; color: var(--cove-gray-700); line-height: 1.8; max-width: 700px; }
+        .mvm-divider { width: 48px; height: 3px; background: var(--cove-gold); margin: var(--space-huge) 0; }
+        .mvm-moonshot-text { font-size: 1.6rem; font-weight: 600; color: var(--cove-dark); line-height: 1.4; text-align: center; max-width: 600px; margin: 0 auto; }
+
+        /* Timeline */
+        .timeline { position: relative; padding-left: 40px; margin: var(--space-xxl) 0; }
+        .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 3px; background: var(--cove-gold); }
+        .timeline-item { position: relative; margin-bottom: var(--space-xxl); }
+        .timeline-item:last-child { margin-bottom: 0; }
+        .timeline-dot { position: absolute; left: -36px; top: 4px; width: 16px; height: 16px; background: var(--cove-gold); border-radius: 50%; border: 3px solid var(--cove-gray-100); }
+        .timeline-date { font-size: 0.9rem; font-weight: 600; color: var(--cove-gold); margin-bottom: var(--space-xs); }
+        .timeline-title { font-size: 1.5rem; font-weight: 700; color: var(--cove-dark); margin-bottom: var(--space-sm); line-height: 1.3; }
+        .timeline-desc { font-size: 1rem; color: var(--cove-gray-700); line-height: 1.7; margin-bottom: 0; }
+
+        /* Regulatory Compliance Cards */
+        .compliance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-xl); margin: var(--space-xxl) 0; }
+        .compliance-card { background: var(--cove-white); border-radius: var(--radius-large); padding: 32px; border-left: 4px solid var(--cove-gold); box-shadow: var(--shadow-subtle); }
+        .compliance-card-title { font-size: 1.4rem; font-weight: 700; color: var(--cove-dark); margin-bottom: var(--space-lg); }
+        .compliance-card-title .check { color: var(--cove-gold); }
+        .compliance-card ul { list-style: disc; padding-left: 20px; margin: 0; }
+        .compliance-card ul li { font-size: 0.95rem; color: var(--cove-gray-700); padding: 4px 0; line-height: 1.6; }
+
+        /* First Principles Cards */
+        .principles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-xl); margin: var(--space-xxl) 0; }
+        .principle-card { background: var(--cove-white); padding: 36px; border-radius: var(--radius-large); border: 1px solid var(--cove-gray-200); transition: all var(--transition-normal); }
+        .principle-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(176, 141, 87, 0.2); border-color: var(--cove-gold); }
+        .principle-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cove-gold); margin-bottom: var(--space-sm); }
+        .principle-text { font-size: 1.05rem; color: var(--cove-gray-700); line-height: 1.8; margin-bottom: 0; }
+
+        /* Lightbox Overlay */
+        .lightbox-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(28, 28, 28, 0.85); z-index: 10000;
+            align-items: center; justify-content: center;
+        }
+        .lightbox-overlay.active { display: flex; }
+        .lightbox-content {
+            background: var(--cove-white); border-radius: var(--radius-large);
+            max-width: 900px; width: 90%; max-height: 85vh;
+            position: relative; overflow: hidden;
+        }
+        .lightbox-close {
+            position: absolute; top: 16px; right: 16px; z-index: 10;
+            background: var(--cove-dark); color: var(--cove-white);
+            border: none; width: 40px; height: 40px; border-radius: 50%;
+            font-size: 1.4rem; cursor: pointer; display: flex;
+            align-items: center; justify-content: center;
+            transition: background var(--transition-fast);
+        }
+        .lightbox-close:hover { background: var(--cove-gold); }
+        .lightbox-iframe { width: 100%; height: 80vh; border: none; }
+
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%); padding: 100px 20px; text-align: center; color: var(--cove-white); }
+        .cta-section h2 { font-size: 2.8rem; margin-bottom: var(--space-lg); }
+        .cta-section p { font-size: 1.25rem; margin-bottom: var(--space-xxl); opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+
+        /* Fade-in */
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+        /* Footer */
+        .footer { background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center; border-top: 1px solid rgba(176, 141, 87, 0.3); }
+        .footer h3 { font-size: 2rem; margin-bottom: var(--space-md); }
+        .footer-tagline { color: var(--cove-offwhite); margin-bottom: var(--space-xl); }
+        .footer-nav a { color: var(--cove-offwhite); text-decoration: none; margin: 0 16px; transition: color var(--transition-fast); }
+        .footer-nav a:hover { color: var(--cove-gold); }
+        .footer-nav a.donate-link { color: var(--cove-gold); font-weight: 600; }
+        .footer-legal { color: var(--cove-warm-gray); font-size: 0.9rem; margin-top: var(--space-xxl); }
+        .footer-copyright { color: var(--cove-warm-gray); font-size: 0.85rem; margin-top: var(--space-lg); }
+
+        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
             .hero .tagline { font-size: 1.15rem; }
@@ -786,10 +346,15 @@
             .team-card { padding: 32px 24px; }
             .advisor-card { padding: 32px 24px; }
             .team-name { font-size: 1.6rem; }
+            .team-header { flex-direction: column; text-align: center; }
             .values-grid { grid-template-columns: 1fr; }
             .trust-grid { grid-template-columns: 1fr 1fr; }
+            .mvm-heading { font-size: 2rem; }
+            .mvm-moonshot-text { font-size: 1.3rem; }
+            .compliance-grid { grid-template-columns: 1fr; }
+            .principles-grid { grid-template-columns: 1fr; }
+            .timeline-title { font-size: 1.25rem; }
         }
-
         @media (max-width: 480px) {
             .hero { padding: 100px 16px 80px; }
             .hero h1 { font-size: 1.8rem; }
@@ -803,14 +368,14 @@
 <body>
 
     <!-- ============================================
-         HERO SECTION
+         HERO
          ============================================ -->
     <section class="hero">
         <div class="container">
             <div class="trust-badge" style="margin-bottom: var(--space-xl);">501(c)(3) NONPROFIT</div>
             <h1>Covenant of Education<span class="gold-dot">.</span></h1>
-            <p class="tagline">We build systems of structured presence that reveal people to themselves.</p>
-            <p class="subtitle">Starting with teenagers who have fire but not support.</p>
+            <p class="tagline">We help teenagers find their purpose before the world convinces them they don&rsquo;t have one.</p>
+            <p class="subtitle">Physical cards they scan with their phone. Digital experiences that meet them where they already live. A methodology &mdash; the 7 Teachings &mdash; that has already changed lives across the US and Brazil. And a real-time counter tracking every single moment someone sees something in themselves they didn&rsquo;t see before.</p>
 
             <div style="margin-top: var(--space-xxl);">
                 <a href="#mission" class="btn btn-primary">Our Mission</a>
@@ -820,24 +385,91 @@
     </section>
 
     <!-- ============================================
-         MISSION & VISION
+         MISSION / VISION / MOONSHOT (image-matched clean style)
          ============================================ -->
-    <section id="mission" class="narrative-section section-light fade-in">
+    <section id="mission" class="mvm-section fade-in">
         <div class="narrow-container">
-            <span class="act-label">Our Mission</span>
-            <h2 class="act-title">Structured Presence<span class="gold-dot">.</span></h2>
+            <div class="mvm-block">
+                <p class="mvm-label">OUR MISSION</p>
+                <h2 class="mvm-heading">Structured Presence<span class="gold-dot">.</span></h2>
+                <p class="mvm-text">We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support.</p>
+            </div>
 
-            <p class="narrative-text emphasis">We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support.</p>
+            <div class="mvm-divider"></div>
+
+            <div class="mvm-block">
+                <p class="mvm-label">OUR VISION</p>
+                <p class="mvm-text">A world where purpose-finding is not an accident of privilege but a standard part of growing up &mdash; as universal as learning to read.</p>
+            </div>
+
+            <div class="mvm-divider"></div>
+
+            <div class="mvm-block" style="text-align: center;">
+                <p class="mvm-label">MOONSHOT</p>
+                <p class="mvm-moonshot-text">100 million transformations through the 7 Teachings by 2040.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         DAILY MISSION / MECHANISM (with accordion)
+         ============================================ -->
+    <section class="narrative-section fade-in">
+        <div class="narrow-container">
+            <span class="act-label">Every Day</span>
+            <h2 class="act-title">We come to work to achieve one mission, and one mission only &mdash; better and better each day<span class="gold-dot">:</span></h2>
+
+            <div class="accordion">
+                <button class="accordion-trigger" id="mechanism-toggle" aria-expanded="false" aria-controls="mechanism-body">
+                    <span>To help people find their purpose, get dangerous at it, and give it away.</span>
+                    <span class="arrow">&#9660;</span>
+                </button>
+                <div class="accordion-body" id="mechanism-body">
+                    <div class="accordion-inner">
+                        <p style="font-size: 1.1rem; color: var(--cove-gray-700); margin-bottom: var(--space-xl); font-weight: 500;">How the hell do we do that? Here&rsquo;s the Mechanism behind it:</p>
+
+                        <div class="mechanism-step">
+                            <p class="mechanism-step-title">Find your purpose.</p>
+                            <p class="mechanism-step-text">Through the 7 Teachings &mdash; a step-by-step framework for discovering what you&rsquo;re here for.</p>
+                        </div>
+
+                        <div class="mechanism-step">
+                            <p class="mechanism-step-title">Prove it.</p>
+                            <p class="mechanism-step-text">The Atom Log &mdash; every spark of growth captured, witnessed, counted. No effort goes unseen.</p>
+                        </div>
+
+                        <div class="mechanism-step">
+                            <p class="mechanism-step-title">Give the same gift to others.</p>
+                            <p class="mechanism-step-text">The Contribution Engine &mdash; connecting what you&rsquo;ve become to the people who need it most.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <span class="narrative-pause"></span>
 
-            <span class="act-label">Our Vision</span>
-            <p class="narrative-text" style="font-size: 1.25rem; color: var(--cove-dark); font-weight: 500; line-height: 1.8;">A world where purpose-finding is not an accident of privilege but a standard part of growing up &mdash; as universal as learning to read.</p>
+            <!-- VISION | MISSION | PURPOSE | NORTHSTAR -->
+            <div style="display: grid; gap: var(--space-xxl);">
+                <div>
+                    <span class="act-label">Vision</span>
+                    <p class="narrative-text emphasis">A world where finding your purpose is as universal as learning to read.</p>
+                </div>
 
-            <span class="narrative-pause"></span>
+                <div>
+                    <span class="act-label">Mission</span>
+                    <p class="narrative-text emphasis">We help people find their purpose, get dangerous at it, and give that knowledge away to others &mdash; starting with the teenagers the system forgot to look out for.</p>
+                </div>
 
-            <span class="act-label">Moonshot</span>
-            <p class="narrative-text emphasis" style="font-size: 1.5rem; text-align: center;">100 million transformations through the 7 Teachings by 2040.</p>
+                <div>
+                    <span class="act-label">Purpose</span>
+                    <p class="narrative-text">Close the gap between a life of direction and a life of drift. The distance between those two outcomes is almost always one person and one system arriving at the right time. We are that person. We are that system.</p>
+                </div>
+
+                <div>
+                    <span class="act-label">Northstar</span>
+                    <p class="narrative-text emphasis">Harmonize humanity &mdash; through education, love, and kindness.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -846,14 +478,26 @@
          ============================================ -->
     <section class="narrative-section section-dark fade-in">
         <div class="narrow-container">
-            <span class="act-label">The Why</span>
+            <span class="act-label">Why Me, Why This, Why Now</span>
             <h2 class="act-title">The Gap Is Not Acceptable<span class="gold-dot">.</span></h2>
 
-            <p class="narrative-text large-quote" style="border-color: rgba(176, 141, 87, 0.5);">Two people showed up for me and it changed everything. My brother had no one, and it killed him.</p>
+            <p class="narrative-text" style="font-weight: 600; color: var(--cove-gold); font-size: 1.15rem;">Why me.</p>
+            <p class="narrative-text">I lived both sides. The kid with someone, and the kid with no one. I lost my faith, my identity, and my brother. I rebuilt from zero, codified the path that saved me, and turned it into a system anyone can walk. Nobody else in this space carries this story and this methodology in the same body. The credential is not a degree. The credential is a brother-shaped hole in a family and an organization that grew in its exact dimensions.</p>
 
-            <p class="narrative-text">The difference between a life of purpose and a life of despair is often one person and one system arriving at the right time.</p>
+            <span class="narrative-pause" style="background: rgba(176, 141, 87, 0.5);"></span>
 
-            <p class="narrative-text emphasis">That gap is not acceptable. I'm closing it.</p>
+            <p class="narrative-text" style="font-weight: 600; color: var(--cove-gold); font-size: 1.15rem;">Why this.</p>
+            <p class="narrative-text">Every other approach either tells people what to become or leaves them alone with a journal. Career counseling serves the economy. Therapy serves the wound. Neither serves the fire. The 7 Teachings serve the fire. They are the first methodology designed to produce the moment of self-recognition reliably, and to capture proof that it happened. That approach does not exist at scale anywhere on earth.</p>
+
+            <span class="narrative-pause" style="background: rgba(176, 141, 87, 0.5);"></span>
+
+            <p class="narrative-text" style="font-weight: 600; color: var(--cove-gold); font-size: 1.15rem;">Why now.</p>
+            <p class="narrative-text">The crisis is here and accelerating. Teen purposelessness, anxiety, and suicide are at historic highs. Meanwhile, NFC technology, mobile-first learning, and AI-assisted delivery make it possible for the first time to reach teenagers at scale without requiring a classroom. The infrastructure that needed to exist yesterday &mdash; we&rsquo;re building today.</p>
+
+            <span class="narrative-pause" style="background: rgba(176, 141, 87, 0.5);"></span>
+
+            <p class="narrative-text" style="font-weight: 600; color: var(--cove-gold); font-size: 1.15rem;">Why at all.</p>
+            <p class="narrative-text">Because Tolik didn&rsquo;t have it. Because I almost didn&rsquo;t survive without it. Because right now, somewhere, a teenager with everything inside them and nothing around them is making a decision about whether any of this is worth it. And the answer to that question should never depend on the accident of who happens to show up.</p>
 
             <div style="text-align: center; margin-top: var(--space-xxl);">
                 <a href="origins.html" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white);">Read the Full Origin Story</a>
@@ -862,29 +506,41 @@
     </section>
 
     <!-- ============================================
-         CORE VALUES
+         CORE VALUES / FIRST PRINCIPLES
          ============================================ -->
     <section class="section fade-in">
         <div class="container">
             <h2 class="section-title">Core Values<span class="gold-dot">.</span></h2>
             <p class="section-subtitle">What we believe. How we operate. No exceptions.</p>
 
-            <div class="values-grid">
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <p class="principle-label">WHY</p>
+                    <p class="principle-text">Regularly ask ourselves: How do we show up for as many people as possible, as early as possible, in a way that makes their efforts visible and their potential undeniable.</p>
+                </div>
+                <div class="principle-card">
+                    <p class="principle-label">WHAT</p>
+                    <p class="principle-text">Lead by example and show up for others, until they can show up for themselves.</p>
+                </div>
+                <div class="principle-card">
+                    <p class="principle-label">SUCCESS</p>
+                    <p class="principle-text">The atom (our smallest metric of success) is when someone sees in themselves a newfound power &mdash; clarity, capability, contribution &mdash; they haven&rsquo;t yet seen before or believed in. That&rsquo;s how we know it&rsquo;s working.</p>
+                </div>
+            </div>
+
+            <div class="values-grid" style="margin-top: var(--space-xxl);">
                 <div class="value-card">
                     <h3 class="value-title">Presence Over Prescription</h3>
-                    <p class="value-description">We show up. We don't lecture.</p>
+                    <p class="value-description">We show up. We don&rsquo;t lecture.</p>
                 </div>
-
                 <div class="value-card">
                     <h3 class="value-title">Evidence Over Assertion</h3>
                     <p class="value-description">We measure atoms of realization, not vanity metrics.</p>
                 </div>
-
                 <div class="value-card">
                     <h3 class="value-title">Structured Presence</h3>
                     <p class="value-description">Discipline creates the conditions for discovery.</p>
                 </div>
-
                 <div class="value-card">
                     <h3 class="value-title">Effort Made Visible</h3>
                     <p class="value-description">Your work counts. We make sure you can see it.</p>
@@ -894,7 +550,7 @@
     </section>
 
     <!-- ============================================
-         TEAM SECTION
+         TEAM
          ============================================ -->
     <section id="team" class="section section-light fade-in">
         <div class="container">
@@ -903,46 +559,61 @@
 
             <!-- Izzy Kiver -->
             <div class="team-card">
-                <p class="team-role">Founder &amp; Executive Director</p>
-                <h3 class="team-name">Izzy Kiver</h3>
+                <div class="team-header">
+                    <img src="https://coveofedu.org/wp-content/uploads/2026/03/2-1.png" alt="Izzy Kiver" class="team-photo">
+                    <div>
+                        <p class="team-role">Founder &amp; Executive Director</p>
+                        <h3 class="team-name">Izzy Kiver</h3>
+                    </div>
+                </div>
 
-                <p class="team-bio">I've spent the better part of a decade building things that teach people &mdash; at volumes most educators would find slightly indecent.</p>
+                <p class="team-bio">I&rsquo;ve spent the better part of a decade building things that teach people &mdash; at volumes most educators would find slightly indecent.</p>
 
-                <p class="team-bio">Ten million engineers at Polygon Labs. Five million families at TAL Education. Several thousand managers at SAP who, I'm told, still reference the frameworks I built, which is either flattering or an indictment of what came after me &mdash; I choose to believe the former.</p>
+                <p class="team-bio">Ten million engineers at Polygon Labs. Five million families at TAL Education. Several thousand managers at SAP who, I&rsquo;m told, still reference the frameworks I built, which is either flattering or an indictment of what came after me &mdash; I choose to believe the former.</p>
 
-                <p class="team-bio">The completion rates were triple the industry average. Not because I'm particularly brilliant &mdash; though I wouldn't argue the point strenuously &mdash; but because I learned something early that most curriculum designers never figure out: people don't finish things that weren't built for them. They finish things that see them. That's not pedagogy. That's architecture. And it's the same architecture underneath the 7 Teachings.</p>
+                <p class="team-bio">The completion rates were triple the industry average. Not because I&rsquo;m particularly brilliant &mdash; though I wouldn&rsquo;t argue the point strenuously &mdash; but because I learned something early that most curriculum designers never figure out: people don&rsquo;t finish things that weren&rsquo;t built for them. They finish things that see them. That&rsquo;s not pedagogy. That&rsquo;s architecture. And it&rsquo;s the same architecture underneath the 7 Teachings.</p>
 
-                <p class="team-bio">The difference is that at Google, the stakes were quarterly performance reviews. Here, the stakes are a sixteen-year-old who can't breathe over a college essay. I find the second problem considerably more interesting.</p>
+                <p class="team-bio">The difference is that at Google, the stakes were quarterly performance reviews. Here, the stakes are a sixteen-year-old who can&rsquo;t breathe over a college essay. I find the second problem considerably more interesting.</p>
             </div>
 
             <!-- Elly Rezende -->
             <div class="team-card">
-                <p class="team-role">Facilitator &amp; Content Lead</p>
-                <h3 class="team-name">Elly Rezende</h3>
+                <div class="team-header">
+                    <img src="https://coveofedu.org/wp-content/uploads/2026/03/1-1.png" alt="Elly Rezende" class="team-photo">
+                    <div>
+                        <p class="team-role">Facilitator &amp; Content Lead</p>
+                        <h3 class="team-name">Elly Rezende</h3>
+                    </div>
+                </div>
 
                 <p class="team-bio">When Elly arrived in Florian&oacute;polis, she was floundering. New to the city, not fully believing in her own skills or potential, she was taking whatever odd jobs she could find. The kind of work that pays the rent but quietly erodes something harder to name &mdash; the sense that you were built for more than this.</p>
 
-                <p class="team-bio">Then she connected with COE. She couldn't leave her house the first day. She didn't have a working phone. The fear of showing up unprepared was enough to paralyze her.</p>
+                <p class="team-bio">Then she connected with COE. She couldn&rsquo;t leave her house the first day. She didn&rsquo;t have a working phone. The fear of showing up unprepared was enough to paralyze her.</p>
 
                 <p class="team-bio">Izzy removed the barrier. Covered her phone. Covered her transport. Made it possible for her to simply <em>show up</em>. Everything that followed began with that single gesture.</p>
 
                 <p class="team-bio">Elly lit up. She helped arrange professional media equipment, coordinated camera operators, managed filming, and learned DaVinci Resolve in a single week to help deliver the final cut of <a href="https://thecoe.org/movie" target="_blank" rel="noopener" style="color: var(--cove-gold); text-decoration: none; font-weight: 500;">The Redemption Film</a>.</p>
 
-                <p class="team-bio">A woman who couldn't leave her apartment became the producer of a film. That distance &mdash; from paralysis to production &mdash; is the distance COE exists to close.</p>
+                <p class="team-bio">A woman who couldn&rsquo;t leave her apartment became the producer of a film. That distance &mdash; from paralysis to production &mdash; is the distance COE exists to close.</p>
             </div>
 
             <!-- Dr. Nick Hall - Advisor -->
             <div class="advisor-card">
-                <p class="team-role">Advisor</p>
-                <h3 class="team-name">Dr. Nick Hall</h3>
+                <div class="team-header">
+                    <img src="https://coveofedu.org/wp-content/uploads/2026/03/3-1.png" alt="Dr. Nick Hall" class="team-photo" style="border-color: var(--cove-gold);">
+                    <div>
+                        <p class="team-role">Advisor</p>
+                        <h3 class="team-name">Dr. Nick Hall</h3>
+                    </div>
+                </div>
 
                 <p class="team-bio">Pioneer of psychoneuroimmunology. Author of <em>The Stress Recovery Effect</em>. Former researcher for the Office of Naval Research. A man who has spent his life studying how the brain communicates with the body &mdash; and what happens when that communication breaks down under stress.</p>
 
-                <p class="team-bio">When Dr. Hall connected with Izzy, the relationship didn't flow in one direction. Izzy helped Dr. Hall use AI to synthesize his entire life's work &mdash; decades of research, discoveries, and adventures &mdash; into a comprehensive legacy book. For a man who had spent a lifetime generating knowledge, the ability to finally consolidate it was transformative.</p>
+                <p class="team-bio">When Dr. Hall connected with Izzy, the relationship didn&rsquo;t flow in one direction. Izzy helped Dr. Hall use AI to synthesize his entire life&rsquo;s work &mdash; decades of research, discoveries, and adventures &mdash; into a comprehensive legacy book. For a man who had spent a lifetime generating knowledge, the ability to finally consolidate it was transformative.</p>
 
                 <p class="team-bio">From that place of collaboration and mutual respect, Dr. Hall saw clearly what Izzy was building with COE. He endorsed it &mdash; fully, without reservation.</p>
 
-                <p class="endorsement-quote">"To my friend Izzy, who has an extraordinary ability to synthesize information and translate it into powerful systems. All the best &mdash; Nick"</p>
+                <p class="endorsement-quote">&ldquo;To my friend Izzy, who has an extraordinary ability to synthesize information and translate it into powerful systems. All the best &mdash; Nick&rdquo;</p>
             </div>
         </div>
     </section>
@@ -958,19 +629,19 @@
             <div style="max-width: 800px; margin: 0 auto;">
                 <div class="meaning-card">
                     <p class="meaning-name">Izzy Kiver &mdash; Founder</p>
-                    <p class="meaning-text">COE is the debt I intend to repay for the rest of my life. My brother held the line until I was strong enough to stand on my own. Now I hand that same gift &mdash; perspective, presence, the ability to see yourself from an angle of love rather than fear &mdash; to teenagers who are losing themselves the way I was losing myself. Seven teachings. Seven weeks. Tools they'll carry for the rest of their lives.</p>
+                    <p class="meaning-text">COE is the debt I intend to repay for the rest of my life. My brother held the line until I was strong enough to stand on my own. Now I hand that same gift &mdash; perspective, presence, the ability to see yourself from an angle of love rather than fear &mdash; to teenagers who are losing themselves the way I was losing myself. Seven teachings. Seven weeks. Tools they&rsquo;ll carry for the rest of their lives.</p>
                 </div>
 
                 <div class="meaning-card">
                     <p class="meaning-name">Elly Rezende &mdash; Facilitator</p>
-                    <p class="meaning-text">COE found me when I couldn't find myself. I was paralyzed &mdash; literally couldn't walk out my door. Someone showed up and removed the barrier, not with a lecture, but with an act of belief. That single gesture unlocked everything. Now I get to be that person for someone else. That's what COE means to me &mdash; the proof that genius is never created from nothing. It is uncovered. Cultivated. Set loose.</p>
+                    <p class="meaning-text">COE found me when I couldn&rsquo;t find myself. I was paralyzed &mdash; literally couldn&rsquo;t walk out my door. Someone showed up and removed the barrier, not with a lecture, but with an act of belief. That single gesture unlocked everything. Now I get to be that person for someone else. That&rsquo;s what COE means to me &mdash; the proof that genius is never created from nothing. It is uncovered. Cultivated. Set loose.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================
-         NONPROFIT STATUS & TRANSPARENCY
+         TRUST & TRANSPARENCY
          ============================================ -->
     <section class="section section-light fade-in">
         <div class="container">
@@ -978,29 +649,47 @@
             <p class="section-subtitle">Verified nonprofit status. Audited financials. Full accountability.</p>
 
             <div class="trust-grid">
-                <div class="trust-card">
+                <a class="trust-card" href="#" onclick="openLightbox('https://drive.google.com/file/d/1U2Ool1y8o0BdkFuzUPtt_ZKVxTa2lfsq/preview'); return false;">
                     <div class="trust-icon">&#9745;</div>
                     <p class="trust-card-title">501(c)(3) Status</p>
                     <p class="trust-card-detail">Registered nonprofit organization.<br>EIN: 92-2455469</p>
-                </div>
+                    <span class="trust-card-cta">View Determination Letter &rarr;</span>
+                </a>
 
-                <div class="trust-card">
+                <a class="trust-card" href="https://app.candid.org/profile/15928348/covenant-of-education-inc-92-2455469" target="_blank" rel="noopener">
                     <div class="trust-icon">&#9733;</div>
                     <p class="trust-card-title">GuideStar Gold</p>
                     <p class="trust-card-detail">Gold Transparency status on GuideStar/Candid.</p>
-                </div>
+                    <span class="trust-card-cta">View on GuideStar &rarr;</span>
+                </a>
 
-                <div class="trust-card">
+                <a class="trust-card" href="https://causes.benevity.org/causes/840-922455469" target="_blank" rel="noopener">
                     <div class="trust-icon">&#9830;</div>
                     <p class="trust-card-title">Benevity Approved</p>
                     <p class="trust-card-detail">Verified on Benevity for corporate matching gifts.</p>
-                </div>
+                    <span class="trust-card-cta">View on Benevity &rarr;</span>
+                </a>
 
-                <div class="trust-card">
+                <a class="trust-card" href="https://giving.goodstack.io/sign-in" target="_blank" rel="noopener">
                     <div class="trust-icon">&#9829;</div>
                     <p class="trust-card-title">GoodStack Partner</p>
                     <p class="trust-card-detail">Partnered with GoodStack for nonprofit technology.</p>
-                </div>
+                    <span class="trust-card-cta">View on GoodStack &rarr;</span>
+                </a>
+
+                <a class="trust-card" href="#" onclick="openLightbox('https://drive.google.com/file/d/1hg4LSmby1P-CRQ47MLWW1NTZDv8kGpYK/preview'); return false;">
+                    <div class="trust-icon">&#128220;</div>
+                    <p class="trust-card-title">Bylaws</p>
+                    <p class="trust-card-detail">Our organizational bylaws and governance documents.</p>
+                    <span class="trust-card-cta">View Bylaws &rarr;</span>
+                </a>
+
+                <a class="trust-card" href="https://doublethedonation.com/list-matching-gifts-companies/" target="_blank" rel="noopener">
+                    <div class="trust-icon">&#215;2</div>
+                    <p class="trust-card-title">Double Your Donation</p>
+                    <p class="trust-card-detail">Check if your employer offers gift matching.</p>
+                    <span class="trust-card-cta">Check Matching List &rarr;</span>
+                </a>
             </div>
 
             <!-- Nonprofit Documentation -->
@@ -1009,57 +698,127 @@
                 <p style="color: var(--cove-gray-700); font-size: 1.05rem;">View our official filings and documentation:</p>
 
                 <div class="doc-links">
-                    <a href="https://drive.google.com/file/d/1gaJDWY0FJNW8Xd4sW95hHWrsnNJoJ4U3/view?usp=sharing"
-                       class="doc-link"
-                       target="_blank"
-                       rel="noopener">
+                    <a href="#" onclick="openLightbox('https://drive.google.com/file/d/1gaJDWY0FJNW8Xd4sW95hHWrsnNJoJ4U3/preview'); return false;" class="doc-link">
                         <span class="doc-link-icon">&#128196;</span>
                         <div class="doc-link-content">
                             <div class="doc-link-title">Department of State Annual Filing</div>
                             <div class="doc-link-description">View our latest annual filing proof</div>
                         </div>
                     </a>
-                    <a href="https://drive.google.com/file/d/1U2Ool1y8o0BdkFuzUPtt_ZKVxTa2lfsq/view?usp=sharing"
-                       class="doc-link"
-                       target="_blank"
-                       rel="noopener">
+                    <a href="#" onclick="openLightbox('https://drive.google.com/file/d/1U2Ool1y8o0BdkFuzUPtt_ZKVxTa2lfsq/preview'); return false;" class="doc-link">
                         <span class="doc-link-icon">&#10003;</span>
                         <div class="doc-link-content">
                             <div class="doc-link-title">501(c)(3) NFP Status</div>
                             <div class="doc-link-description">Official nonprofit status documentation</div>
                         </div>
                     </a>
+                    <a href="#" onclick="openLightbox('https://drive.google.com/file/d/1hg4LSmby1P-CRQ47MLWW1NTZDv8kGpYK/preview'); return false;" class="doc-link">
+                        <span class="doc-link-icon">&#128220;</span>
+                        <div class="doc-link-content">
+                            <div class="doc-link-title">Organizational Bylaws</div>
+                            <div class="doc-link-description">Our governance structure and bylaws</div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
-            <!-- Financial Transparency -->
+            <!-- Financial Transparency - 2025 -->
             <div class="callout" style="margin-top: var(--space-xl);">
                 <h3>Financial Transparency</h3>
-                <p style="color: var(--cove-gray-700); font-size: 1.05rem; margin-bottom: var(--space-md);"><strong>2024 Investment Breakdown &mdash; Total: $44,000</strong></p>
+                <p style="color: var(--cove-gray-700); font-size: 1.05rem; margin-bottom: var(--space-md);"><strong>2025 Financial Summary &mdash; $138,000 Inbound (Services &amp; Donations)</strong></p>
                 <ul>
-                    <li>65% Student Programs &mdash; Direct support for education and mentorship</li>
-                    <li>20% Platform Development &mdash; Building Kiver.org infrastructure</li>
-                    <li>10% Administrative &mdash; Operational costs and compliance</li>
-                    <li>5% Marketing &mdash; Outreach to reach more students</li>
+                    <li>$90,000 &mdash; Salaries</li>
+                    <li>$30,000 &mdash; Program Delivery, Platform Development, Marketing, Legal, Administrative</li>
+                    <li>$18,000 &mdash; Reserve</li>
                 </ul>
             </div>
 
-            <!-- Benevity -->
-            <div style="background: linear-gradient(135deg, rgba(176, 141, 87, 0.1) 0%, rgba(45, 61, 31, 0.1) 100%); padding: 36px; border-radius: var(--radius-large); margin-top: var(--space-xxl); text-align: center;">
-                <h3 style="font-size: 1.5rem; margin-bottom: var(--space-md);">Donate Through Benevity</h3>
-                <p style="font-size: 1.05rem; color: var(--cove-gray-700); max-width: 600px; margin: 0 auto var(--space-xl);">If your employer uses Benevity for charitable giving, you can donate to Covenant of Education directly through their platform and potentially receive matching funds.</p>
-                <a href="https://share.google/w5YJpdYYjH2mhYApj"
-                   class="btn-primary btn"
-                   target="_blank"
-                   rel="noopener">
-                    Visit Our Benevity Page
-                </a>
+            <!-- Legal Milestones Timeline -->
+            <h3 style="font-size: 2rem; font-weight: 700; margin-top: var(--space-huge); margin-bottom: var(--space-xxl);">Legal Milestones</h3>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">January 2019</p>
+                    <p class="timeline-title">Organization Founded</p>
+                    <p class="timeline-desc">CoveOfEdu established with mission to help teenagers find their purpose through structured presence and mentorship.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">June 2022</p>
+                    <p class="timeline-title">Incorporation</p>
+                    <p class="timeline-desc">Incorporated as a nonprofit corporation in the State of Florida.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">October 2022</p>
+                    <p class="timeline-title">501(c)(3) Application Filed</p>
+                    <p class="timeline-desc">Submitted Form 1023 application for federal tax-exempt status to the IRS.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">March 2023</p>
+                    <p class="timeline-title">501(c)(3) Status Approved</p>
+                    <p class="timeline-desc">Received IRS determination letter granting 501(c)(3) public charity status.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">December 2023</p>
+                    <p class="timeline-title">First Form 990 Filed</p>
+                    <p class="timeline-desc">Filed annual information return with complete financial transparency.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">Ongoing</p>
+                    <p class="timeline-title">Compliance Maintained</p>
+                    <p class="timeline-desc">Continuous adherence to all federal and state nonprofit regulations.</p>
+                </div>
+            </div>
+
+            <!-- Regulatory Compliance -->
+            <h3 style="font-size: 2rem; font-weight: 700; margin-top: var(--space-huge); margin-bottom: var(--space-xxl);">Regulatory Compliance</h3>
+
+            <div class="compliance-grid">
+                <div class="compliance-card">
+                    <p class="compliance-card-title"><span class="check">&#10003;</span> IRS Compliance</p>
+                    <ul>
+                        <li>Annual Form 990 filing</li>
+                        <li>Unrelated business income reporting</li>
+                        <li>Donor acknowledgment letters</li>
+                        <li>Public disclosure requirements met</li>
+                    </ul>
+                </div>
+
+                <div class="compliance-card">
+                    <p class="compliance-card-title"><span class="check">&#10003;</span> State Compliance</p>
+                    <ul>
+                        <li>Annual registration current</li>
+                        <li>Charitable solicitation registered</li>
+                        <li>State tax exemptions maintained</li>
+                        <li>Corporate filings up to date</li>
+                    </ul>
+                </div>
+
+                <div class="compliance-card">
+                    <p class="compliance-card-title"><span class="check">&#10003;</span> Best Practices</p>
+                    <ul>
+                        <li>Written financial policies</li>
+                        <li>Document retention policy</li>
+                        <li>Whistleblower protection</li>
+                        <li>Privacy and data security</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================
-         OUR IMPACT — Pledge Tracker
+         IMPACT / PLEDGE TRACKER
          ============================================ -->
     <section class="section fade-in">
         <div class="container" style="text-align: center;">
@@ -1073,17 +832,20 @@
     </section>
 
     <!-- ============================================
-         CTA SECTION
+         DONATION CTA
          ============================================ -->
     <section class="cta-section fade-in">
         <div class="container">
-            <h2>Will You Show Up<span style="color: var(--cove-white);">?</span></h2>
-            <p>Someone taught you to walk. And now there's a kid out there, reaching up with empty hands, waiting for you to return the favor.</p>
+            <h2>When I Had Nothing, He Gave Me Everything<span class="gold-dot">.</span></h2>
+            <p>Now It&rsquo;s Your Turn.</p>
 
             <div style="margin-bottom: var(--space-xl);">
-                <a href="donate.html" class="btn" style="background: var(--cove-white); color: var(--cove-gold); margin: 12px;">Support Our Mission</a>
+                <a href="https://www.pledge.to/coe" target="_blank" rel="noopener" class="btn" style="background: var(--cove-white); color: var(--cove-gold); margin: 12px;">Donate Now</a>
+                <a href="donate.html" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white); margin: 12px;">Other Ways to Give</a>
                 <a href="contact.html" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white); margin: 12px;">Get in Touch</a>
             </div>
+
+            <p style="font-size: 1rem; opacity: 0.8; margin-bottom: 0;">The counter is live. It&rsquo;s climbing. Come see it.</p>
         </div>
     </section>
 
@@ -1116,26 +878,63 @@
     </footer>
 
     <!-- ============================================
-         SCROLL ANIMATION SCRIPT
+         LIGHTBOX OVERLAY
+         ============================================ -->
+    <div class="lightbox-overlay" id="lightbox-overlay">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+            <iframe class="lightbox-iframe" id="lightbox-iframe" src="" title="Document viewer"></iframe>
+        </div>
+    </div>
+
+    <!-- ============================================
+         SCRIPTS
          ============================================ -->
     <script>
+        // Fade-in on scroll
         document.addEventListener('DOMContentLoaded', function() {
             var fadeElements = document.querySelectorAll('.fade-in');
-
             var observer = new IntersectionObserver(function(entries) {
                 entries.forEach(function(entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                     }
                 });
-            }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            fadeElements.forEach(function(el) { observer.observe(el); });
+        });
 
-            fadeElements.forEach(function(el) {
-                observer.observe(el);
-            });
+        // Accordion
+        document.getElementById('mechanism-toggle').addEventListener('click', function() {
+            var body = document.getElementById('mechanism-body');
+            var isOpen = this.classList.toggle('open');
+            body.classList.toggle('open');
+            this.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Lightbox
+        function openLightbox(url) {
+            var overlay = document.getElementById('lightbox-overlay');
+            var iframe = document.getElementById('lightbox-iframe');
+            iframe.src = url;
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            var overlay = document.getElementById('lightbox-overlay');
+            var iframe = document.getElementById('lightbox-iframe');
+            overlay.classList.remove('active');
+            iframe.src = '';
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox-overlay').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
         });
     </script>
 </body>
