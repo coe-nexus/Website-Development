@@ -255,6 +255,42 @@
         /* Pledge */
         .pledge-wrapper { background: var(--cove-white); border-radius: var(--radius-large); padding: 36px; box-shadow: var(--shadow-medium); max-width: 700px; margin: var(--space-xxl) auto 0; }
 
+        /* Mission/Vision/Moonshot (image-matched clean style) */
+        .mvm-section { padding: 100px 20px; background: var(--cove-gray-100); }
+        .mvm-block { margin-bottom: var(--space-huge); }
+        .mvm-block:last-child { margin-bottom: 0; }
+        .mvm-label { font-size: 0.875rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cove-gold); margin-bottom: var(--space-md); }
+        .mvm-heading { font-size: 2.5rem; font-weight: 700; color: var(--cove-dark); margin-bottom: var(--space-lg); line-height: 1.2; }
+        .mvm-heading .gold-dot { color: var(--cove-gold); }
+        .mvm-text { font-size: 1.25rem; color: var(--cove-gray-700); line-height: 1.8; max-width: 700px; }
+        .mvm-divider { width: 48px; height: 3px; background: var(--cove-gold); margin: var(--space-huge) 0; }
+        .mvm-moonshot-text { font-size: 1.6rem; font-weight: 600; color: var(--cove-dark); line-height: 1.4; text-align: center; max-width: 600px; margin: 0 auto; }
+
+        /* Timeline */
+        .timeline { position: relative; padding-left: 40px; margin: var(--space-xxl) 0; }
+        .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 3px; background: var(--cove-gold); }
+        .timeline-item { position: relative; margin-bottom: var(--space-xxl); }
+        .timeline-item:last-child { margin-bottom: 0; }
+        .timeline-dot { position: absolute; left: -36px; top: 4px; width: 16px; height: 16px; background: var(--cove-gold); border-radius: 50%; border: 3px solid var(--cove-gray-100); }
+        .timeline-date { font-size: 0.9rem; font-weight: 600; color: var(--cove-gold); margin-bottom: var(--space-xs); }
+        .timeline-title { font-size: 1.5rem; font-weight: 700; color: var(--cove-dark); margin-bottom: var(--space-sm); line-height: 1.3; }
+        .timeline-desc { font-size: 1rem; color: var(--cove-gray-700); line-height: 1.7; margin-bottom: 0; }
+
+        /* Regulatory Compliance Cards */
+        .compliance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-xl); margin: var(--space-xxl) 0; }
+        .compliance-card { background: var(--cove-white); border-radius: var(--radius-large); padding: 32px; border-left: 4px solid var(--cove-gold); box-shadow: var(--shadow-subtle); }
+        .compliance-card-title { font-size: 1.4rem; font-weight: 700; color: var(--cove-dark); margin-bottom: var(--space-lg); }
+        .compliance-card-title .check { color: var(--cove-gold); }
+        .compliance-card ul { list-style: disc; padding-left: 20px; margin: 0; }
+        .compliance-card ul li { font-size: 0.95rem; color: var(--cove-gray-700); padding: 4px 0; line-height: 1.6; }
+
+        /* First Principles Cards */
+        .principles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-xl); margin: var(--space-xxl) 0; }
+        .principle-card { background: var(--cove-white); padding: 36px; border-radius: var(--radius-large); border: 1px solid var(--cove-gray-200); transition: all var(--transition-normal); }
+        .principle-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(176, 141, 87, 0.2); border-color: var(--cove-gold); }
+        .principle-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cove-gold); margin-bottom: var(--space-sm); }
+        .principle-text { font-size: 1.05rem; color: var(--cove-gray-700); line-height: 1.8; margin-bottom: 0; }
+
         /* Lightbox Overlay */
         .lightbox-overlay {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
@@ -313,6 +349,11 @@
             .team-header { flex-direction: column; text-align: center; }
             .values-grid { grid-template-columns: 1fr; }
             .trust-grid { grid-template-columns: 1fr 1fr; }
+            .mvm-heading { font-size: 2rem; }
+            .mvm-moonshot-text { font-size: 1.3rem; }
+            .compliance-grid { grid-template-columns: 1fr; }
+            .principles-grid { grid-template-columns: 1fr; }
+            .timeline-title { font-size: 1.25rem; }
         }
         @media (max-width: 480px) {
             .hero { padding: 100px 16px 80px; }
@@ -344,9 +385,36 @@
     </section>
 
     <!-- ============================================
-         MISSION / MECHANISM (with accordion)
+         MISSION / VISION / MOONSHOT (image-matched clean style)
          ============================================ -->
-    <section id="mission" class="narrative-section section-light fade-in">
+    <section id="mission" class="mvm-section fade-in">
+        <div class="narrow-container">
+            <div class="mvm-block">
+                <p class="mvm-label">OUR MISSION</p>
+                <h2 class="mvm-heading">Structured Presence<span class="gold-dot">.</span></h2>
+                <p class="mvm-text">We build systems of structured presence that reveal people to themselves, starting with teenagers who have fire but not support.</p>
+            </div>
+
+            <div class="mvm-divider"></div>
+
+            <div class="mvm-block">
+                <p class="mvm-label">OUR VISION</p>
+                <p class="mvm-text">A world where purpose-finding is not an accident of privilege but a standard part of growing up &mdash; as universal as learning to read.</p>
+            </div>
+
+            <div class="mvm-divider"></div>
+
+            <div class="mvm-block" style="text-align: center;">
+                <p class="mvm-label">MOONSHOT</p>
+                <p class="mvm-moonshot-text">100 million transformations through the 7 Teachings by 2040.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         DAILY MISSION / MECHANISM (with accordion)
+         ============================================ -->
+    <section class="narrative-section fade-in">
         <div class="narrow-container">
             <span class="act-label">Every Day</span>
             <h2 class="act-title">We come to work to achieve one mission, and one mission only &mdash; better and better each day<span class="gold-dot">:</span></h2>
@@ -380,7 +448,7 @@
 
             <span class="narrative-pause"></span>
 
-            <!-- VISION | MISSION | PURPOSE -->
+            <!-- VISION | MISSION | PURPOSE | NORTHSTAR -->
             <div style="display: grid; gap: var(--space-xxl);">
                 <div>
                     <span class="act-label">Vision</span>
@@ -438,14 +506,29 @@
     </section>
 
     <!-- ============================================
-         CORE VALUES
+         CORE VALUES / FIRST PRINCIPLES
          ============================================ -->
     <section class="section fade-in">
         <div class="container">
             <h2 class="section-title">Core Values<span class="gold-dot">.</span></h2>
             <p class="section-subtitle">What we believe. How we operate. No exceptions.</p>
 
-            <div class="values-grid">
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <p class="principle-label">WHY</p>
+                    <p class="principle-text">Regularly ask ourselves: How do we show up for as many people as possible, as early as possible, in a way that makes their efforts visible and their potential undeniable.</p>
+                </div>
+                <div class="principle-card">
+                    <p class="principle-label">WHAT</p>
+                    <p class="principle-text">Lead by example and show up for others, until they can show up for themselves.</p>
+                </div>
+                <div class="principle-card">
+                    <p class="principle-label">SUCCESS</p>
+                    <p class="principle-text">The atom (our smallest metric of success) is when someone sees in themselves a newfound power &mdash; clarity, capability, contribution &mdash; they haven&rsquo;t yet seen before or believed in. That&rsquo;s how we know it&rsquo;s working.</p>
+                </div>
+            </div>
+
+            <div class="values-grid" style="margin-top: var(--space-xxl);">
                 <div class="value-card">
                     <h3 class="value-title">Presence Over Prescription</h3>
                     <p class="value-description">We show up. We don&rsquo;t lecture.</p>
@@ -477,11 +560,7 @@
             <!-- Izzy Kiver -->
             <div class="team-card">
                 <div class="team-header">
-                    <!-- PLACEHOLDER: Replace src with Izzy's photo URL. Recommended size: 320x320px, square crop. -->
-                    <img src="" alt="Izzy Kiver" class="team-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                    <div class="team-photo-placeholder" style="display:flex;">
-                        <span>Photo<br>320&times;320px</span>
-                    </div>
+                    <img src="https://coveofedu.org/wp-content/uploads/2026/03/2-1.png" alt="Izzy Kiver" class="team-photo">
                     <div>
                         <p class="team-role">Founder &amp; Executive Director</p>
                         <h3 class="team-name">Izzy Kiver</h3>
@@ -500,11 +579,7 @@
             <!-- Elly Rezende -->
             <div class="team-card">
                 <div class="team-header">
-                    <!-- PLACEHOLDER: Replace src with Elly's photo URL. Recommended size: 320x320px, square crop. -->
-                    <img src="" alt="Elly Rezende" class="team-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                    <div class="team-photo-placeholder" style="display:flex;">
-                        <span>Photo<br>320&times;320px</span>
-                    </div>
+                    <img src="https://coveofedu.org/wp-content/uploads/2026/03/1-1.png" alt="Elly Rezende" class="team-photo">
                     <div>
                         <p class="team-role">Facilitator &amp; Content Lead</p>
                         <h3 class="team-name">Elly Rezende</h3>
@@ -525,11 +600,7 @@
             <!-- Dr. Nick Hall - Advisor -->
             <div class="advisor-card">
                 <div class="team-header">
-                    <!-- PLACEHOLDER: Replace src with Dr. Hall's photo URL. Recommended size: 320x320px, square crop. -->
-                    <img src="" alt="Dr. Nick Hall" class="team-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-                    <div class="team-photo-placeholder" style="display:flex;">
-                        <span>Photo<br>320&times;320px</span>
-                    </div>
+                    <img src="https://coveofedu.org/wp-content/uploads/2026/03/3-1.png" alt="Dr. Nick Hall" class="team-photo" style="border-color: var(--cove-gold);">
                     <div>
                         <p class="team-role">Advisor</p>
                         <h3 class="team-name">Dr. Nick Hall</h3>
@@ -660,6 +731,88 @@
                     <li>$30,000 &mdash; Program Delivery, Platform Development, Marketing, Legal, Administrative</li>
                     <li>$18,000 &mdash; Reserve</li>
                 </ul>
+            </div>
+
+            <!-- Legal Milestones Timeline -->
+            <h3 style="font-size: 2rem; font-weight: 700; margin-top: var(--space-huge); margin-bottom: var(--space-xxl);">Legal Milestones</h3>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">January 2019</p>
+                    <p class="timeline-title">Organization Founded</p>
+                    <p class="timeline-desc">CoveOfEdu established with mission to help teenagers find their purpose through structured presence and mentorship.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">June 2022</p>
+                    <p class="timeline-title">Incorporation</p>
+                    <p class="timeline-desc">Incorporated as a nonprofit corporation in the State of Florida.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">October 2022</p>
+                    <p class="timeline-title">501(c)(3) Application Filed</p>
+                    <p class="timeline-desc">Submitted Form 1023 application for federal tax-exempt status to the IRS.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">March 2023</p>
+                    <p class="timeline-title">501(c)(3) Status Approved</p>
+                    <p class="timeline-desc">Received IRS determination letter granting 501(c)(3) public charity status.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">December 2023</p>
+                    <p class="timeline-title">First Form 990 Filed</p>
+                    <p class="timeline-desc">Filed annual information return with complete financial transparency.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <p class="timeline-date">Ongoing</p>
+                    <p class="timeline-title">Compliance Maintained</p>
+                    <p class="timeline-desc">Continuous adherence to all federal and state nonprofit regulations.</p>
+                </div>
+            </div>
+
+            <!-- Regulatory Compliance -->
+            <h3 style="font-size: 2rem; font-weight: 700; margin-top: var(--space-huge); margin-bottom: var(--space-xxl);">Regulatory Compliance</h3>
+
+            <div class="compliance-grid">
+                <div class="compliance-card">
+                    <p class="compliance-card-title"><span class="check">&#10003;</span> IRS Compliance</p>
+                    <ul>
+                        <li>Annual Form 990 filing</li>
+                        <li>Unrelated business income reporting</li>
+                        <li>Donor acknowledgment letters</li>
+                        <li>Public disclosure requirements met</li>
+                    </ul>
+                </div>
+
+                <div class="compliance-card">
+                    <p class="compliance-card-title"><span class="check">&#10003;</span> State Compliance</p>
+                    <ul>
+                        <li>Annual registration current</li>
+                        <li>Charitable solicitation registered</li>
+                        <li>State tax exemptions maintained</li>
+                        <li>Corporate filings up to date</li>
+                    </ul>
+                </div>
+
+                <div class="compliance-card">
+                    <p class="compliance-card-title"><span class="check">&#10003;</span> Best Practices</p>
+                    <ul>
+                        <li>Written financial policies</li>
+                        <li>Document retention policy</li>
+                        <li>Whistleblower protection</li>
+                        <li>Privacy and data security</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
