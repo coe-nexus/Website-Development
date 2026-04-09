@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoveOfEdu | The Carnegie Library of the AI Age | 501(c)(3) Nonprofit</title>
-    <meta name="description" content="CoveOfEdu is a 501(c)(3) nonprofit building wealth-creation infrastructure through AI education for underserved students. Transform lives through the 7 Teachings.">
+    <title>Covenant of Education | Every teenager already has something extraordinary in them.</title>
+    <meta name="description" content="Covenant of Education is a 501(c)(3) nonprofit. The 7 Teachings — a structured path for soul-searching that institutions have forgotten. 100 million people discovering their purpose by 2040.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,44 +20,22 @@
             --cove-light-gold: #d4af37;
             --cove-gray-100: #f8f7f5;
             --cove-gray-200: #e5e5e5;
+            --cove-navy: #1a2744;
+            --cove-navy-light: #2a3d5e;
             --space-xl: 32px;
-            --space-xxl: 48px;
-            --space-xxxl: 64px;
             --radius-large: 16px;
             --radius-round: 9999px;
             --shadow-gold: 0 8px 24px rgba(176, 141, 87, 0.25);
             --font-primary: 'Comfortaa', sans-serif;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: var(--font-primary);
             background: var(--cove-white);
             color: var(--cove-dark);
             line-height: 1.7;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, var(--cove-offwhite) 0%, var(--cove-white) 100%);
-            padding: 120px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(176, 141, 87, 0.1) 0%, transparent 50%);
         }
 
         .container {
@@ -68,30 +46,9 @@
             z-index: 1;
         }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 24px;
-            color: var(--cove-dark);
-        }
+        .gold-dot { color: var(--cove-gold); }
 
-        .hero .tagline {
-            font-size: 1.5rem;
-            color: var(--cove-gold);
-            margin-bottom: 16px;
-            font-weight: 500;
-        }
-
-        .hero .subtitle {
-            font-size: 1.2rem;
-            color: var(--cove-warm-gray);
-            margin-bottom: 48px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
+        /* ── Buttons ── */
         .btn {
             display: inline-block;
             padding: 18px 48px;
@@ -104,151 +61,41 @@
             border: 2px solid transparent;
             font-family: var(--font-primary);
         }
-
         .btn-primary {
             background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
             color: var(--cove-white);
             box-shadow: var(--shadow-gold);
             margin: 0 12px;
         }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 32px rgba(176, 141, 87, 0.4);
-        }
-
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(176, 141, 87, 0.4); }
         .btn-secondary {
             background: transparent;
             color: var(--cove-dark);
             border: 2px solid var(--cove-dark);
             margin: 0 12px;
         }
-
-        .btn-secondary:hover {
-            background: var(--cove-dark);
+        .btn-secondary:hover { background: var(--cove-dark); color: var(--cove-white); }
+        .btn-navy {
+            background: linear-gradient(135deg, var(--cove-navy) 0%, var(--cove-navy-light) 100%);
             color: var(--cove-white);
+            box-shadow: 0 8px 24px rgba(26, 39, 68, 0.25);
+            margin: 0 12px;
         }
-
-        .section {
-            padding: 80px 20px;
-        }
-
-        .section-dark {
-            background: var(--cove-dark);
-            color: var(--cove-white);
-        }
-
-        .section-light {
-            background: var(--cove-gray-100);
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 24px;
-        }
-
-        .section-subtitle {
-            font-size: 1.2rem;
-            text-align: center;
-            color: var(--cove-warm-gray);
-            margin-bottom: 64px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 32px;
-            margin: 48px 0;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 32px;
-            background: var(--cove-white);
-            border-radius: var(--radius-large);
-            border: 2px solid var(--cove-gold);
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--cove-gold);
-            margin-bottom: 8px;
-        }
-
-        .stat-label {
-            font-size: 1.1rem;
-            color: var(--cove-warm-gray);
-        }
-
-        .teachings-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 32px;
-            margin: 48px 0;
-        }
-
-        .teaching-card {
-            background: var(--cove-white);
-            padding: 40px;
-            border-radius: var(--radius-large);
-            border: 1px solid var(--cove-gray-200);
-            transition: all 300ms ease;
-            text-align: center;
-        }
-
-        .teaching-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 16px 40px rgba(176, 141, 87, 0.2);
-            border-color: var(--cove-gold);
-        }
-
-        .teaching-number {
-            font-size: 1rem;
-            color: var(--cove-gold);
-            font-weight: 600;
-            margin-bottom: 16px;
-            letter-spacing: 0.1em;
-        }
-
-        .teaching-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: var(--cove-dark);
-        }
-
-        .teaching-description {
-            color: var(--cove-warm-gray);
-            line-height: 1.8;
-        }
-
-        .cta-section {
+        .btn-navy:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(26, 39, 68, 0.4); }
+        .btn-sm { padding: 12px 32px; font-size: 0.95rem; }
+        .btn-card {
             background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
-            padding: 100px 20px;
-            text-align: center;
             color: var(--cove-white);
+            padding: 10px 28px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--radius-round);
+            transition: all 200ms ease;
+            display: inline-block;
+            font-family: var(--font-primary);
         }
-
-        .cta-section h2 {
-            font-size: 3rem;
-            margin-bottom: 24px;
-        }
-
-        .cta-section p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.95;
-        }
-
-        .gold-dot {
-            color: var(--cove-gold);
-        }
+        .btn-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(176, 141, 87, 0.3); }
 
         .trust-badge {
             display: inline-block;
@@ -262,22 +109,213 @@
             margin: 8px;
         }
 
+        /* ── Sections ── */
+        .section { padding: 80px 20px; }
+        .section-dark { background: var(--cove-dark); color: var(--cove-white); }
+        .section-light { background: var(--cove-gray-100); }
+        .section-title { font-size: 2.5rem; font-weight: 600; text-align: center; margin-bottom: 24px; }
+        .section-subtitle {
+            font-size: 1.2rem; text-align: center; color: var(--cove-warm-gray);
+            margin-bottom: 64px; max-width: 700px; margin-left: auto; margin-right: auto;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            background: linear-gradient(135deg, var(--cove-offwhite) 0%, var(--cove-white) 100%);
+            padding: 120px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at 20% 50%, rgba(176, 141, 87, 0.1) 0%, transparent 50%);
+        }
+        .hero h1 { font-size: 3.2rem; font-weight: 700; line-height: 1.2; margin-bottom: 24px; color: var(--cove-dark); }
+        .hero .tagline { font-size: 1.5rem; color: var(--cove-gold); margin-bottom: 12px; font-weight: 600; }
+        .hero .subhead {
+            font-size: 1.1rem; color: var(--cove-warm-gray); margin-bottom: 28px;
+            max-width: 780px; margin-left: auto; margin-right: auto; line-height: 1.8;
+        }
+        .hero .movement-line {
+            font-size: 1.05rem; color: var(--cove-dark); margin-bottom: 32px;
+            max-width: 720px; margin-left: auto; margin-right: auto;
+        }
+        .pull-quote {
+            max-width: 680px; margin: 0 auto 36px; padding: 20px 28px;
+            border-left: 4px solid var(--cove-gold); background: rgba(176, 141, 87, 0.06);
+            border-radius: 0 var(--radius-large) var(--radius-large) 0;
+            font-style: italic; font-size: 1.1rem; color: var(--cove-dark); text-align: left;
+        }
+
+        /* ── Moonshot / Atoms ── */
+        .moonshot-block { max-width: 800px; margin: 0 auto; text-align: center; }
+        .moonshot-block p { font-size: 1.1rem; line-height: 1.9; color: var(--cove-warm-gray); margin-bottom: 20px; }
+        .moonshot-big { font-size: 2rem; font-weight: 700; color: var(--cove-gold); margin: 24px 0 8px; }
+        .moonshot-caption { font-size: 1rem; color: var(--cove-warm-gray); font-style: italic; }
+
+        /* ── Narrative ── */
+        .narrative-block { max-width: 800px; margin: 0 auto; font-size: 1.15rem; line-height: 1.9; }
+        .narrative-block p { margin-bottom: 24px; }
+        .narrative-block .highlight { color: var(--cove-gold); font-weight: 600; }
+        .narrative-block blockquote {
+            border-left: 4px solid var(--cove-gold); padding: 16px 24px; margin: 32px 0;
+            background: rgba(176, 141, 87, 0.05);
+            border-radius: 0 var(--radius-large) var(--radius-large) 0; font-style: italic;
+        }
+
+        /* ── Two Paths ── */
+        .paths-container { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: 48px 0; }
+        .path-card { padding: 48px 40px; border-radius: var(--radius-large); transition: all 300ms ease; text-align: center; }
+        .path-card:hover { transform: translateY(-4px); }
+        .path-card-a {
+            background: linear-gradient(135deg, rgba(176, 141, 87, 0.08) 0%, rgba(212, 175, 55, 0.06) 100%);
+            border: 2px solid var(--cove-gold);
+        }
+        .path-card-a:hover { box-shadow: 0 12px 32px rgba(176, 141, 87, 0.2); }
+        .path-card-b {
+            background: linear-gradient(135deg, rgba(26, 39, 68, 0.06) 0%, rgba(42, 61, 94, 0.04) 100%);
+            border: 2px solid var(--cove-navy);
+        }
+        .path-card-b:hover { box-shadow: 0 12px 32px rgba(26, 39, 68, 0.2); }
+        .path-label {
+            font-size: 0.85rem; font-weight: 600; letter-spacing: 0.1em;
+            margin-bottom: 12px; text-transform: uppercase;
+        }
+        .path-card-a .path-label { color: var(--cove-light-gold); }
+        .path-card-b .path-label { color: var(--cove-navy-light); }
+        .path-card h3 { font-size: 1.4rem; margin-bottom: 16px; }
+        .path-card-a h3 { color: var(--cove-gold); }
+        .path-card-b h3 { color: var(--cove-navy); }
+        .path-card p { color: var(--cove-warm-gray); line-height: 1.8; margin-bottom: 28px; }
+
+        /* ── Stats ── */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin: 48px 0; }
+        .stat-card {
+            text-align: center; padding: 28px 16px; background: var(--cove-white);
+            border-radius: var(--radius-large); border: 2px solid var(--cove-gold);
+        }
+        .stat-number { font-size: 2.5rem; font-weight: 700; color: var(--cove-gold); margin-bottom: 8px; }
+        .stat-number.hero-stat { font-size: 3.2rem; }
+        .stat-label { font-size: 0.95rem; color: var(--cove-warm-gray); }
+        .stat-context { font-size: 0.82rem; color: var(--cove-warm-gray); margin-top: 4px; font-style: italic; }
+
+        /* ── Transformation Stories ── */
+        .stories-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; margin: 48px 0; }
+        .story-card {
+            background: var(--cove-white); border-radius: var(--radius-large); padding: 40px;
+            border: 1px solid var(--cove-gray-200); transition: all 300ms ease; text-align: center;
+        }
+        .story-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(176, 141, 87, 0.15); border-color: var(--cove-gold); }
+        .story-card.memorial {
+            background: linear-gradient(135deg, var(--cove-gray-100) 0%, #f0ede8 100%);
+            border-color: var(--cove-warm-gray); opacity: 0.92;
+        }
+        .story-card.memorial:hover { opacity: 1; border-color: var(--cove-gold); }
+        .story-photo {
+            width: 120px; height: 120px; border-radius: 50%; background: var(--cove-gray-200);
+            margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;
+            font-size: 0.7rem; color: var(--cove-warm-gray); border: 3px solid var(--cove-gold); overflow: hidden;
+        }
+        .story-card.memorial .story-photo { border-color: var(--cove-warm-gray); }
+        .story-card h3 { font-size: 1.3rem; color: var(--cove-dark); margin-bottom: 4px; }
+        .story-role { font-size: 0.9rem; color: var(--cove-gold); font-style: italic; margin-bottom: 16px; }
+        .story-card.memorial .story-role { color: var(--cove-warm-gray); }
+        .story-quote { color: var(--cove-warm-gray); line-height: 1.8; font-size: 0.95rem; }
+        .story-card .achievements { text-align: left; margin-top: 12px; padding-left: 20px; }
+        .story-card .achievements li { margin-bottom: 6px; color: var(--cove-warm-gray); font-size: 0.9rem; }
+
+        /* ── 7 Teachings ── */
+        .teachings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; margin: 48px 0; }
+        .teaching-card {
+            background: var(--cove-white); padding: 40px; border-radius: var(--radius-large);
+            border: 1px solid var(--cove-gray-200); transition: all 300ms ease; text-align: center;
+        }
+        .teaching-card:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(176, 141, 87, 0.2); border-color: var(--cove-gold); }
+        .teaching-number { font-size: 1rem; color: var(--cove-gold); font-weight: 600; margin-bottom: 16px; letter-spacing: 0.1em; }
+        .teaching-title { font-size: 1.8rem; font-weight: 600; margin-bottom: 16px; color: var(--cove-dark); }
+        .teaching-description { color: var(--cove-warm-gray); line-height: 1.8; }
+
+        /* ── Donate Cards ── */
+        .donate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin: 48px 0; }
+        .donate-card {
+            text-align: center; padding: 36px 20px; background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-large); border: 2px solid rgba(176, 141, 87, 0.3);
+            transition: all 300ms ease; display: flex; flex-direction: column; align-items: center;
+        }
+        .donate-card:hover { border-color: var(--cove-gold); transform: translateY(-4px); box-shadow: 0 12px 24px rgba(176, 141, 87, 0.15); }
+        .donate-amount { font-size: 2rem; font-weight: 700; color: var(--cove-gold); margin-bottom: 4px; }
+        .donate-frequency { font-size: 0.85rem; color: var(--cove-warm-gray); margin-bottom: 8px; }
+        .donate-tier { font-size: 1.05rem; color: var(--cove-offwhite); font-weight: 600; margin-bottom: 12px; }
+        .donate-desc { font-size: 0.88rem; color: var(--cove-warm-gray); line-height: 1.6; margin-bottom: 20px; flex-grow: 1; }
+
+        /* ── Supporters ── */
+        .supporters-group { margin-bottom: 56px; }
+        .supporters-group h3 { font-size: 1.3rem; color: var(--cove-gold); text-align: center; margin-bottom: 28px; font-weight: 600; }
+        .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; max-width: 1000px; margin: 0 auto; }
+        .logo-card {
+            text-align: center; padding: 20px 12px; background: var(--cove-white);
+            border-radius: var(--radius-large); border: 1px solid var(--cove-gray-200); transition: all 200ms ease;
+        }
+        .logo-card:hover { border-color: var(--cove-gold); box-shadow: 0 4px 12px rgba(176, 141, 87, 0.1); }
+        .logo-placeholder {
+            width: 56px; height: 56px; border-radius: 12px; background: var(--cove-gray-100);
+            margin: 0 auto 10px; display: flex; align-items: center; justify-content: center;
+            font-size: 0.6rem; color: var(--cove-warm-gray);
+        }
+        .logo-card .p-name { font-size: 0.9rem; font-weight: 600; color: var(--cove-dark); margin-bottom: 4px; }
+        .logo-card .p-desc { font-size: 0.75rem; color: var(--cove-warm-gray); line-height: 1.4; }
+        .donors-list { text-align: center; max-width: 600px; margin: 0 auto; }
+        .donors-list ul { list-style: none; padding: 0; }
+        .donors-list li { padding: 10px 0; color: var(--cove-dark); font-size: 1rem; border-bottom: 1px solid var(--cove-gray-200); }
+        .donors-list li:last-child { border-bottom: none; }
+        .donors-note { margin-top: 16px; font-size: 0.9rem; color: var(--cove-warm-gray); font-style: italic; }
+
+        /* ── CTA ── */
+        .cta-section {
+            background: linear-gradient(135deg, var(--cove-gold) 0%, var(--cove-light-gold) 100%);
+            padding: 100px 20px; text-align: center; color: var(--cove-white);
+        }
+        .cta-section h2 { font-size: 2.5rem; margin-bottom: 16px; }
+        .cta-sub { font-size: 1.3rem; margin-bottom: 8px; opacity: 0.95; }
+        .cta-kicker { font-size: 1.05rem; margin-bottom: 40px; opacity: 0.85; font-style: italic; }
+
+        /* ── Responsive ── */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
+            .hero h1 { font-size: 2rem; }
             .hero .tagline { font-size: 1.2rem; }
-            .section-title { font-size: 2rem; }
+            .section-title { font-size: 1.8rem; }
             .btn { padding: 14px 32px; font-size: 1rem; margin: 8px; }
-            .cta-section h2 { font-size: 2rem; }
+            .cta-section h2 { font-size: 1.8rem; }
+            .narrative-block { font-size: 1.05rem; }
+            .paths-container { grid-template-columns: 1fr; }
+            .stories-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+            .stat-number { font-size: 2rem; }
+            .stat-number.hero-stat { font-size: 2.5rem; }
+            .donate-grid { grid-template-columns: 1fr 1fr; }
+            .logo-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+            .pull-quote { margin: 0 auto 28px; padding: 16px 20px; font-size: 1rem; }
+        }
+        @media (max-width: 480px) {
+            .donate-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 1: HERO
+         ═══════════════════════════════════════════ -->
     <section class="hero">
         <div class="container">
-            <h1>The Carnegie Library of the AI Age<span class="gold-dot">.</span></h1>
-            <p class="tagline">Building Wealth-Creation Infrastructure Through AI Education</p>
-            <p class="subtitle">Empowering underserved students to create sustainable wealth through AI skills, entrepreneurship, and the 7 Teachings of purpose-driven success.</p>
+            <h1>Every teenager already has something extraordinary in them<span class="gold-dot">.</span> We help them see it<span class="gold-dot">.</span></h1>
+
+            <p class="tagline">The 7 Teachings</p>
+            <p class="subhead">A structured path for soul-searching that institutions have either forgotten or never bothered to build&mdash;purpose discovery for ordinary people seeking growth, meaning, and genuine opportunity.</p>
+
+            <p class="movement-line" style="font-weight: 600; color: var(--cove-gold); font-size: 1.1rem; margin-bottom: 36px;">COE is the soul<span class="gold-dot">.</span> The 7 Teachings is the map<span class="gold-dot">.</span></p>
 
             <div>
                 <div class="trust-badge">501(c)(3) NONPROFIT</div>
@@ -285,42 +323,231 @@
                 <div class="trust-badge">TAX DEDUCTIBLE</div>
             </div>
 
-            <div style="margin-top: 48px;">
-                <a href="#join-movement" class="btn btn-primary">Join the Movement</a>
-                <a href="#7-teachings" class="btn btn-secondary">Explore the 7 Teachings</a>
+            <div style="margin-top: 40px;">
+                <a href="#7-teachings" class="btn btn-primary">Explore the 7 Teachings</a>
+                <a href="#paths" class="btn btn-secondary">What Path Are You On?</a>
             </div>
         </div>
     </section>
 
-    <!-- Impact Section -->
+    <!-- ═══════════════════════════════════════════
+         SECTION 2: MOONSHOT / ATOMS
+         ═══════════════════════════════════════════ -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">Real Impact<span class="gold-dot">.</span> Real Results<span class="gold-dot">.</span></h2>
-            <p class="section-subtitle">We're not just teaching skills—we're building wealth-creation infrastructure for the next generation.</p>
+            <div class="moonshot-block">
+                <p>Our moonshot is <strong style="color: var(--cove-gold);">100 million people</strong> discovering their purpose by 2040. We measure transformation in atoms&mdash;single, verified moments where a person gains clarity about who they are, builds a capability they didn't have before, or makes a contribution that changes someone else's trajectory.</p>
+                <p>Three stages. One unit of change.</p>
+                <div class="moonshot-big">1 trillion atoms by 2050<span class="gold-dot">.</span></div>
+                <div class="moonshot-caption">That's the long game. Every atom logged is a person one step closer to a life they actually chose.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3a: THE PROBLEM
+         ═══════════════════════════════════════════ -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">The Problem<span class="gold-dot">.</span></h2>
+            <div class="narrative-block">
+                <p>Counseling, career training, therapy&hellip; prepares people for a world that will not exist. Our world is exponentially changing. We need character development that transcends economic disruption.</p>
+
+                <blockquote>
+                    The system catches the failing. It ignores the searching. Safety nets exist for kids falling behind&mdash;nothing exists for the kid reaching upward with empty hands.
+                </blockquote>
+
+                <p>I sit across from parents who can see brilliance in their children the way you can see a city from an airplane&mdash;clearly, completely, from a distance the child doesn't have. And those parents are desperate. Because they can see it, and their child cannot, and no amount of love or money or tutoring has been able to close that gap.</p>
+
+                <p>This is an epidemic that nobody talks about because these kids look extraordinary on paper. Schools can't reach them&mdash;these schools are often the source of the pressure. And therapy&mdash;look, therapy is wonderful. I'm a great believer in therapy. But therapy is a conversation about what's broken. <span class="highlight">These kids don't need to be fixed. They need to be shown.</span></p>
+
+                <p>Shown the thing inside them that everyone else can see but they can't. They need someone who sees the exception within them&mdash;the way my brother once saw it in me, when I was convinced there was nothing there worth finding.</p>
+
+                <p>Covenant of Education is the infrastructure for that gap.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3b: OUR ORIGIN
+         ═══════════════════════════════════════════ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Origin<span class="gold-dot">.</span></h2>
+            <div class="narrative-block">
+                <p>When I was a kid, I had fire inside me but no one to fan it. The system had programs for kids falling behind, but nothing for the kid reaching upward with empty hands.</p>
+
+                <p>Two experiences changed my life: a volunteer tutor who showed up three times a week, and a structured system that made my effort visible. Neither told me what to become. They created conditions where I could not help but become more of who I already was.</p>
+
+                <p>My brother did not have that. He took his own life. It took me a decade to process the grief and find my way to purpose. I started Covenant of Education so that <span class="highlight">the distance between lost and aimed would never be that far for anyone again.</span></p>
+
+                <p>We built the 7 Teachings&mdash;a philosophy and methodology that creates the conditions for self-discovery. We deliver it through physical NFC cards teenagers can scan for mentorship content, digital courses, facilitated group experiences, and eventually certified practitioners and institutional licensing.</p>
+
+                <p>Right now we are proving the model works at small scale. We need partners who believe that purpose-finding should not be an accident of privilege. If you want to be part of building the infrastructure that catches people before they fall through the cracks, this is the moment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3c: TWO PATHS — Path A / Path B
+         ═══════════════════════════════════════════ -->
+    <section id="paths" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">What Path Are You On<span class="gold-dot">?</span></h2>
+
+            <div class="narrative-block" style="text-align: center; margin-bottom: 24px;">
+                <p>Covenant of Education is a movement of showing up for others&mdash;until they are ready to show up for themselves, and can take others along with them on the journey to success.</p>
+            </div>
+
+            <div class="pull-quote" style="max-width: 680px; margin: 0 auto 48px;">
+                &ldquo;COE created the conditions where I could not help but become more of who I already was.&rdquo;
+            </div>
+
+            <p class="section-subtitle" style="margin-bottom: 48px;">The best way to make your dreams come true is by taking others along with you for the ride. This is not meant to be an inspirational quote. It's the principle by which we function.</p>
+
+            <div class="paths-container">
+                <div class="path-card path-card-a">
+                    <div class="path-label">Path A</div>
+                    <h3>You Already Show Up</h3>
+                    <p>You already show up for yourself every day, but you don't have the level of success you know you deserve. We show you how to show up for others in a way that gets you closer to your purpose&mdash;by mentoring and inspiring them towards success in your chosen direction.</p>
+                    <a href="#donate" class="btn btn-primary btn-sm">Support Our Mission</a>
+                </div>
+                <div class="path-card path-card-b">
+                    <div class="path-label">Path B</div>
+                    <h3>You're Not There Yet</h3>
+                    <p>You don't yet show up for yourself. In which case we are here for YOU. We will show up for you, until you are ready to show up for yourself&mdash;and can take others along with you on the journey to success.</p>
+                    <a href="#7-teachings" class="btn btn-navy btn-sm">Explore the 7 Teachings</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 4: OUR IMPACT
+         ═══════════════════════════════════════════ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Our Impact<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">Verified results from our cohorts to date.</p>
 
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">$1.2M+</div>
-                    <div class="stat-label">Revenue Generated by Students</div>
+                    <div class="stat-number hero-stat counter" data-target="1333">0</div>
+                    <div class="stat-label">Atoms Logged</div>
+                    <div class="stat-context">verified moments of change</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">94%</div>
-                    <div class="stat-label">Success Rate</div>
+                    <div class="stat-number counter" data-target="31">0</div>
+                    <div class="stat-label">Cohorts Completed</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">127</div>
-                    <div class="stat-label">Students Transformed</div>
+                    <div class="stat-number counter" data-target="174">0</div>
+                    <div class="stat-label">Graduates</div>
+                    <div class="stat-context">96% avg completion</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">90 Days</div>
-                    <div class="stat-label">Average Transformation Time</div>
+                    <div class="stat-number counter" data-target="11">0</div>
+                    <div class="stat-label">Projects Developed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Active Facilitators</div>
+                    <div class="stat-context">across 8 countries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">+85%</div>
+                    <div class="stat-label">Avg PCI Improvement</div>
+                    <div class="stat-context">Purpose Clarity Index (pre&rarr;post)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">58%</div>
+                    <div class="stat-label">Project Launch Rate</div>
+                    <div class="stat-context">of sample graduates</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">9.3</div>
+                    <div class="stat-label">Net Promoter Score</div>
+                    <div class="stat-context">across all cohorts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$1,800</div>
+                    <div class="stat-label">Cost Per Transformation</div>
+                    <div class="stat-context">full 7 Teachings experience</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The 7 Teachings Section -->
-    <section id="7-teachings" class="section section-light">
+    <!-- ═══════════════════════════════════════════
+         SECTION 5: TRANSFORMATION STORIES
+         ═══════════════════════════════════════════ -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Transformation Stories<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">Real people. Real atoms. Real change.</p>
+
+            <div class="stories-grid">
+                <!-- Dimash -->
+                <div class="story-card">
+                    <div class="story-photo"><span>Photo<br>400&times;400</span></div>
+                    <h3>Dimash</h3>
+                    <div class="story-role">Full transformation arc &mdash; Purpose discovery</div>
+                    <p class="story-quote">Dimash came to COE searching for direction. Through the 7 Teachings and structured mentorship, he discovered the DuplicateMe project&mdash;synthesizing his skills, passions, and purpose into something he could not have imagined before the process began.</p>
+                </div>
+
+                <!-- Aselya -->
+                <div class="story-card">
+                    <div class="story-photo"><span>Photo<br>400&times;400</span></div>
+                    <h3>Aselya</h3>
+                    <div class="story-role">Parent perspective &mdash; Witnessing transformation</div>
+                    <p class="story-quote">As a parent, Aselya could see the brilliance in her child the way you see a city from an airplane. Through COE she watched that gap close&mdash;her child stopped waiting for permission to become who they already were.</p>
+                </div>
+
+                <!-- Elly -->
+                <div class="story-card">
+                    <div class="story-photo"><span>Photo<br>400&times;400</span></div>
+                    <h3>Elly</h3>
+                    <div class="story-role">Creator &mdash; Proving limitless potential</div>
+                    <p class="story-quote">Elly &ldquo;didn't realize&rdquo; she could do what she did. Through COE she proved to herself what was always there:</p>
+                    <ul class="achievements">
+                        <li>Documentary produced in 10 days</li>
+                        <li>Learned DaVinci Resolve in 1 week</li>
+                        <li>10-min rough cut edited in 5 days</li>
+                        <li>30 YouTube videos in 3 weeks</li>
+                    </ul>
+                </div>
+
+                <!-- Dr. Nicholas Hall -->
+                <div class="story-card">
+                    <div class="story-photo"><span>Photo<br>400&times;400</span></div>
+                    <h3>Dr. Nicholas Hall</h3>
+                    <div class="story-role">Advisor &amp; Donor</div>
+                    <p class="story-quote">A career spent in research and education. Found in COE's framework something most institutions have abandoned&mdash;a method that trusts people to discover their own answers.</p>
+                </div>
+
+                <!-- Tolik (Memorial) -->
+                <div class="story-card memorial">
+                    <div class="story-photo"><span>Photo<br>400&times;400</span></div>
+                    <h3>Tolik (Nafthali, 1983&ndash;2014)</h3>
+                    <div class="story-role">Origin Story</div>
+                    <p class="story-quote">COE exists because of one sacrifice. Tolik's life&mdash;and his death&mdash;gave his brother the clarity to build something that would make sure no one else had to lose everything before they found their purpose.</p>
+                </div>
+
+                <!-- Izzy Kiver -->
+                <div class="story-card">
+                    <div class="story-photo"><span>Photo<br>400&times;400</span></div>
+                    <h3>Izzy Kiver</h3>
+                    <div class="story-role">Founder &amp; Executive Director</div>
+                    <p class="story-quote">Filmmaker, educator, builder. Left a conventional path to create the infrastructure for purpose discovery at scale. The 7 Teachings aren't theory&mdash;they're the system he used on himself first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         THE 7 TEACHINGS
+         ═══════════════════════════════════════════ -->
+    <section id="7-teachings" class="section">
         <div class="container">
             <h2 class="section-title">The 7 Teachings<span class="gold-dot">.</span></h2>
             <p class="section-subtitle">Skills alone aren't enough. We teach the philosophy, mindset, and purpose that create lasting success.</p>
@@ -331,37 +558,31 @@
                     <h3 class="teaching-title">Positive Mental Attitude</h3>
                     <p class="teaching-description">The foundation of all success starts with the belief that transformation is possible.</p>
                 </div>
-
                 <div class="teaching-card">
                     <div class="teaching-number">TEACHING 02</div>
                     <h3 class="teaching-title">Purity of Thought</h3>
                     <p class="teaching-description">Clear thinking leads to clear action. Discover your life's purpose and align with it.</p>
                 </div>
-
                 <div class="teaching-card">
                     <div class="teaching-number">TEACHING 03</div>
                     <h3 class="teaching-title">Vision</h3>
                     <p class="teaching-description">Build your future before it exists. See what others cannot yet see.</p>
                 </div>
-
                 <div class="teaching-card">
                     <div class="teaching-number">TEACHING 04</div>
                     <h3 class="teaching-title">Courage</h3>
                     <p class="teaching-description">The bridge between knowing and doing. Take action despite fear.</p>
                 </div>
-
                 <div class="teaching-card">
                     <div class="teaching-number">TEACHING 05</div>
                     <h3 class="teaching-title">Charisma</h3>
                     <p class="teaching-description">The ability to inspire and influence. Lead yourself and others.</p>
                 </div>
-
                 <div class="teaching-card">
                     <div class="teaching-number">TEACHING 06</div>
                     <h3 class="teaching-title">Sanctuary</h3>
                     <p class="teaching-description">Create sacred space for growth, transformation, and deep work.</p>
                 </div>
-
                 <div class="teaching-card">
                     <div class="teaching-number">TEACHING 07</div>
                     <h3 class="teaching-title">Rhythm</h3>
@@ -375,111 +596,297 @@
         </div>
     </section>
 
-    <!-- Global Events CTA Section -->
-    <section id="join-movement" class="cta-section">
-        <div class="container">
-            <h2>Experience the 7 Teachings Live<span style="color: var(--cove-white);">.</span></h2>
-            <p>Join our global community on Kiver.org. Attend live Zoom/Google Meet events teaching the 7 Teachings in every language. Help us bring these transformative teachings to corporations, schools, and communities worldwide.</p>
-
-            <div style="margin-bottom: 32px;">
-                <a href="https://kiver.org" class="btn" style="background: var(--cove-white); color: var(--cove-gold); margin: 12px;">Join Kiver.org Community</a>
-                <a href="#events" class="btn" style="background: transparent; border: 2px solid var(--cove-white); color: var(--cove-white); margin: 12px;">Host a Live Event</a>
-            </div>
-
-            <p style="font-size: 1.1rem; margin-top: 32px;">💡 <strong>For Organizations:</strong> Bring the 7 Teachings to your corporation, school, or community. Live webinars available globally. Form clubs. Transform lives together.</p>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">How It Works<span class="gold-dot">.</span></h2>
-            <p class="section-subtitle">From stuck to successful in 90 days through AI education, entrepreneurship training, and purpose-driven philosophy.</p>
-
-            <div class="teachings-grid">
-                <div class="teaching-card">
-                    <div class="teaching-number">STEP 01</div>
-                    <h3 class="teaching-title">Learn AI Skills</h3>
-                    <p class="teaching-description">Master the tools that are reshaping every industry. No computer science background required.</p>
-                </div>
-
-                <div class="teaching-card">
-                    <div class="teaching-number">STEP 02</div>
-                    <h3 class="teaching-title">Build Your Business</h3>
-                    <p class="teaching-description">Apply AI skills to create real revenue-generating businesses with guidance and support.</p>
-                </div>
-
-                <div class="teaching-card">
-                    <div class="teaching-number">STEP 03</div>
-                    <h3 class="teaching-title">Transform Your Life</h3>
-                    <p class="teaching-description">Through the 7 Teachings, discover purpose, build wealth, and create lasting impact.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Donate Section -->
-    <section class="section section-dark">
+    <!-- ═══════════════════════════════════════════
+         SECTION 6: FUND A TRANSFORMATION
+         ═══════════════════════════════════════════ -->
+    <section id="donate" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Fund a Transformation<span class="gold-dot">.</span></h2>
-            <p class="section-subtitle" style="color: var(--cove-offwhite);">Your tax-deductible donation builds wealth-creation infrastructure for underserved students.</p>
+            <p class="section-subtitle" style="color: var(--cove-offwhite);">Every dollar logged. Every atom tracked. Full transparency.</p>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">$2,500</div>
-                    <div class="stat-label">Reality Shifter</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 1 complete student transformation</p>
+            <div class="donate-grid">
+                <!-- Spark (monthly) -->
+                <div class="donate-card">
+                    <div class="donate-amount">$18</div>
+                    <div class="donate-frequency">/month for a year</div>
+                    <div class="donate-tier">Spark</div>
+                    <div class="donate-desc">One teenager's discovery of the 7 Teachings through the Purpose Cards.</div>
+                    <a href="donate.html" class="btn-card">Give Monthly</a>
                 </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">$10,000</div>
-                    <div class="stat-label">Infrastructure Builder</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 4 students + curriculum development</p>
+                <!-- Signal (monthly) -->
+                <div class="donate-card">
+                    <div class="donate-amount">$42</div>
+                    <div class="donate-frequency">/month for a year</div>
+                    <div class="donate-tier">Signal</div>
+                    <div class="donate-desc">Facilitator training, curriculum development, and atom tracking infrastructure.</div>
+                    <a href="donate.html" class="btn-card">Give Monthly</a>
                 </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">$50,000</div>
-                    <div class="stat-label">Legacy Architect</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund 20 students + staff expansion</p>
+                <!-- Seed -->
+                <div class="donate-card">
+                    <div class="donate-amount">$1,800</div>
+                    <div class="donate-frequency">one-time</div>
+                    <div class="donate-tier">Seed</div>
+                    <div class="donate-desc">Sponsor one student through the full 7 Teachings experience.</div>
+                    <a href="donate.html" class="btn-card">Donate</a>
                 </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">$250K+</div>
-                    <div class="stat-label">Carnegie Class</div>
-                    <p style="margin-top: 16px; color: var(--cove-warm-gray);">Fund entire cohort (100+ students)</p>
+                <!-- Cultivator -->
+                <div class="donate-card">
+                    <div class="donate-amount">$18,000</div>
+                    <div class="donate-frequency">one-time</div>
+                    <div class="donate-tier">Cultivator</div>
+                    <div class="donate-desc">Fund a full cohort of 10 students through transformation.</div>
+                    <a href="donate.html" class="btn-card">Donate</a>
                 </div>
-            </div>
 
-            <div style="text-align: center; margin-top: 48px;">
-                <a href="donate.html" class="btn btn-primary">Donate Now (Tax Deductible)</a>
+                <!-- Builder -->
+                <div class="donate-card">
+                    <div class="donate-amount">$32,400</div>
+                    <div class="donate-frequency">one-time</div>
+                    <div class="donate-tier">Builder</div>
+                    <div class="donate-desc">Fund 18 students plus facilitator training and materials.</div>
+                    <a href="donate.html" class="btn-card">Donate</a>
+                </div>
+
+                <!-- Architect -->
+                <div class="donate-card">
+                    <div class="donate-amount">$180,000</div>
+                    <div class="donate-frequency">one-time</div>
+                    <div class="donate-tier">Architect</div>
+                    <div class="donate-desc">Fund a full year of 100 students for a Chief Facilitator.</div>
+                    <a href="donate.html" class="btn-card">Donate</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ═══════════════════════════════════════════
+         SECTION 7: OUR SUPPORTERS
+         ═══════════════════════════════════════════ -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Our Supporters<span class="gold-dot">.</span></h2>
+            <p class="section-subtitle">We are grateful to the people and organizations who have shaped our success and believed in our mission from the start.</p>
+
+            <!-- Individual Donors -->
+            <div class="supporters-group">
+                <h3>Individual Donors</h3>
+                <div class="donors-list">
+                    <ul>
+                        <li>Dr. Jonathan Snyderman, MD</li>
+                        <li>Dr. Nicholas Hall</li>
+                        <li>Sara Oshayeva</li>
+                        <li>Chava Lasri</li>
+                        <li>Steven Gillen</li>
+                    </ul>
+                    <p class="donors-note">And a growing community of purpose-driven individuals.</p>
+                </div>
+            </div>
+
+            <!-- Institutional Partners -->
+            <div class="supporters-group">
+                <h3>Institutional Partners</h3>
+                <div class="logo-grid">
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">TIGER 21</div>
+                        <div class="p-desc">Ultra-high-net-worth peer advisory network</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">R360</div>
+                        <div class="p-desc">Global community for ultra-high-net-worth families</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Abundance360</div>
+                        <div class="p-desc">Peter Diamandis's longevity &amp; exponential tech community</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">YPO</div>
+                        <div class="p-desc">Global leadership community of chief executives</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">YPO Next Gen</div>
+                        <div class="p-desc">Next-generation leadership development within YPO</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Harvard Alumni</div>
+                        <div class="p-desc">Global network of Harvard University graduates</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">EO</div>
+                        <div class="p-desc">Peer-to-peer network for founders scaling beyond $1M</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Oxford International College</div>
+                        <div class="p-desc">Academic partner</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Partners -->
+            <div class="supporters-group">
+                <h3>Technology Partners</h3>
+                <div class="logo-grid">
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Microsoft for Startups</div>
+                        <div class="p-desc">Cloud infrastructure &amp; development tools</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">NVIDIA</div>
+                        <div class="p-desc">AI and compute resources</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Salesforce</div>
+                        <div class="p-desc">CRM and nonprofit operations</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">LinkedIn</div>
+                        <div class="p-desc">Professional network and outreach tools</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Google for Nonprofits</div>
+                        <div class="p-desc">Ad Grants, Workspace, and analytics</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Adobe</div>
+                        <div class="p-desc">Creative tools for content &amp; media production</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Anthropic</div>
+                        <div class="p-desc">AI research and tools</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Canva</div>
+                        <div class="p-desc">Design tools</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Descript</div>
+                        <div class="p-desc">Video &amp; audio editing for documentary and course content</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Buttondown</div>
+                        <div class="p-desc">Email newsletter infrastructure</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Pledge.to</div>
+                        <div class="p-desc">Donation and fundraising platform</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Zeffy</div>
+                        <div class="p-desc">Zero-fee nonprofit fundraising &amp; payment processing</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">Goodstack</div>
+                        <div class="p-desc">Nonprofit technology access</div>
+                    </div>
+                    <div class="logo-card">
+                        <div class="logo-placeholder">Logo</div>
+                        <div class="p-name">TechSoup</div>
+                        <div class="p-desc">Technology donations for nonprofits</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CLOSING CTA
+         ═══════════════════════════════════════════ -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Every teenager already has something extraordinary in them<span style="color: var(--cove-white);">.</span> We help them see it<span style="color: var(--cove-white);">.</span></h2>
+            <p class="cta-sub">The rest is logistics.</p>
+            <p class="cta-kicker">100 this year. 100 million by 2040.</p>
+            <div>
+                <a href="contact.html" class="btn" style="background: var(--cove-white); color: var(--cove-gold); font-weight: 700; margin: 12px;">Book a 10-Minute Discovery Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════ -->
     <footer style="background: var(--cove-dark); color: var(--cove-white); padding: 64px 20px 32px; text-align: center; border-top: 1px solid rgba(176, 141, 87, 0.3);">
         <div class="container">
-            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVEOFEDU<span class="gold-dot">.</span></h3>
-            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">The Carnegie Library of the AI Age</p>
+            <h3 style="font-size: 2rem; margin-bottom: 16px;">COVENANT OF EDUCATION<span class="gold-dot">.</span></h3>
+            <p style="color: var(--cove-offwhite); margin-bottom: 32px;">100 million people discovering their purpose by 2040.</p>
 
             <div style="margin: 32px 0;">
                 <a href="about.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">About</a>
                 <a href="7-teachings.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">7 Teachings</a>
                 <a href="programs.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Programs</a>
-                <a href="impact.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Impact</a>
+                <a href="origins.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Origins</a>
                 <a href="donate.html" style="color: var(--cove-gold); text-decoration: none; margin: 0 16px; font-weight: 600;">Donate</a>
                 <a href="../blog/index.html" style="color: var(--cove-offwhite); text-decoration: none; margin: 0 16px;">Blog</a>
             </div>
 
             <p style="color: var(--cove-warm-gray); font-size: 0.9rem; margin-top: 48px;">
-                CoveOfEdu is a 501(c)(3) nonprofit organization<br>
+                Covenant of Education is a 501(c)(3) nonprofit organization<br>
                 EIN: 92-2455469 | All donations are tax-deductible
             </p>
-
             <p style="color: var(--cove-warm-gray); font-size: 0.85rem; margin-top: 24px;">
-                © 2025 CoveOfEdu. All rights reserved.
+                &copy; 2025 Covenant of Education. All rights reserved.
             </p>
         </div>
     </footer>
+
+    <!-- ═══════════════════════════════════════════
+         SCROLL-TRIGGERED COUNTER ANIMATION
+         ═══════════════════════════════════════════ -->
+    <script>
+        (function() {
+            var counters = document.querySelectorAll('.counter');
+            var animated = new Set();
+
+            function animate(el) {
+                if (animated.has(el)) return;
+                animated.add(el);
+                var target = parseInt(el.getAttribute('data-target'), 10);
+                var duration = 1500;
+                var start = null;
+
+                function step(ts) {
+                    if (!start) start = ts;
+                    var p = Math.min((ts - start) / duration, 1);
+                    var eased = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.floor(eased * target).toLocaleString();
+                    if (p < 1) requestAnimationFrame(step);
+                    else el.textContent = target.toLocaleString();
+                }
+                requestAnimationFrame(step);
+            }
+
+            if ('IntersectionObserver' in window) {
+                var obs = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(e) { if (e.isIntersecting) animate(e.target); });
+                }, { threshold: 0.3 });
+                counters.forEach(function(c) { obs.observe(c); });
+            } else {
+                counters.forEach(animate);
+            }
+        })();
+    </script>
 </body>
 </html>
